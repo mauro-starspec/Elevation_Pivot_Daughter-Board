@@ -34,10 +34,11 @@ These must be rechecked against the actual mounting hardware during redesign.
 
 - Preserve the validated STM32, brake, STR8, SSI-encoder, power-protection, CAN,
   and isolation circuits where they remain applicable.
-- Add a protected differential A/B/Z receiver interface for the pivot motor's
-  embedded GBA incremental encoder.
-- Add current measurement for the two external STR8 supplies if it remains part
-  of the system architecture.
+- Add two protected differential A/B/Z receiver interfaces for the pivot
+  motors' embedded GBA incremental encoders.
+- Route two separately protected STR8 power branches through ACS725 current
+  sensors after a complete power and regeneration-path review.
+- Add verified battery-voltage and temperature monitoring.
 - Review available STM32 timer pins before assigning the incremental encoder.
 - Keep field wiring, grounding, shielding, termination, serviceability, and
   connector keying explicit in the schematic.
@@ -47,6 +48,10 @@ These must be rechecked against the actual mounting hardware during redesign.
 See [`docs/PIVOT_ENCODER_INTERFACE.md`](docs/PIVOT_ENCODER_INTERFACE.md) for the
 known encoder interface and [`docs/REDESIGN_PLAN.md`](docs/REDESIGN_PLAN.md) for
 the controlled redesign sequence.
+
+For a new chat or another computer, start with
+[`PROJECT_HANDOFF.md`](PROJECT_HANDOFF.md). It records the complete current
+requirements, verified baseline, design risks, open decisions, and next steps.
 
 ## Repository contents
 

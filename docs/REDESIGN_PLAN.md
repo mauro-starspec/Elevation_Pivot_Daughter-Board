@@ -4,24 +4,27 @@
 
 - Confirm every retained interface: two brakes, STR8 controls and faults, two
   SSI elevation encoders, CAN, power rails, and any servo-related functions.
-- Confirm whether the pivot motor/encoder is an addition or replaces an existing
-  channel.
+- Confirm whether the two pivot motor/encoder channels supplement or replace
+  the existing SSI channels.
 - Confirm the pivot gear ratio, travel, speed, cable length, connector, and
   reference strategy.
-- Decide whether two STR8 supply-current sensors belong on this revision.
+- Route two individually protected STR8 supply branches through appropriately
+  ranged ACS725 current sensors.
+- Confirm and implement battery/protected-bus voltage measurement.
+- Define board-ambient, power-area, and optional external temperature sensing.
 
 ## 2. Allocate STM32 resources
 
 - Inventory all used NUCLEO-H723ZG pins.
-- Reserve one timer's CH1/CH2 pair for hardware quadrature decoding.
-- Reserve an appropriate Z/index input.
+- Reserve two timers' CH1/CH2 pairs for hardware quadrature decoding.
+- Reserve two appropriate Z/index inputs.
 - Check conflicts with clocks, debug, UART, SSI, step generation, CAN, and Nucleo
   board functions.
 - Record the allocation in a pin table before changing PCB routing.
 
 ## 3. Design the encoder front end
 
-- Select and review the differential receiver.
+- Select and review six differential receiver channels.
 - Complete termination, ESD protection, filtering, power, grounding, connector,
   test-point, and shield details.
 - Check signal levels, common-mode range, fail-safe behavior, bandwidth, and
@@ -30,7 +33,9 @@
 
 ## 4. Update the rest of the hardware
 
-- Apply the STR8 current-sensing change if approved.
+- Redesign the complete STR8 power path, protection, current sensing,
+  regeneration path, connectors, and copper for two powered branches.
+- Add verified battery-voltage and temperature-monitoring circuits.
 - Remove functions that are conclusively obsolete rather than leaving confusing
   unpopulated circuitry.
 - Recheck power budgets, isolation boundaries, return-current paths, connector

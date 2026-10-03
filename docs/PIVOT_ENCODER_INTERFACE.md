@@ -1,8 +1,9 @@
-# Pivot incremental encoder interface
+# Dual pivot incremental encoder interfaces
 
-## Selected motor and encoder
+## Selected motors and encoders
 
-- Motor: Applied Motion Products `HT23-598D-GBA`
+- Motors: two Applied Motion Products `HT23-598D-GBA` units, pending final
+  confirmation that both sides are identical
 - Encoder family: GBA optical incremental encoder
 - Manufacturer datasheet: [925-0070 Rev B](https://applied-motion.s3.amazonaws.com/documents/Datasheets/925-0070_RevB_FBA-GBA-HBA_Encoder_Datasheet.pdf)
 
@@ -39,9 +40,13 @@ drawing before releasing a harness or PCB.
 ## Required PCB signal chain
 
 ```text
-A+/A− -> differential receiver -> STM32 timer channel 1
-B+/B− -> differential receiver -> STM32 timer channel 2
-Z+/Z− -> differential receiver -> STM32 timer/index input
+Encoder L A+/A− -> differential receiver -> STM32 timer L channel 1
+Encoder L B+/B− -> differential receiver -> STM32 timer L channel 2
+Encoder L Z+/Z− -> differential receiver -> STM32 index/interrupt input L
+
+Encoder R A+/A− -> differential receiver -> STM32 timer R channel 1
+Encoder R B+/B− -> differential receiver -> STM32 timer R channel 2
+Encoder R Z+/Z− -> differential receiver -> STM32 index/interrupt input R
 ```
 
 The external differential pairs must not be connected directly to normal STM32
@@ -49,24 +54,24 @@ GPIO inputs. Select a 3.3 V-powered RS-422-compatible receiver whose input range
 accepts the encoder's 5 V differential driver and whose logic outputs are safe
 for the STM32H723. A spare fourth receiver channel is acceptable.
 
-The completed circuit should provide:
+The completed dual-channel circuit should provide:
 
 - receiver-end termination for A, B, and Z, selected from the encoder/receiver
   datasheets and verified for the actual cable;
 - ESD/transient protection suitable for the signal levels and required
   bandwidth;
 - local receiver and encoder-supply decoupling;
-- a filtered 5 V encoder supply with at least 130 mA available plus design
-  margin;
+- a filtered 5 V encoder supply sized for at least 260 mA total plus design
+  margin, with branch filtering or protection as appropriate;
 - twisted differential pairs in the harness;
 - an intentional shield connection that does not create an uncontrolled return
   path;
 - labeled test points on the receiver outputs, and preferably accessible
   differential-pair test locations;
-- A and B assignments on channels 1 and 2 of the same STM32 timer configured
-  for hardware encoder mode;
-- Z on a timer index-capable pin or an interrupt input with documented reset
-  behavior.
+- each encoder's A and B assignments on channels 1 and 2 of the same STM32
+  timer configured for hardware encoder mode;
+- two Z signals on timer index-capable pins or interrupt inputs with documented
+  reset behavior.
 
 ## Position interpretation
 
