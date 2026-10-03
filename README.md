@@ -22,8 +22,9 @@ Mauro's workstation libraries.
 
 The copied schematic and PCB represent the working elevation-control board
 before pivot-specific changes. They are a known starting point, not a released
-pivot-board design. In particular, the new HT23-598D-GBA incremental-encoder
-input has not yet been placed or routed.
+pivot-board design. In particular, the two new HT23-553D-ZAC incremental-
+encoder inputs and raw-battery STR8 current-sensing branches have not yet been
+placed or routed.
 
 KiCad 9.0.7 baseline validation on 2026-10-02 found **zero ERC findings** and
 **zero unconnected PCB pads**. The PCB retains three known courtyard overlaps
@@ -35,10 +36,11 @@ These must be rechecked against the actual mounting hardware during redesign.
 - Preserve the validated STM32, brake, STR8, SSI-encoder, power-protection, CAN,
   and isolation circuits where they remain applicable.
 - Add two protected differential A/B/Z receiver interfaces for the pivot
-  motors' embedded GBA incremental encoders.
-- Route two separately protected STR8 power branches through ACS725 current
-  sensors after a complete power and regeneration-path review.
+  motors' embedded ZAA encoders in HT23-553D-ZAC assemblies.
+- Route two separately protected raw-battery STR8 power branches through
+  ACS725-or-better current sensors. These branches bypass the LTC4364.
 - Add verified battery-voltage and temperature monitoring.
+- Use `Port (LH)` and `Star (RH)` as the canonical channel names.
 - Review available STM32 timer pins before assigning the incremental encoder.
 - Keep field wiring, grounding, shielding, termination, serviceability, and
   connector keying explicit in the schematic.

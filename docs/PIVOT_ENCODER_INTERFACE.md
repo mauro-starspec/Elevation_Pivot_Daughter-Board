@@ -2,91 +2,103 @@
 
 ## Selected motors and encoders
 
-- Motors: two Applied Motion Products `HT23-598D-GBA` units, pending final
-  confirmation that both sides are identical
-- Encoder family: GBA optical incremental encoder
-- Manufacturer datasheet: [925-0070 Rev B](https://applied-motion.s3.amazonaws.com/documents/Datasheets/925-0070_RevB_FBA-GBA-HBA_Encoder_Datasheet.pdf)
+- Motors: two Applied Motion Products `HT23-553D-ZAC` units
+- Encoder: Renco ZAA type, Applied Motion legacy part `970-1001`, enclosed by
+  the ZAC motor cover
+- Motor product: [HT23-553D-ZAC](https://www.applied-motion.com/s/product/eolstep-motor-high-torqueht23553dzac/01t5i000000xz33AAA?name=HT23-553D-ZAC-NEMA-23-High-Torque-Stepper-Motor-w-Encoder-and-Cover)
+- Encoder drawing: [Applied Motion 970-1001 Rev C](https://applied-motion.s3.amazonaws.com/documents/2D-Drawing/970-1001_RevC_Renco_ZAA_0.pdf)
+- Encoder family data: [Renco R35i](https://www.renco.com/fileadmin/user_upload/renco/1319497-21_Drehgeber_RENCO_en.pdf)
+
+The old motor page is marked end-of-life. Preserve the exact motor and encoder
+part numbers in the schematic and BOM so a replacement is not assumed to have
+the same connector, pinout, resolution, or temperature range.
 
 ## Confirmed electrical characteristics
 
 | Property | Requirement |
 |---|---|
-| Supply | 5 V ±0.5 V |
-| Maximum supply/load current | 130 mA |
-| Output format | Differential A/B/Z square waves |
-| Resolution | 1,000 lines/revolution; 4,000 quadrature counts/revolution |
-| Shaft resolution | 0.09° per decoded count |
-| Index | One Z pulse per motor revolution |
-| Maximum output frequency | 60 kHz |
-| Encoder connector | JST `SM08B-NSHSS-TB` |
-| Mating housing | JST `NSHR-08V-S` |
+| Supply | 5 V ±10% |
+| Output format | Differential A+/A−, B+/B−, and Z+/Z− line-driver signals |
+| Resolution | 2,000 signal periods/revolution |
+| STM32 x4 resolution | 8,000 counts/revolution |
+| Shaft resolution | 0.045° per decoded count |
+| Index | One marker/index pulse per motor revolution |
+| Encoder interface | Differential line driver compatible with RS-422 reception |
+| Encoder family operating range | −30 °C to +115 °C |
+| Applied Motion encoder | ZAA / legacy `970-1001` |
+| Applied Motion extension cable | `3004-195-xx` family |
 
-## Encoder pinout
+The previous GBA assumptions—4,000 counts/revolution, 60 kHz maximum, 130 mA,
+and the 8-pin JST pinout—do not apply to this motor.
 
-| Pin | Signal |
-|---:|---|
-| 1 | +5 V |
-| 2 | GND |
-| 3 | A+ |
-| 4 | A− |
-| 5 | B+ |
-| 6 | B− |
-| 7 | Z+ |
-| 8 | Z− |
+## Connector and harness warning
 
-Verify pin numbering and connector viewing direction against the manufacturer
-drawing before releasing a harness or PCB.
+The ZAA encoder uses a 15-position connector system rather than the GBA's
+8-position JST connector. Applied Motion identifies `3004-195-xx` as the WAA,
+YAA, and ZAA extension-cable family, with a JAE connector at the encoder and a
+high-density 15-pin D-sub at the drive end.
+
+The encoder provides these electrical connections:
+
+| Signal | Function |
+|---|---|
+| A+, A− | Quadrature channel A differential pair |
+| B+, B− | Quadrature channel B differential pair |
+| Z+, Z− | Index differential pair |
+| +5 V | Encoder power |
+| GND | Encoder power return |
+| Shield/drain | Cable shield, terminated according to the final EMC plan |
+
+Do not release the PCB or harness from an internet pin table alone. Verify the
+actual installed encoder connector and the exact `3004-195-xx` cable drawing
+from both mating viewpoints before assigning PCB connector pin numbers.
 
 ## Required PCB signal chain
 
 ```text
-Encoder L A+/A− -> differential receiver -> STM32 timer L channel 1
-Encoder L B+/B− -> differential receiver -> STM32 timer L channel 2
-Encoder L Z+/Z− -> differential receiver -> STM32 index/interrupt input L
+Port A+/A− -> differential receiver -> STM32 Port timer channel 1
+Port B+/B− -> differential receiver -> STM32 Port timer channel 2
+Port Z+/Z− -> differential receiver -> STM32 Port index/interrupt input
 
-Encoder R A+/A− -> differential receiver -> STM32 timer R channel 1
-Encoder R B+/B− -> differential receiver -> STM32 timer R channel 2
-Encoder R Z+/Z− -> differential receiver -> STM32 index/interrupt input R
+Star A+/A− -> differential receiver -> STM32 Star timer channel 1
+Star B+/B− -> differential receiver -> STM32 Star timer channel 2
+Star Z+/Z− -> differential receiver -> STM32 Star index/interrupt input
 ```
 
 The external differential pairs must not be connected directly to normal STM32
-GPIO inputs. Select a 3.3 V-powered RS-422-compatible receiver whose input range
-accepts the encoder's 5 V differential driver and whose logic outputs are safe
-for the STM32H723. A spare fourth receiver channel is acceptable.
+GPIO inputs. Select six RS-422-compatible differential receiver channels whose
+logic outputs are natively safe for the STM32H723's 3.3 V domain.
 
 The completed dual-channel circuit should provide:
 
-- receiver-end termination for A, B, and Z, selected from the encoder/receiver
-  datasheets and verified for the actual cable;
-- ESD/transient protection suitable for the signal levels and required
-  bandwidth;
+- receiver-end termination for all six differential pairs, derived from the
+  encoder, receiver, and actual cable requirements;
+- ESD/transient protection with sufficiently low capacitance;
 - local receiver and encoder-supply decoupling;
-- a filtered 5 V encoder supply sized for at least 260 mA total plus design
-  margin, with branch filtering or protection as appropriate;
-- twisted differential pairs in the harness;
-- an intentional shield connection that does not create an uncontrolled return
-  path;
-- labeled test points on the receiver outputs, and preferably accessible
-  differential-pair test locations;
-- each encoder's A and B assignments on channels 1 and 2 of the same STM32
-  timer configured for hardware encoder mode;
-- two Z signals on timer index-capable pins or interrupt inputs with documented
-  reset behavior.
+- a filtered 5 V encoder supply sized from the verified ZAA supply-current
+  requirement for two encoders plus design margin;
+- twisted differential pairs and a documented cable-shield connection;
+- labeled test points on the six receiver outputs;
+- each encoder's A and B outputs on channels 1 and 2 of the same STM32 timer in
+  hardware encoder mode;
+- two Z signals on timer index-capable pins or interrupt inputs;
+- canonical channel names `Port (LH)` and `Star (RH)` in documentation, UI, and
+  firmware, while existing LH/RH net names may remain during the controlled
+  schematic migration.
 
 ## Position interpretation
 
 With x4 quadrature decoding:
 
 ```text
-motor_shaft_degrees = encoder_counts * 360 / 4000
-motor_shaft_degrees = encoder_counts * 0.09
+motor_shaft_degrees = encoder_counts * 360 / 8000
+motor_shaft_degrees = encoder_counts * 0.045
 pivot_degrees = motor_shaft_degrees / mechanical_ratio
 ```
 
 The final mechanical ratio and sign convention must be confirmed from the pivot
-mechanism. The count direction can be reversed in firmware or by exchanging the
-logical A and B channels, but the schematic and harness should use one recorded
-convention.
+mechanism. The count direction can be reversed in firmware, but the schematic,
+harness, and software must document one consistent convention.
 
 ## Reference limitation
 
@@ -98,9 +110,11 @@ sensor, an operator-established zero, or another absolute measurement.
 
 ## Decisions still required
 
+- Verify the two physical encoder labels and connectors
+- Obtain and archive the exact `3004-195-xx` cable drawing
+- Encoder supply current for the installed legacy ZAA units
 - Pivot mechanical reduction ratio and maximum motor speed
 - Maximum encoder cable length and shield termination policy
-- Whether Z is mandatory in the first PCB revision
-- Exact differential receiver and protection components
-- STM32 timer and pin assignment after a whole-board pin-resource review
+- Exact differential receiver, termination, and protection components
+- STM32 timer and pin assignments after a whole-board pin-resource review
 - Required behavior following power loss or motion while unpowered

@@ -1,6 +1,6 @@
 # Project handoff — Elevation Pivot Daughter Board
 
-Last updated: 2026-10-02
+Last updated: 2026-10-03
 
 ## Purpose
 
@@ -10,10 +10,10 @@ development chat that created the original elevation controller.
 The immediate objective is a new STM32H723 Nucleo daughter board that preserves
 the proven elevation-control functions while adding:
 
-1. two Applied Motion GBA incremental-encoder interfaces;
+1. two Applied Motion `HT23-553D-ZAC` incremental-encoder interfaces;
 2. board-routed power for two STR8 stepper drives;
 3. independent current measurement for each STR8 supply using ACS725 sensors;
-4. battery/protected-bus voltage measurement;
+4. raw-battery voltage measurement, with optional protected-bus diagnostics;
 5. useful board and system-temperature measurements.
 
 This is currently a requirements-and-baseline repository. It is **not ready for
@@ -62,19 +62,34 @@ The original firmware and browser UI have successfully operated the brakes,
 both STR8 drives, both motors, and both SSI encoders. Preserve working
 interfaces unless a documented redesign requirement supersedes them.
 
-## Requirement 1 — two GBA incremental encoders
+## Naming convention
 
-Two motors will use the embedded encoder from the Applied Motion
-`HT23-598D-GBA` family. Each encoder requires:
+Use these human-facing names from this point forward:
 
-- 5 V ±0.5 V supply;
-- up to 130 mA;
-- differential A+/A−, B+/B−, and Z+/Z− reception;
-- 1,000 lines/revolution and 4,000 x4-decoded counts/revolution;
-- one Z index pulse per motor revolution;
-- support for up to 60 kHz encoder output frequency.
+- `Port (LH)` for the left-hand channel;
+- `Star (RH)` for the right-hand channel.
 
-For two encoders, budget at least 260 mA before supply margin and provide:
+Existing schematic nets may retain LH/RH temporarily during controlled
+migration, but new documentation, UI labels, measurements, and requirements
+should use Port and Star.
+
+## Requirement 1 — two ZAC incremental encoders
+
+Two motors are Applied Motion `HT23-553D-ZAC` units. The ZAC assembly uses the
+Renco ZAA incremental encoder, legacy Applied Motion part `970-1001`, beneath an
+encoder cover. Each encoder provides:
+
+- 5 V ±10% supply;
+- differential A+/A−, B+/B−, and Z+/Z− line-driver signals;
+- 2,000 signal periods/revolution;
+- 8,000 x4-decoded counts/revolution, or 0.045° per motor-shaft count;
+- one Z index pulse per motor revolution.
+
+The GBA values previously recorded in this handoff are superseded. The installed
+ZAA encoder supply current and exact connector/cable pinout still require
+verification against the physical hardware and cable drawing.
+
+For two encoders provide:
 
 - two keyed encoder connectors;
 - six differential receiver channels total;
@@ -91,19 +106,20 @@ An incremental encoder loses its accumulated position on power loss. The final
 system still needs an agreed reference method. Z is only one index per motor
 revolution and may not identify a unique pivot angle after gearing.
 
-## Requirement 2 — route and measure two STR8 power branches
+## Requirement 2 — route and measure two raw-battery STR8 power branches
 
 The present board communicates with the STR8 drives but does not carry their DC
-power. The redesign is intended to accept the battery/protected-bus supply and
-send separate power branches to the left and right STR8 drives, with one ACS725
-sensor in each branch.
+power. The redesign will take both STR8 power branches directly from the raw
+battery input, before the LTC4364 protected branch. Each STR8 branch has its own
+current sensor. The LTC4364 does not carry STR8 current.
 
 Preferred functional arrangement:
 
 ```text
-battery input -> protection -> protected DC bus
-                              |-> branch protection -> ACS725 L -> STR8 L
-                              `-> branch protection -> ACS725 R -> STR8 R
+raw battery + -> Port branch fuse/protection -> current sensor -> Port STR8
+              `-> Star branch fuse/protection -> current sensor -> Star STR8
+
+raw battery + -> LTC4364 -> protected board/load bus (separate path)
 ```
 
 Use a bidirectional ACS725 variant (`AB`) unless analysis proves reverse current
@@ -125,27 +141,28 @@ ACS725 implementation constraints from the manufacturer datasheet include:
 - layout and copper area determine thermal performance;
 - filter pin can trade bandwidth for lower output noise.
 
-The two unused ADS1115 inputs, AIN2 and AIN3, are natural candidates for the two
-ACS725 outputs. AIN0 and AIN1 are already used for left and right brake current.
-This is suitable for monitoring and logging, but the ADS1115's multiplexed
-sample rate is not a substitute for fuses, STR8 protection, or a fast hardware
-overcurrent shutdown.
+The two current sensors will produce analog voltages for two ADC channels.
+ADS1115 AIN2 and AIN3 are currently unused and are the leading candidates.
+AIN0 and AIN1 already measure Port and Star brake current. This is suitable for
+monitoring and logging, but the ADS1115's multiplexed sample rate is not a
+substitute for fuses, STR8 protection, or fast hardware overcurrent shutdown.
 
 ### Mandatory power-stage review
 
-The inherited LTC4364 sheet is annotated for a 10 mΩ sense resistor and an
-approximately 5 A current limit. Supplying two STR8 drives through that path is
-therefore not a simple connector addition. Recalculate and validate:
+The STR8 branches intentionally bypass the LTC4364. Do not increase or redesign
+the LTC4364 current limit merely to supply the drives. The independent raw-
+battery branches still require calculation and validation of:
 
 - worst-case simultaneous DC input current;
 - startup/inrush and bulk capacitance at both drives;
 - acceleration and stall demand;
 - reverse/regenerative current path;
-- LTC4364/MOSFET/shunt ratings and behavior;
 - branch and upstream fuse strategy;
 - connector current and voltage ratings;
 - copper width, thickness, vias, temperature rise, and voltage drop;
-- fault containment if one STR8 or its cable shorts.
+- fault containment if one STR8 or its cable shorts;
+- separation from the LTC4364-protected branch so a drive fault cannot force
+  current through that protected path.
 
 Do not confuse the STR8's motor phase-current setting with its DC-bus input
 current. They are related through drive power, duty cycle, motor speed, and
@@ -153,6 +170,7 @@ conversion losses, but they are not the same number.
 
 ## Requirement 3 — battery voltage
 
+The required voltage measurement is the raw battery feeding the STR8 branches.
 The user expects battery-voltage measurement to be retained. The copied design
 contains `+BATT` and `+BATT_Prot` power nets, but the 2026-10-02 exported
 netlist did not reveal a clearly named dedicated battery-voltage ADC signal.
@@ -160,12 +178,14 @@ Verify this in the schematic before claiming it already exists.
 
 Preferred redesign provision:
 
-- measure the protected bus used by the STR8 branches;
-- consider measuring raw battery voltage as a second diagnostic if useful;
+- measure raw battery voltage at the STR8 branch source;
+- optionally measure the LTC4364-protected bus as a second diagnostic;
 - design the divider for worst-case surge/clamp voltage, not only nominal 48 V;
 - use appropriately rated series resistors, RC filtering, input protection, and
   a documented ADC conversion ratio;
-- avoid loading or bypassing the existing protection/isolation boundaries.
+- do not accidentally bridge an existing isolation boundary with an ordinary
+  divider. Confirm the ADC reference domain or use an isolated measurement
+  architecture.
 
 AIN2/AIN3 will likely be consumed by STR8 current, so battery voltage may need a
 spare STM32 ADC input, another external ADC channel, or a larger-channel ADC.
@@ -201,7 +221,8 @@ be reviewed as a system:
 
 - TMP117 is specified to −55 °C;
 - the reviewed ACS725 L-grade family is specified to −40 °C;
-- the Applied Motion GBA encoder datasheet specifies −20 °C to +85 °C;
+- the Renco R35i/ZAA encoder family is specified to −30 °C, while the complete
+  legacy motor assembly and all cabling still require application-level review;
 - the Nucleo board, connectors, capacitors, DC/DC modules, brakes, motors, and
   STR8 drives also require individual review.
 
@@ -226,7 +247,7 @@ obtain manufacturer approval and perform environmental testing.
 
 ## Next engineering sequence
 
-1. Confirm whether the two GBA encoders supplement or replace any existing SSI
+1. Confirm whether the two ZAC encoders supplement or replace any existing SSI
    encoder channels.
 2. Confirm the actual pivot mechanics: gear ratios, travel, maximum RPM,
    required angular accuracy, and reference method.
@@ -245,7 +266,8 @@ obtain manufacturer approval and perform environmental testing.
 
 ## Information the next chat should request if still unknown
 
-- Are both GBA encoders identical HT23-598D-GBA units?
+- Verify both physical motor labels as `HT23-553D-ZAC` and identify the exact
+  installed encoder cables/connectors.
 - Are they additions to, or replacements for, the two existing SSI encoders?
 - Pivot gearbox ratio and motor-to-output direction for each side
 - Maximum expected motor RPM and cable lengths
@@ -257,7 +279,9 @@ obtain manufacturer approval and perform environmental testing.
 
 ## Source documents
 
-- [Applied Motion FBA/GBA/HBA encoder datasheet](https://applied-motion.s3.amazonaws.com/documents/Datasheets/925-0070_RevB_FBA-GBA-HBA_Encoder_Datasheet.pdf)
+- [Applied Motion HT23-553D-ZAC product page](https://www.applied-motion.com/s/product/eolstep-motor-high-torqueht23553dzac/01t5i000000xz33AAA?name=HT23-553D-ZAC-NEMA-23-High-Torque-Stepper-Motor-w-Encoder-and-Cover)
+- [Applied Motion 970-1001 ZAA encoder drawing](https://applied-motion.s3.amazonaws.com/documents/2D-Drawing/970-1001_RevC_Renco_ZAA_0.pdf)
+- [Renco R35i encoder family data](https://www.renco.com/fileadmin/user_upload/renco/1319497-21_Drehgeber_RENCO_en.pdf)
 - [Allegro ACS725 datasheet](https://www.allegromicro.com/-/media/files/datasheets/acs725-datasheet.pdf)
 - [TI TMP117 product page and datasheet](https://www.ti.com/product/TMP117)
 

@@ -9,8 +9,10 @@
 - Confirm the pivot gear ratio, travel, speed, cable length, connector, and
   reference strategy.
 - Route two individually protected STR8 supply branches through appropriately
-  ranged ACS725 current sensors.
-- Confirm and implement battery/protected-bus voltage measurement.
+  ranged ACS725-or-better current sensors, directly from raw battery and before
+  the LTC4364 branch.
+- Confirm and implement raw-battery voltage measurement without violating the
+  existing isolation architecture.
 - Define board-ambient, power-area, and optional external temperature sensing.
 
 ## 2. Allocate STM32 resources
@@ -34,7 +36,8 @@
 ## 4. Update the rest of the hardware
 
 - Redesign the complete STR8 power path, protection, current sensing,
-  regeneration path, connectors, and copper for two powered branches.
+  regeneration path, connectors, and copper for two raw-battery branches that
+  do not load the LTC4364-protected path.
 - Add verified battery-voltage and temperature-monitoring circuits.
 - Remove functions that are conclusively obsolete rather than leaving confusing
   unpopulated circuitry.
