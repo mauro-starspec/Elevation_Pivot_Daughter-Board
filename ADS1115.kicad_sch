@@ -6,8 +6,8 @@
 	(paper "A3")
 	(title_block
 		(title "Elevation Control_Gigabit")
-		(date "2026-09-01")
-		(rev "Sep_2026_V1")
+		(date "2026-10-03")
+		(rev "P3 REVIEW")
 		(company "Starspec")
 		(comment 4 "Mauro M. Coutinho")
 	)
@@ -883,6 +883,526 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Pivot_Reviewed:C"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Pivot_Reviewed:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Pivot_Reviewed:Thermistor_NTC"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TH"
+				(at -4.445 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Thermistor_NTC"
+				(at 3.175 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Temperature dependent resistor, negative temperature coefficient"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "thermistor NTC resistor sensor RTD"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_* RV_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Thermistor_NTC_0_1"
+				(arc
+					(start -3.175 2.413)
+					(mid -3.0506 2.3165)
+					(end -3.048 2.159)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -3.048 2.794)
+					(mid -2.9736 2.9736)
+					(end -2.794 3.048)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -2.794 3.048)
+					(mid -2.6144 2.9736)
+					(end -2.54 2.794)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -2.794 2.54)
+					(mid -2.9736 2.6144)
+					(end -3.048 2.794)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -2.794 1.905)
+					(mid -2.9736 1.9794)
+					(end -3.048 2.159)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -2.54 2.159)
+					(mid -2.6144 1.9794)
+					(end -2.794 1.905)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -2.159 2.794)
+					(mid -2.434 2.5608)
+					(end -2.794 2.54)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 2.159) (xy -2.54 2.794)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -3.683) (xy -2.54 -1.397) (xy -2.794 -2.159) (xy -2.286 -2.159) (xy -2.54 -1.397) (xy -2.54 -1.651)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 2.54) (xy -1.778 1.524) (xy 1.778 -1.524) (xy 1.778 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -1.397) (xy -1.778 -3.683) (xy -2.032 -2.921) (xy -1.524 -2.921) (xy -1.778 -3.683)
+						(xy -1.778 -3.429)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start -1.016 2.54)
+					(end 1.016 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Thermistor_NTC_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Power_Custom:+3V3_STM32"
 			(power)
 			(pin_numbers
@@ -1336,6 +1856,27 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "16-bit, 4-channel ADC"
+		(exclude_from_sim no)
+		(at 222.25 35.56 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "0bb19eec-5c55-598e-bbe2-a12e351a4e91")
+	)
+	(text "Board temperature"
+		(exclude_from_sim no)
+		(at 45.72 114.3 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left top)
+		)
+		(uuid "115f8c2e-16b7-5ddf-ba77-0a84a1d407e3")
+	)
 	(text "U21: ADDR tied to GND = 0x48"
 		(exclude_from_sim no)
 		(at 265.43 29.718 0)
@@ -1346,6 +1887,60 @@
 		)
 		(uuid "3589b6e0-fbe0-473b-a3bb-7bcc85454392")
 	)
+	(text "I2C digital isolator"
+		(exclude_from_sim no)
+		(at 91.44 38.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "657bb1ba-5f06-5ff4-8c70-ba84bfdd8134")
+	)
+	(text "TH1 / TH2: two-pad 1206 thermistors, mounted on this PCB.\nPlace TH1 away from heat sources; TH2 near the selected power hot spot.\nBoth circuits stay in the +5V_BRAKE / GND_BRAKE domain; preserve isolation clearances."
+		(exclude_from_sim no)
+		(at 30.48 190.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "caa78df0-97e0-5416-8e81-c17e49e03b67")
+	)
+	(text "ONBOARD TEMPERATURE"
+		(exclude_from_sim no)
+		(at 30.48 104.14 0)
+		(effects
+			(font
+				(size 1.778 1.778)
+			)
+			(justify left top)
+		)
+		(uuid "ec768cb5-a70d-545d-881a-480190f70a60")
+	)
+	(text "U21 AIN2 = TEMP_BOARD; AIN3 = TEMP_POWER. No added ICs or I2C addresses.\nFirmware: use +/-6.144 V range for AIN2/3; keep brake AIN0/1 at +/-4.096 V.\nUse TDK R/T curve 1010 and calibrated excitation voltage; voltage rises with temperature.\nReadings require the brake supply. Placement, calibration and cold testing remain to be done."
+		(exclude_from_sim no)
+		(at 30.48 213.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "ecc1eaad-1391-5ab9-9ffa-688a0da5167d")
+	)
+	(text "Power-area temperature"
+		(exclude_from_sim no)
+		(at 210.82 114.3 0)
+		(effects
+			(font
+				(size 1.524 1.524)
+			)
+			(justify left top)
+		)
+		(uuid "f66e34c2-0593-57b8-a17e-9c4306c156cd")
+	)
 	(junction
 		(at 44.45 57.15)
 		(diameter 0)
@@ -1353,10 +1948,22 @@
 		(uuid "01432ed6-9ea4-4dae-b270-7af201d71bd5")
 	)
 	(junction
+		(at 241.3 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0bf9ee7d-0cd0-5c6f-a121-ee0432f06c56")
+	)
+	(junction
 		(at 125.73 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "306dec79-048d-404f-b886-a6fdafa51853")
+	)
+	(junction
+		(at 76.2 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3c2eb6a0-5da0-515a-b1c8-7b9b8645e6c0")
 	)
 	(junction
 		(at 33.02 62.23)
@@ -1419,6 +2026,18 @@
 		(uuid "d838022c-57d1-4795-8429-9077e5ed695a")
 	)
 	(junction
+		(at 307.34 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dd29fa55-18bc-51f9-853f-4fe65fa77bec")
+	)
+	(junction
+		(at 142.24 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e8eba620-1440-561f-9a7c-1b377d7074e9")
+	)
+	(junction
 		(at 59.69 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1427,14 +2046,6 @@
 	(no_connect
 		(at 199.39 67.31)
 		(uuid "3b8ffa04-d93d-4093-b2ab-66e7768b0634")
-	)
-	(no_connect
-		(at 245.11 59.69)
-		(uuid "91623e34-a6f2-4cd4-a89b-789a00e06891")
-	)
-	(no_connect
-		(at 245.11 57.15)
-		(uuid "c5a438d2-1ef2-4a10-bc21-fb46a0481909")
 	)
 	(wire
 		(pts
@@ -1468,6 +2079,46 @@
 	)
 	(wire
 		(pts
+			(xy 76.2 144.78) (xy 76.2 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11ed5b14-fb3f-5be6-8ed7-fb44f1104bf5")
+	)
+	(wire
+		(pts
+			(xy 76.2 161.29) (xy 76.2 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ba5c0b8-341f-5f7e-8591-635e130ef5b8")
+	)
+	(wire
+		(pts
+			(xy 245.11 59.69) (xy 264.16 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21911a05-5db1-5142-bec7-e7ffcb87f1d4")
+	)
+	(wire
+		(pts
+			(xy 142.24 144.78) (xy 160.02 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "261840c2-f897-5645-9ce9-46700a6c96d1")
+	)
+	(wire
+		(pts
 			(xy 44.45 40.64) (xy 36.83 40.64)
 		)
 		(stroke
@@ -1498,6 +2149,16 @@
 	)
 	(wire
 		(pts
+			(xy 307.34 144.78) (xy 325.12 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3201aa98-c084-5bc6-bebe-e655921a0de2")
+	)
+	(wire
+		(pts
 			(xy 160.02 40.64) (xy 160.02 43.18)
 		)
 		(stroke
@@ -1505,6 +2166,16 @@
 			(type default)
 		)
 		(uuid "339c43cf-afdc-44b7-9e21-752417691122")
+	)
+	(wire
+		(pts
+			(xy 307.34 144.78) (xy 307.34 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a6cb92e-ae5e-556c-9a9d-afe1f3e493fb")
 	)
 	(wire
 		(pts
@@ -1528,6 +2199,26 @@
 	)
 	(wire
 		(pts
+			(xy 76.2 135.89) (xy 76.2 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "484daf19-0d1a-5b87-b66a-9a95f9d0f290")
+	)
+	(wire
+		(pts
+			(xy 245.11 57.15) (xy 264.16 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e5207bc-594c-503a-9832-c544d6df984a")
+	)
+	(wire
+		(pts
 			(xy 111.76 52.07) (xy 111.76 39.37)
 		)
 		(stroke
@@ -1535,6 +2226,26 @@
 			(type default)
 		)
 		(uuid "550e6682-a01c-4c0d-a410-89311961003a")
+	)
+	(wire
+		(pts
+			(xy 307.34 161.29) (xy 307.34 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5785cb24-0fca-59ae-8b9c-9d3a443c36d1")
+	)
+	(wire
+		(pts
+			(xy 241.3 121.92) (xy 241.3 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "586f57ae-7144-5766-b601-197d96ae11a7")
 	)
 	(wire
 		(pts
@@ -1575,6 +2286,16 @@
 			(type default)
 		)
 		(uuid "69581cbb-ded0-4cef-b164-a30ebd98ea54")
+	)
+	(wire
+		(pts
+			(xy 142.24 161.29) (xy 142.24 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6dff4348-1bb9-5f45-b662-2cee7b500c0a")
 	)
 	(wire
 		(pts
@@ -1635,6 +2356,16 @@
 			(type default)
 		)
 		(uuid "7c1c936a-c513-4eea-882f-c07f559d7a12")
+	)
+	(wire
+		(pts
+			(xy 241.3 144.78) (xy 278.13 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "800fdee4-a04f-5166-a6a2-f0a0e479114e")
 	)
 	(wire
 		(pts
@@ -1728,6 +2459,16 @@
 	)
 	(wire
 		(pts
+			(xy 120.65 144.78) (xy 142.24 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0260aad-70cf-542d-a626-4d8537fdc137")
+	)
+	(wire
+		(pts
 			(xy 36.83 40.64) (xy 36.83 35.56)
 		)
 		(stroke
@@ -1745,6 +2486,16 @@
 			(type default)
 		)
 		(uuid "abb794e9-b211-4f81-ad13-889c67fdb54a")
+	)
+	(wire
+		(pts
+			(xy 76.2 144.78) (xy 113.03 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af6df421-b0de-52bb-97e4-a5027666a2ab")
 	)
 	(wire
 		(pts
@@ -1838,6 +2589,26 @@
 	)
 	(wire
 		(pts
+			(xy 241.3 135.89) (xy 241.3 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cac57cdc-e6b2-571a-ac60-9614b5ef2581")
+	)
+	(wire
+		(pts
+			(xy 285.75 144.78) (xy 307.34 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb3952c6-ad73-5ded-b76a-5d4266d71f69")
+	)
+	(wire
+		(pts
 			(xy 111.76 67.31) (xy 115.57 67.31)
 		)
 		(stroke
@@ -1845,6 +2616,36 @@
 			(type default)
 		)
 		(uuid "ce44de40-0812-439b-8bd0-bbfd02f4ef06")
+	)
+	(wire
+		(pts
+			(xy 142.24 144.78) (xy 142.24 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce486a2f-4ada-5a78-a630-8074790c6df8")
+	)
+	(wire
+		(pts
+			(xy 241.3 144.78) (xy 241.3 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf542286-6dd1-56eb-b9fb-c10b214e9ba4")
+	)
+	(wire
+		(pts
+			(xy 241.3 161.29) (xy 241.3 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cfdbf467-93c3-5aa2-87df-c0315cebb5f5")
 	)
 	(wire
 		(pts
@@ -1966,6 +2767,56 @@
 		)
 		(uuid "fa0ef130-f58e-4ceb-a16c-04f6aeab408d")
 	)
+	(wire
+		(pts
+			(xy 76.2 121.92) (xy 76.2 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff572187-d146-5466-85b6-e0e34c23f15b")
+	)
+	(label "TEMP_BOARD"
+		(at 160.02 144.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1349e858-1648-5e6d-a24a-38ba350831f9")
+	)
+	(label "TEMP_POWER"
+		(at 325.12 144.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5e0cc119-6010-5ab8-83a0-f9aafaeb662a")
+	)
+	(label "TEMP_BOARD"
+		(at 264.16 57.15 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7976b834-7e77-50f6-bf91-ad9127275589")
+	)
+	(label "TEMP_POWER"
+		(at 264.16 59.69 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f3c8fdf0-e769-5bc7-b596-c31dd53dcd09")
+	)
 	(hierarchical_label "STM32_SDA"
 		(shape bidirectional)
 		(at 29.21 57.15 180)
@@ -1977,7 +2828,7 @@
 		)
 		(uuid "25ccbbcf-6993-45fd-bc8a-77db09c9dc0c")
 	)
-	(hierarchical_label "LH_BRAKE_CURR"
+	(hierarchical_label "PORT_BRAKE_CURR"
 		(shape input)
 		(at 250.19 49.53 0)
 		(effects
@@ -1999,7 +2850,7 @@
 		)
 		(uuid "8b1a06cb-4dee-4f0f-94d4-6bc926b8ab3d")
 	)
-	(hierarchical_label "RH_BRAKE_CURR"
+	(hierarchical_label "STAR_BRAKE_CURR"
 		(shape input)
 		(at 250.19 52.07 0)
 		(effects
@@ -2460,6 +3311,225 @@
 	)
 	(symbol
 		(lib_id "Power_Custom:GND_BRAKE")
+		(at 241.3 170.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "26f7a00e-306f-5a71-bf6e-4cded229c568")
+		(property "Reference" "#PWR761"
+			(at 241.3 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND_BRAKE"
+			(at 241.3 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 241.3 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 241.3 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
+			(at 241.3 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "266afaa8-2bfd-5d90-988e-736df9c6cf85")
+		)
+		(instances
+			(project "Elevation_Pivot_Daughter-Board"
+				(path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/17b8fa8c-be91-49fa-a99e-b377fef04af4"
+					(reference "#PWR761")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Power_Custom:+5V_BRAKE")
+		(at 241.3 121.92 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "37e7b9e3-b929-5f36-be28-1c1db562f129")
+		(property "Reference" "#PWR749"
+			(at 241.3 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V_BRAKE"
+			(at 241.3 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 241.3 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 241.3 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 241.3 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c8c41aa0-f23f-53be-a5f1-637573d0267b")
+		)
+		(instances
+			(project "Elevation_Pivot_Daughter-Board"
+				(path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/17b8fa8c-be91-49fa-a99e-b377fef04af4"
+					(reference "#PWR749")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Pivot_Reviewed:Thermistor_NTC")
+		(at 76.2 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "429b5efb-df24-5258-b5d6-44b89aa595c2")
+		(property "Reference" "TH1"
+			(at 81.28 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k NTC / 1206"
+			(at 81.28 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 76.2 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/en/system/files?file=dam%2Fdoc%2Fproduct%2Fsensor%2Fntc%2Fchip-ntc-thermistor%2Fdata_sheet%2F50%2Fdb%2Fntc%2Fntc_smd_standard_series_1206.pdf"
+			(at 76.2 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Temperature dependent resistor, negative temperature coefficient"
+			(at 76.2 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Design notes" "TDK B57621C5103J062; R25=10k +/-5%; R/T curve 1010; onboard sensor, no cable"
+			(at 76.2 132.08 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" "B57621C5103J062"
+			(at 76.2 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c95d9687-2af2-51b1-8679-db44d42ebbfd")
+		)
+		(pin "2"
+			(uuid "30dac134-3e4c-59cf-857c-434b99bb6455")
+		)
+		(instances
+			(project "Elevation_Pivot_Daughter-Board"
+				(path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/17b8fa8c-be91-49fa-a99e-b377fef04af4"
+					(reference "TH1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Power_Custom:GND_BRAKE")
 		(at 180.34 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2667,6 +3737,93 @@
 		)
 	)
 	(symbol
+		(lib_id "Pivot_Reviewed:Thermistor_NTC")
+		(at 241.3 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "800ccbfb-c04a-59d8-9a8e-114a55c0ed3f")
+		(property "Reference" "TH2"
+			(at 246.38 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k NTC / 1206"
+			(at 246.38 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
+			(at 241.3 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://product.tdk.com/en/system/files?file=dam%2Fdoc%2Fproduct%2Fsensor%2Fntc%2Fchip-ntc-thermistor%2Fdata_sheet%2F50%2Fdb%2Fntc%2Fntc_smd_standard_series_1206.pdf"
+			(at 241.3 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Temperature dependent resistor, negative temperature coefficient"
+			(at 241.3 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Design notes" "TDK B57621C5103J062; R25=10k +/-5%; R/T curve 1010; onboard sensor, no cable"
+			(at 241.3 132.08 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER_PART_NUMBER" "B57621C5103J062"
+			(at 241.3 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "01d2df9e-000a-5d6e-be55-a077b836b3f1")
+		)
+		(pin "2"
+			(uuid "5a8b4566-9658-5e4f-ab38-b93ae7b70d00")
+		)
+		(instances
+			(project "Elevation_Pivot_Daughter-Board"
+				(path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/17b8fa8c-be91-49fa-a99e-b377fef04af4"
+					(reference "TH2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 180.34 39.37 0)
 		(unit 1)
@@ -2785,6 +3942,72 @@
 			(project "Elevation_Pivot_Daughter-Board"
 				(path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/17b8fa8c-be91-49fa-a99e-b377fef04af4"
 					(reference "C91")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Power_Custom:+5V_BRAKE")
+		(at 76.2 121.92 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8c77aeb1-9aeb-5e09-a0cc-5788569b5941")
+		(property "Reference" "#PWR716"
+			(at 76.2 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V_BRAKE"
+			(at 76.2 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 76.2 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 76.2 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0fd6075e-3293-5bd4-9537-85c3a4e2c364")
+		)
+		(instances
+			(project "Elevation_Pivot_Daughter-Board"
+				(path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/17b8fa8c-be91-49fa-a99e-b377fef04af4"
+					(reference "#PWR716")
 					(unit 1)
 				)
 			)
@@ -2917,6 +4140,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Pivot_Reviewed:R")
+		(at 281.94 144.78 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9bcf26e4-5eb7-5c10-8c96-00dcaa2be3f5")
+		(property "Reference" "R183"
+			(at 281.94 139.7 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 281.94 142.24 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 280.162 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 281.94 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 281.94 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "48183c49-c361-5976-b495-fef278ba882a")
+		)
+		(pin "2"
+			(uuid "73fbfe8d-2c17-5aff-966c-08c0dd2a6da0")
+		)
+		(instances
+			(project "Elevation_Pivot_Daughter-Board"
+				(path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/17b8fa8c-be91-49fa-a99e-b377fef04af4"
+					(reference "R183")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Power_Custom:+5V_BRAKE")
 		(at 186.69 35.56 0)
 		(unit 1)
@@ -2977,6 +4267,72 @@
 			(project "Elevation_Pivot_Daughter-Board"
 				(path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/17b8fa8c-be91-49fa-a99e-b377fef04af4"
 					(reference "#PWR0145")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Power_Custom:GND_BRAKE")
+		(at 307.34 170.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a3fa688f-b04c-52f9-98a1-19182e206583")
+		(property "Reference" "#PWR764"
+			(at 307.34 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND_BRAKE"
+			(at 307.34 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 307.34 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 307.34 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
+			(at 307.34 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8897f969-0066-5b9f-a120-aa335748de48")
+		)
+		(instances
+			(project "Elevation_Pivot_Daughter-Board"
+				(path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/17b8fa8c-be91-49fa-a99e-b377fef04af4"
+					(reference "#PWR764")
 					(unit 1)
 				)
 			)
@@ -3238,6 +4594,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Pivot_Reviewed:R")
+		(at 116.84 144.78 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bc60785d-491f-5d95-8a55-7af8a3bd61c6")
+		(property "Reference" "R182"
+			(at 116.84 139.7 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 116.84 142.24 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 115.062 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 116.84 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 116.84 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fb3c8626-a89f-5af8-8302-50929d60d889")
+		)
+		(pin "2"
+			(uuid "77ca7460-9879-5d05-92bc-dabf799e61cf")
+		)
+		(instances
+			(project "Elevation_Pivot_Daughter-Board"
+				(path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/17b8fa8c-be91-49fa-a99e-b377fef04af4"
+					(reference "R182")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Power_Custom:GND_BRAKE")
 		(at 185.42 67.31 0)
 		(unit 1)
@@ -3298,6 +4721,141 @@
 			(project "Elevation_Pivot_Daughter-Board"
 				(path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/17b8fa8c-be91-49fa-a99e-b377fef04af4"
 					(reference "#PWR054")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Pivot_Reviewed:C")
+		(at 307.34 157.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c934fad3-3641-5f62-a08e-b76fd8a56e28")
+		(property "Reference" "C191"
+			(at 311.15 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 311.15 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 308.3052 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 307.34 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 307.34 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "918e5615-efea-5e2d-bd28-16aa2499de97")
+		)
+		(pin "2"
+			(uuid "90085a90-3c8f-5c94-9978-138a6f00a66b")
+		)
+		(instances
+			(project "Elevation_Pivot_Daughter-Board"
+				(path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/17b8fa8c-be91-49fa-a99e-b377fef04af4"
+					(reference "C191")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Power_Custom:GND_BRAKE")
+		(at 142.24 170.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d1e68379-aab2-505f-b9ca-80b6bd8fec88")
+		(property "Reference" "#PWR731"
+			(at 142.24 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND_BRAKE"
+			(at 142.24 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 142.24 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 142.24 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
+			(at 142.24 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "237ecdad-f9c8-5c41-918b-d1c1f98cd030")
+		)
+		(instances
+			(project "Elevation_Pivot_Daughter-Board"
+				(path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/17b8fa8c-be91-49fa-a99e-b377fef04af4"
+					(reference "#PWR731")
 					(unit 1)
 				)
 			)
@@ -3559,6 +5117,144 @@
 		)
 	)
 	(symbol
+		(lib_id "Pivot_Reviewed:R")
+		(at 241.3 157.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e1ff8eb3-6249-5ac0-ac7a-68b7b20c2cbb")
+		(property "Reference" "R181"
+			(at 245.11 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k 0.1%"
+			(at 245.11 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 239.522 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 241.3 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 241.3 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1618b652-e392-58bf-a06f-dbd9fd3b23ac")
+		)
+		(pin "2"
+			(uuid "956dee5f-8984-56c0-af21-924fce1fcacd")
+		)
+		(instances
+			(project "Elevation_Pivot_Daughter-Board"
+				(path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/17b8fa8c-be91-49fa-a99e-b377fef04af4"
+					(reference "R181")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Pivot_Reviewed:C")
+		(at 142.24 157.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e313c84e-35e6-5be0-b23d-a23fdf8e0284")
+		(property "Reference" "C190"
+			(at 146.05 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 146.05 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 143.2052 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 142.24 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 142.24 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9e94c135-cb82-5c83-b259-f05b98792c02")
+		)
+		(pin "2"
+			(uuid "61003a27-ee94-5679-8fc1-d70e88feccde")
+		)
+		(instances
+			(project "Elevation_Pivot_Daughter-Board"
+				(path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/17b8fa8c-be91-49fa-a99e-b377fef04af4"
+					(reference "C190")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 129.54 43.18 180)
 		(unit 1)
@@ -3800,6 +5496,72 @@
 			(project "Elevation_Pivot_Daughter-Board"
 				(path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/17b8fa8c-be91-49fa-a99e-b377fef04af4"
 					(reference "R66")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Power_Custom:GND_BRAKE")
+		(at 76.2 170.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e8946917-d646-5238-8a76-78098af603cc")
+		(property "Reference" "#PWR728"
+			(at 76.2 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND_BRAKE"
+			(at 76.2 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 76.2 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
+			(at 76.2 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e160ed1d-50e8-5a46-bd07-7e6cfaca6e78")
+		)
+		(instances
+			(project "Elevation_Pivot_Daughter-Board"
+				(path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/17b8fa8c-be91-49fa-a99e-b377fef04af4"
+					(reference "#PWR728")
 					(unit 1)
 				)
 			)
@@ -4080,6 +5842,75 @@
 			(project "Elevation_Pivot_Daughter-Board"
 				(path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/17b8fa8c-be91-49fa-a99e-b377fef04af4"
 					(reference "#PWR058")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Pivot_Reviewed:R")
+		(at 76.2 157.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fd41d6aa-43f9-50ae-a1a5-fe6b12366a1f")
+		(property "Reference" "R180"
+			(at 80.01 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k 0.1%"
+			(at 80.01 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 74.422 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 76.2 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 76.2 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cb20404d-2ff6-5744-bc6f-daa9c5ebdf00")
+		)
+		(pin "2"
+			(uuid "c3e7a6d3-0720-5c50-983f-105679fa9615")
+		)
+		(instances
+			(project "Elevation_Pivot_Daughter-Board"
+				(path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/17b8fa8c-be91-49fa-a99e-b377fef04af4"
+					(reference "R180")
 					(unit 1)
 				)
 			)

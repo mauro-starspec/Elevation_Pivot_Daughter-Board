@@ -1,78 +1,51 @@
 # Elevation Pivot Daughter Board
 
-KiCad 9 hardware project for the redesigned Starspec elevation/pivot controller
-daughter board.
+KiCad 9 daughter board for the Starspec elevation/pivot controller.
 
-This repository begins from the proven `Elevation_Control_STM32_Daughter-Board`
-hardware baseline. The original repository remains unchanged and continues to
-hold its firmware, browser tools, recordings, and test history. This repository
-contains only the editable PCB design and the documentation needed for the new
-hardware revision.
+## Current revision: P3
 
-## Open the design
+The schematic adds two isolated motor encoder interfaces while preserving both
+SSI channels, two onboard 1206 thermistors, and all existing
+controller functions. Port/Star names now apply
+throughout the schematic, including brake, stepper, SSI, preset, and supply nets.
+New signals use hierarchical labels; supplies use conventional power symbols.
 
-Open [`Elevation_Pivot_Daughter-Board.kicad_pro`](Elevation_Pivot_Daughter-Board.kicad_pro)
-in KiCad 9. The hierarchical schematics, project-specific symbols, and custom
-footprints are stored in this repository so that the design does not depend on
-Mauro's workstation libraries.
+One six-channel ISO7760F isolates both motor encoders' A/B/Z signals. Both
+receivers share U105's 3.3 V supply from PS10; loss of PS10 disables both
+feedback paths. The two 5 V encoder converters remain separate.
 
-## Current status
+Device power switching belongs to external PSRB. Other systems already measure
+battery voltage and device current. The P1 STR8 power/current and voltage
+additions have been removed, along with the new one-shot encoder fuses and
+external thermistor inputs. Existing brake current sensing is retained.
 
-**Redesign baseline — not ready for fabrication.**
+TH1 measures board temperature and TH2 the power area. Their passive dividers
+use the existing U21 ADC's spare AIN2/3 inputs and U24 isolation. No extra sensor
+ICs, regulator or I2C isolator are required. Temperature readings depend on the
+brake supply. Firmware channel scheduling and conversion remain future work.
 
-The copied schematic and PCB represent the working elevation-control board
-before pivot-specific changes. They are a known starting point, not a released
-pivot-board design. In particular, the two new HT23-553D-ZAC incremental-
-encoder inputs and raw-battery STR8 current-sensing branches have not yet been
-placed or routed.
+The PCB is unchanged and does not match the redesigned schematic. This is a
+review revision, not a fabrication release. No firmware was changed.
 
-KiCad 9.0.7 baseline validation on 2026-10-02 found **zero ERC findings** and
-**zero unconnected PCB pads**. The PCB retains three known courtyard overlaps
-between the fixed Nucleo connector/mounting group: H3/CN9, H4/CN10, and H2/CN7.
-These must be rechecked against the actual mounting hardware during redesign.
+## Open and review
 
-## Redesign objectives
+Open [Elevation_Pivot_Daughter-Board.kicad_pro](Elevation_Pivot_Daughter-Board.kicad_pro)
+in KiCad 9. Symbols and footprints are stored locally in the repository.
 
-- Preserve the validated STM32, brake, STR8, SSI-encoder, power-protection, CAN,
-  and isolation circuits where they remain applicable.
-- Add two protected differential A/B/Z receiver interfaces for the pivot
-  motors' embedded ZAA encoders in HT23-553D-ZAC assemblies.
-- Route two separately protected raw-battery STR8 power branches through
-  ACS725-or-better current sensors. These branches bypass the LTC4364.
-- Add verified battery-voltage and temperature monitoring.
-- Use `Port (LH)` and `Star (RH)` as the canonical channel names.
-- Review available STM32 timer pins before assigning the incremental encoder.
-- Keep field wiring, grounding, shielding, termination, serviceability, and
-  connector keying explicit in the schematic.
-- Complete ERC, PCB parity, DRC, fabrication preview, and first-article review
-  before release.
+- [PROJECT_HANDOFF.md](PROJECT_HANDOFF.md): scope and next-session context.
+- [SCHEMATIC_REDESIGN_P3.md](docs/SCHEMATIC_REDESIGN_P3.md): foundation review and current circuits.
+- [REDESIGN_PLAN.md](docs/REDESIGN_PLAN.md): remaining review sequence.
+- outputs/Pivot_Schematic_Review.pdf: local review export, ignored by Git.
 
-See [`docs/PIVOT_ENCODER_INTERFACE.md`](docs/PIVOT_ENCODER_INTERFACE.md) for the
-known encoder interface and [`docs/REDESIGN_PLAN.md`](docs/REDESIGN_PLAN.md) for
-the controlled redesign sequence.
+Run `python tools/validate_pivot_schematic.py` to check connectivity, channel
+renaming, original component values/footprints, encoder interfaces, ERC, and
+the unchanged PCB hash. The two inherited Nucleo ERC exclusions remain.
 
-For a new chat or another computer, start with
-[`PROJECT_HANDOFF.md`](PROJECT_HANDOFF.md). It records the complete current
-requirements, verified baseline, design risks, open decisions, and next steps.
+Actual NEMA34 motor/encoder identity, supply demand, maximum frequency, and the
+proposed custom DE9 harness must be verified. J20/J21 now use DE9 sockets;
+plain-language captions identify the main components. The earlier HT23/ZAA reference
+is unconfirmed for this hardware.
 
-## Repository contents
-
-```text
-Elevation_Pivot_Daughter-Board.kicad_pro  KiCad project
-Elevation_Pivot_Daughter-Board.kicad_sch  Top-level schematic
-Elevation_Pivot_Daughter-Board.kicad_pcb  Starting PCB layout
-*.kicad_sch                               Hierarchical schematic sheets
-Project_Symbols/                          Project-local symbol libraries
-footprints/                               Project-local footprint libraries
-docs/                                     Design requirements and decisions
-```
-
-Firmware is deliberately excluded. It remains in the original elevation-control
-repository until this board's pin assignment and hardware architecture are
-stable enough to justify a dedicated firmware target.
-
-## Source baseline
-
-Imported from `mauro-starspec/Elevation_Control_STM32_Daughter-Board` on
-2026-10-02. Preserve the original repository as the as-built and test-history
-reference; make pivot redesign changes here.
+The original elevation project remains the firmware and bench-test reference.
+The unchanged baseline PCB retains three known courtyard overlaps: H3/CN9,
+H4/CN10, and H2/CN7.

@@ -7,7 +7,7 @@
 	(title_block
 		(title "Elevation Control_Gigabit")
 		(date "2026-09-01")
-		(rev "Sep_2026_V1")
+		(rev "P3 REVIEW")
 		(company "Starspec")
 		(comment 4 "Mauro M. Coutinho")
 	)
@@ -3490,6 +3490,16 @@
 			(justify left)
 		)
 		(uuid "7329c707-5680-4478-8c97-f2eaa37c7900")
+	)
+	(text "Surge / ideal-diode controller"
+		(exclude_from_sim no)
+		(at 234.95 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "87290178-71b2-5e51-a3da-1544eb61a521")
 	)
 	(text "Current sense resistor\n1%, 2512 package, 0.5 W or 1 W\nRoute SENSE/OUT as Kelvin traces to the resistor pads\n10 mOhms = 5A"
 		(exclude_from_sim no)
@@ -8560,11 +8570,21 @@
 		)
 		(property "ALT_LCSC" "C6497281"
 			(at 204.47 189.23 0)
-			(effects (font (size 1.27 1.27)) (hide yes))
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(property "ALT_MANUFACTURER_PART_NUMBER" "SSM3K361R,LXHF"
 			(at 204.47 189.23 0)
-			(effects (font (size 1.27 1.27)) (hide yes))
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "2"
 			(uuid "ac0a0ed1-501b-4cee-88aa-e95e1141ffdd")
@@ -8684,11 +8704,21 @@
 		)
 		(property "ALT_LCSC" "C20564982"
 			(at 198.12 166.37 0)
-			(effects (font (size 1.27 1.27)) (hide yes))
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(property "ALT_MANUFACTURER_PART_NUMBER" "MMSZ4699-HE3_A-08"
 			(at 198.12 166.37 0)
-			(effects (font (size 1.27 1.27)) (hide yes))
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(property "Sim.Device" "D"
 			(at 198.12 166.37 0)

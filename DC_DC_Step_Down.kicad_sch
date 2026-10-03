@@ -6,8 +6,8 @@
 	(paper "A3")
 	(title_block
 		(title "Elevation Control_Gigabit")
-		(date "2026-09-01")
-		(rev "Sep_2026_V1")
+		(date "2026-10-03")
+		(rev "P3 REVIEW")
 		(company "Starspec")
 		(comment 4 "Mauro M. Coutinho")
 	)
@@ -3010,7 +3010,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Power_Custom:+5V_ENC_L"
+		(symbol "Power_Custom:+5V_ENC_PORT"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -3031,7 +3031,7 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "+5V_ENC_L"
+			(property "Value" "+5V_ENC_PORT"
 				(at 0 5.08 0)
 				(effects
 					(font
@@ -3075,7 +3075,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "+5V_ENC_L_0_1"
+			(symbol "+5V_ENC_PORT_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27) (xy 0 2.54)
@@ -3113,7 +3113,7 @@
 					)
 				)
 			)
-			(symbol "+5V_ENC_L_1_1"
+			(symbol "+5V_ENC_PORT_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -3135,7 +3135,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Power_Custom:+5V_ENC_R"
+		(symbol "Power_Custom:+5V_ENC_STAR"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -3156,7 +3156,7 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "+5V_ENC_R"
+			(property "Value" "+5V_ENC_STAR"
 				(at 0 5.08 0)
 				(effects
 					(font
@@ -3200,7 +3200,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "+5V_ENC_R_0_1"
+			(symbol "+5V_ENC_STAR_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27) (xy 0 2.54)
@@ -3238,7 +3238,7 @@
 					)
 				)
 			)
-			(symbol "+5V_ENC_R_1_1"
+			(symbol "+5V_ENC_STAR_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -3635,7 +3635,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Power_Custom:6.5V_ENC_L"
+		(symbol "Power_Custom:6.5V_ENC_PORT"
 			(power)
 			(pin_numbers
 				(hide yes)
@@ -3656,7 +3656,7 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "+6.5V_ENC_R"
+			(property "Value" "+6.5V_ENC_STAR"
 				(at 0 5.08 0)
 				(effects
 					(font
@@ -3700,7 +3700,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "6.5V_ENC_L_0_1"
+			(symbol "6.5V_ENC_PORT_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27) (xy 0 2.54)
@@ -3738,7 +3738,7 @@
 					)
 				)
 			)
-			(symbol "6.5V_ENC_L_1_1"
+			(symbol "6.5V_ENC_PORT_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -4403,6 +4403,26 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "5 V linear regulator"
+		(exclude_from_sim no)
+		(at 175.26 182.88 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "14aca0bc-1795-5f8d-a5fc-c600d8d90153")
+	)
+	(text "5 V linear regulator"
+		(exclude_from_sim no)
+		(at 176.53 226.06 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "43f17960-6529-56c0-9be4-c864f504342b")
+	)
 	(text "External supply / return entry at J1 (ERC source declarations)"
 		(exclude_from_sim no)
 		(at 233.68 88.9 0)
@@ -4414,6 +4434,66 @@
 		)
 		(uuid "551d922a-8188-4e2f-9663-16029038f25f")
 	)
+	(text "5 V field supply"
+		(exclude_from_sim no)
+		(at 76.2 92.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "5d11d129-2efd-5c69-b743-e355c634615c")
+	)
+	(text "6.5 V Star SSI supply"
+		(exclude_from_sim no)
+		(at 66.04 214.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "772c0d21-2af3-543a-8e3b-c21d75ec9a2f")
+	)
+	(text "6.5 V Port SSI supply"
+		(exclude_from_sim no)
+		(at 67.31 168.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "7838268c-8634-56cf-88a6-d7d1f3aa488c")
+	)
+	(text "Isolated 5 V MCU supply"
+		(exclude_from_sim no)
+		(at 140.97 33.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "898e5c3d-1e8b-5f1d-993e-4f6c40ca1836")
+	)
+	(text "Common-mode filter"
+		(exclude_from_sim no)
+		(at 81.28 33.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "8ca6a2d1-944c-5098-b98c-cfda92629a60")
+	)
+	(text "5 V brake supply"
+		(exclude_from_sim no)
+		(at 356.87 22.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "902a3760-cd97-53a1-9576-2b7cd36dd123")
+	)
 	(text "DNC --"
 		(exclude_from_sim no)
 		(at 293.37 130.81 0)
@@ -4423,6 +4503,16 @@
 			)
 		)
 		(uuid "b8f87297-d156-4be8-b562-dc1a72b7a43b")
+	)
+	(text "Isolated 5 V CAN supply"
+		(exclude_from_sim no)
+		(at 279.4 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e0ed35ec-7c83-5bb0-8ad5-38282a477706")
 	)
 	(text "173010575 (1000 mAmp)\n173950575 (500 mAmp)"
 		(exclude_from_sim no)
@@ -5357,16 +5447,6 @@
 	)
 	(wire
 		(pts
-			(xy 269.24 78.74) (xy 279.4 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1ebc39fc-0da4-40e4-8ccc-5d73161b52b3")
-	)
-	(wire
-		(pts
 			(xy 81.28 250.19) (xy 92.71 250.19)
 		)
 		(stroke
@@ -5634,6 +5714,16 @@
 			(type default)
 		)
 		(uuid "403bde13-aaf7-40d2-b262-5d5d9ba6978a")
+	)
+	(wire
+		(pts
+			(xy 269.24 76.2) (xy 269.24 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "404d146c-71e0-4bd4-b85b-c6e0838a1477")
 	)
 	(wire
 		(pts
@@ -6334,6 +6424,16 @@
 			(type default)
 		)
 		(uuid "74fec17f-7d74-47ea-bedc-c0c3578dd17c")
+	)
+	(wire
+		(pts
+			(xy 330.2 77.47) (xy 330.2 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78f4b880-c362-4fc3-a04c-c6a96e5a767d")
 	)
 	(wire
 		(pts
@@ -7114,16 +7214,6 @@
 			(type default)
 		)
 		(uuid "d2a0bcab-1890-4b20-a939-c6d23d9c37f1")
-	)
-	(wire
-		(pts
-			(xy 330.2 78.74) (xy 340.36 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d303feae-b35f-4d65-bf70-e3a0f3b763a4")
 	)
 	(wire
 		(pts
@@ -11122,7 +11212,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Power_Custom:+5V_ENC_R")
+		(lib_id "Power_Custom:+5V_ENC_STAR")
 		(at 222.25 236.22 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11140,7 +11230,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+5V_ENC_R"
+		(property "Value" "+5V_ENC_STAR"
 			(at 222.25 231.14 0)
 			(effects
 				(font
@@ -11189,7 +11279,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 279.4 78.74 0)
+		(at 269.24 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11197,7 +11287,7 @@
 		(dnp no)
 		(uuid "5f1cedfa-94bd-4a32-9a5e-26e87f8358a5")
 		(property "Reference" "#FLG04"
-			(at 279.4 78.74 0)
+			(at 269.24 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11206,7 +11296,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 279.4 73.66 0)
+			(at 269.24 71.12 0)
 			(effects
 				(font
 					(size 1 1)
@@ -11214,7 +11304,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 279.4 78.74 0)
+			(at 269.24 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11223,7 +11313,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 279.4 78.74 0)
+			(at 269.24 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11232,7 +11322,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 279.4 78.74 0)
+			(at 269.24 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11252,7 +11342,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Power_Custom:6.5V_ENC_L")
+		(lib_id "Power_Custom:6.5V_ENC_PORT")
 		(at 144.78 236.22 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11270,7 +11360,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+6.5V_ENC_R"
+		(property "Value" "+6.5V_ENC_STAR"
 			(at 144.78 231.14 0)
 			(effects
 				(font
@@ -13500,7 +13590,7 @@
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
-		(at 340.36 78.74 0)
+		(at 330.2 77.47 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13508,7 +13598,7 @@
 		(dnp no)
 		(uuid "98a13c80-1406-4e69-bd0b-8b6fe55cd6ce")
 		(property "Reference" "#FLG06"
-			(at 340.36 78.74 0)
+			(at 330.2 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13517,7 +13607,7 @@
 			)
 		)
 		(property "Value" "PWR_FLAG"
-			(at 340.36 73.66 0)
+			(at 330.2 72.39 0)
 			(effects
 				(font
 					(size 1 1)
@@ -13525,7 +13615,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 340.36 78.74 0)
+			(at 330.2 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13534,7 +13624,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 340.36 78.74 0)
+			(at 330.2 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13543,7 +13633,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 340.36 78.74 0)
+			(at 330.2 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14353,7 +14443,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Power_Custom:6.5V_ENC_L")
+		(lib_id "Power_Custom:6.5V_ENC_PORT")
 		(at 182.88 260.35 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14371,7 +14461,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+6.5V_ENC_R"
+		(property "Value" "+6.5V_ENC_STAR"
 			(at 182.88 255.27 0)
 			(effects
 				(font
@@ -15187,7 +15277,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Power_Custom:6.5V_ENC_L")
+		(lib_id "Power_Custom:6.5V_ENC_PORT")
 		(at 144.78 193.04 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -15205,7 +15295,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+6.5V_ENC_L"
+		(property "Value" "+6.5V_ENC_PORT"
 			(at 144.78 187.96 0)
 			(effects
 				(font
@@ -16742,7 +16832,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Power_Custom:6.5V_ENC_L")
+		(lib_id "Power_Custom:6.5V_ENC_PORT")
 		(at 181.61 214.63 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -16760,7 +16850,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+6.5V_ENC_L"
+		(property "Value" "+6.5V_ENC_PORT"
 			(at 181.61 209.55 0)
 			(effects
 				(font
@@ -17036,7 +17126,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Power_Custom:+5V_ENC_L")
+		(lib_id "Power_Custom:+5V_ENC_PORT")
 		(at 223.52 194.31 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -17054,7 +17144,7 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+5V_ENC_L"
+		(property "Value" "+5V_ENC_PORT"
 			(at 223.52 189.23 0)
 			(effects
 				(font

@@ -6,8 +6,8 @@
 	(paper "A3")
 	(title_block
 		(title "Elevation Pivot Daughter Board")
-		(date "2026-09-01")
-		(rev "Redesign_Baseline_2026-10-02")
+		(date "2026-10-03")
+		(rev "P3 REVIEW")
 		(company "Starspec")
 		(comment 4 "Mauro M. Coutinho")
 	)
@@ -25,13 +25,24 @@
 	)
 	(text "NUCLEO CN14 RJ45 → Ethernet cable/switch → FMP100-50-IPM"
 		(exclude_from_sim no)
-		(at 80.264 25.654 0)
+		(at 60.96 13.97 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 		)
 		(uuid "7414c2aa-5c88-4f08-91b5-f9c2913409ba")
+	)
+	(text "P3: motor encoders and two onboard thermistors; SSI retained.\nTemperature uses the existing ADS1115 spare inputs.\nPSRB handles external device power control.\nBattery and drive-current monitoring belong to other systems.\nPort / Star naming applies to all channels and their supplies.\nSchematic only; motor identity and harness remain unverified."
+		(exclude_from_sim no)
+		(at 233.68 238.76 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left top)
+		)
+		(uuid "81ed0143-7710-5373-8908-04a097d2ba71")
 	)
 	(wire
 		(pts
@@ -45,13 +56,13 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 50.8) (xy 143.51 50.8)
+			(xy 68.58 30.48) (xy 143.51 30.48)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0b9fe057-082c-45ea-904c-ef750c4340a5")
+		(uuid "0ce57794-8d58-5b4c-8eef-f44bae8cef7c")
 	)
 	(wire
 		(pts
@@ -75,7 +86,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 43.18) (xy 189.23 43.18)
+			(xy 198.12 73.66) (xy 189.23 73.66)
 		)
 		(stroke
 			(width 0)
@@ -85,23 +96,43 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 100.33) (xy 143.51 100.33)
+			(xy 68.58 54.61) (xy 143.51 54.61)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "28fdf1a2-3af3-48b0-8474-839454927339")
+		(uuid "303dac14-433e-56ae-bfd5-99c8bad0e521")
 	)
 	(wire
 		(pts
-			(xy 68.58 81.28) (xy 143.51 81.28)
+			(xy 68.58 99.06) (xy 143.51 99.06)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4c4ab59e-6adb-4408-85d6-421cb6f5b13e")
+		(uuid "3621acc0-32a6-4beb-9b19-0e7725c0a763")
+	)
+	(wire
+		(pts
+			(xy 68.58 50.8) (xy 143.51 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38577c6a-02b1-582f-adb1-3e19ad78f7ef")
+	)
+	(wire
+		(pts
+			(xy 68.58 74.93) (xy 143.51 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42949c27-7003-4962-bff3-409b962eb9d5")
 	)
 	(wire
 		(pts
@@ -115,6 +146,26 @@
 	)
 	(wire
 		(pts
+			(xy 68.58 110.49) (xy 143.51 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5ddde8be-05dd-471b-b173-be7d2f232e15")
+	)
+	(wire
+		(pts
+			(xy 68.58 26.67) (xy 143.51 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5fd2e7e8-5834-5576-a4ac-7d78d4d20bdf")
+	)
+	(wire
+		(pts
 			(xy 68.58 254) (xy 142.24 254)
 		)
 		(stroke
@@ -125,23 +176,13 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 38.1) (xy 203.2 38.1)
+			(xy 189.23 69.85) (xy 203.2 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "6f25babd-7615-4894-9d31-57e8da55562e")
-	)
-	(wire
-		(pts
-			(xy 68.58 45.72) (xy 143.51 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "72be4c8b-01d3-46b4-9040-5f5160417d12")
 	)
 	(wire
 		(pts
@@ -165,7 +206,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 81.28) (xy 198.12 43.18)
+			(xy 198.12 88.9) (xy 198.12 73.66)
 		)
 		(stroke
 			(width 0)
@@ -185,7 +226,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 38.1) (xy 203.2 87.63)
+			(xy 203.2 69.85) (xy 203.2 95.25)
 		)
 		(stroke
 			(width 0)
@@ -235,13 +276,23 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 81.28) (xy 198.12 81.28)
+			(xy 187.96 88.9) (xy 198.12 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "a0b3fd7b-6b29-4ee0-93dd-e2a3878e716d")
+	)
+	(wire
+		(pts
+			(xy 68.58 69.85) (xy 143.51 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6a1c529-57c3-4f32-88dd-a2c4b0ab0bf3")
 	)
 	(wire
 		(pts
@@ -255,6 +306,16 @@
 	)
 	(wire
 		(pts
+			(xy 68.58 46.99) (xy 143.51 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b46ca9da-29bf-577d-b885-ddc966b66100")
+	)
+	(wire
+		(pts
 			(xy 68.58 167.64) (xy 143.51 167.64)
 		)
 		(stroke
@@ -262,6 +323,16 @@
 			(type default)
 		)
 		(uuid "c712b308-3c5e-4f30-9195-80839ac70319")
+	)
+	(wire
+		(pts
+			(xy 68.58 22.86) (xy 143.51 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbd64e6f-fc5b-5033-819d-af64a8265299")
 	)
 	(wire
 		(pts
@@ -281,17 +352,7 @@
 			(width 0)
 			(type default)
 		)
-		(uuid "edacb4da-2c26-4e43-baf7-9c5f056e02bb")
-	)
-	(wire
-		(pts
-			(xy 68.58 85.09) (xy 143.51 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eeff9cf7-29d9-4bb0-bc13-f08ebad63d25")
+		(uuid "f3fd6411-b87f-4e18-823f-7cdc62b6ff31")
 	)
 	(wire
 		(pts
@@ -305,7 +366,17 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 87.63) (xy 187.96 87.63)
+			(xy 68.58 95.25) (xy 143.51 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7439fc6-8c9d-4ad9-96bc-543c563ba174")
+	)
+	(wire
+		(pts
+			(xy 203.2 95.25) (xy 187.96 95.25)
 		)
 		(stroke
 			(width 0)
@@ -324,13 +395,12 @@
 		(uuid "feafa3cc-cc9a-48b5-b402-8f08404fba55")
 	)
 	(sheet
-		(at 143.51 29.21)
-		(size 45.72 35.56)
+		(at 143.51 64.77)
+		(size 45.72 13.97)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -340,7 +410,7 @@
 		)
 		(uuid "17b8fa8c-be91-49fa-a99e-b377fef04af4")
 		(property "Sheetname" "ADS1115"
-			(at 143.51 28.4984 0)
+			(at 143.51 64.0584 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -349,7 +419,7 @@
 			)
 		)
 		(property "Sheetfile" "ADS1115.kicad_sch"
-			(at 143.51 65.3546 0)
+			(at 165.1 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -357,8 +427,8 @@
 				(justify left top)
 			)
 		)
-		(pin "LH_BRAKE_CURR" input
-			(at 189.23 43.18 0)
+		(pin "PORT_BRAKE_CURR" input
+			(at 189.23 73.66 0)
 			(uuid "984b5862-047b-4a9c-ba96-470c3dedf7fa")
 			(effects
 				(font
@@ -367,8 +437,8 @@
 				(justify right)
 			)
 		)
-		(pin "RH_BRAKE_CURR" input
-			(at 189.23 38.1 0)
+		(pin "STAR_BRAKE_CURR" input
+			(at 189.23 69.85 0)
 			(uuid "aa2fc3c8-110f-4a85-8041-c3c31cb2ece0")
 			(effects
 				(font
@@ -378,7 +448,7 @@
 			)
 		)
 		(pin "STM32_SCL" input
-			(at 143.51 45.72 180)
+			(at 143.51 69.85 180)
 			(uuid "e905c3d0-a887-4185-ad9e-f2b4a153817a")
 			(effects
 				(font
@@ -388,7 +458,7 @@
 			)
 		)
 		(pin "STM32_SDA" bidirectional
-			(at 143.51 50.8 180)
+			(at 143.51 74.93 180)
 			(uuid "653e3a1b-6734-4545-82e7-02829693cf50")
 			(effects
 				(font
@@ -405,6 +475,98 @@
 			)
 		)
 	)
+	(sheet
+  (at 143.51 19.05)
+  (size 76.2 40.64)
+  (exclude_from_sim no)
+  (in_bom yes)
+  (on_board yes)
+  (dnp no)
+  (stroke
+    (width 0.1524)
+    (type solid))
+  (fill
+    (color 0 0 0 0.0))
+  (uuid "2e710e11-24fc-53a2-ac67-6179fd34ea44")
+  (property "Sheetname" "Pivot_Encoder_Port"
+    (at 143.51 16.51 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left)))
+  (property "Sheetfile" "Pivot_Encoder_Port.kicad_sch"
+    (at 170.18 16.51 0)
+    (effects
+      (font
+        (size 1.016 1.016))
+      (justify left)))
+  (pin "PORT_ENC_A" output
+    (at 143.51 22.86 180)
+    (uuid "5b391911-c9ff-5006-9f63-5e2fcdf10a5e")
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left)))
+  (pin "PORT_ENC_B" output
+    (at 143.51 26.67 180)
+    (uuid "841c3a03-4ade-56c6-bc53-2ddd84b3cd95")
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left)))
+  (pin "PORT_ENC_Z" output
+    (at 143.51 30.48 180)
+    (uuid "7a98b804-f518-53d7-b017-8aa4ff3a8c2a")
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left)))
+  (instances
+    (project "Elevation_Pivot_Daughter-Board"
+      (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d"
+        (page "10"))))
+  (pin "STAR_ENC_A" output
+    (at 143.51 46.99 180)
+    (uuid "bf1ba9b6-cdc1-5de6-8658-f9d4d18736de")
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left)))
+  (pin "STAR_ENC_B" output
+    (at 143.51 50.8 180)
+    (uuid "8e4c3826-e7a2-5e31-8c75-79ae3f10074f")
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left)))
+  (pin "STAR_ENC_Z" output
+    (at 143.51 54.61 180)
+    (uuid "ec852a1b-3779-5fcb-9f0d-14a73c8f29db")
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left)))
+  (pin "STAR_ENC_A_RX" input
+    (at 219.71 22.86 0)
+    (uuid "dda0fa2e-935a-5364-85e3-bea0b514a05c")
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right)))
+  (pin "STAR_ENC_B_RX" input
+    (at 219.71 26.67 0)
+    (uuid "c65a9c8c-22a1-55de-aa5c-7d00b1be965b")
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right)))
+  (pin "STAR_ENC_Z_RX" input
+    (at 219.71 30.48 0)
+    (uuid "028d4541-20aa-5ae3-a547-c2366dadac35")
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))))
 	(sheet
 		(at 143.51 124.46)
 		(size 33.02 63.5)
@@ -438,7 +600,7 @@
 				(justify left top)
 			)
 		)
-		(pin "LH_STR8_DIR_CMD" input
+		(pin "PORT_STR8_DIR_CMD" input
 			(at 143.51 135.89 180)
 			(uuid "879b73c7-eac6-4364-833f-d91a34f0695d")
 			(effects
@@ -448,7 +610,7 @@
 				(justify left)
 			)
 		)
-		(pin "LH_STR8_DISABLE" input
+		(pin "PORT_STR8_DISABLE" input
 			(at 143.51 140.97 180)
 			(uuid "c010efd7-8833-4713-9fae-7e9edbe386e0")
 			(effects
@@ -458,7 +620,7 @@
 				(justify left)
 			)
 		)
-		(pin "LH_STR8_FAULT" output
+		(pin "PORT_STR8_FAULT" output
 			(at 143.51 146.05 180)
 			(uuid "869c9ae6-cca8-47f9-81d4-cda68b4a45c7")
 			(effects
@@ -468,7 +630,7 @@
 				(justify left)
 			)
 		)
-		(pin "LH_STR8_STEP_CMD" input
+		(pin "PORT_STR8_STEP_CMD" input
 			(at 143.51 130.81 180)
 			(uuid "de59d7e8-80d7-4657-89d2-f6a9a4cff503")
 			(effects
@@ -478,7 +640,7 @@
 				(justify left)
 			)
 		)
-		(pin "RH_STR8_DIR_CMD" input
+		(pin "STAR_STR8_DIR_CMD" input
 			(at 143.51 162.56 180)
 			(uuid "2ca09ec7-410d-4823-88b7-6b20e826ce49")
 			(effects
@@ -488,7 +650,7 @@
 				(justify left)
 			)
 		)
-		(pin "RH_STR8_DISABLE" input
+		(pin "STAR_STR8_DISABLE" input
 			(at 143.51 167.64 180)
 			(uuid "1664f9b2-284a-4806-9969-c593d8adb620")
 			(effects
@@ -498,7 +660,7 @@
 				(justify left)
 			)
 		)
-		(pin "RH_STR8_FAULT" output
+		(pin "STAR_STR8_FAULT" output
 			(at 143.51 172.72 180)
 			(uuid "1e9c559e-af29-4757-8cf7-23ba321401d8")
 			(effects
@@ -508,7 +670,7 @@
 				(justify left)
 			)
 		)
-		(pin "RH_STR8_STEP_CMD" input
+		(pin "STAR_STR8_STEP_CMD" input
 			(at 143.51 157.48 180)
 			(uuid "3c5c887e-9631-415f-8e49-9633115eef50")
 			(effects
@@ -518,7 +680,7 @@
 				(justify left)
 			)
 		)
-		(pin "LH_ENC_PRESET" input
+		(pin "PORT_ENC_PRESET" input
 			(at 143.51 151.13 180)
 			(uuid "f8748885-7b20-4c45-a4aa-f9b18518a3bd")
 			(effects
@@ -528,7 +690,7 @@
 				(justify left)
 			)
 		)
-		(pin "RH_ENC_PRESET" input
+		(pin "STAR_ENC_PRESET" input
 			(at 143.51 177.8 180)
 			(uuid "2b9ebc4a-899e-455f-ab34-90a246c32507")
 			(effects
@@ -589,8 +751,8 @@
 		)
 	)
 	(sheet
-		(at 41.91 20.32)
-		(size 26.67 243.84)
+		(at 35.56 20.32)
+		(size 33.02 243.84)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -605,7 +767,7 @@
 		)
 		(uuid "3f9c8f12-0f4f-4aa4-9cc2-9b6623511d78")
 		(property "Sheetname" "STM32"
-			(at 41.91 19.6084 0)
+			(at 35.56 19.6084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -614,7 +776,7 @@
 			)
 		)
 		(property "Sheetfile" "STM32.kicad_sch"
-			(at 41.91 264.7446 0)
+			(at 35.56 264.7446 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -623,7 +785,7 @@
 			)
 		)
 		(pin "E_STOP_OK" input
-			(at 68.58 81.28 0)
+			(at 68.58 95.25 0)
 			(uuid "db5c2b36-e508-432d-9879-089d6df8739f")
 			(effects
 				(font
@@ -633,7 +795,7 @@
 			)
 		)
 		(pin "HOME_POS" input
-			(at 68.58 85.09 0)
+			(at 68.58 99.06 0)
 			(uuid "81c6c270-2e21-4cff-aeac-da3f18f11205")
 			(effects
 				(font
@@ -642,8 +804,8 @@
 				(justify right)
 			)
 		)
-		(pin "LH_BRAKE_RELEASE_CMD" output
-			(at 68.58 100.33 0)
+		(pin "PORT_BRAKE_RELEASE_CMD" output
+			(at 68.58 105.41 0)
 			(uuid "84c0ea4c-977a-4945-ae69-63d7d1c3b03a")
 			(effects
 				(font
@@ -652,8 +814,8 @@
 				(justify right)
 			)
 		)
-		(pin "RH_BRAKE_RELEASE_CMD" output
-			(at 68.58 105.41 0)
+		(pin "STAR_BRAKE_RELEASE_CMD" output
+			(at 68.58 110.49 0)
 			(uuid "6078533f-207d-4098-95c5-ff08b525ac9e")
 			(effects
 				(font
@@ -683,7 +845,7 @@
 			)
 		)
 		(pin "STM32_SCL" output
-			(at 68.58 45.72 0)
+			(at 68.58 69.85 0)
 			(uuid "2bc31b49-729d-49ba-9584-d05577d570f5")
 			(effects
 				(font
@@ -693,7 +855,7 @@
 			)
 		)
 		(pin "STM32_SDA" bidirectional
-			(at 68.58 50.8 0)
+			(at 68.58 74.93 0)
 			(uuid "9838f14c-8513-4e79-b7d0-cf3dc6aea8da")
 			(effects
 				(font
@@ -712,7 +874,7 @@
 				(justify right)
 			)
 		)
-		(pin "LH_SSI_CLK" output
+		(pin "PORT_SSI_CLK" output
 			(at 68.58 200.66 0)
 			(uuid "7be29863-724b-4d85-8834-5a1530421782")
 			(effects
@@ -722,7 +884,7 @@
 				(justify right)
 			)
 		)
-		(pin "LH_SSI_DATA" input
+		(pin "PORT_SSI_DATA" input
 			(at 68.58 204.47 0)
 			(uuid "36bf942d-d7ba-47f1-8fbd-14eb2cc47eb5")
 			(effects
@@ -732,7 +894,7 @@
 				(justify right)
 			)
 		)
-		(pin "RH_SSI_CLK" output
+		(pin "STAR_SSI_CLK" output
 			(at 68.58 215.9 0)
 			(uuid "833ce18a-aa3e-41f9-864b-73d35867a9a2")
 			(effects
@@ -742,7 +904,7 @@
 				(justify right)
 			)
 		)
-		(pin "RH_SSI_DATA" input
+		(pin "STAR_SSI_DATA" input
 			(at 68.58 219.71 0)
 			(uuid "c0e0f596-3e9e-48b6-adfd-493872af0afd")
 			(effects
@@ -752,7 +914,7 @@
 				(justify right)
 			)
 		)
-		(pin "LH_STR8_DIR_CMD" output
+		(pin "PORT_STR8_DIR_CMD" output
 			(at 68.58 135.89 0)
 			(uuid "e8ce13fe-487d-43b1-ab00-5f315cbec459")
 			(effects
@@ -762,7 +924,7 @@
 				(justify right)
 			)
 		)
-		(pin "LH_STR8_DISABLE" output
+		(pin "PORT_STR8_DISABLE" output
 			(at 68.58 140.97 0)
 			(uuid "d5919ce6-1850-4f21-acad-4e74ab40b897")
 			(effects
@@ -772,7 +934,7 @@
 				(justify right)
 			)
 		)
-		(pin "LH_STR8_FAULT" input
+		(pin "PORT_STR8_FAULT" input
 			(at 68.58 146.05 0)
 			(uuid "23f061a6-b3ab-4659-9c85-7a683de38e0e")
 			(effects
@@ -782,7 +944,7 @@
 				(justify right)
 			)
 		)
-		(pin "LH_STR8_STEP_CMD" output
+		(pin "PORT_STR8_STEP_CMD" output
 			(at 68.58 130.81 0)
 			(uuid "64bbbc5f-f31d-463c-b6b2-ee6c7d3c515b")
 			(effects
@@ -792,7 +954,7 @@
 				(justify right)
 			)
 		)
-		(pin "RH_STR8_DIR_CMD" output
+		(pin "STAR_STR8_DIR_CMD" output
 			(at 68.58 162.56 0)
 			(uuid "2efb0454-c533-49ea-9ddf-c79e4822b9d3")
 			(effects
@@ -802,7 +964,7 @@
 				(justify right)
 			)
 		)
-		(pin "RH_STR8_DISABLE" output
+		(pin "STAR_STR8_DISABLE" output
 			(at 68.58 167.64 0)
 			(uuid "faa782d6-755e-4576-9cf7-736528393da6")
 			(effects
@@ -812,7 +974,7 @@
 				(justify right)
 			)
 		)
-		(pin "RH_STR8_FAULT" input
+		(pin "STAR_STR8_FAULT" input
 			(at 68.58 172.72 0)
 			(uuid "7a0a75fa-87e2-48de-b01f-73188eedd553")
 			(effects
@@ -822,7 +984,7 @@
 				(justify right)
 			)
 		)
-		(pin "RH_STR8_STEP_CMD" output
+		(pin "STAR_STR8_STEP_CMD" output
 			(at 68.58 157.48 0)
 			(uuid "cba788ee-17fd-4da3-8286-8dc8c6eb373b")
 			(effects
@@ -832,7 +994,7 @@
 				(justify right)
 			)
 		)
-		(pin "LH_ENC_PRESET_N" output
+		(pin "PORT_ENC_PRESET_N" output
 			(at 68.58 151.13 0)
 			(uuid "ed70dc44-b25d-42fe-aa8b-0e685ed7316d")
 			(effects
@@ -842,9 +1004,69 @@
 				(justify right)
 			)
 		)
-		(pin "RH_ENC_PRESET_N" output
+		(pin "STAR_ENC_PRESET_N" output
 			(at 68.58 177.8 0)
 			(uuid "7649a73f-055b-4c41-acd0-6ff55eb7caae")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PORT_ENC_A" input
+			(at 68.58 22.86 0)
+			(uuid "ff448145-3af3-58ec-96ac-0b1af29f4a7b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PORT_ENC_B" input
+			(at 68.58 26.67 0)
+			(uuid "87b7ad30-755a-5d3a-8127-b3f4ca7877ad")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PORT_ENC_Z" input
+			(at 68.58 30.48 0)
+			(uuid "8aa6736f-cbad-5808-a049-313e35b380d1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "STAR_ENC_A" input
+			(at 68.58 46.99 0)
+			(uuid "548de492-a55b-54e2-b1f8-3e3d2df29141")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "STAR_ENC_B" input
+			(at 68.58 50.8 0)
+			(uuid "53bae42c-d8cc-51c9-86fb-afc16438387a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "STAR_ENC_Z" input
+			(at 68.58 54.61 0)
+			(uuid "d7a5a5be-9c76-5acb-9681-ad92567de582")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -867,7 +1089,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -886,7 +1107,7 @@
 			)
 		)
 		(property "Sheetfile" "ServoMotor.kicad_sch"
-			(at 142.24 267.2846 0)
+			(at 181.61 266.7 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -933,13 +1154,12 @@
 		)
 	)
 	(sheet
-		(at 143.51 74.93)
-		(size 44.45 39.37)
+		(at 143.51 87.63)
+		(size 44.45 26.67)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -949,7 +1169,7 @@
 		)
 		(uuid "6765969a-e8c4-4024-a99d-060a4869a208")
 		(property "Sheetname" "Brakes"
-			(at 143.51 74.2184 0)
+			(at 143.51 86.9184 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -958,7 +1178,7 @@
 			)
 		)
 		(property "Sheetfile" "Brakes.kicad_sch"
-			(at 143.51 114.8846 0)
+			(at 165.1 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -967,7 +1187,7 @@
 			)
 		)
 		(pin "E_STOP_OK" output
-			(at 143.51 81.28 180)
+			(at 143.51 95.25 180)
 			(uuid "42a40048-9cab-40c6-a453-c4c557b4a88b")
 			(effects
 				(font
@@ -977,7 +1197,7 @@
 			)
 		)
 		(pin "HOME_POS" output
-			(at 143.51 85.09 180)
+			(at 143.51 99.06 180)
 			(uuid "a8cfb28b-549b-44d0-b63c-e64296c3828d")
 			(effects
 				(font
@@ -986,8 +1206,8 @@
 				(justify left)
 			)
 		)
-		(pin "LH_BRAKE_CURR" output
-			(at 187.96 81.28 0)
+		(pin "PORT_BRAKE_CURR" output
+			(at 187.96 88.9 0)
 			(uuid "8271506c-005f-4b48-a217-71f8531f986d")
 			(effects
 				(font
@@ -996,8 +1216,8 @@
 				(justify right)
 			)
 		)
-		(pin "LH_BRAKE_RELEASE_CMD" input
-			(at 143.51 100.33 180)
+		(pin "PORT_BRAKE_RELEASE_CMD" input
+			(at 143.51 105.41 180)
 			(uuid "26edcf29-3e33-44e3-9ee4-9a7d7eb3626f")
 			(effects
 				(font
@@ -1006,8 +1226,8 @@
 				(justify left)
 			)
 		)
-		(pin "RH_BRAKE_CURR" output
-			(at 187.96 87.63 0)
+		(pin "STAR_BRAKE_CURR" output
+			(at 187.96 95.25 0)
 			(uuid "cc0db44d-e6d4-4272-b6d8-e32b1ac2fad3")
 			(effects
 				(font
@@ -1016,8 +1236,8 @@
 				(justify right)
 			)
 		)
-		(pin "RH_BRAKE_RELEASE_CMD" input
-			(at 143.51 105.41 180)
+		(pin "STAR_BRAKE_RELEASE_CMD" input
+			(at 143.51 110.49 180)
 			(uuid "6d79dba9-6ed5-4c59-97b1-c881dd33ac33")
 			(effects
 				(font
@@ -1077,13 +1297,62 @@
 		)
 	)
 	(sheet
+  (at 254 19.05)
+  (size 57.15 16.51)
+  (exclude_from_sim no)
+  (in_bom yes)
+  (on_board yes)
+  (dnp no)
+  (stroke
+    (width 0.1524)
+    (type solid))
+  (fill
+    (color 0 0 0 0.0))
+  (uuid "aaef5caf-c763-5ff0-9a29-93dc06652472")
+  (property "Sheetname" "Pivot_Encoder_Star"
+    (at 254 16.51 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left)))
+  (property "Sheetfile" "Pivot_Encoder_Star.kicad_sch"
+    (at 281.94 16.51 0)
+    (effects
+      (font
+        (size 1.016 1.016))
+      (justify left)))
+  (instances
+    (project "Elevation_Pivot_Daughter-Board"
+      (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d"
+        (page "11"))))
+  (pin "STAR_ENC_A_RX" output
+    (at 254 22.86 180)
+    (uuid "d68760d4-230e-5598-8775-fd4cc20fc9d3")
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left)))
+  (pin "STAR_ENC_B_RX" output
+    (at 254 26.67 180)
+    (uuid "c20d9210-fa7b-5303-a4d4-41a657c0026d")
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left)))
+  (pin "STAR_ENC_Z_RX" output
+    (at 254 30.48 180)
+    (uuid "1f137806-0acb-50ca-87dd-f3def57ef591")
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))))
+	(sheet
 		(at 142.24 196.85)
-		(size 36.83 35.56)
+		(size 36.83 26.67)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -1102,7 +1371,7 @@
 			)
 		)
 		(property "Sheetfile" "SSI_Encoder.kicad_sch"
-			(at 142.24 232.9946 0)
+			(at 180.34 223.52 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1110,7 +1379,7 @@
 				(justify left top)
 			)
 		)
-		(pin "LH_SSI_CLK" input
+		(pin "PORT_SSI_CLK" input
 			(at 142.24 200.66 180)
 			(uuid "c6958a71-2232-4114-a790-52db0849e39b")
 			(effects
@@ -1120,7 +1389,7 @@
 				(justify left)
 			)
 		)
-		(pin "LH_SSI_DATA" output
+		(pin "PORT_SSI_DATA" output
 			(at 142.24 204.47 180)
 			(uuid "297ea099-a1d1-4d41-9de4-4310a00b6d76")
 			(effects
@@ -1130,7 +1399,7 @@
 				(justify left)
 			)
 		)
-		(pin "RH_SSI_CLK" input
+		(pin "STAR_SSI_CLK" input
 			(at 142.24 215.9 180)
 			(uuid "19e563f3-ee18-478a-bb60-81806b361381")
 			(effects
@@ -1140,7 +1409,7 @@
 				(justify left)
 			)
 		)
-		(pin "RH_SSI_DATA" output
+		(pin "STAR_SSI_DATA" output
 			(at 142.24 219.71 180)
 			(uuid "b0af9847-fa44-40b9-a075-54d1b9ce68cf")
 			(effects
@@ -1164,4 +1433,57 @@
 		)
 	)
 	(embedded_fonts no)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(wire
+  (pts
+    (xy 219.71 22.86)
+    (xy 254 22.86))
+  (stroke
+    (width 0)
+    (type default))
+  (uuid "c13dd4c6-bb1e-5f85-84b7-6dec915156c4"))
+(wire
+  (pts
+    (xy 219.71 26.67)
+    (xy 254 26.67))
+  (stroke
+    (width 0)
+    (type default))
+  (uuid "acadddba-7f9b-5f51-83de-7d9cbaecedb9"))
+(wire
+  (pts
+    (xy 219.71 30.48)
+    (xy 254 30.48))
+  (stroke
+    (width 0)
+    (type default))
+  (uuid "a1b18f93-762c-533d-b512-29d27e53f95e"))
+(text "Shared isolation U101\nPort + Star A/B/Z"
+  (at 151.13 35.56 0)
+  (effects
+    (font
+      (size 1.016 1.016))
+    (justify left top))
+  (uuid "1efd8f18-c47c-531e-b9a7-f655425e30f1"))
+(text "Receiver outputs to shared isolator"
+  (at 254 39.37 0)
+  (effects
+    (font
+      (size 1.016 1.016))
+    (justify left top))
+  (uuid "f9854123-f6a7-5cf3-b580-c34b9183a567"))
 )

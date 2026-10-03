@@ -39,4 +39,7 @@
  (lib (name "TPS1H100BQPWPRQ1")(type "KiCad")(uri "${KIPRJMOD}/footprints/TPS1H100BQPWPRQ1.pretty")(options "")(descr "Project library"))
  (lib (name "TPS7A2450DBVR")(type "KiCad")(uri "${KIPRJMOD}/footprints/TPS7A2450DBVR.pretty")(options "")(descr "Project library"))
  (lib (name "TestPoint")(type "KiCad")(uri "${KIPRJMOD}/footprints/TestPoint.pretty")(options "")(descr "Project library"))
+ (lib (name "Connector_Wire")(type "KiCad")(uri "${KIPRJMOD}/footprints/Connector_Wire.pretty")(options "")(descr "KiCad stock footprint for schematic part"))
+ (lib (name "Converter_DCDC")(type "KiCad")(uri "${KIPRJMOD}/footprints/Converter_DCDC.pretty")(options "")(descr "KiCad stock footprint for schematic part"))
+ (lib (name "Package_SO")(type "KiCad")(uri "${KIPRJMOD}/footprints/Package_SO.pretty")(options "")(descr "KiCad stock footprint for schematic part"))
 )

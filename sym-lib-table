@@ -24,4 +24,5 @@
  (lib (name "TPD2E2U06QDBZRQ1")(type "KiCad")(uri "${KIPRJMOD}/Project_Symbols/TPD2E2U06QDBZRQ1.kicad_sym")(options "")(descr "Project library"))
  (lib (name "Transistor_FET")(type "KiCad")(uri "${KIPRJMOD}/Project_Symbols/Transistor_FET.kicad_sym")(options "")(descr "Project library"))
  (lib (name "power")(type "KiCad")(uri "${KIPRJMOD}/Project_Symbols/power.kicad_sym")(options "")(descr "Project library"))
+ (lib (name "Pivot_Reviewed")(type "KiCad")(uri "${KIPRJMOD}/Project_Symbols/Pivot_Reviewed.kicad_sym")(options "")(descr "Pivot schematic reviewed pin maps"))
 )

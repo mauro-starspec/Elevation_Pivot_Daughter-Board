@@ -7,7 +7,7 @@
 	(title_block
 		(title "Elevation Control_Gigabit")
 		(date "2026-09-01")
-		(rev "Sep_2026_V1")
+		(rev "P3 REVIEW")
 		(company "Starspec")
 		(comment 4 "Mauro M. Coutinho")
 	)
@@ -2397,6 +2397,26 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "CAN ESD protection"
+		(exclude_from_sim no)
+		(at 233.68 19.05 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "472f3775-4e4f-5bad-a40f-ed03ac1b97f2")
+	)
+	(text "Digital isolator"
+		(exclude_from_sim no)
+		(at 73.66 57.15 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "8e2e83ee-8238-54da-aa46-4fedf2d1e04e")
+	)
 	(text "The existing TSM24A devices can work at 1 Mbit/s, but \nthey have much higher capacitance and are not CAN-specific."
 		(exclude_from_sim no)
 		(at 329.184 56.642 0)
@@ -2406,6 +2426,16 @@
 			)
 		)
 		(uuid "8ef77aac-e0f2-4f8e-bd2e-62f9a4ba94d9")
+	)
+	(text "CAN transceiver"
+		(exclude_from_sim no)
+		(at 181.61 67.31 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c2f40d31-ec67-51a0-a292-cc5abeabca4a")
 	)
 	(junction
 		(at 26.67 81.28)
@@ -4781,11 +4811,21 @@
 		)
 		(property "ALT_LCSC" "C190987"
 			(at 161.29 81.28 0)
-			(effects (font (size 1.27 1.27)) (hide yes))
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(property "ALT_MANUFACTURER_PART_NUMBER" "TCAN1051HGVDRQ1"
 			(at 161.29 81.28 0)
-			(effects (font (size 1.27 1.27)) (hide yes))
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "1"
 			(uuid "bb9be88c-6708-4d61-a9a3-d24f4883c2da")

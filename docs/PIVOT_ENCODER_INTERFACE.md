@@ -2,6 +2,16 @@
 
 ## Selected motors and encoders
 
+**P3 status, 2026-10-03:** the user now describes NEMA34 motors. The earlier
+HT23/ZAA identification below is a reference, not a confirmed description of
+the installed hardware. Both existing SSI channels are retained. The new
+circuits assume 5 V differential A/B/Z. The user selected DE9 for J20/J21;
+the custom pinout must
+be verified against the actual encoder and cable. See
+[`SCHEMATIC_REDESIGN_P3.md`](SCHEMATIC_REDESIGN_P3.md) for the current shared
+ISO7760F isolation circuit. Both receivers now share PS10/U105 logic power;
+the MCU allocation from P2 is unchanged.
+
 - Motors: two Applied Motion Products `HT23-553D-ZAC` units
 - Encoder: Renco ZAA type, Applied Motion legacy part `970-1001`, enclosed by
   the ZAC motor cover
@@ -13,7 +23,7 @@ The old motor page is marked end-of-life. Preserve the exact motor and encoder
 part numbers in the schematic and BOM so a replacement is not assumed to have
 the same connector, pinout, resolution, or temperature range.
 
-## Confirmed electrical characteristics
+## Electrical characteristics of the earlier reference assembly
 
 | Property | Requirement |
 |---|---|
@@ -82,9 +92,9 @@ The completed dual-channel circuit should provide:
 - each encoder's A and B outputs on channels 1 and 2 of the same STM32 timer in
   hardware encoder mode;
 - two Z signals on timer index-capable pins or interrupt inputs;
-- canonical channel names `Port (LH)` and `Star (RH)` in documentation, UI, and
-  firmware, while existing LH/RH net names may remain during the controlled
-  schematic migration.
+- canonical channel names `Port` and `Star`; P2 completes the channel and
+  supply-net rename across the schematic. The original firmware and unchanged
+  PCB retain their historical naming until those are separately updated.
 
 ## Position interpretation
 
@@ -111,10 +121,11 @@ sensor, an operator-established zero, or another absolute measurement.
 ## Decisions still required
 
 - Verify the two physical encoder labels and connectors
-- Obtain and archive the exact `3004-195-xx` cable drawing
-- Encoder supply current for the installed legacy ZAA units
+- Obtain the installed cable drawing; verify whether the older `3004-195-xx`
+  reference applies at all to the NEMA34 assemblies
+- Encoder supply current for the actual installed units
 - Pivot mechanical reduction ratio and maximum motor speed
 - Maximum encoder cable length and shield termination policy
-- Exact differential receiver, termination, and protection components
-- STM32 timer and pin assignments after a whole-board pin-resource review
+- Verify P2 receiver, termination, and protection choices against the actual encoder
+- Verify P2 TIM2/TIM3 and index allocation against required frequency and firmware
 - Required behavior following power loss or motion while unpowered

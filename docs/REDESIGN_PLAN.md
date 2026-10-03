@@ -1,67 +1,41 @@
-# Pivot daughter-board redesign plan
+# Pivot daughter-board review plan
 
-## 1. Freeze the requirements
+Current scope: P3, 2026-10-03. Two motor encoders supplement the existing SSI
+channels. Both onboard temperature sensors remain, now as passive 1206 thermistors. Port/Star naming
+covers the entire schematic. PSRB handles external
+device power control; voltage and device-current measurement exist elsewhere.
+P1 power distribution, current/voltage monitoring, and external thermistor
+inputs are superseded and removed. Onboard temperature remains in scope.
 
-- Confirm every retained interface: two brakes, STR8 controls and faults, two
-  SSI elevation encoders, CAN, power rails, and any servo-related functions.
-- Confirm whether the two pivot motor/encoder channels supplement or replace
-  the existing SSI channels.
-- Confirm the pivot gear ratio, travel, speed, cable length, connector, and
-  reference strategy.
-- Route two individually protected STR8 supply branches through appropriately
-  ranged ACS725-or-better current sensors, directly from raw battery and before
-  the LTC4364 branch.
-- Confirm and implement raw-battery voltage measurement without violating the
-  existing isolation architecture.
-- Define board-ambient, power-area, and optional external temperature sensing.
+## Completed schematic work
 
-## 2. Allocate STM32 resources
+- Add two protected, isolated differential A/B/Z receiver interfaces.
+- Consolidate their six forward signals into U101 ISO7760F, with shared 3.3 V
+  receiver power from PS10/U105; remove the second isolator and logic regulator.
+- Allocate TIM2/TIM3 quadrature inputs and two index inputs.
+- Preserve the controller, brake sensing, drive controls, SSI, and CAN.
+- Restore the baseline J1 inlet; use spare ADC inputs for two onboard thermistors.
+- Remove the added one-shot encoder fuses.
+- Apply Port/Star names to all channel signals and power nets.
+- Use hierarchical signal labels and conventional power symbols.
+- Add TH1/TH2 on the existing ADC sheet, reusing its supply and isolation.
 
-- Inventory all used NUCLEO-H723ZG pins.
-- Reserve two timers' CH1/CH2 pairs for hardware quadrature decoding.
-- Reserve two appropriate Z/index inputs.
-- Check conflicts with clocks, debug, UART, SSI, step generation, CAN, and Nucleo
-  board functions.
-- Record the allocation in a pin table before changing PCB routing.
+## Remaining schematic review
 
-## 3. Design the encoder front end
+1. Identify the actual NEMA34 motor/encoder assemblies and installed cables.
+2. Confirm DE9 parts, pinout, mating views, shield bonds, and cable impedance.
+3. Check encoder current, converter overload behavior, protected-bus load,
+   voltage limits, and temperature derating with the external power system.
+4. Check maximum frequency, bias margin, input filtering, timer-wrap handling,
+   and index/reference strategy.
+5. Confirm minimum electronics temperature, enclosure thermal control, and
+   placement/calibration of the two onboard sensors.
 
-- Select and review six differential receiver channels.
-- Complete termination, ESD protection, filtering, power, grounding, connector,
-  test-point, and shield details.
-- Check signal levels, common-mode range, fail-safe behavior, bandwidth, and
-  startup state from primary datasheets.
-- Add the circuit as its own hierarchical sheet if practical.
+Run `python tools/validate_pivot_schematic.py` after schematic changes.
+See [SCHEMATIC_REDESIGN_P3.md](SCHEMATIC_REDESIGN_P3.md) for implemented details.
 
-## 4. Update the rest of the hardware
-
-- Redesign the complete STR8 power path, protection, current sensing,
-  regeneration path, connectors, and copper for two raw-battery branches that
-  do not load the LTC4364-protected path.
-- Add verified battery-voltage and temperature-monitoring circuits.
-- Remove functions that are conclusively obsolete rather than leaving confusing
-  unpopulated circuitry.
-- Recheck power budgets, isolation boundaries, return-current paths, connector
-  keying, clearances, and field-fault behavior.
-
-## 5. Validate before layout release
-
-- Schematic review and zero unexplained ERC findings
-- Netlist/parity review against the known baseline
-- Placement and return-path review
-- PCB DRC and copper-current review
-- Connector and harness cross-check from both mating viewpoints
-- BOM lifecycle and sourcing review
-- Fabricator Gerber, drill, BOM, and placement-preview inspection
-
-## 6. Bring-up strategy
-
-- Power-rail and current-limit checks without field loads
-- Static differential-input tests using known A/B/Z patterns
-- Slow manual shaft rotation with timer counts and direction displayed
-- Index repeatability test
-- Counts-per-revolution and gear-ratio verification
-- Noise test with brakes and STR8 drives independently disabled/enabled
-- Only then integrate pivot position into motion supervision
-
-Do not treat the copied PCB as fabrication-ready until this sequence is closed.
+PCB synchronization/layout requires a separate request. Later checks include
+return paths, isolation spacing, connector mechanics, DRC, manufacturing outputs,
+and first-article testing. Firmware must use the verified encoder resolution
+and channel mapping. Temperature firmware must add AIN2/3 with per-channel
+gain/scaling, curve 1010 conversion and calibration, retaining brake sampling cadence.

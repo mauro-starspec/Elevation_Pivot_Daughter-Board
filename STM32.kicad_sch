@@ -6,8 +6,8 @@
 	(paper "A3")
 	(title_block
 		(title "Elevation Control_Gigabit")
-		(date "2026-09-01")
-		(rev "Sep_2026_V1")
+		(date "2026-10-03")
+		(rev "P3 REVIEW")
 		(company "Starspec")
 		(comment 4 "Mauro M. Coutinho")
 	)
@@ -5113,6 +5113,27 @@
 		)
 		(uuid "2a913931-c29c-4309-b26f-3dd18a871c3b")
 	)
+	(text "PIVOT ENCODERS: Port TIM2 PA5/PB3 (AF1); Star TIM3 PC6/PC7 (AF2).\nIndex: PE4 / PE3 on EXTI4 / EXTI3. Retain all existing SSI and drive signals.\nUse SWD only; disable SWO trace on PB3. PA5 also drives the high-impedance D13 LED input."
+		(exclude_from_sim no)
+		(at 213.36 210.82 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left top)
+		)
+		(uuid "74fe69f7-6765-5e3d-b28c-cc9848b20221")
+	)
+	(text "STM32H723 controller"
+		(exclude_from_sim no)
+		(at 128.27 38.1 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "bc71a358-9b99-588e-b13f-dadfe305dba6")
+	)
 	(junction
 		(at 374.65 157.48)
 		(diameter 0)
@@ -5120,7 +5141,7 @@
 		(uuid "c6a4514b-9708-4df4-8993-ee6710c8fe4b")
 	)
 	(no_connect
-		(at 26.67 106.68)
+		(at 36.83 106.68)
 		(uuid "016febad-ecdf-4940-9d90-ee014c303303")
 	)
 	(no_connect
@@ -5128,7 +5149,7 @@
 		(uuid "0764ee98-c087-4e9b-abe5-6d7703dbfd43")
 	)
 	(no_connect
-		(at 275.59 109.22)
+		(at 252.73 109.22)
 		(uuid "0ae52344-1326-43b2-9384-7ab5fd77e60f")
 	)
 	(no_connect
@@ -5136,24 +5157,20 @@
 		(uuid "0cfe30aa-735d-499c-af16-5cd25623061c")
 	)
 	(no_connect
-		(at 179.07 60.96)
+		(at 146.05 60.96)
 		(uuid "0e10483d-08de-4e69-b0aa-ede837250763")
 	)
 	(no_connect
-		(at 143.51 83.82)
+		(at 110.49 83.82)
 		(uuid "0e8a9726-6b6b-4ca3-b3c6-18bc5b5470be")
 	)
 	(no_connect
-		(at 209.55 114.3)
+		(at 186.69 114.3)
 		(uuid "1023b394-89bd-4677-9e3a-b27ed1717432")
 	)
 	(no_connect
 		(at 370.84 116.84)
 		(uuid "10b29f3b-8a0d-421b-be25-c2aef204617a")
-	)
-	(no_connect
-		(at 52.07 101.6)
-		(uuid "13cf6fb8-a7a0-42f6-a63a-3d2a2bc3ebc7")
 	)
 	(no_connect
 		(at 53.34 229.87)
@@ -5164,7 +5181,7 @@
 		(uuid "18ba1ad3-c335-4612-858f-d3657b3ce4fb")
 	)
 	(no_connect
-		(at 275.59 50.8)
+		(at 252.73 50.8)
 		(uuid "18f99c7e-e838-4e1d-b257-ccb71241ef72")
 	)
 	(no_connect
@@ -5180,7 +5197,7 @@
 		(uuid "1af44eb1-cdb1-48b4-bed6-3f8e5d204c55")
 	)
 	(no_connect
-		(at 52.07 104.14)
+		(at 62.23 104.14)
 		(uuid "1afbbad8-34ad-4588-8a2f-65ccb0e9a810")
 	)
 	(no_connect
@@ -5188,15 +5205,11 @@
 		(uuid "1d32c243-3ad3-4be4-8822-fd96dbc86d46")
 	)
 	(no_connect
-		(at 275.59 134.62)
+		(at 252.73 134.62)
 		(uuid "1d3d32ca-0599-4b03-b36c-4e76301c3a05")
 	)
 	(no_connect
-		(at 275.59 149.86)
-		(uuid "1f7e1745-ed08-4074-8ac1-f6b4019ad75f")
-	)
-	(no_connect
-		(at 26.67 93.98)
+		(at 36.83 93.98)
 		(uuid "1fa083b7-59cc-4fef-b054-784254011748")
 	)
 	(no_connect
@@ -5204,7 +5217,7 @@
 		(uuid "1fbb9530-bb98-4c6d-9142-05c6ba81f416")
 	)
 	(no_connect
-		(at 209.55 137.16)
+		(at 186.69 137.16)
 		(uuid "20f86cd4-5e36-45de-9222-c5f39a2a9d63")
 	)
 	(no_connect
@@ -5216,7 +5229,7 @@
 		(uuid "2264b5d9-49d4-4d1c-821e-6e2a48066129")
 	)
 	(no_connect
-		(at 209.55 78.74)
+		(at 186.69 78.74)
 		(uuid "23398805-117d-479d-a9f1-a491c7d80202")
 	)
 	(no_connect
@@ -5240,11 +5253,11 @@
 		(uuid "2b0f82e4-f094-4fa1-9732-d588a193a8cb")
 	)
 	(no_connect
-		(at 209.55 66.04)
+		(at 186.69 66.04)
 		(uuid "2b21927a-e381-451a-8cf3-a46415c967ba")
 	)
 	(no_connect
-		(at 209.55 71.12)
+		(at 186.69 71.12)
 		(uuid "2b99338d-dda0-43f7-8064-478b35bceced")
 	)
 	(no_connect
@@ -5252,12 +5265,8 @@
 		(uuid "2e0f4f0a-76ce-4283-963a-bae9add6ee30")
 	)
 	(no_connect
-		(at 275.59 144.78)
+		(at 252.73 144.78)
 		(uuid "2feea3a3-116e-49f0-98a9-9baa8b2acb99")
-	)
-	(no_connect
-		(at 26.67 91.44)
-		(uuid "2ffa71ee-d42c-46ab-802e-89e42f37bf95")
 	)
 	(no_connect
 		(at 50.8 46.99)
@@ -5272,11 +5281,11 @@
 		(uuid "3113bc0f-f3df-428e-a0c1-afdbc930b8d6")
 	)
 	(no_connect
-		(at 275.59 60.96)
+		(at 252.73 60.96)
 		(uuid "33d66177-1cdb-4338-b014-91784630530a")
 	)
 	(no_connect
-		(at 275.59 53.34)
+		(at 252.73 53.34)
 		(uuid "3971ef07-54ce-4dd5-99fb-e42d0b7c5299")
 	)
 	(no_connect
@@ -5292,7 +5301,7 @@
 		(uuid "3be4b000-8af8-43cb-b2b8-d3b65a65093f")
 	)
 	(no_connect
-		(at 143.51 132.08)
+		(at 110.49 132.08)
 		(uuid "3e1a437f-9cca-47f8-ab3b-260a8f3244da")
 	)
 	(no_connect
@@ -5304,16 +5313,8 @@
 		(uuid "3f376534-5fd1-4912-a64d-2dfb32c6f724")
 	)
 	(no_connect
-		(at 26.67 104.14)
-		(uuid "40adc33f-f8f8-41cc-9137-d13904fa4a99")
-	)
-	(no_connect
 		(at 66.04 207.01)
 		(uuid "41f80ea9-4510-490d-8700-6ea1017a8f4a")
-	)
-	(no_connect
-		(at 66.04 191.77)
-		(uuid "44e5cba0-a722-4c2e-abba-339e2b1330d9")
 	)
 	(no_connect
 		(at 78.74 260.35)
@@ -5328,11 +5329,7 @@
 		(uuid "4b8a1be8-7c39-4e4d-871e-1a4d26e1fa41")
 	)
 	(no_connect
-		(at 209.55 144.78)
-		(uuid "4c5cdc7c-4c61-4228-9a0c-766ba9a1c291")
-	)
-	(no_connect
-		(at 179.07 99.06)
+		(at 146.05 99.06)
 		(uuid "4d2a626a-aff0-4e94-9d5b-0637dabd3d7f")
 	)
 	(no_connect
@@ -5344,15 +5341,15 @@
 		(uuid "4e93ac00-e57a-4382-9a40-140d7b2aa40d")
 	)
 	(no_connect
-		(at 209.55 68.58)
+		(at 186.69 68.58)
 		(uuid "503cf4d8-3aa5-4916-a658-7bab4dc0fa11")
 	)
 	(no_connect
-		(at 275.59 55.88)
+		(at 252.73 55.88)
 		(uuid "509f0d9b-5dbc-4d0e-a42b-dcc2898b1ee3")
 	)
 	(no_connect
-		(at 52.07 109.22)
+		(at 62.23 109.22)
 		(uuid "5405c801-0b1c-402b-a1fb-24f77f9551e5")
 	)
 	(no_connect
@@ -5376,7 +5373,7 @@
 		(uuid "6215e340-ff98-47d5-a3ed-af5e61a39503")
 	)
 	(no_connect
-		(at 143.51 68.58)
+		(at 110.49 68.58)
 		(uuid "652cb02d-19a4-4e09-ae43-109caae0d1cb")
 	)
 	(no_connect
@@ -5392,15 +5389,15 @@
 		(uuid "69c0c5a1-18d5-4c73-8a9d-962051791b93")
 	)
 	(no_connect
-		(at 209.55 121.92)
+		(at 186.69 121.92)
 		(uuid "6c975978-4948-4556-b036-610b509e6e8d")
 	)
 	(no_connect
-		(at 209.55 129.54)
+		(at 186.69 129.54)
 		(uuid "6dac7e0c-9f4a-4f16-8e70-fc7b793a6500")
 	)
 	(no_connect
-		(at 209.55 134.62)
+		(at 186.69 134.62)
 		(uuid "6fb526a7-f18d-4d8e-8f06-b23b31b37ec1")
 	)
 	(no_connect
@@ -5412,7 +5409,7 @@
 		(uuid "7462324b-b7f0-41de-9c54-dcc1f17697c4")
 	)
 	(no_connect
-		(at 143.51 66.04)
+		(at 110.49 66.04)
 		(uuid "754b0c5a-69d5-40de-b094-3027f8e08de6")
 	)
 	(no_connect
@@ -5428,11 +5425,11 @@
 		(uuid "78c8f092-81f0-476b-83b6-b324f16aaf29")
 	)
 	(no_connect
-		(at 143.51 111.76)
+		(at 110.49 111.76)
 		(uuid "7ccc9e27-10dd-4b73-afd8-2f0b05b25adf")
 	)
 	(no_connect
-		(at 275.59 111.76)
+		(at 252.73 111.76)
 		(uuid "81567abd-6bb3-4f23-844e-405c5971e83d")
 	)
 	(no_connect
@@ -5456,11 +5453,11 @@
 		(uuid "88c03ea5-54af-4b49-a806-8a47307fe44a")
 	)
 	(no_connect
-		(at 209.55 149.86)
+		(at 186.69 149.86)
 		(uuid "8a3e8351-ddf8-4503-a1f5-f1f32b416268")
 	)
 	(no_connect
-		(at 52.07 96.52)
+		(at 62.23 96.52)
 		(uuid "8c607474-f219-4845-ab49-3f512323a474")
 	)
 	(no_connect
@@ -5472,16 +5469,12 @@
 		(uuid "8e19a3b6-d59c-422d-b88c-18224e0cd678")
 	)
 	(no_connect
-		(at 143.51 81.28)
+		(at 110.49 81.28)
 		(uuid "958c1abf-2e0e-49f0-8768-3244f2f77cb7")
 	)
 	(no_connect
 		(at 25.4 54.61)
 		(uuid "97f0d76c-2575-4d01-9297-087128b7df86")
-	)
-	(no_connect
-		(at 299.72 71.12)
-		(uuid "99b92b36-3e1b-4cb3-9dd0-9d2a1e9313aa")
 	)
 	(no_connect
 		(at 50.8 57.15)
@@ -5496,23 +5489,19 @@
 		(uuid "9af8bd76-0abd-4c6c-9f36-43b4a9469428")
 	)
 	(no_connect
-		(at 209.55 109.22)
+		(at 186.69 109.22)
 		(uuid "9bc49ab5-e971-44e2-ad61-f1d6fd60d912")
 	)
 	(no_connect
-		(at 209.55 60.96)
+		(at 186.69 60.96)
 		(uuid "9e202d36-6f5b-4ee6-9627-53849f030dd0")
-	)
-	(no_connect
-		(at 375.92 66.04)
-		(uuid "9ee72a2e-dc29-4df0-8759-c3ca97efe5f3")
 	)
 	(no_connect
 		(at 66.04 204.47)
 		(uuid "9f44931b-b031-4655-b871-6f021c9b6aaf")
 	)
 	(no_connect
-		(at 179.07 101.6)
+		(at 146.05 101.6)
 		(uuid "9f6f8701-de4f-45f3-b594-cd074ab50661")
 	)
 	(no_connect
@@ -5524,7 +5513,7 @@
 		(uuid "a0f2ed9c-b180-45c9-9b9e-b4bb478315b6")
 	)
 	(no_connect
-		(at 275.59 142.24)
+		(at 252.73 142.24)
 		(uuid "a1ae108b-3fa5-4f0d-a96b-cae0f8d587b5")
 	)
 	(no_connect
@@ -5544,19 +5533,11 @@
 		(uuid "a239f558-bc69-4823-9d3a-286934e3ad06")
 	)
 	(no_connect
-		(at 26.67 109.22)
-		(uuid "a403e03d-d7a3-4e27-b24d-6f32475ea151")
-	)
-	(no_connect
 		(at 53.34 270.51)
 		(uuid "a5b41fb0-cd3c-4e64-a8a2-0589c278187d")
 	)
 	(no_connect
-		(at 299.72 78.74)
-		(uuid "a74fb86e-67b6-44d0-abef-33bd65b14d07")
-	)
-	(no_connect
-		(at 275.59 114.3)
+		(at 252.73 114.3)
 		(uuid "a978cea1-e27b-40db-9b30-c63fbf4ca393")
 	)
 	(no_connect
@@ -5576,11 +5557,11 @@
 		(uuid "af731f4c-11db-46ed-8f26-b2bd1abf8009")
 	)
 	(no_connect
-		(at 275.59 137.16)
+		(at 252.73 137.16)
 		(uuid "b062270d-c1f8-4658-aabe-1a3e40f4387a")
 	)
 	(no_connect
-		(at 179.07 68.58)
+		(at 146.05 68.58)
 		(uuid "b12be7d7-7dfe-46a6-8349-d621b5353084")
 	)
 	(no_connect
@@ -5588,7 +5569,7 @@
 		(uuid "b793f458-e872-487a-8197-0885175119b2")
 	)
 	(no_connect
-		(at 52.07 106.68)
+		(at 62.23 106.68)
 		(uuid "b87c40d0-711e-4c04-8369-a3d08249044b")
 	)
 	(no_connect
@@ -5600,7 +5581,7 @@
 		(uuid "bc071d11-70ba-4a2a-b43c-20bec0cb3304")
 	)
 	(no_connect
-		(at 26.67 96.52)
+		(at 36.83 96.52)
 		(uuid "bd7256a3-4711-42b6-8eb1-3d2986a8a9ac")
 	)
 	(no_connect
@@ -5612,7 +5593,7 @@
 		(uuid "be803a8b-1e47-474a-80e6-3f54cdeea916")
 	)
 	(no_connect
-		(at 275.59 127)
+		(at 252.73 127)
 		(uuid "c1c90ee2-7601-46d0-8aeb-bd8de3deb9f2")
 	)
 	(no_connect
@@ -5624,11 +5605,11 @@
 		(uuid "c1f7c9a5-6079-4e05-9587-2471b6edcc94")
 	)
 	(no_connect
-		(at 275.59 147.32)
+		(at 252.73 147.32)
 		(uuid "c22d27cf-d2ba-4015-8c5c-5992d34c793e")
 	)
 	(no_connect
-		(at 52.07 114.3)
+		(at 62.23 114.3)
 		(uuid "c4b3e9fd-d88c-4885-a292-90a8543769fe")
 	)
 	(no_connect
@@ -5636,7 +5617,7 @@
 		(uuid "c7795119-5954-40dc-8893-597664f8270e")
 	)
 	(no_connect
-		(at 26.67 101.6)
+		(at 36.83 101.6)
 		(uuid "c81d87be-f6a6-47d0-93e0-bb74d4419beb")
 	)
 	(no_connect
@@ -5644,7 +5625,7 @@
 		(uuid "c850129d-63f9-4696-b98f-1e05b0b99f82")
 	)
 	(no_connect
-		(at 209.55 127)
+		(at 186.69 127)
 		(uuid "ca137ad3-f34c-43c0-9bf3-1786f6426c8a")
 	)
 	(no_connect
@@ -5652,7 +5633,7 @@
 		(uuid "cb69465b-bbe0-4f3c-aff5-493188d5a545")
 	)
 	(no_connect
-		(at 143.51 109.22)
+		(at 110.49 109.22)
 		(uuid "cf511ddb-ca93-49f8-94f6-5b39581ff261")
 	)
 	(no_connect
@@ -5660,7 +5641,7 @@
 		(uuid "cfdcd4f3-7106-424d-bd8a-b009767b64e9")
 	)
 	(no_connect
-		(at 26.67 111.76)
+		(at 36.83 111.76)
 		(uuid "d50936dc-e5e5-4847-a85f-a46c8a4d3d87")
 	)
 	(no_connect
@@ -5668,11 +5649,11 @@
 		(uuid "d531c321-cc55-4bd2-883e-5a9779528646")
 	)
 	(no_connect
-		(at 209.55 83.82)
+		(at 186.69 83.82)
 		(uuid "dc48c707-c261-493d-b670-c522c380a995")
 	)
 	(no_connect
-		(at 209.55 73.66)
+		(at 186.69 73.66)
 		(uuid "dc4be305-9577-4974-881c-b02ff520ec00")
 	)
 	(no_connect
@@ -5688,11 +5669,11 @@
 		(uuid "de921272-fa9e-4285-a498-47d827019efb")
 	)
 	(no_connect
-		(at 209.55 116.84)
+		(at 186.69 116.84)
 		(uuid "de9f8501-b96f-4ba5-8ab3-4f85abf6aba5")
 	)
 	(no_connect
-		(at 209.55 111.76)
+		(at 186.69 111.76)
 		(uuid "dec2598e-64c0-4509-b14a-58f83b2326f6")
 	)
 	(no_connect
@@ -5704,7 +5685,7 @@
 		(uuid "e0edc7f0-491f-4f2f-ad5e-9441f7d0b1d9")
 	)
 	(no_connect
-		(at 209.55 76.2)
+		(at 186.69 76.2)
 		(uuid "e2391003-7b5c-43b4-8ce6-b8a5d20154ed")
 	)
 	(no_connect
@@ -5712,7 +5693,7 @@
 		(uuid "e9835c63-32cd-4581-ad05-4f436c5d0cad")
 	)
 	(no_connect
-		(at 26.67 99.06)
+		(at 36.83 99.06)
 		(uuid "ec89412f-b168-4005-8fb0-c4b4789e704c")
 	)
 	(no_connect
@@ -5720,7 +5701,7 @@
 		(uuid "ecb9af40-1b8f-4bb6-9d05-7c683e336a68")
 	)
 	(no_connect
-		(at 143.51 114.3)
+		(at 110.49 114.3)
 		(uuid "f0627598-cb67-4038-a8f7-94fab66983d2")
 	)
 	(no_connect
@@ -5728,11 +5709,11 @@
 		(uuid "f099eb38-deab-4e99-be60-aa18d8829d02")
 	)
 	(no_connect
-		(at 275.59 129.54)
+		(at 252.73 129.54)
 		(uuid "f30ff0b1-7fbd-45db-a7f7-26f80d783e58")
 	)
 	(no_connect
-		(at 26.67 114.3)
+		(at 36.83 114.3)
 		(uuid "f9023c93-4ef1-4b4e-83ef-84d22338cf3b")
 	)
 	(no_connect
@@ -5740,20 +5721,12 @@
 		(uuid "f97a29fd-949f-4daa-988e-a6452449703e")
 	)
 	(no_connect
-		(at 209.55 132.08)
+		(at 186.69 132.08)
 		(uuid "fac41112-fdff-45fa-870e-74a44c920321")
-	)
-	(no_connect
-		(at 66.04 199.39)
-		(uuid "fb12787c-dcf6-4fd8-9402-ecdfa6a53da0")
 	)
 	(no_connect
 		(at 53.34 260.35)
 		(uuid "fc4db5b2-dfb8-4813-bb7b-35eb2f61211e")
-	)
-	(no_connect
-		(at 375.92 58.42)
-		(uuid "ff24bc92-f2f9-424a-9057-d12c44081143")
 	)
 	(wire
 		(pts
@@ -5767,7 +5740,7 @@
 	)
 	(wire
 		(pts
-			(xy 275.59 68.58) (xy 279.4 68.58)
+			(xy 252.73 68.58) (xy 256.54 68.58)
 		)
 		(stroke
 			(width 0)
@@ -5777,7 +5750,7 @@
 	)
 	(wire
 		(pts
-			(xy 275.59 71.12) (xy 279.4 71.12)
+			(xy 252.73 71.12) (xy 256.54 71.12)
 		)
 		(stroke
 			(width 0)
@@ -5807,6 +5780,36 @@
 	)
 	(wire
 		(pts
+			(xy 186.69 144.78) (xy 181.61 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11982847-1cde-5d75-991c-adf917c19bc5")
+	)
+	(wire
+		(pts
+			(xy 252.73 149.86) (xy 257.81 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15095b2b-950d-5f27-bc46-da5a3ef9c07c")
+	)
+	(wire
+		(pts
+			(xy 36.83 109.22) (xy 34.29 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "175c381a-5a41-5d31-86a3-b9020852ab90")
+	)
+	(wire
+		(pts
 			(xy 53.34 232.41) (xy 48.26 232.41)
 		)
 		(stroke
@@ -5817,7 +5820,7 @@
 	)
 	(wire
 		(pts
-			(xy 275.59 121.92) (xy 278.13 121.92)
+			(xy 252.73 121.92) (xy 259.08 121.92)
 		)
 		(stroke
 			(width 0)
@@ -5847,7 +5850,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 48.26) (xy 190.5 55.88)
+			(xy 153.67 48.26) (xy 153.67 55.88)
 		)
 		(stroke
 			(width 0)
@@ -5867,7 +5870,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 152.4) (xy 179.07 152.4)
+			(xy 149.86 152.4) (xy 146.05 152.4)
 		)
 		(stroke
 			(width 0)
@@ -5907,7 +5910,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 55.88) (xy 179.07 55.88)
+			(xy 153.67 55.88) (xy 146.05 55.88)
 		)
 		(stroke
 			(width 0)
@@ -5917,13 +5920,33 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 119.38) (xy 209.55 119.38)
+			(xy 182.88 119.38) (xy 186.69 119.38)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "363ce990-b3e3-4674-9fc9-a413f486b67d")
+	)
+	(wire
+		(pts
+			(xy 66.04 191.77) (xy 68.58 191.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37c06d9e-96b2-58cc-9c35-e6bd27a9a9a1")
+	)
+	(wire
+		(pts
+			(xy 36.83 104.14) (xy 34.29 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a85881b-01c4-52b7-8a67-388b32dc4fa7")
 	)
 	(wire
 		(pts
@@ -6007,6 +6030,16 @@
 	)
 	(wire
 		(pts
+			(xy 66.04 199.39) (xy 68.58 199.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "591bb007-7ace-566b-a828-5da59b2d9469")
+	)
+	(wire
+		(pts
 			(xy 53.34 265.43) (xy 48.26 265.43)
 		)
 		(stroke
@@ -6017,7 +6050,7 @@
 	)
 	(wire
 		(pts
-			(xy 284.48 163.83) (xy 284.48 154.94)
+			(xy 256.54 158.75) (xy 256.54 154.94)
 		)
 		(stroke
 			(width 0)
@@ -6057,7 +6090,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 93.98) (xy 57.15 93.98)
+			(xy 62.23 93.98) (xy 67.31 93.98)
 		)
 		(stroke
 			(width 0)
@@ -6097,7 +6130,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 41.91) (xy 180.34 50.8)
+			(xy 147.32 41.91) (xy 147.32 50.8)
 		)
 		(stroke
 			(width 0)
@@ -6147,7 +6180,37 @@
 	)
 	(wire
 		(pts
-			(xy 204.47 142.24) (xy 209.55 142.24)
+			(xy 375.92 58.42) (xy 381 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79e944bb-8277-5e55-9dbe-c89d537b64ec")
+	)
+	(wire
+		(pts
+			(xy 62.23 101.6) (xy 67.31 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b63fd49-b410-5ae1-88ed-e673ff2f8c48")
+	)
+	(wire
+		(pts
+			(xy 375.92 66.04) (xy 381 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c8e19ce-a4fa-52e4-b442-8d36f775a07b")
+	)
+	(wire
+		(pts
+			(xy 181.61 142.24) (xy 186.69 142.24)
 		)
 		(stroke
 			(width 0)
@@ -6187,7 +6250,17 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 50.8) (xy 179.07 50.8)
+			(xy 299.72 71.12) (xy 294.64 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88a09238-17ca-5ae6-a181-dfe016da85c2")
+	)
+	(wire
+		(pts
+			(xy 147.32 50.8) (xy 146.05 50.8)
 		)
 		(stroke
 			(width 0)
@@ -6217,13 +6290,23 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 91.44) (xy 57.15 91.44)
+			(xy 62.23 91.44) (xy 67.31 91.44)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "9b2360d1-8419-418f-a2be-93bfc85f9d91")
+	)
+	(wire
+		(pts
+			(xy 299.72 78.74) (xy 294.64 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b77c397-08c6-576d-8987-417406c19bd8")
 	)
 	(wire
 		(pts
@@ -6337,7 +6420,7 @@
 	)
 	(wire
 		(pts
-			(xy 279.4 86.36) (xy 275.59 86.36)
+			(xy 254 86.36) (xy 252.73 86.36)
 		)
 		(stroke
 			(width 0)
@@ -6347,7 +6430,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 157.48) (xy 182.88 152.4)
+			(xy 149.86 157.48) (xy 149.86 152.4)
 		)
 		(stroke
 			(width 0)
@@ -6357,7 +6440,7 @@
 	)
 	(wire
 		(pts
-			(xy 284.48 154.94) (xy 275.59 154.94)
+			(xy 256.54 154.94) (xy 252.73 154.94)
 		)
 		(stroke
 			(width 0)
@@ -6367,7 +6450,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 111.76) (xy 57.15 111.76)
+			(xy 62.23 111.76) (xy 67.31 111.76)
 		)
 		(stroke
 			(width 0)
@@ -6427,7 +6510,7 @@
 	)
 	(wire
 		(pts
-			(xy 279.4 93.98) (xy 279.4 86.36)
+			(xy 254 92.71) (xy 254 86.36)
 		)
 		(stroke
 			(width 0)
@@ -6467,7 +6550,17 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 99.06) (xy 57.15 99.06)
+			(xy 36.83 91.44) (xy 34.29 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2e69e1b-bbb9-5c25-b82f-e2c3c01f3013")
+	)
+	(wire
+		(pts
+			(xy 62.23 99.06) (xy 67.31 99.06)
 		)
 		(stroke
 			(width 0)
@@ -6477,7 +6570,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 147.32) (xy 209.55 147.32)
+			(xy 182.88 147.32) (xy 186.69 147.32)
 		)
 		(stroke
 			(width 0)
@@ -6497,7 +6590,7 @@
 	)
 	(wire
 		(pts
-			(xy 275.59 119.38) (xy 278.13 119.38)
+			(xy 252.73 119.38) (xy 259.08 119.38)
 		)
 		(stroke
 			(width 0)
@@ -6727,7 +6820,7 @@
 	)
 	(global_label "GND_STM32"
 		(shape input)
-		(at 57.15 99.06 0)
+		(at 67.31 99.06 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6736,7 +6829,7 @@
 		)
 		(uuid "bf20a229-37bc-497f-b200-5ac6fa8b551a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 57.15 99.06 0)
+			(at 67.31 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6765,7 +6858,7 @@
 			)
 		)
 	)
-	(hierarchical_label "RH_STR8_FAULT"
+	(hierarchical_label "STAR_STR8_FAULT"
 		(shape input)
 		(at 83.82 262.89 0)
 		(effects
@@ -6776,7 +6869,7 @@
 		)
 		(uuid "00018ed8-6f76-42b6-a244-6f94eb3a6237")
 	)
-	(hierarchical_label "RH_STR8_DIR_CMD"
+	(hierarchical_label "STAR_STR8_DIR_CMD"
 		(shape output)
 		(at 302.26 147.32 180)
 		(effects
@@ -6798,9 +6891,9 @@
 		)
 		(uuid "062e33ca-b4b9-4ed6-a611-349b539d5a74")
 	)
-	(hierarchical_label "LH_SSI_DATA"
+	(hierarchical_label "PORT_SSI_DATA"
 		(shape input)
-		(at 205.74 119.38 180)
+		(at 182.88 119.38 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6809,7 +6902,7 @@
 		)
 		(uuid "063c5d4c-b69b-417c-b95d-c3fe55e347f5")
 	)
-	(hierarchical_label "LH_BRAKE_RELEASE_CMD"
+	(hierarchical_label "PORT_BRAKE_RELEASE_CMD"
 		(shape output)
 		(at 373.38 142.24 0)
 		(effects
@@ -6820,7 +6913,7 @@
 		)
 		(uuid "09481484-016e-4c93-a600-7842e0f24be1")
 	)
-	(hierarchical_label "RH_STR8_DIR_CMD"
+	(hierarchical_label "STAR_STR8_DIR_CMD"
 		(shape output)
 		(at 83.82 250.19 0)
 		(effects
@@ -6830,6 +6923,17 @@
 			(justify left)
 		)
 		(uuid "1092c7d3-0fc6-4e75-882b-83ba9e530f85")
+	)
+	(hierarchical_label "STAR_ENC_Z"
+		(shape input)
+		(at 68.58 199.39 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "13f1ddca-56b9-575d-954d-f04d450b7393")
 	)
 	(hierarchical_label "TX_CAN"
 		(shape output)
@@ -6842,7 +6946,7 @@
 		)
 		(uuid "1a59f256-6590-4bd1-b226-c30f4b18dcd6")
 	)
-	(hierarchical_label "LH_SSI_CLK"
+	(hierarchical_label "PORT_SSI_CLK"
 		(shape output)
 		(at 83.82 267.97 0)
 		(effects
@@ -6853,7 +6957,18 @@
 		)
 		(uuid "1c1dcff0-4795-4fb7-ad82-4735c48eb3b8")
 	)
-	(hierarchical_label "LH_STR8_FAULT"
+	(hierarchical_label "PORT_ENC_B"
+		(shape input)
+		(at 34.29 109.22 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "257cd256-1ec2-54ee-b670-07880df183ff")
+	)
+	(hierarchical_label "PORT_STR8_FAULT"
 		(shape input)
 		(at 83.82 237.49 0)
 		(effects
@@ -6864,7 +6979,7 @@
 		)
 		(uuid "391b45a0-3a1b-47f4-be3f-34377575fc6d")
 	)
-	(hierarchical_label "LH_STR8_DIR_CMD"
+	(hierarchical_label "PORT_STR8_DIR_CMD"
 		(shape output)
 		(at 302.26 127 180)
 		(effects
@@ -6886,7 +7001,7 @@
 		)
 		(uuid "3acb9dfa-f653-4acf-8a0f-9762d1c3f3d1")
 	)
-	(hierarchical_label "LH_STR8_STEP_CMD"
+	(hierarchical_label "PORT_STR8_STEP_CMD"
 		(shape output)
 		(at 302.26 124.46 180)
 		(effects
@@ -6897,7 +7012,18 @@
 		)
 		(uuid "4473d5a9-7663-4ed8-845e-89807b7637c6")
 	)
-	(hierarchical_label "RH_BRAKE_RELEASE_CMD"
+	(hierarchical_label "STAR_ENC_Z"
+		(shape input)
+		(at 257.81 149.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "44ace6b4-dda6-5144-a8ec-438168c5f7d2")
+	)
+	(hierarchical_label "STAR_BRAKE_RELEASE_CMD"
 		(shape output)
 		(at 48.26 255.27 180)
 		(effects
@@ -6919,7 +7045,7 @@
 		)
 		(uuid "5c3f53d7-60a9-4615-b99d-6688f7cb3933")
 	)
-	(hierarchical_label "RH_SSI_DATA"
+	(hierarchical_label "STAR_SSI_DATA"
 		(shape input)
 		(at 68.58 194.31 0)
 		(effects
@@ -6930,7 +7056,29 @@
 		)
 		(uuid "5f275bef-2702-4c1b-9a1f-005176e83dec")
 	)
-	(hierarchical_label "RH_ENC_PRESET_N"
+	(hierarchical_label "STAR_ENC_B"
+		(shape input)
+		(at 34.29 104.14 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7567d4a0-6a02-5470-9ef6-61b8a159fdfe")
+	)
+	(hierarchical_label "STAR_ENC_A"
+		(shape input)
+		(at 34.29 91.44 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "77c106f0-8c69-58e0-a178-4cb6e1cf5e75")
+	)
+	(hierarchical_label "STAR_ENC_PRESET_N"
 		(shape output)
 		(at 68.58 156.21 0)
 		(effects
@@ -6963,9 +7111,9 @@
 		)
 		(uuid "8ae742f1-70e1-4cc7-8296-e2a4885d9db7")
 	)
-	(hierarchical_label "RH_SSI_CLK"
+	(hierarchical_label "STAR_SSI_CLK"
 		(shape output)
-		(at 204.47 142.24 180)
+		(at 181.61 142.24 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6985,7 +7133,7 @@
 		)
 		(uuid "8ee8fa81-675e-4717-b46e-655dac3b62e9")
 	)
-	(hierarchical_label "RH_STR8_DISABLE"
+	(hierarchical_label "STAR_STR8_DISABLE"
 		(shape output)
 		(at 302.26 142.24 180)
 		(effects
@@ -6996,7 +7144,7 @@
 		)
 		(uuid "932c501d-b4c1-490a-9e10-4617d7cc9ac6")
 	)
-	(hierarchical_label "LH_STR8_DISABLE"
+	(hierarchical_label "PORT_STR8_DISABLE"
 		(shape output)
 		(at 302.26 129.54 180)
 		(effects
@@ -7007,7 +7155,7 @@
 		)
 		(uuid "995870c4-64a1-44e5-9494-8c3c8a5747c3")
 	)
-	(hierarchical_label "RH_BRAKE_RELEASE_CMD"
+	(hierarchical_label "STAR_BRAKE_RELEASE_CMD"
 		(shape output)
 		(at 373.38 144.78 0)
 		(effects
@@ -7018,7 +7166,7 @@
 		)
 		(uuid "9aa41a40-c88a-4507-90e6-6cfa4cacf908")
 	)
-	(hierarchical_label "LH_STR8_STEP_CMD"
+	(hierarchical_label "PORT_STR8_STEP_CMD"
 		(shape output)
 		(at 83.82 232.41 0)
 		(effects
@@ -7029,7 +7177,18 @@
 		)
 		(uuid "a0e1a69f-f096-4a79-8923-66584d56a601")
 	)
-	(hierarchical_label "RH_SSI_CLK"
+	(hierarchical_label "STAR_ENC_A"
+		(shape input)
+		(at 294.64 78.74 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "abef1c66-365b-5b58-b88b-ed10f7fc833f")
+	)
+	(hierarchical_label "STAR_SSI_CLK"
 		(shape output)
 		(at 68.58 189.23 0)
 		(effects
@@ -7040,7 +7199,7 @@
 		)
 		(uuid "ae180b85-a2ab-4431-8967-6f961540b3aa")
 	)
-	(hierarchical_label "LH_ENC_PRESET_N"
+	(hierarchical_label "PORT_ENC_PRESET_N"
 		(shape output)
 		(at 68.58 153.67 0)
 		(effects
@@ -7053,7 +7212,7 @@
 	)
 	(hierarchical_label "STM32_SCL"
 		(shape output)
-		(at 57.15 91.44 0)
+		(at 67.31 91.44 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7062,9 +7221,20 @@
 		)
 		(uuid "b14819db-02ec-41bc-8ead-3ffb71ece12e")
 	)
+	(hierarchical_label "STAR_ENC_B"
+		(shape input)
+		(at 381 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b8895b20-b975-5a91-9b37-11b940c37dbd")
+	)
 	(hierarchical_label "STM32_SDA"
 		(shape bidirectional)
-		(at 57.15 93.98 0)
+		(at 67.31 93.98 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7073,9 +7243,20 @@
 		)
 		(uuid "b88a782e-f0d9-4c41-9ce9-31d2a5ca393c")
 	)
+	(hierarchical_label "PORT_ENC_A"
+		(shape input)
+		(at 67.31 101.6 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b8ea3aae-2c64-5f8f-b85a-3ae06ceee69d")
+	)
 	(hierarchical_label "E_STOP_OK"
 		(shape input)
-		(at 57.15 111.76 0)
+		(at 67.31 111.76 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7084,9 +7265,9 @@
 		)
 		(uuid "ba587c10-ee66-4eae-8e43-cd1f7a345129")
 	)
-	(hierarchical_label "RH_ENC_PRESET_N"
+	(hierarchical_label "STAR_ENC_PRESET_N"
 		(shape output)
-		(at 279.4 68.58 0)
+		(at 256.54 68.58 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7106,7 +7287,7 @@
 		)
 		(uuid "bdc0e5b8-7a90-4f40-be4f-d6a7db50adda")
 	)
-	(hierarchical_label "LH_BRAKE_RELEASE_CMD"
+	(hierarchical_label "PORT_BRAKE_RELEASE_CMD"
 		(shape output)
 		(at 48.26 257.81 180)
 		(effects
@@ -7117,7 +7298,18 @@
 		)
 		(uuid "c04b82c6-0e92-496b-9590-25de3f16da70")
 	)
-	(hierarchical_label "RH_STR8_STEP_CMD"
+	(hierarchical_label "PORT_ENC_Z"
+		(shape input)
+		(at 181.61 144.78 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c09e8d5f-e9c1-56fa-93dc-b4c8955ce90f")
+	)
+	(hierarchical_label "STAR_STR8_STEP_CMD"
 		(shape output)
 		(at 48.26 265.43 180)
 		(effects
@@ -7128,7 +7320,7 @@
 		)
 		(uuid "c35e6d47-d211-4cdf-b2c4-9c8b7b935595")
 	)
-	(hierarchical_label "LH_SSI_DATA"
+	(hierarchical_label "PORT_SSI_DATA"
 		(shape input)
 		(at 35.56 184.15 180)
 		(effects
@@ -7139,7 +7331,7 @@
 		)
 		(uuid "c5ec65e5-7914-40f9-96ab-8cb216166495")
 	)
-	(hierarchical_label "LH_SSI_CLK"
+	(hierarchical_label "PORT_SSI_CLK"
 		(shape output)
 		(at 372.11 114.3 0)
 		(effects
@@ -7150,7 +7342,7 @@
 		)
 		(uuid "c62bebe7-974d-42b3-8f65-55827bfc05a3")
 	)
-	(hierarchical_label "RH_STR8_STEP_CMD"
+	(hierarchical_label "STAR_STR8_STEP_CMD"
 		(shape output)
 		(at 372.11 111.76 0)
 		(effects
@@ -7163,7 +7355,7 @@
 	)
 	(hierarchical_label "RX_CAN"
 		(shape input)
-		(at 278.13 121.92 0)
+		(at 259.08 121.92 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7172,7 +7364,7 @@
 		)
 		(uuid "c8cce0d4-09f2-441d-aeae-e581c3ef249c")
 	)
-	(hierarchical_label "LH_STR8_FAULT"
+	(hierarchical_label "PORT_STR8_FAULT"
 		(shape input)
 		(at 372.11 129.54 0)
 		(effects
@@ -7183,7 +7375,18 @@
 		)
 		(uuid "d16a4569-c99a-457d-a4ee-8ce025cb1661")
 	)
-	(hierarchical_label "RH_STR8_DISABLE"
+	(hierarchical_label "PORT_ENC_Z"
+		(shape input)
+		(at 68.58 191.77 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d3c42dd7-0a81-5dc0-88fe-6739ce864394")
+	)
+	(hierarchical_label "STAR_STR8_DISABLE"
 		(shape output)
 		(at 83.82 257.81 0)
 		(effects
@@ -7194,9 +7397,9 @@
 		)
 		(uuid "d6f8a3b3-4256-4353-bffd-76c091651534")
 	)
-	(hierarchical_label "RH_SSI_DATA"
+	(hierarchical_label "STAR_SSI_DATA"
 		(shape input)
-		(at 205.74 147.32 180)
+		(at 182.88 147.32 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7205,7 +7408,7 @@
 		)
 		(uuid "e146aef9-d70d-4e21-a4e6-3cd1cd5a5f08")
 	)
-	(hierarchical_label "LH_STR8_DIR_CMD"
+	(hierarchical_label "PORT_STR8_DIR_CMD"
 		(shape output)
 		(at 83.82 234.95 0)
 		(effects
@@ -7216,7 +7419,18 @@
 		)
 		(uuid "e6dcc67d-eb2e-46c8-b0b1-ffc081d826b8")
 	)
-	(hierarchical_label "RH_STR8_FAULT"
+	(hierarchical_label "PORT_ENC_B"
+		(shape input)
+		(at 381 58.42 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "eadc28d3-343f-588d-8e54-f4a01ae888b6")
+	)
+	(hierarchical_label "STAR_STR8_FAULT"
 		(shape input)
 		(at 302.26 137.16 180)
 		(effects
@@ -7227,9 +7441,9 @@
 		)
 		(uuid "eb24bf25-d1ab-4cbf-b2f0-2c742db4bdbf")
 	)
-	(hierarchical_label "LH_ENC_PRESET_N"
+	(hierarchical_label "PORT_ENC_PRESET_N"
 		(shape output)
-		(at 279.4 71.12 0)
+		(at 256.54 71.12 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7238,9 +7452,20 @@
 		)
 		(uuid "eb3ed837-473b-4545-baee-37970bedbae3")
 	)
+	(hierarchical_label "PORT_ENC_A"
+		(shape input)
+		(at 294.64 71.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "eff4d6fd-5820-5117-818d-61b86f6b00b0")
+	)
 	(hierarchical_label "TX_CAN"
 		(shape output)
-		(at 278.13 119.38 0)
+		(at 259.08 119.38 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7249,7 +7474,7 @@
 		)
 		(uuid "f7ea86b4-5d11-4158-9a8b-400c49d9d8f0")
 	)
-	(hierarchical_label "LH_STR8_DISABLE"
+	(hierarchical_label "PORT_STR8_DISABLE"
 		(shape output)
 		(at 83.82 240.03 0)
 		(effects
@@ -7391,7 +7616,7 @@
 	)
 	(symbol
 		(lib_id "NUCLEOH723ZG:NUCLEOH723ZG_Daughterboard_Interface")
-		(at 161.29 101.6 0)
+		(at 128.27 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -7400,7 +7625,7 @@
 		(fields_autoplaced yes)
 		(uuid "1169ba5a-48dc-4b92-b3e2-ed4edbfd1fde")
 		(property "Reference" "U1"
-			(at 161.29 41.91 0)
+			(at 128.27 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7408,7 +7633,7 @@
 			)
 		)
 		(property "Value" "NUCLEOH723ZG"
-			(at 161.29 44.45 0)
+			(at 128.27 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7416,7 +7641,7 @@
 			)
 		)
 		(property "Footprint" "NUCLEO-H723ZG:MODULE_NUCLEOH723ZG"
-			(at 161.29 101.6 0)
+			(at 128.27 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7426,7 +7651,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 161.29 101.6 0)
+			(at 128.27 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7435,7 +7660,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 161.29 101.6 0)
+			(at 128.27 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7444,7 +7669,7 @@
 			)
 		)
 		(property "MF" "STMicroelectronics"
-			(at 161.29 101.6 0)
+			(at 128.27 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7454,7 +7679,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "18.57 mm"
-			(at 161.29 101.6 0)
+			(at 128.27 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7464,7 +7689,7 @@
 			)
 		)
 		(property "Package" "None"
-			(at 161.29 101.6 0)
+			(at 128.27 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7474,7 +7699,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 161.29 101.6 0)
+			(at 128.27 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7484,7 +7709,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/NUCLEOH723ZG/STMicroelectronics/view-part/?ref=eda"
-			(at 161.29 101.6 0)
+			(at 128.27 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7494,7 +7719,7 @@
 			)
 		)
 		(property "STANDARD" "Manufacturer Recommendations"
-			(at 161.29 101.6 0)
+			(at 128.27 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7504,7 +7729,7 @@
 			)
 		)
 		(property "PARTREV" "2"
-			(at 161.29 101.6 0)
+			(at 128.27 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7514,7 +7739,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/NUCLEOH723ZG/STMicroelectronics/view-part/?ref=snap"
-			(at 161.29 101.6 0)
+			(at 128.27 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7524,7 +7749,7 @@
 			)
 		)
 		(property "MP" "NUCLEOH723ZG"
-			(at 161.29 101.6 0)
+			(at 128.27 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7534,7 +7759,7 @@
 			)
 		)
 		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=8820245&manufacturer=STMicroelectronics&part_name=NUCLEOH723ZG&search_term=None"
-			(at 161.29 101.6 0)
+			(at 128.27 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7544,7 +7769,7 @@
 			)
 		)
 		(property "Description_1" "STM32H723 Nucleo-144 STM32H7 ARM® Cortex®-M7 MCU 32-Bit Embedded Evaluation Board"
-			(at 161.29 101.6 0)
+			(at 128.27 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7554,7 +7779,7 @@
 			)
 		)
 		(property "SNAPEDA_PN" "NUCLEOH723ZG"
-			(at 161.29 101.6 0)
+			(at 128.27 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7564,7 +7789,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 161.29 101.6 0)
+			(at 128.27 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7574,7 +7799,7 @@
 			)
 		)
 		(property "MANUFACTURER" "STMicroelectronics"
-			(at 161.29 101.6 0)
+			(at 128.27 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7584,7 +7809,7 @@
 			)
 		)
 		(property "MANUFACTURER_PART_NUMBER" "NUCLEO-H723ZG"
-			(at 161.29 101.6 0)
+			(at 128.27 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7593,7 +7818,7 @@
 			)
 		)
 		(property "Manufacturer" "STMicroelectronics"
-			(at 161.29 101.6 0)
+			(at 128.27 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7602,7 +7827,7 @@
 			)
 		)
 		(property "VENDOR" ""
-			(at 161.29 101.6 0)
+			(at 128.27 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7611,7 +7836,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 161.29 101.6 0)
+			(at 128.27 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7620,7 +7845,7 @@
 			)
 		)
 		(property "BOM Notes" "Mechanical/electrical reference only. JLCPCB assembles CN7-CN11 on the daughter board; the Nucleo module is not soldered."
-			(at 161.29 101.6 0)
+			(at 128.27 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7629,7 +7854,7 @@
 			)
 		)
 		(property "Operating Temperature" "Module; verify separately"
-			(at 161.29 101.6 0)
+			(at 128.27 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8232,7 +8457,7 @@
 	)
 	(symbol
 		(lib_id "Power_Custom:GND_STM32")
-		(at 284.48 163.83 0)
+		(at 256.54 158.75 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8241,7 +8466,7 @@
 		(fields_autoplaced yes)
 		(uuid "34900e78-46bd-4189-916c-7fd241eefeb5")
 		(property "Reference" "#PWR010"
-			(at 284.48 170.18 0)
+			(at 256.54 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8250,7 +8475,7 @@
 			)
 		)
 		(property "Value" "GND_STM32"
-			(at 284.48 168.91 0)
+			(at 256.54 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8258,7 +8483,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 284.48 163.83 0)
+			(at 256.54 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8267,7 +8492,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 284.48 163.83 0)
+			(at 256.54 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8276,7 +8501,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
-			(at 284.48 163.83 0)
+			(at 256.54 158.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8656,7 +8881,7 @@
 	)
 	(symbol
 		(lib_id "ESW-110-44-L-D:ESW-110-44-L-D")
-		(at 39.37 104.14 0)
+		(at 49.53 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8665,7 +8890,7 @@
 		(fields_autoplaced yes)
 		(uuid "4b830205-89a6-4b13-9968-55fc6fd042bc")
 		(property "Reference" "CN7"
-			(at 39.37 83.82 0)
+			(at 49.53 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8673,7 +8898,7 @@
 			)
 		)
 		(property "Value" "ESW-110-44-L-D"
-			(at 39.37 86.36 0)
+			(at 49.53 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8681,7 +8906,7 @@
 			)
 		)
 		(property "Footprint" "ESW-110-44-L-D:ESW-110-44-L-D"
-			(at 39.37 104.14 0)
+			(at 49.53 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8691,7 +8916,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 39.37 104.14 0)
+			(at 49.53 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8700,7 +8925,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 39.37 104.14 0)
+			(at 49.53 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8709,7 +8934,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 39.37 104.14 0)
+			(at 49.53 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8718,7 +8943,7 @@
 			)
 		)
 		(property "BOM Notes" "Listed; out of stock. 20-position socket strip; exact MPN and footprint, but currently unavailable for JLC assembly."
-			(at 39.37 104.14 0)
+			(at 49.53 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8727,7 +8952,7 @@
 			)
 		)
 		(property "Operating Temperature" "Not confirmed"
-			(at 39.37 104.14 0)
+			(at 49.53 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8736,7 +8961,7 @@
 			)
 		)
 		(property "MANUFACTURER_PART_NUMBER" "ESW-110-44-L-D"
-			(at 39.37 104.14 0)
+			(at 49.53 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8745,7 +8970,7 @@
 			)
 		)
 		(property "Manufacturer" "Samtec"
-			(at 39.37 104.14 0)
+			(at 49.53 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8754,7 +8979,7 @@
 			)
 		)
 		(property "PARTREV" "R"
-			(at 39.37 104.14 0)
+			(at 49.53 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8764,7 +8989,7 @@
 			)
 		)
 		(property "STANDARD" "Manufacturer Recommendations"
-			(at 39.37 104.14 0)
+			(at 49.53 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8774,7 +8999,7 @@
 			)
 		)
 		(property "MANUFACTURER" "Samtec"
-			(at 39.37 104.14 0)
+			(at 49.53 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9450,7 +9675,7 @@
 	)
 	(symbol
 		(lib_id "Power_Custom:GND_STM32")
-		(at 182.88 157.48 0)
+		(at 149.86 157.48 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9459,7 +9684,7 @@
 		(fields_autoplaced yes)
 		(uuid "9112f5ff-a175-46dd-a99a-0f96ba67724b")
 		(property "Reference" "#PWR07"
-			(at 182.88 163.83 0)
+			(at 149.86 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9468,7 +9693,7 @@
 			)
 		)
 		(property "Value" "GND_STM32"
-			(at 182.88 162.56 0)
+			(at 149.86 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9476,7 +9701,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 182.88 157.48 0)
+			(at 149.86 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9485,7 +9710,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 182.88 157.48 0)
+			(at 149.86 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9494,7 +9719,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
-			(at 182.88 157.48 0)
+			(at 149.86 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9516,7 +9741,7 @@
 	)
 	(symbol
 		(lib_id "NUCLEOH723ZG:NUCLEOH723ZG_Daughterboard_Interface")
-		(at 242.57 132.08 0)
+		(at 219.71 132.08 0)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -9524,7 +9749,7 @@
 		(dnp no)
 		(uuid "92c8f465-fbfb-4309-8354-e56ed43a7117")
 		(property "Reference" "U1"
-			(at 242.57 101.6 0)
+			(at 219.71 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9532,7 +9757,7 @@
 			)
 		)
 		(property "Value" "NUCLEOH723ZG"
-			(at 242.57 104.14 0)
+			(at 219.71 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9540,7 +9765,7 @@
 			)
 		)
 		(property "Footprint" "NUCLEO-H723ZG:MODULE_NUCLEOH723ZG"
-			(at 242.57 132.08 0)
+			(at 219.71 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9550,7 +9775,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 242.57 132.08 0)
+			(at 219.71 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9559,7 +9784,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 242.57 132.08 0)
+			(at 219.71 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9568,7 +9793,7 @@
 			)
 		)
 		(property "MF" "STMicroelectronics"
-			(at 242.57 132.08 0)
+			(at 219.71 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9578,7 +9803,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "18.57 mm"
-			(at 242.57 132.08 0)
+			(at 219.71 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9588,7 +9813,7 @@
 			)
 		)
 		(property "Package" "None"
-			(at 242.57 132.08 0)
+			(at 219.71 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9598,7 +9823,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 242.57 132.08 0)
+			(at 219.71 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9608,7 +9833,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/NUCLEOH723ZG/STMicroelectronics/view-part/?ref=eda"
-			(at 242.57 132.08 0)
+			(at 219.71 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9618,7 +9843,7 @@
 			)
 		)
 		(property "STANDARD" "Manufacturer Recommendations"
-			(at 242.57 132.08 0)
+			(at 219.71 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9628,7 +9853,7 @@
 			)
 		)
 		(property "PARTREV" "2"
-			(at 242.57 132.08 0)
+			(at 219.71 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9638,7 +9863,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/NUCLEOH723ZG/STMicroelectronics/view-part/?ref=snap"
-			(at 242.57 132.08 0)
+			(at 219.71 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9648,7 +9873,7 @@
 			)
 		)
 		(property "MP" "NUCLEOH723ZG"
-			(at 242.57 132.08 0)
+			(at 219.71 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9658,7 +9883,7 @@
 			)
 		)
 		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=8820245&manufacturer=STMicroelectronics&part_name=NUCLEOH723ZG&search_term=None"
-			(at 242.57 132.08 0)
+			(at 219.71 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9668,7 +9893,7 @@
 			)
 		)
 		(property "Description_1" "STM32H723 Nucleo-144 STM32H7 ARM® Cortex®-M7 MCU 32-Bit Embedded Evaluation Board"
-			(at 242.57 132.08 0)
+			(at 219.71 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9678,7 +9903,7 @@
 			)
 		)
 		(property "SNAPEDA_PN" "NUCLEOH723ZG"
-			(at 242.57 132.08 0)
+			(at 219.71 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9688,7 +9913,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 242.57 132.08 0)
+			(at 219.71 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9698,7 +9923,7 @@
 			)
 		)
 		(property "MANUFACTURER" "STMicroelectronics"
-			(at 242.57 132.08 0)
+			(at 219.71 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9708,7 +9933,7 @@
 			)
 		)
 		(property "MANUFACTURER_PART_NUMBER" "NUCLEO-H723ZG"
-			(at 242.57 132.08 0)
+			(at 219.71 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9717,7 +9942,7 @@
 			)
 		)
 		(property "Manufacturer" "STMicroelectronics"
-			(at 242.57 132.08 0)
+			(at 219.71 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9726,7 +9951,7 @@
 			)
 		)
 		(property "VENDOR" ""
-			(at 242.57 132.08 0)
+			(at 219.71 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9735,7 +9960,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 242.57 132.08 0)
+			(at 219.71 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9744,7 +9969,7 @@
 			)
 		)
 		(property "BOM Notes" "Mechanical/electrical reference only. JLCPCB assembles CN7-CN11 on the daughter board; the Nucleo module is not soldered."
-			(at 242.57 132.08 0)
+			(at 219.71 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9753,7 +9978,7 @@
 			)
 		)
 		(property "Operating Temperature" "Module; verify separately"
-			(at 242.57 132.08 0)
+			(at 219.71 132.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11027,7 +11252,7 @@
 	)
 	(symbol
 		(lib_id "NUCLEOH723ZG:NUCLEOH723ZG_Daughterboard_Interface")
-		(at 242.57 68.58 0)
+		(at 219.71 68.58 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom no)
@@ -11035,7 +11260,7 @@
 		(dnp no)
 		(uuid "b6cf6127-273d-4a40-9665-c354c664dad2")
 		(property "Reference" "U1"
-			(at 241.808 43.18 0)
+			(at 218.948 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11043,7 +11268,7 @@
 			)
 		)
 		(property "Value" "NUCLEOH723ZG"
-			(at 241.808 45.72 0)
+			(at 218.948 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11051,7 +11276,7 @@
 			)
 		)
 		(property "Footprint" "NUCLEO-H723ZG:MODULE_NUCLEOH723ZG"
-			(at 242.57 68.58 0)
+			(at 219.71 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11061,7 +11286,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 242.57 68.58 0)
+			(at 219.71 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11070,7 +11295,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 242.57 68.58 0)
+			(at 219.71 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11079,7 +11304,7 @@
 			)
 		)
 		(property "MF" "STMicroelectronics"
-			(at 242.57 68.58 0)
+			(at 219.71 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11089,7 +11314,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "18.57 mm"
-			(at 242.57 68.58 0)
+			(at 219.71 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11099,7 +11324,7 @@
 			)
 		)
 		(property "Package" "None"
-			(at 242.57 68.58 0)
+			(at 219.71 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11109,7 +11334,7 @@
 			)
 		)
 		(property "Price" "None"
-			(at 242.57 68.58 0)
+			(at 219.71 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11119,7 +11344,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/NUCLEOH723ZG/STMicroelectronics/view-part/?ref=eda"
-			(at 242.57 68.58 0)
+			(at 219.71 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11129,7 +11354,7 @@
 			)
 		)
 		(property "STANDARD" "Manufacturer Recommendations"
-			(at 242.57 68.58 0)
+			(at 219.71 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11139,7 +11364,7 @@
 			)
 		)
 		(property "PARTREV" "2"
-			(at 242.57 68.58 0)
+			(at 219.71 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11149,7 +11374,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/NUCLEOH723ZG/STMicroelectronics/view-part/?ref=snap"
-			(at 242.57 68.58 0)
+			(at 219.71 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11159,7 +11384,7 @@
 			)
 		)
 		(property "MP" "NUCLEOH723ZG"
-			(at 242.57 68.58 0)
+			(at 219.71 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11169,7 +11394,7 @@
 			)
 		)
 		(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=8820245&manufacturer=STMicroelectronics&part_name=NUCLEOH723ZG&search_term=None"
-			(at 242.57 68.58 0)
+			(at 219.71 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11179,7 +11404,7 @@
 			)
 		)
 		(property "Description_1" "STM32H723 Nucleo-144 STM32H7 ARM® Cortex®-M7 MCU 32-Bit Embedded Evaluation Board"
-			(at 242.57 68.58 0)
+			(at 219.71 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11189,7 +11414,7 @@
 			)
 		)
 		(property "SNAPEDA_PN" "NUCLEOH723ZG"
-			(at 242.57 68.58 0)
+			(at 219.71 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11199,7 +11424,7 @@
 			)
 		)
 		(property "Availability" "In Stock"
-			(at 242.57 68.58 0)
+			(at 219.71 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11209,7 +11434,7 @@
 			)
 		)
 		(property "MANUFACTURER" "STMicroelectronics"
-			(at 242.57 68.58 0)
+			(at 219.71 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11219,7 +11444,7 @@
 			)
 		)
 		(property "MANUFACTURER_PART_NUMBER" "NUCLEO-H723ZG"
-			(at 242.57 68.58 0)
+			(at 219.71 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11228,7 +11453,7 @@
 			)
 		)
 		(property "Manufacturer" "STMicroelectronics"
-			(at 242.57 68.58 0)
+			(at 219.71 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11237,7 +11462,7 @@
 			)
 		)
 		(property "VENDOR" ""
-			(at 242.57 68.58 0)
+			(at 219.71 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11246,7 +11471,7 @@
 			)
 		)
 		(property "LCSC" ""
-			(at 242.57 68.58 0)
+			(at 219.71 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11255,7 +11480,7 @@
 			)
 		)
 		(property "BOM Notes" "Mechanical/electrical reference only. JLCPCB assembles CN7-CN11 on the daughter board; the Nucleo module is not soldered."
-			(at 242.57 68.58 0)
+			(at 219.71 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11264,7 +11489,7 @@
 			)
 		)
 		(property "Operating Temperature" "Module; verify separately"
-			(at 242.57 68.58 0)
+			(at 219.71 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11631,7 +11856,7 @@
 	)
 	(symbol
 		(lib_id "Power_Custom:+5V_STM32")
-		(at 190.5 48.26 0)
+		(at 153.67 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11640,7 +11865,7 @@
 		(fields_autoplaced yes)
 		(uuid "b7ac710d-0b4b-456e-b918-ab901b680d4f")
 		(property "Reference" "#PWR022"
-			(at 190.5 52.07 0)
+			(at 153.67 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11649,7 +11874,7 @@
 			)
 		)
 		(property "Value" "+5V_STM32"
-			(at 190.5 43.18 0)
+			(at 153.67 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11657,7 +11882,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 190.5 48.26 0)
+			(at 153.67 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11666,7 +11891,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 190.5 48.26 0)
+			(at 153.67 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11675,7 +11900,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 190.5 48.26 0)
+			(at 153.67 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12043,7 +12268,7 @@
 	)
 	(symbol
 		(lib_id "Power_Custom:+3V3_STM32")
-		(at 180.34 41.91 0)
+		(at 147.32 41.91 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12052,7 +12277,7 @@
 		(fields_autoplaced yes)
 		(uuid "d61bc653-2666-44b2-9acf-f01c503ed2d7")
 		(property "Reference" "#PWR0171"
-			(at 180.34 45.72 0)
+			(at 147.32 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12061,7 +12286,7 @@
 			)
 		)
 		(property "Value" "+3V3_STM32"
-			(at 180.34 36.83 0)
+			(at 147.32 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12069,7 +12294,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 180.34 41.91 0)
+			(at 147.32 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12078,7 +12303,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 180.34 41.91 0)
+			(at 147.32 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12087,7 +12312,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 180.34 41.91 0)
+			(at 147.32 41.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12109,7 +12334,7 @@
 	)
 	(symbol
 		(lib_id "Power_Custom:GND_STM32")
-		(at 279.4 93.98 0)
+		(at 254 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12118,7 +12343,7 @@
 		(fields_autoplaced yes)
 		(uuid "e4458fb9-dc7c-4d13-a338-192e4ee124cc")
 		(property "Reference" "#PWR031"
-			(at 279.4 100.33 0)
+			(at 254 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12127,7 +12352,7 @@
 			)
 		)
 		(property "Value" "GND_STM32"
-			(at 279.4 99.06 0)
+			(at 254 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12135,7 +12360,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 279.4 93.98 0)
+			(at 254 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12144,7 +12369,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 279.4 93.98 0)
+			(at 254 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12153,7 +12378,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
-			(at 279.4 93.98 0)
+			(at 254 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)

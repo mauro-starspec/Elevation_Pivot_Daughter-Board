@@ -1670,6 +1670,14 @@
     [
       "17b8fa8c-be91-49fa-a99e-b377fef04af4",
       "ADS1115"
+    ],
+    [
+      "2e710e11-24fc-53a2-ac67-6179fd34ea44",
+      "Pivot_Encoder_Port"
+    ],
+    [
+      "aaef5caf-c763-5ff0-9a29-93dc06652472",
+      "Pivot_Encoder_Star"
     ]
   ],
   "text_variables": {}
