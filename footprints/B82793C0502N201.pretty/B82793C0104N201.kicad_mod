@@ -1,0 +1,388 @@
+(footprint "B82793C0104N201"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "B82793C0")
+	(tags "Filter")
+	(property "Reference" "REF**"
+		(at 4.882381 5.09115 180)
+		(layer "F.SilkS")
+		(uuid "1b7c44e5-0939-44c3-9a2c-1548f6a08a7c")
+		(effects
+			(font
+				(size 0.8 0.8)
+				(thickness 0.13)
+			)
+		)
+	)
+	(property "Value" "B82793C0104N201"
+		(at 0 0 180)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "fe846143-ddae-41d6-a439-976ae2d62701")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Datasheet" "https://product.tdk.com/system/files/dam/doc/product/emc/emc/cmf_cmc/catalog/b82793c0_s0.pdf"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3f24f3e2-c540-474a-b714-959d1e3cadb7")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Common Mode Filters / Chokes, |Z|=190 at 10MHz, L x W x T :"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d9199d56-7be8-4fc0-9a44-75ca2bc3db66")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Height" "4.8"
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ae605c55-240e-4316-9914-3bece31fe497")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Mouser Part Number" "871-B82793C502N201"
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ad7b9024-52d1-4090-9b55-2b81713bf20e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/EPCOS-TDK/B82793C0502N201?qs=pGJ4H8VyKtXl%252BruvMi5ksA%3D%3D"
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "0aa0dd3c-ff34-4aaf-9c22-93ed74028252")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer_Name" "TDK"
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f58d45cd-fc14-4d29-babd-408bc64f9349")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer_Part_Number" "B82793C0502N201"
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "dc012f59-ae3e-4d56-b3a6-642f4f3ba0fb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MANUFACTURER_PART_NUMBER" "B82793C0502N201"
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "dab9dca1-fe5e-4e8f-aaa2-94e5adbd5e63")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer" "TDK"
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2e930c0d-a1ae-4b27-b44c-e50d89d258c7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "VENDOR" ""
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "82248b56-aad1-43ef-b553-d8f50f45063a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" "C3018570"
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d9ad8bf3-ec06-4016-97a0-ad80ae2c8685")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "BOM Notes" "In stock. Exact MPN. Board footprint library name ends C0104 while value/MPN is C0502; compare pad geometry to the C0502 datasheet before release."
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "44654e56-d2ba-4c32-b623-58b7943d701a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Operating Temperature" "See datasheet"
+		(at 0 0 180)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9075356e-c701-48c7-a18f-7ff2e77989a8")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -3.55 -3)
+		(end 3.55 -3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8afdcd88-6295-4b06-899f-8d98118d5237")
+	)
+	(fp_line
+		(start 3.55 3)
+		(end -3.55 3)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "50e485ab-14a6-4aa8-a790-41da90033baa")
+	)
+	(fp_line
+		(start -5.9 -4)
+		(end 5.9 -4)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "eaf92da1-3f32-489e-9714-d42e9dc151f6")
+	)
+	(fp_line
+		(start -5.9 4)
+		(end -5.9 -4)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "f0f10559-407d-4c9a-b57d-2cebf5698e40")
+	)
+	(fp_line
+		(start 5.9 -4)
+		(end 5.9 4)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "1042646d-4f20-4772-8b49-1490cbdd4fd8")
+	)
+	(fp_line
+		(start 5.9 4)
+		(end -5.9 4)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "20a3d435-e8f8-4cca-a0f5-28a3bee7062b")
+	)
+	(fp_line
+		(start -4.55 -1.25)
+		(end -4.55 -1.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "40fb8791-803b-4953-9245-8c771818eadb")
+	)
+	(fp_line
+		(start -4.5 -1.25)
+		(end -4.5 -1.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d346e475-a5d4-4d32-99d3-18376ee8b4b9")
+	)
+	(fp_line
+		(start -3.55 -3)
+		(end 3.55 -3)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "4a0b6b7d-aa84-4e7d-a141-1bc062a53b61")
+	)
+	(fp_line
+		(start -3.55 3)
+		(end -3.55 -3)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "d449a6a6-8797-45ae-a520-71ed2f0d5d6a")
+	)
+	(fp_line
+		(start 3.55 -3)
+		(end 3.55 3)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "3062fdff-1cd6-4134-94c1-5da8eaa13aa1")
+	)
+	(fp_line
+		(start 3.55 3)
+		(end -3.55 3)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "4e95a586-d233-4b87-91b1-01932391c20e")
+	)
+	(fp_arc
+		(start -4.55 -1.25)
+		(mid -4.525 -1.275)
+		(end -4.5 -1.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "b3ae5fc6-50df-4cd5-8e26-e09560a14544")
+	)
+	(fp_arc
+		(start -4.5 -1.25)
+		(mid -4.525 -1.225)
+		(end -4.55 -1.25)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "fb5ca34a-0a73-42ed-843a-ca03439f26d8")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(uuid "3785d0e5-f6e2-440f-8d7e-e9d3736fa3a8")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -3.675 1.25 90)
+		(size 1.2 2.85)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "7d71f837-4fb3-4194-9a9c-d3ff8aefdc0f")
+	)
+	(pad "2" smd rect
+		(at 3.675 1.25 90)
+		(size 1.2 2.85)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "c4936c6d-7078-4344-93a5-46d6cd091e60")
+	)
+	(pad "3" smd rect
+		(at 3.675 -1.25 90)
+		(size 1.2 2.85)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "f13c802a-cd94-4082-b0cc-ab96ce1f315d")
+	)
+	(pad "4" smd rect
+		(at -3.675 -1.25 90)
+		(size 1.2 2.85)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "fd8c61ef-6d17-44c9-9431-b4a226ce3a27")
+	)
+	(embedded_fonts no)
+	(model "C:/Users/Mauro/Documents/KiCad/9.0/custom_lib/B82793C0502N201/B82793C0502N201.stp"
+		(offset
+			(xyz 0 0 4.599999836)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 90 0 0)
+		)
+	)
+)

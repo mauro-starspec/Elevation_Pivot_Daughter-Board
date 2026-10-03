@@ -1,0 +1,321 @@
+(footprint "DSUB-9_Socket_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "TE 5747844-4: drawing 5747844 Rev P; 2.7432 x 2.8448 mm pitch, 1.05 mm contact drill, 24.9936 mm mounting pitch. Courtyard enlarged for dimensional tolerances. Generic 3D illustration only.")
+	(tags "9-pin D-Sub connector horizontal angled 90deg THT socket pitch 2.77x2.84mm pin-PCB-offset 7.7mm mounting-holes-distance 25mm mounting-hole-offset 9.12mm")
+	(property "Reference" "REF**"
+		(at 9 -4 180)
+		(layer "F.SilkS")
+		(uuid "4d371c41-0039-4367-99f9-0b660ca6852f")
+		(effects
+			(font
+				(size 0.9 0.9)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "DSUB-9_Socket_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm"
+		(at -5.54 18.61 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4d729edf-96e5-476e-9747-6d3644a3984b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "~"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bd74e29a-1f08-4242-a3c1-003a32cdd6a4")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "9-pin D-SUB connector, socket (female), Mounting Hole"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d42d9969-0b44-4d42-8457-60ff8243057d")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" "C305941"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "616e3df2-12ff-4791-a469-91cb5421ab94")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "MANUFACTURER_PART_NUMBER" "5747844-4"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "73b9218a-4fee-44d3-898b-52afcb0d6ab6")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Manufacturer" "TE Connectivity"
+		(at 0 0 180)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8c1a4202-3bcf-4d9e-bff0-fa352677bfdb")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "BOM Notes" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "aebe4593-7680-4e65-947a-a3f1adf1f099")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Operating Temperature" "-55 to +105 C"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "90c2bb66-919b-48c6-89e2-64cf0b57617a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -21.025 -1.86)
+		(end 9.945 -1.86)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "60882ca7-8037-431b-9aca-86a3180197dc")
+	)
+	(fp_line
+		(start -21.025 9.75)
+		(end -21.025 -1.86)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "53cfc31c-49d5-4e58-a981-f24fdcf89e54")
+	)
+	(fp_line
+		(start -0.25 -2.754338)
+		(end 0.25 -2.754338)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "2de027aa-b707-4135-93c5-83056f38630e")
+	)
+	(fp_line
+		(start 0 -2.321325)
+		(end -0.25 -2.754338)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "008cf9b8-3975-40c3-ad0b-28ac4420d7f8")
+	)
+	(fp_line
+		(start 0.25 -2.754338)
+		(end 0 -2.321325)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "a90e3472-2501-47f3-9fae-34dcdb8e2482")
+	)
+	(fp_line
+		(start 9.945 -1.86)
+		(end 9.945 9.75)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e5e529b8-eba6-4122-95df-c0a790abc7db")
+	)
+	(fp_rect
+		(start -21.65 -3.35)
+		(end 10.57 18.4)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "faf96e6f-a686-4ec3-8124-bb4441bcb575")
+	)
+	(fp_line
+		(start -20.9451 10.922)
+		(end 9.8651 10.922)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "fdb0004d-93d3-4a2e-8615-c87ed7e3eb1e")
+	)
+	(fp_rect
+		(start -20.9451 -1.7018)
+		(end 9.8651 17.0942)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "f7635b42-7e08-45f0-b09b-f8afa2e1a7ec")
+	)
+	(fp_text user "${REFERENCE}"
+		(at -5.54 14.025 180)
+		(layer "F.Fab")
+		(uuid "0e076514-e6e6-4f88-8ae6-91359c1b4dc7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "0" thru_hole circle
+		(at -18.0368 1.4224)
+		(size 4 4)
+		(drill 3.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "45e4d3f5-b010-4ec3-bbf6-b08ae6bcf255")
+	)
+	(pad "0" thru_hole circle
+		(at 6.9568 1.4224)
+		(size 4 4)
+		(drill 3.2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "f81a8ee7-7fd5-4c25-8d88-06397a897df2")
+	)
+	(pad "1" thru_hole rect
+		(at -0.0536 0)
+		(size 1.6 1.6)
+		(drill 1.05)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "73257806-c436-4fd4-af7a-4f3217a8d554")
+	)
+	(pad "2" thru_hole circle
+		(at -2.7968 0)
+		(size 1.6 1.6)
+		(drill 1.05)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "a92c1f3c-519b-4c73-9ee9-27ba00231730")
+	)
+	(pad "3" thru_hole circle
+		(at -5.54 0)
+		(size 1.6 1.6)
+		(drill 1.05)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "92d739e4-24be-4a00-b437-ee2d9896a35a")
+	)
+	(pad "4" thru_hole circle
+		(at -8.2832 0)
+		(size 1.6 1.6)
+		(drill 1.05)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "dc46c9cc-a6e2-4774-9b2e-312c36cae0bb")
+	)
+	(pad "5" thru_hole circle
+		(at -11.026399 0)
+		(size 1.6 1.6)
+		(drill 1.05)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "e46963c0-f77a-49c9-9c8d-5e136b1228ab")
+	)
+	(pad "6" thru_hole circle
+		(at -1.4252 2.8448)
+		(size 1.6 1.6)
+		(drill 1.05)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "296d374f-8260-45c9-97ef-e50c75fa2c30")
+	)
+	(pad "7" thru_hole circle
+		(at -4.1684 2.8448)
+		(size 1.6 1.6)
+		(drill 1.05)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "6f630d1a-38f3-43d8-aad0-f65df7dfe250")
+	)
+	(pad "8" thru_hole circle
+		(at -6.9116 2.8448)
+		(size 1.6 1.6)
+		(drill 1.05)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "1736792c-0e15-411a-84c7-6a4ebd6f4f6e")
+	)
+	(pad "9" thru_hole circle
+		(at -9.6548 2.8448)
+		(size 1.6 1.6)
+		(drill 1.05)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "f396b5dd-3636-4b5b-bb03-acddf528ec07")
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/Connector_Dsub.3dshapes/DSUB-9_Socket_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
