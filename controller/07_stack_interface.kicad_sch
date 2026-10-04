@@ -7,7 +7,7 @@
   (title_block
     (title "Controller stacking interface")
     (date "2026-10-03")
-    (rev "P4.1 MODBUS")
+    (rev "P6 COMPACT")
     (company "Starspec"))
   (lib_symbols
     (symbol "Controller_Power:3V3_DIG"
@@ -1024,1213 +1024,9 @@
           (fill
             (type none))))
       (embedded_fonts no)))
-  (text "MATCHED TWO-BOARD INTERFACE | J30 30 CONTACTS + J31 20 CONTACTS"
-    (exclude_from_sim no)
-    (at 20.32 17.78 0)
-    (effects
-      (font
-        (size 1.778 1.778))
-      (justify left top))
-    (uuid "22d33860-3440-5a09-a8ae-0cd071fbaf82"))
-  (text "Controller underside header | 20 contacts"
-    (exclude_from_sim no)
-    (at 238.76 35.56 0)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify left top))
-    (uuid "545bf658-f654-5dca-8334-3205cdfb466e"))
-  (text "J30 mates to J30; J31 mates to J31, same pin number to same pin number.\n5 V: elevation PS4 -> controller. 3.3 V: controller buck -> elevation MCU-side logic.\nAll signal returns use GND_STM32 / controller GND. No field return crosses these connectors.\nMechanical definition: assembly/stack_interface.json. Nominal facing-board gap: 12 mm."
-    (exclude_from_sim no)
-    (at 20.32 172.72 0)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify left top))
-    (uuid "83129e4f-88d3-58fa-ae66-bc76695ada00"))
-  (text "Startup biases are on the elevation board, beside the existing isolators.\nDrive disables and CAN silent default high; brake releases and STEP default low.\nSSI clocks and encoder preset controls idle high. I2C pull-ups remain on elevation.\nJ31-19 carries NRST to a test point; SWD and USB stay on the controller."
-    (exclude_from_sim no)
-    (at 20.32 205.74 0)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify left top))
-    (uuid "93b81f50-16f8-5106-9636-7989c9336d4e"))
-  (text "Controller underside header | 30 contacts"
-    (exclude_from_sim no)
-    (at 35.56 35.56 0)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify left top))
-    (uuid "a8e6827f-8e3b-539b-82ee-0d281c4278f0"))
-  (wire
-    (pts
-      (xy 104.14 83.82)
-      (xy 109.22 83.82))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "0011c171-76ab-5603-855d-e2343a3817db"))
-  (wire
-    (pts
-      (xy 78.74 63.5)
-      (xy 73.66 63.5))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "018e40b8-c290-5564-aa2c-2edc42d63725"))
-  (wire
-    (pts
-      (xy 307.34 83.82)
-      (xy 312.42 83.82))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "040c0194-1731-57a3-b957-de2e4ceb002d"))
-  (wire
-    (pts
-      (xy 307.34 58.42)
-      (xy 312.42 58.42))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "0d215e35-5264-5f38-9776-69b535b2d191"))
-  (wire
-    (pts
-      (xy 104.14 68.58)
-      (xy 109.22 68.58))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "1cc7bc36-8211-5a7d-927d-0951fedc066f"))
-  (wire
-    (pts
-      (xy 78.74 83.82)
-      (xy 73.66 83.82))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "25fb1372-1c6c-5430-bf00-2765f762a9ff"))
-  (wire
-    (pts
-      (xy 104.14 99.06)
-      (xy 109.22 99.06))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "29780a96-ea71-5055-bbe3-7679aad9d070"))
-  (wire
-    (pts
-      (xy 281.94 68.58)
-      (xy 276.86 68.58))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "2b9909f2-e00e-5a8f-9753-c45671c5c483"))
-  (wire
-    (pts
-      (xy 281.94 58.42)
-      (xy 276.86 58.42))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "2bbc3cd9-a234-5279-a6b4-6f432cddba8f"))
-  (wire
-    (pts
-      (xy 104.14 109.22)
-      (xy 109.22 109.22))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "2c86be36-32a0-52b8-bcbc-73feaa286dfc"))
-  (wire
-    (pts
-      (xy 104.14 88.9)
-      (xy 109.22 88.9))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "32ec39d9-acef-5fc3-a994-5bbebe365020"))
-  (wire
-    (pts
-      (xy 78.74 99.06)
-      (xy 73.66 99.06))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "3d6e0041-1b56-5bf9-83a3-27f142c32da8"))
-  (wire
-    (pts
-      (xy 104.14 63.5)
-      (xy 109.22 63.5))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "53d19e16-c16c-5d4a-be7e-9dcfd5a79564"))
-  (wire
-    (pts
-      (xy 281.94 63.5)
-      (xy 276.86 63.5))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "541daa0b-a376-51e9-a0d9-3e95f4d55ada"))
-  (wire
-    (pts
-      (xy 307.34 68.58)
-      (xy 312.42 68.58))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "54c9d37b-d629-5e77-a04a-64ba338dff2a"))
-  (wire
-    (pts
-      (xy 104.14 78.74)
-      (xy 109.22 78.74))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "5589fd6f-87f8-526a-a3da-f0ff0e4cb39d"))
-  (wire
-    (pts
-      (xy 307.34 93.98)
-      (xy 312.42 93.98))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "57d2d27c-bf48-5944-8eed-cc58b7f172ba"))
-  (wire
-    (pts
-      (xy 78.74 58.42)
-      (xy 73.66 58.42))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "58d5c195-320b-5bc6-8bca-247ac5b1f986"))
-  (wire
-    (pts
-      (xy 281.94 88.9)
-      (xy 276.86 88.9))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "59ce4cd4-e84a-5b9a-bd8c-3662544e7261"))
-  (wire
-    (pts
-      (xy 66.04 124.46)
-      (xy 78.74 124.46))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "59e89737-39c8-561f-bdc7-783e3c65126e"))
-  (wire
-    (pts
-      (xy 104.14 124.46)
-      (xy 116.84 124.46))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "619fa842-849e-5674-b325-816a28f52600"))
-  (wire
-    (pts
-      (xy 104.14 53.34)
-      (xy 109.22 53.34))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "67897b93-53b6-587d-9f4a-954adbdd939c"))
-  (wire
-    (pts
-      (xy 281.94 73.66)
-      (xy 276.86 73.66))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "6ca5bb4e-a012-5353-9539-a0acb4f6c374"))
-  (wire
-    (pts
-      (xy 78.74 114.3)
-      (xy 73.66 114.3))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "6f06815e-1261-570e-9e24-65498e1c511e"))
-  (wire
-    (pts
-      (xy 307.34 63.5)
-      (xy 312.42 63.5))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "6f18ae5f-be0b-5c50-9314-7c2df95f3c78"))
-  (wire
-    (pts
-      (xy 78.74 104.14)
-      (xy 73.66 104.14))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "71620326-c7ef-5c52-bf61-a7a9498a9824"))
-  (wire
-    (pts
-      (xy 104.14 119.38)
-      (xy 109.22 119.38))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "74b79acb-8e43-5490-9544-84bdb053c309"))
-  (wire
-    (pts
-      (xy 307.34 99.06)
-      (xy 312.42 99.06))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "7b7a3b37-64a1-546b-ae64-166058aee2ad"))
-  (wire
-    (pts
-      (xy 281.94 93.98)
-      (xy 276.86 93.98))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "7dbbc888-6dfd-54f6-9974-5d2c78eb0c3f"))
-  (wire
-    (pts
-      (xy 78.74 109.22)
-      (xy 73.66 109.22))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "809b9799-0a16-5dac-a14e-03e5840da487"))
-  (wire
-    (pts
-      (xy 104.14 114.3)
-      (xy 109.22 114.3))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "83acb852-4936-55b0-b31d-32d1fddc90ce"))
-  (wire
-    (pts
-      (xy 78.74 68.58)
-      (xy 73.66 68.58))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "8c6a9fd5-d09e-542d-8e8e-7c0c9a1bdb1e"))
-  (wire
-    (pts
-      (xy 281.94 83.82)
-      (xy 276.86 83.82))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "8e4e43df-eaa2-5a98-86b9-06ac2d5d7cc2"))
-  (wire
-    (pts
-      (xy 281.94 78.74)
-      (xy 276.86 78.74))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "969ed6b0-889e-5954-adf9-4feba61b7c67"))
-  (wire
-    (pts
-      (xy 307.34 88.9)
-      (xy 312.42 88.9))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "a5d8bea0-a5b1-51a4-be69-533cbc1cdd89"))
-  (wire
-    (pts
-      (xy 78.74 119.38)
-      (xy 73.66 119.38))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "a6b318b1-5e9d-54ae-8554-6e4f937665dc"))
-  (wire
-    (pts
-      (xy 281.94 53.34)
-      (xy 276.86 53.34))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "a8f66f13-faed-52b8-bb24-9064463ca1f2"))
-  (wire
-    (pts
-      (xy 307.34 78.74)
-      (xy 312.42 78.74))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "ad7345e6-9c37-566f-867f-ff29b899523f"))
-  (wire
-    (pts
-      (xy 78.74 73.66)
-      (xy 73.66 73.66))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "b0cef2b4-ccd4-5d3b-8f02-6cdbd467f428"))
-  (wire
-    (pts
-      (xy 307.34 73.66)
-      (xy 312.42 73.66))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "b1e9f003-2eef-5207-be69-7262aaadf4e9"))
-  (wire
-    (pts
-      (xy 104.14 58.42)
-      (xy 109.22 58.42))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "b1ef320e-42e1-5570-9bc0-a40beac1befd"))
-  (wire
-    (pts
-      (xy 104.14 104.14)
-      (xy 109.22 104.14))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "bca195d4-1292-5539-bcf6-e7a8f2543441"))
-  (wire
-    (pts
-      (xy 307.34 53.34)
-      (xy 312.42 53.34))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "c522f0f4-6419-5edc-813c-7f7c65ad2b6a"))
-  (wire
-    (pts
-      (xy 78.74 78.74)
-      (xy 73.66 78.74))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "d1695d9f-09c4-598c-9b59-f7d5b45a7345"))
-  (wire
-    (pts
-      (xy 281.94 99.06)
-      (xy 276.86 99.06))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "d616cd65-aa44-5202-86b1-d188044137c8"))
-  (wire
-    (pts
-      (xy 78.74 53.34)
-      (xy 73.66 53.34))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "dfb55f77-9cac-57aa-b859-f99b742d0eab"))
-  (wire
-    (pts
-      (xy 104.14 73.66)
-      (xy 109.22 73.66))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "ecb9c53b-f153-5e42-a4e2-6ad026765411"))
-  (wire
-    (pts
-      (xy 104.14 93.98)
-      (xy 109.22 93.98))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "ee5168f0-9ae9-5a29-87e3-305bf3fd8ae3"))
-  (wire
-    (pts
-      (xy 78.74 88.9)
-      (xy 73.66 88.9))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "f6e049a2-ff8e-5a54-9fcc-59662cd4d675"))
-  (wire
-    (pts
-      (xy 78.74 93.98)
-      (xy 73.66 93.98))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "f7c37e83-0687-58c5-b751-53e60b5a16ef"))
-  (global_label "Silent_Mode"
-    (shape bidirectional)
-    (at 276.86 93.98 180)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify right))
-    (uuid "1a00ab35-969e-54ec-8456-e62c548ace5f")
-    (property "Intersheetrefs" "${INTERSHEET_REFS}"
-      (at 276.86 93.98 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes))))
-  (global_label "STAR_SSI_CLK"
-    (shape bidirectional)
-    (at 109.22 83.82 0)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify left))
-    (uuid "1b2fd8d1-aa7c-5bfb-ae0d-35ce5eef7f35")
-    (property "Intersheetrefs" "${INTERSHEET_REFS}"
-      (at 109.22 83.82 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes))))
-  (global_label "PORT_ENC_B"
-    (shape bidirectional)
-    (at 312.42 53.34 0)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify left))
-    (uuid "2b43a9f4-b5ce-59ce-84d0-1fbc74b2b5f7")
-    (property "Intersheetrefs" "${INTERSHEET_REFS}"
-      (at 312.42 53.34 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes))))
-  (global_label "STAR_ENC_PRESET_N"
-    (shape bidirectional)
-    (at 109.22 93.98 0)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify left))
-    (uuid "2d49e5f3-8124-5a39-8ebe-597ad3a1a51d")
-    (property "Intersheetrefs" "${INTERSHEET_REFS}"
-      (at 109.22 93.98 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes))))
-  (global_label "NRST"
-    (shape bidirectional)
-    (at 276.86 99.06 180)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify right))
-    (uuid "463438a8-ee64-58c6-90d4-430d538b76ed")
-    (property "Intersheetrefs" "${INTERSHEET_REFS}"
-      (at 276.86 99.06 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes))))
-  (global_label "PORT_STR8_DISABLE"
-    (shape bidirectional)
-    (at 73.66 68.58 180)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify right))
-    (uuid "476cc7a5-c411-580f-a845-483fee4b2ec8")
-    (property "Intersheetrefs" "${INTERSHEET_REFS}"
-      (at 73.66 68.58 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes))))
-  (global_label "STAR_ENC_Z"
-    (shape bidirectional)
-    (at 312.42 68.58 0)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify left))
-    (uuid "4c8578af-526e-580b-b4dc-60dff39f6705")
-    (property "Intersheetrefs" "${INTERSHEET_REFS}"
-      (at 312.42 68.58 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes))))
-  (global_label "PORT_SSI_CLK"
-    (shape bidirectional)
-    (at 73.66 83.82 180)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify right))
-    (uuid "4d09be1a-d80b-5a40-a06f-7910171bf40c")
-    (property "Intersheetrefs" "${INTERSHEET_REFS}"
-      (at 73.66 83.82 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes))))
-  (global_label "PORT_BRAKE_RELEASE_CMD"
-    (shape bidirectional)
-    (at 73.66 99.06 180)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify right))
-    (uuid "4d59bcbf-5cae-5879-a622-0735cbf61578")
-    (property "Intersheetrefs" "${INTERSHEET_REFS}"
-      (at 73.66 99.06 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes))))
-  (global_label "STAR_BRAKE_RELEASE_CMD"
-    (shape bidirectional)
-    (at 109.22 99.06 0)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify left))
-    (uuid "53e82fc4-0aa7-5756-b46f-4dc318b8c9ff")
-    (property "Intersheetrefs" "${INTERSHEET_REFS}"
-      (at 109.22 99.06 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes))))
-  (global_label "STM32_SCL"
-    (shape bidirectional)
-    (at 276.86 78.74 180)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify right))
-    (uuid "76eff0d5-1fb0-5ad2-b07e-4cdab1a2ec32")
-    (property "Intersheetrefs" "${INTERSHEET_REFS}"
-      (at 276.86 78.74 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes))))
-  (global_label "PORT_STR8_FAULT"
-    (shape bidirectional)
-    (at 73.66 73.66 180)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify right))
-    (uuid "803769db-d5fe-532b-859f-011ef9464675")
-    (property "Intersheetrefs" "${INTERSHEET_REFS}"
-      (at 73.66 73.66 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes))))
-  (global_label "PORT_ENC_Z"
-    (shape bidirectional)
-    (at 276.86 68.58 180)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify right))
-    (uuid "829f0fe8-174b-56ef-ad45-44916bcb4283")
-    (property "Intersheetrefs" "${INTERSHEET_REFS}"
-      (at 276.86 68.58 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes))))
-  (global_label "STAR_STR8_DISABLE"
-    (shape bidirectional)
-    (at 109.22 68.58 0)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify left))
-    (uuid "86c3c0f5-ecdb-550b-8cd5-8d1f3fc7ccc6")
-    (property "Intersheetrefs" "${INTERSHEET_REFS}"
-      (at 109.22 68.58 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes))))
-  (global_label "STM32_SDA"
-    (shape bidirectional)
-    (at 312.42 78.74 0)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify left))
-    (uuid "9048d494-0ce6-524c-9dc8-f90edbc0cf64")
-    (property "Intersheetrefs" "${INTERSHEET_REFS}"
-      (at 312.42 78.74 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes))))
-  (global_label "TX_CAN"
-    (shape bidirectional)
-    (at 276.86 88.9 180)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify right))
-    (uuid "91771cb3-60d7-5b24-abad-602ae82a1d08")
-    (property "Intersheetrefs" "${INTERSHEET_REFS}"
-      (at 276.86 88.9 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes))))
-  (global_label "RX_CAN"
-    (shape bidirectional)
-    (at 312.42 88.9 0)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify left))
-    (uuid "95243e25-6a6a-5ae3-98da-ae9e7d42ee1b")
-    (property "Intersheetrefs" "${INTERSHEET_REFS}"
-      (at 312.42 88.9 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes))))
-  (global_label "STAR_SSI_DATA"
-    (shape bidirectional)
-    (at 109.22 88.9 0)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify left))
-    (uuid "a6ce6ff0-93f8-5fb8-bfbf-3ef5e5006cd3")
-    (property "Intersheetrefs" "${INTERSHEET_REFS}"
-      (at 109.22 88.9 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes))))
-  (global_label "STAR_STR8_FAULT"
-    (shape bidirectional)
-    (at 109.22 73.66 0)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify left))
-    (uuid "b1320363-3760-5b2f-96be-798f75b6d2db")
-    (property "Intersheetrefs" "${INTERSHEET_REFS}"
-      (at 109.22 73.66 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes))))
-  (global_label "PORT_STR8_STEP_CMD"
-    (shape bidirectional)
-    (at 73.66 58.42 180)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify right))
-    (uuid "b687fdab-77b6-5e31-b112-4a2ca23331ad")
-    (property "Intersheetrefs" "${INTERSHEET_REFS}"
-      (at 73.66 58.42 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes))))
-  (global_label "HOME_POS"
-    (shape bidirectional)
-    (at 73.66 109.22 180)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify right))
-    (uuid "cc882a81-8913-51da-ab06-21488e1fa9a7")
-    (property "Intersheetrefs" "${INTERSHEET_REFS}"
-      (at 73.66 109.22 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes))))
-  (global_label "STAR_STR8_DIR_CMD"
-    (shape bidirectional)
-    (at 109.22 63.5 0)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify left))
-    (uuid "cd1b054c-fb97-5200-a20c-da06aac500c6")
-    (property "Intersheetrefs" "${INTERSHEET_REFS}"
-      (at 109.22 63.5 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes))))
-  (global_label "PORT_ENC_A"
-    (shape bidirectional)
-    (at 276.86 53.34 180)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify right))
-    (uuid "e931c8ca-749e-5cc0-a2ba-1f8d3ab0da53")
-    (property "Intersheetrefs" "${INTERSHEET_REFS}"
-      (at 276.86 53.34 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes))))
-  (global_label "PORT_ENC_PRESET_N"
-    (shape bidirectional)
-    (at 73.66 93.98 180)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify right))
-    (uuid "e96ac978-4868-5d1c-a232-05ee43d7bc96")
-    (property "Intersheetrefs" "${INTERSHEET_REFS}"
-      (at 73.66 93.98 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes))))
-  (global_label "E_STOP_OK"
-    (shape bidirectional)
-    (at 109.22 109.22 0)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify left))
-    (uuid "ead1f14c-6302-53cd-a7bc-877fa52137b8")
-    (property "Intersheetrefs" "${INTERSHEET_REFS}"
-      (at 109.22 109.22 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes))))
-  (global_label "PORT_SSI_DATA"
-    (shape bidirectional)
-    (at 73.66 88.9 180)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify right))
-    (uuid "ed5aa34a-5833-54a2-a98f-f3ed7a60233d")
-    (property "Intersheetrefs" "${INTERSHEET_REFS}"
-      (at 73.66 88.9 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes))))
-  (global_label "STAR_ENC_A"
-    (shape bidirectional)
-    (at 276.86 63.5 180)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify right))
-    (uuid "f2df9fc9-be60-5113-997b-0395b8db371c")
-    (property "Intersheetrefs" "${INTERSHEET_REFS}"
-      (at 276.86 63.5 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes))))
-  (global_label "STAR_STR8_STEP_CMD"
-    (shape bidirectional)
-    (at 109.22 58.42 0)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify left))
-    (uuid "f4065018-4bff-5b0d-8496-24eb01dd884f")
-    (property "Intersheetrefs" "${INTERSHEET_REFS}"
-      (at 109.22 58.42 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes))))
-  (global_label "STAR_ENC_B"
-    (shape bidirectional)
-    (at 312.42 63.5 0)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify left))
-    (uuid "f9cd6fff-0fc9-51fa-8c14-2f47fae6cfed")
-    (property "Intersheetrefs" "${INTERSHEET_REFS}"
-      (at 312.42 63.5 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes))))
-  (global_label "PORT_STR8_DIR_CMD"
-    (shape bidirectional)
-    (at 73.66 63.5 180)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify right))
-    (uuid "ff9c3746-ebb0-5946-9c6a-429387d9111b")
-    (property "Intersheetrefs" "${INTERSHEET_REFS}"
-      (at 73.66 63.5 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes))))
-  (symbol
-    (lib_id "Controller_Power:GND")
-    (at 109.22 119.38 0)
-    (unit 1)
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "0160faa5-5efc-5246-a577-fff49457885d")
-    (property "Reference" "#PWRP40181"
-      (at 109.22 119.38 90)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "Value" "GND"
-      (at 111.76 121.285 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left)))
-    (property "Footprint" ""
-      (at 109.22 119.38 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Datasheet" ""
-      (at 109.22 119.38 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Description" ""
-      (at 109.22 119.38 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (pin "1"
-      (uuid "373a5238-b3a6-58d0-b6a7-094b6e9aa083"))
-    (instances
-      (project "Elevation_Controller"
-        (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/6fdf4713-7b80-53e0-8a3f-44ca7cb4cca8"
-          (reference "#PWRP40181")
-          (unit 1)))))
-  (symbol
-    (lib_id "Controller_Power:GND")
-    (at 73.66 104.14 0)
-    (unit 1)
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "3f81359c-3b93-56bc-a2eb-51ea3a5ea9f2")
-    (property "Reference" "#PWRP40176"
-      (at 73.66 104.14 270)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "Value" "GND"
-      (at 71.12 106.045 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right)))
-    (property "Footprint" ""
-      (at 73.66 104.14 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Datasheet" ""
-      (at 73.66 104.14 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Description" ""
-      (at 73.66 104.14 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (pin "1"
-      (uuid "9dca0c4d-1cef-565a-ad10-0b507607dcf6"))
-    (instances
-      (project "Elevation_Controller"
-        (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/6fdf4713-7b80-53e0-8a3f-44ca7cb4cca8"
-          (reference "#PWRP40176")
-          (unit 1)))))
-  (symbol
-    (lib_id "Controller_Power:GND")
-    (at 109.22 53.34 0)
-    (unit 1)
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "454b033d-393e-58a0-b428-4400c6a80c75")
-    (property "Reference" "#PWRP40173"
-      (at 109.22 53.34 90)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "Value" "GND"
-      (at 111.76 55.245 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left)))
-    (property "Footprint" ""
-      (at 109.22 53.34 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Datasheet" ""
-      (at 109.22 53.34 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Description" ""
-      (at 109.22 53.34 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (pin "1"
-      (uuid "c7f920a6-7b3c-5b3a-9dee-7006a6fccdc9"))
-    (instances
-      (project "Elevation_Controller"
-        (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/6fdf4713-7b80-53e0-8a3f-44ca7cb4cca8"
-          (reference "#PWRP40173")
-          (unit 1)))))
-  (symbol
-    (lib_id "Controller_Power:GND")
-    (at 312.42 58.42 0)
-    (unit 1)
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "46d798ff-bd59-5da9-9b40-224f7d35792f")
-    (property "Reference" "#PWRP40185"
-      (at 312.42 58.42 90)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "Value" "GND"
-      (at 314.96 60.325 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left)))
-    (property "Footprint" ""
-      (at 312.42 58.42 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Datasheet" ""
-      (at 312.42 58.42 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Description" ""
-      (at 312.42 58.42 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (pin "1"
-      (uuid "ef60f471-b09c-52fa-9883-9a92901fdc26"))
-    (instances
-      (project "Elevation_Controller"
-        (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/6fdf4713-7b80-53e0-8a3f-44ca7cb4cca8"
-          (reference "#PWRP40185")
-          (unit 1)))))
-  (symbol
-    (lib_id "Controller_Power:GND")
-    (at 73.66 53.34 0)
-    (unit 1)
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "6831646a-7350-506a-8f17-dbfa0b27265e")
-    (property "Reference" "#PWRP40172"
-      (at 73.66 53.34 270)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "Value" "GND"
-      (at 71.12 55.245 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right)))
-    (property "Footprint" ""
-      (at 73.66 53.34 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Datasheet" ""
-      (at 73.66 53.34 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Description" ""
-      (at 73.66 53.34 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (pin "1"
-      (uuid "08a5662d-3cbd-5c31-818b-8372e0dbc232"))
-    (instances
-      (project "Elevation_Controller"
-        (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/6fdf4713-7b80-53e0-8a3f-44ca7cb4cca8"
-          (reference "#PWRP40172")
-          (unit 1)))))
-  (symbol
-    (lib_id "Controller_Power:GND")
-    (at 276.86 73.66 0)
-    (unit 1)
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "70dc5ab2-6239-5315-9406-e40ab001c932")
-    (property "Reference" "#PWRP40186"
-      (at 276.86 73.66 270)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "Value" "GND"
-      (at 274.32 75.565 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right)))
-    (property "Footprint" ""
-      (at 276.86 73.66 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Datasheet" ""
-      (at 276.86 73.66 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Description" ""
-      (at 276.86 73.66 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (pin "1"
-      (uuid "ee25a1e6-5dea-5721-9116-85b917d292dc"))
-    (instances
-      (project "Elevation_Controller"
-        (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/6fdf4713-7b80-53e0-8a3f-44ca7cb4cca8"
-          (reference "#PWRP40186")
-          (unit 1)))))
-  (symbol
-    (lib_id "Controller_Power:GND")
-    (at 312.42 73.66 0)
-    (unit 1)
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "7b28e925-5fec-5ccb-bd15-da6a35b018a2")
-    (property "Reference" "#PWRP40187"
-      (at 312.42 73.66 90)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "Value" "GND"
-      (at 314.96 75.565 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left)))
-    (property "Footprint" ""
-      (at 312.42 73.66 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Datasheet" ""
-      (at 312.42 73.66 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Description" ""
-      (at 312.42 73.66 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (pin "1"
-      (uuid "1ca64c3e-d8ee-5aa1-82cf-55108fd82d53"))
-    (instances
-      (project "Elevation_Controller"
-        (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/6fdf4713-7b80-53e0-8a3f-44ca7cb4cca8"
-          (reference "#PWRP40187")
-          (unit 1)))))
-  (symbol
-    (lib_id "Controller_Power:B2B_5V_IN")
-    (at 73.66 114.3 0)
-    (unit 1)
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "8ff30285-b863-504d-a1f7-bfd10591c0d5")
-    (property "Reference" "#PWRP40178"
-      (at 73.66 114.3 90)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "Value" "B2B_5V_IN"
-      (at 71.12 112.395 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right)))
-    (property "Footprint" ""
-      (at 73.66 114.3 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Datasheet" ""
-      (at 73.66 114.3 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Description" ""
-      (at 73.66 114.3 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (pin "1"
-      (uuid "180d84c8-35bb-550b-8197-55be730cc78a"))
-    (instances
-      (project "Elevation_Controller"
-        (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/6fdf4713-7b80-53e0-8a3f-44ca7cb4cca8"
-          (reference "#PWRP40178")
-          (unit 1)))))
   (symbol
     (lib_id "Mechanical:MountingHole")
-    (at 203.2 248.92 0)
+    (at 90.0 220.0 0)
     (unit 1)
     (exclude_from_sim no)
     (in_bom no)
@@ -2238,95 +1034,119 @@
     (dnp no)
     (uuid "91579d2c-eb0f-541f-98c5-4615e40644b3")
     (property "Reference" "H30"
-      (at 203.2 243.84 0)
+      (at 90.0 214.92 0)
       (effects
         (font
           (size 1.27 1.27))))
     (property "Value" "M3 STACK SUPPORT"
-      (at 203.2 246.38 0)
+      (at 90.0 217.46 0)
       (effects
         (font
           (size 1.27 1.27))))
     (property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-      (at 203.2 248.92 0)
+      (at 90.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Datasheet" ""
-      (at 203.2 248.92 0)
+      (at 90.0 220.0 0)
       (effects
         (font
-          (size 1.27 1.27))))
+          (size 1.27 1.27))
+        (hide yes)))
     (property "Description" ""
-      (at 203.2 248.92 0)
+      (at 90.0 220.0 0)
       (effects
         (font
-          (size 1.27 1.27))))
+          (size 1.27 1.27))
+        (hide yes)))
     (instances
       (project "Elevation_Controller"
         (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/6fdf4713-7b80-53e0-8a3f-44ca7cb4cca8"
           (reference "H30")
           (unit 1))))
-  (property "BOM Review" "Hole only. Four shared 12 mm supports per stack; support material, screws and washers are not selected here." (at 203.2 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "N/A" (at 203.2 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PCB FEATURE" (at 203.2 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Status" "N/A" (at 203.2 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Basis" "PCB feature" (at 203.2 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Max (degC)" "N/A" (at 203.2 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Min (degC)" "N/A" (at 203.2 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "N/A" (at 203.2 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "PCB mounting hole" (at 203.2 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Assembly" "PCB feature - no purchased component" (at 203.2 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "N/A" (at 203.2 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Manufacturer" "N/A" (at 203.2 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "MPN" "N/A" (at 203.2 248.92 0) (effects (font (size 1.27 1.27)) (hide yes))))
-  (symbol
-    (lib_id "Controller_Power:GND")
-    (at 73.66 78.74 0)
-    (unit 1)
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "a4cf0b53-a723-5426-a973-b7542aefe218")
-    (property "Reference" "#PWRP40174"
-      (at 73.66 78.74 270)
+    (property "BOM Review" "Hole only. Four shared 12 mm supports per stack; support material, screws and washers are not selected here."
+      (at 90.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Value" "GND"
-      (at 71.12 80.645 0)
+    (property "JLCPCB Status" "N/A"
+      (at 90.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
-        (justify right)))
-    (property "Footprint" ""
-      (at 73.66 78.74 0)
+        (hide yes)))
+    (property "BOM Status" "PCB FEATURE"
+      (at 90.0 220.0 0)
       (effects
         (font
-          (size 1.27 1.27))))
-    (property "Datasheet" ""
-      (at 73.66 78.74 0)
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "N/A"
+      (at 90.0 220.0 0)
       (effects
         (font
-          (size 1.27 1.27))))
-    (property "Description" ""
-      (at 73.66 78.74 0)
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "PCB feature"
+      (at 90.0 220.0 0)
       (effects
         (font
-          (size 1.27 1.27))))
-    (pin "1"
-      (uuid "c088c407-88f4-5762-bb7c-f71a38ffeaff"))
-    (instances
-      (project "Elevation_Controller"
-        (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/6fdf4713-7b80-53e0-8a3f-44ca7cb4cca8"
-          (reference "#PWRP40174")
-          (unit 1)))))
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "N/A"
+      (at 90.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "N/A"
+      (at 90.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "N/A"
+      (at 90.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "PCB mounting hole"
+      (at 90.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Assembly" "PCB feature - no purchased component"
+      (at 90.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "N/A"
+      (at 90.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "N/A"
+      (at 90.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "N/A"
+      (at 90.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Stack:Stack_2x10")
-    (at 294.64 53.34 0)
+    (at 292.1 60.96 0)
     (unit 1)
     (exclude_from_sim no)
     (in_bom yes)
@@ -2334,31 +1154,33 @@
     (dnp no)
     (uuid "ab1b469a-3c40-55e2-a72c-5be3a5f5fc56")
     (property "Reference" "J31"
-      (at 294.64 43.18 0)
+      (at 292.1 50.8 0)
       (effects
         (font
           (size 1.27 1.27))))
     (property "Value" "TSW-110-07-S-D"
-      (at 294.64 46.99 0)
+      (at 292.1 54.61 0)
       (effects
         (font
           (size 1.27 1.27))))
     (property "Footprint" "Stack:Samtec_TSW-110-07-S-D"
-      (at 294.64 53.34 0)
+      (at 292.1 60.96 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Datasheet" "https://suddendocs.samtec.com/productspecs/tsw-ssw.pdf"
-      (at 294.64 53.34 0)
+      (at 292.1 60.96 0)
       (effects
         (font
-          (size 1.27 1.27))))
+          (size 1.27 1.27))
+        (hide yes)))
     (property "Description" ""
-      (at 294.64 53.34 0)
+      (at 292.1 60.96 0)
       (effects
         (font
-          (size 1.27 1.27))))
+          (size 1.27 1.27))
+        (hide yes)))
     (pin "1"
       (uuid "506b5fba-8b35-5456-9166-0eb8842439d9"))
     (pin "2"
@@ -2404,70 +1226,437 @@
         (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/6fdf4713-7b80-53e0-8a3f-44ca7cb4cca8"
           (reference "J31")
           (unit 1))))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 294.64 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Assembly" "FIT" (at 294.64 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +125 C" (at 294.64 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 294.64 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Data Checked" "UNDATED legacy record" (at 294.64 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "No verified JLCPCB ID; source or consign" (at 294.64 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Review" "Verify 12 mm stack engagement and soldering process. TSW is not specified for lead-free wave soldering; review hand-solder process or HTSW equivalent before assembly." (at 294.64 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Footprint Status" "Paired geometry checked; physical mating approval pending" (at 294.64 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Resistor" (at 294.64 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Status" "Manufacturer rating recorded; system requirement pending" (at 294.64 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Checked" "2026-10-03" (at 294.64 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Source" "https://suddendocs.samtec.com/productspecs/tsw-ssw.pdf" (at 294.64 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Basis" "Operating with gold contacts" (at 294.64 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Max (degC)" "125" (at 294.64 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Min (degC)" "-55" (at 294.64 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "UNVERIFIED" (at 294.64 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Manufacturer" "Samtec" (at 294.64 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "MPN" "TSW-110-07-S-D" (at 294.64 53.34 0) (effects (font (size 1.27 1.27)) (hide yes))))
-  (symbol
-    (lib_id "Controller_Power:GND")
-    (at 276.86 58.42 0)
-    (unit 1)
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "ab53f84d-0251-5847-bb8d-4db576695e79")
-    (property "Reference" "#PWRP40184"
-      (at 276.86 58.42 270)
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 292.1 60.96 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Value" "GND"
-      (at 274.32 60.325 0)
+    (property "Assembly" "FIT"
+      (at 292.1 60.96 0)
       (effects
         (font
           (size 1.27 1.27))
-        (justify right)))
-    (property "Footprint" ""
-      (at 276.86 58.42 0)
+        (hide yes)))
+    (property "Operating Temperature" "-55 to +125 C"
+      (at 292.1 60.96 0)
       (effects
         (font
-          (size 1.27 1.27))))
-    (property "Datasheet" ""
-      (at 276.86 58.42 0)
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 292.1 60.96 0)
       (effects
         (font
-          (size 1.27 1.27))))
-    (property "Description" ""
-      (at 276.86 58.42 0)
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Data Checked" "UNDATED legacy record"
+      (at 292.1 60.96 0)
       (effects
         (font
-          (size 1.27 1.27))))
-    (pin "1"
-      (uuid "5ff4bd4c-5d22-528f-9983-033dbe54c962"))
-    (instances
-      (project "Elevation_Controller"
-        (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/6fdf4713-7b80-53e0-8a3f-44ca7cb4cca8"
-          (reference "#PWRP40184")
-          (unit 1)))))
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "No verified JLCPCB ID; source or consign"
+      (at 292.1 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Review" "Verify 12 mm stack engagement and soldering process. TSW is not specified for lead-free wave soldering; review hand-solder process or HTSW equivalent before assembly."
+      (at 292.1 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Footprint Status" "Paired geometry checked; physical mating approval pending"
+      (at 292.1 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Resistor"
+      (at 292.1 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "Manufacturer rating recorded; system requirement pending"
+      (at 292.1 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Checked" "2026-10-03"
+      (at 292.1 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Source" "https://suddendocs.samtec.com/productspecs/tsw-ssw.pdf"
+      (at 292.1 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "Operating with gold contacts"
+      (at 292.1 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "125"
+      (at 292.1 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "-55"
+      (at 292.1 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "UNVERIFIED"
+      (at 292.1 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "Samtec"
+      (at 292.1 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "TSW-110-07-S-D"
+      (at 292.1 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 279.4 60.96)
+      (xy 264.16 60.96))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "67fd077a-4779-5a68-ada6-5bd58970ad3c"))
+  (global_label "-BATT"
+    (shape bidirectional)
+    (at 264.16 60.96 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "50dd213f-09ec-5e95-b50d-dc9b78514f31"))
+  (wire
+    (pts
+      (xy 279.4 66.04)
+      (xy 264.16 66.04))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "19dd665c-3db2-5186-8cdb-8a47c73af51a"))
+  (global_label "-BATT"
+    (shape bidirectional)
+    (at 264.16 66.04 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "d84066ed-36b5-5ce6-9fd9-a7c11ada5ddb"))
+  (wire
+    (pts
+      (xy 279.4 71.12)
+      (xy 264.16 71.12))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "0eab2954-f79d-5354-b69f-6bf5174bd648"))
+  (global_label "+5V_FIELD"
+    (shape bidirectional)
+    (at 264.16 71.12 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "51872355-16dc-5f81-bf57-c994e52ff879"))
+  (wire
+    (pts
+      (xy 279.4 76.2)
+      (xy 264.16 76.2))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "9b7d1432-2627-5e42-9c8f-2c41bd8a5f28"))
+  (global_label "-BATT"
+    (shape bidirectional)
+    (at 264.16 76.2 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "207fa28a-873e-5c9b-a707-572145aa7cca"))
+  (wire
+    (pts
+      (xy 279.4 81.28)
+      (xy 264.16 81.28))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "5b03f669-e2ea-5499-949c-ce70fd62a696"))
+  (global_label "+6.5V_ENC_PORT"
+    (shape bidirectional)
+    (at 264.16 81.28 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "34f219cf-bfe0-5569-b4b3-fed0c8260a6c"))
+  (wire
+    (pts
+      (xy 279.4 86.36)
+      (xy 264.16 86.36))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "0acb2b29-afa3-5864-84b6-cfed31dd5ecd"))
+  (global_label "+5V_ENC_PORT"
+    (shape bidirectional)
+    (at 264.16 86.36 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "94b3e70a-d4fc-5b4e-a79d-8ba53f1e85c7"))
+  (wire
+    (pts
+      (xy 279.4 91.44)
+      (xy 264.16 91.44))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "b1f49633-fb44-5c2a-80f8-9f6320771056"))
+  (global_label "-BATT"
+    (shape bidirectional)
+    (at 264.16 91.44 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "9580fbf1-9852-5e4a-bbf4-0124ab165366"))
+  (wire
+    (pts
+      (xy 279.4 96.52)
+      (xy 264.16 96.52))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "25e215dc-d3a0-56b9-b2d7-ec8ea448789d"))
+  (global_label "+6.5V_ENC_STAR"
+    (shape bidirectional)
+    (at 264.16 96.52 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "191d446f-e373-53d9-b32f-f5ddd4111a0a"))
+  (wire
+    (pts
+      (xy 279.4 101.6)
+      (xy 264.16 101.6))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "54cc6f12-509a-5973-84e4-826b7232c500"))
+  (global_label "+5V_ENC_STAR"
+    (shape bidirectional)
+    (at 264.16 101.6 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "ebe31429-85aa-5080-8efc-b7e68472da5c"))
+  (wire
+    (pts
+      (xy 279.4 106.68)
+      (xy 264.16 106.68))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "540998f0-c021-5fb4-9f88-cabf9395c381"))
+  (global_label "-BATT"
+    (shape bidirectional)
+    (at 264.16 106.68 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "2f3f2df6-c60a-5a84-a3fb-5d257eae252c"))
+  (wire
+    (pts
+      (xy 304.8 60.96)
+      (xy 320.04 60.96))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "ab942ee6-df45-51b8-9e30-4c25cd94abfc"))
+  (global_label "-BATT"
+    (shape bidirectional)
+    (at 320.04 60.96 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "9769edbd-abf5-5852-89eb-5857336d1485"))
+  (wire
+    (pts
+      (xy 304.8 66.04)
+      (xy 320.04 66.04))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e6bceac9-e2cc-502e-92b8-889b9a754308"))
+  (global_label "-BATT"
+    (shape bidirectional)
+    (at 320.04 66.04 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "469e25cd-4dff-5ae0-852f-e8c413d3a730"))
+  (wire
+    (pts
+      (xy 304.8 71.12)
+      (xy 320.04 71.12))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "10d3fa68-ef79-5ef9-bcd6-aa74f360e451"))
+  (global_label "+5V_FIELD"
+    (shape bidirectional)
+    (at 320.04 71.12 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "1cdf2618-4251-52f8-a7c6-53de8a577392"))
+  (wire
+    (pts
+      (xy 304.8 76.2)
+      (xy 320.04 76.2))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "b154ab81-7763-5932-b418-163adafd6e97"))
+  (global_label "-BATT"
+    (shape bidirectional)
+    (at 320.04 76.2 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "d5a44918-1208-5c26-8b21-60b2385e5006"))
+  (wire
+    (pts
+      (xy 304.8 81.28)
+      (xy 320.04 81.28))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "d1c06c64-6341-57f4-949c-0d3173111e72"))
+  (global_label "+6.5V_ENC_PORT"
+    (shape bidirectional)
+    (at 320.04 81.28 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "707de4b7-1ad1-56a7-83d6-8a497dfa5d4d"))
+  (wire
+    (pts
+      (xy 304.8 86.36)
+      (xy 320.04 86.36))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "04736044-dbc3-5606-9d1c-7c53f4dc6839"))
+  (global_label "+5V_ENC_PORT"
+    (shape bidirectional)
+    (at 320.04 86.36 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "192bfa88-1cd2-5cd1-8ad0-a7bdd3ea52da"))
+  (wire
+    (pts
+      (xy 304.8 91.44)
+      (xy 320.04 91.44))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "b41f2b12-0bb7-58d9-8e9f-1f2a1f27d8ad"))
+  (global_label "-BATT"
+    (shape bidirectional)
+    (at 320.04 91.44 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "490368f8-5068-5e0f-8647-457f4e65db82"))
+  (wire
+    (pts
+      (xy 304.8 96.52)
+      (xy 320.04 96.52))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "29872bb4-6838-5028-9f2e-fed8ab774d1f"))
+  (global_label "+6.5V_ENC_STAR"
+    (shape bidirectional)
+    (at 320.04 96.52 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "02881c59-1fb1-56d1-80eb-c9bd3d3ac47e"))
+  (wire
+    (pts
+      (xy 304.8 101.6)
+      (xy 320.04 101.6))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "5c5a95d1-3f4a-5293-8f49-99262b435585"))
+  (global_label "+5V_ENC_STAR"
+    (shape bidirectional)
+    (at 320.04 101.6 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "4cc65d61-2af5-5c7d-80d4-9d0b975c5fe7"))
+  (wire
+    (pts
+      (xy 304.8 106.68)
+      (xy 320.04 106.68))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "07edad9b-1357-5677-b4b2-87e685c44075"))
+  (global_label "-BATT"
+    (shape bidirectional)
+    (at 320.04 106.68 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "88d3632a-cc4e-5833-9255-1290a374a61f"))
   (symbol
     (lib_id "Mechanical:MountingHole")
-    (at 248.92 248.92 0)
+    (at 135.0 220.0 0)
     (unit 1)
     (exclude_from_sim no)
     (in_bom no)
@@ -2475,181 +1664,119 @@
     (dnp no)
     (uuid "b04b03c5-5bdc-5a81-8b42-35d5d6348d7b")
     (property "Reference" "H31"
-      (at 248.92 243.84 0)
+      (at 135.0 214.92 0)
       (effects
         (font
           (size 1.27 1.27))))
     (property "Value" "M3 STACK SUPPORT"
-      (at 248.92 246.38 0)
+      (at 135.0 217.46 0)
       (effects
         (font
           (size 1.27 1.27))))
     (property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-      (at 248.92 248.92 0)
+      (at 135.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Datasheet" ""
-      (at 248.92 248.92 0)
+      (at 135.0 220.0 0)
       (effects
         (font
-          (size 1.27 1.27))))
+          (size 1.27 1.27))
+        (hide yes)))
     (property "Description" ""
-      (at 248.92 248.92 0)
+      (at 135.0 220.0 0)
       (effects
         (font
-          (size 1.27 1.27))))
+          (size 1.27 1.27))
+        (hide yes)))
     (instances
       (project "Elevation_Controller"
         (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/6fdf4713-7b80-53e0-8a3f-44ca7cb4cca8"
           (reference "H31")
           (unit 1))))
-  (property "BOM Review" "Hole only. Four shared 12 mm supports per stack; support material, screws and washers are not selected here." (at 248.92 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "N/A" (at 248.92 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PCB FEATURE" (at 248.92 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Status" "N/A" (at 248.92 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Basis" "PCB feature" (at 248.92 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Max (degC)" "N/A" (at 248.92 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Min (degC)" "N/A" (at 248.92 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "N/A" (at 248.92 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "PCB mounting hole" (at 248.92 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Assembly" "PCB feature - no purchased component" (at 248.92 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "N/A" (at 248.92 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Manufacturer" "N/A" (at 248.92 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "MPN" "N/A" (at 248.92 248.92 0) (effects (font (size 1.27 1.27)) (hide yes))))
-  (symbol
-    (lib_id "Controller_Power:3V3_DIG")
-    (at 66.04 124.46 0)
-    (unit 1)
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "b99effc1-7a05-5fa2-bf95-7a8962c1abae")
-    (property "Reference" "#PWRP40182"
-      (at 66.04 124.46 90)
+    (property "BOM Review" "Hole only. Four shared 12 mm supports per stack; support material, screws and washers are not selected here."
+      (at 135.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Value" "3V3_DIG"
-      (at 63.5 122.555 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right)))
-    (property "Footprint" ""
-      (at 66.04 124.46 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Datasheet" ""
-      (at 66.04 124.46 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Description" ""
-      (at 66.04 124.46 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (pin "1"
-      (uuid "22b7d6b9-3f17-5888-88ef-7bfe98a02452"))
-    (instances
-      (project "Elevation_Controller"
-        (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/6fdf4713-7b80-53e0-8a3f-44ca7cb4cca8"
-          (reference "#PWRP40182")
-          (unit 1)))))
-  (symbol
-    (lib_id "Controller_Power:GND")
-    (at 109.22 78.74 0)
-    (unit 1)
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "bcb3cd32-a626-5601-8bc9-f5c3e3bf20da")
-    (property "Reference" "#PWRP40175"
-      (at 109.22 78.74 90)
+    (property "JLCPCB Status" "N/A"
+      (at 135.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Value" "GND"
-      (at 111.76 80.645 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left)))
-    (property "Footprint" ""
-      (at 109.22 78.74 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Datasheet" ""
-      (at 109.22 78.74 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Description" ""
-      (at 109.22 78.74 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (pin "1"
-      (uuid "42684d1b-d728-556b-81ea-b142072c47b4"))
-    (instances
-      (project "Elevation_Controller"
-        (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/6fdf4713-7b80-53e0-8a3f-44ca7cb4cca8"
-          (reference "#PWRP40175")
-          (unit 1)))))
-  (symbol
-    (lib_id "Controller_Power:GND")
-    (at 312.42 99.06 0)
-    (unit 1)
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "c56ce250-44fd-5a48-bbce-8bae6a82aa3f")
-    (property "Reference" "#PWRP40191"
-      (at 312.42 99.06 90)
+    (property "BOM Status" "PCB FEATURE"
+      (at 135.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Value" "GND"
-      (at 314.96 100.965 0)
+    (property "Temp Status" "N/A"
+      (at 135.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
-        (justify left)))
-    (property "Footprint" ""
-      (at 312.42 99.06 0)
+        (hide yes)))
+    (property "Temp Basis" "PCB feature"
+      (at 135.0 220.0 0)
       (effects
         (font
-          (size 1.27 1.27))))
-    (property "Datasheet" ""
-      (at 312.42 99.06 0)
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "N/A"
+      (at 135.0 220.0 0)
       (effects
         (font
-          (size 1.27 1.27))))
-    (property "Description" ""
-      (at 312.42 99.06 0)
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "N/A"
+      (at 135.0 220.0 0)
       (effects
         (font
-          (size 1.27 1.27))))
-    (pin "1"
-      (uuid "0e4d0610-52a8-5e93-9882-6a05c2a53530"))
-    (instances
-      (project "Elevation_Controller"
-        (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/6fdf4713-7b80-53e0-8a3f-44ca7cb4cca8"
-          (reference "#PWRP40191")
-          (unit 1)))))
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "N/A"
+      (at 135.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "PCB mounting hole"
+      (at 135.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Assembly" "PCB feature - no purchased component"
+      (at 135.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "N/A"
+      (at 135.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "N/A"
+      (at 135.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "N/A"
+      (at 135.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Stack:Stack_2x15")
-    (at 91.44 53.34 0)
+    (at 95.25 60.96 0)
     (unit 1)
     (exclude_from_sim no)
     (in_bom yes)
@@ -2657,31 +1784,33 @@
     (dnp no)
     (uuid "ca0de219-d6b2-5e76-aae9-072e44b77b4a")
     (property "Reference" "J30"
-      (at 91.44 43.18 0)
+      (at 95.25 50.8 0)
       (effects
         (font
           (size 1.27 1.27))))
     (property "Value" "TSW-115-07-S-D"
-      (at 91.44 46.99 0)
+      (at 95.25 54.61 0)
       (effects
         (font
           (size 1.27 1.27))))
     (property "Footprint" "Stack:Samtec_TSW-115-07-S-D"
-      (at 91.44 53.34 0)
+      (at 95.25 60.96 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Datasheet" "https://suddendocs.samtec.com/productspecs/tsw-ssw.pdf"
-      (at 91.44 53.34 0)
+      (at 95.25 60.96 0)
       (effects
         (font
-          (size 1.27 1.27))))
+          (size 1.27 1.27))
+        (hide yes)))
     (property "Description" ""
-      (at 91.44 53.34 0)
+      (at 95.25 60.96 0)
       (effects
         (font
-          (size 1.27 1.27))))
+          (size 1.27 1.27))
+        (hide yes)))
     (pin "1"
       (uuid "86101909-5667-5422-9c79-6eff60449d3a"))
     (pin "2"
@@ -2747,156 +1876,597 @@
         (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/6fdf4713-7b80-53e0-8a3f-44ca7cb4cca8"
           (reference "J30")
           (unit 1))))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 91.44 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Assembly" "FIT" (at 91.44 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +125 C" (at 91.44 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 91.44 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Data Checked" "UNDATED legacy record" (at 91.44 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "No verified JLCPCB ID; source or consign" (at 91.44 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Review" "Verify 12 mm stack engagement and soldering process. TSW is not specified for lead-free wave soldering; review hand-solder process or HTSW equivalent before assembly." (at 91.44 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Footprint Status" "Paired geometry checked; physical mating approval pending" (at 91.44 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Resistor" (at 91.44 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Status" "Manufacturer rating recorded; system requirement pending" (at 91.44 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Checked" "2026-10-03" (at 91.44 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Source" "https://suddendocs.samtec.com/productspecs/tsw-ssw.pdf" (at 91.44 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Basis" "Operating with gold contacts" (at 91.44 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Max (degC)" "125" (at 91.44 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Min (degC)" "-55" (at 91.44 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "UNVERIFIED" (at 91.44 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Manufacturer" "Samtec" (at 91.44 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "MPN" "TSW-115-07-S-D" (at 91.44 53.34 0) (effects (font (size 1.27 1.27)) (hide yes))))
-  (symbol
-    (lib_id "Controller_Power:3V3_DIG")
-    (at 116.84 124.46 0)
-    (unit 1)
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "d1f5bec6-d06c-5691-9f23-0ace7639c225")
-    (property "Reference" "#PWRP40183"
-      (at 116.84 124.46 270)
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 95.25 60.96 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Value" "3V3_DIG"
-      (at 119.38 122.555 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left)))
-    (property "Footprint" ""
-      (at 116.84 124.46 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Datasheet" ""
-      (at 116.84 124.46 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Description" ""
-      (at 116.84 124.46 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (pin "1"
-      (uuid "38fd635f-6786-566c-bd94-98fdf651846f"))
-    (instances
-      (project "Elevation_Controller"
-        (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/6fdf4713-7b80-53e0-8a3f-44ca7cb4cca8"
-          (reference "#PWRP40183")
-          (unit 1)))))
-  (symbol
-    (lib_id "Controller_Power:GND")
-    (at 109.22 104.14 0)
-    (unit 1)
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "e5329b36-8cdd-5c23-8e98-ef87054c2920")
-    (property "Reference" "#PWRP40177"
-      (at 109.22 104.14 90)
+    (property "Assembly" "FIT"
+      (at 95.25 60.96 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Value" "GND"
-      (at 111.76 106.045 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left)))
-    (property "Footprint" ""
-      (at 109.22 104.14 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Datasheet" ""
-      (at 109.22 104.14 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Description" ""
-      (at 109.22 104.14 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (pin "1"
-      (uuid "a2458fcc-8bc2-5d4c-a1a0-fc16595b4fd3"))
-    (instances
-      (project "Elevation_Controller"
-        (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/6fdf4713-7b80-53e0-8a3f-44ca7cb4cca8"
-          (reference "#PWRP40177")
-          (unit 1)))))
-  (symbol
-    (lib_id "Controller_Power:B2B_5V_IN")
-    (at 109.22 114.3 0)
-    (unit 1)
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "ecc1d6d1-7845-53df-83a7-e559741efb49")
-    (property "Reference" "#PWRP40179"
-      (at 109.22 114.3 270)
+    (property "Operating Temperature" "-55 to +125 C"
+      (at 95.25 60.96 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Value" "B2B_5V_IN"
-      (at 111.76 112.395 0)
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 95.25 60.96 0)
       (effects
         (font
           (size 1.27 1.27))
-        (justify left)))
-    (property "Footprint" ""
-      (at 109.22 114.3 0)
+        (hide yes)))
+    (property "Supplier Data Checked" "UNDATED legacy record"
+      (at 95.25 60.96 0)
       (effects
         (font
-          (size 1.27 1.27))))
-    (property "Datasheet" ""
-      (at 109.22 114.3 0)
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "No verified JLCPCB ID; source or consign"
+      (at 95.25 60.96 0)
       (effects
         (font
-          (size 1.27 1.27))))
-    (property "Description" ""
-      (at 109.22 114.3 0)
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Review" "Verify 12 mm stack engagement and soldering process. TSW is not specified for lead-free wave soldering; review hand-solder process or HTSW equivalent before assembly."
+      (at 95.25 60.96 0)
       (effects
         (font
-          (size 1.27 1.27))))
-    (pin "1"
-      (uuid "83bccf7d-ea77-5133-8f32-aef7388eb1c7"))
-    (instances
-      (project "Elevation_Controller"
-        (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/6fdf4713-7b80-53e0-8a3f-44ca7cb4cca8"
-          (reference "#PWRP40179")
-          (unit 1)))))
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Footprint Status" "Paired geometry checked; physical mating approval pending"
+      (at 95.25 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Resistor"
+      (at 95.25 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "Manufacturer rating recorded; system requirement pending"
+      (at 95.25 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Checked" "2026-10-03"
+      (at 95.25 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Source" "https://suddendocs.samtec.com/productspecs/tsw-ssw.pdf"
+      (at 95.25 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "Operating with gold contacts"
+      (at 95.25 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "125"
+      (at 95.25 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "-55"
+      (at 95.25 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "UNVERIFIED"
+      (at 95.25 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "Samtec"
+      (at 95.25 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "TSW-115-07-S-D"
+      (at 95.25 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
+  (wire
+    (pts
+      (xy 82.55 60.96)
+      (xy 67.31 60.96))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "1c7e09dd-630b-5700-abc7-063bc21383d5"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 67.31 60.96 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "43277036-0a86-5f77-9452-b0f3d4fa75f3"))
+  (wire
+    (pts
+      (xy 82.55 66.04)
+      (xy 67.31 66.04))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "7ff663e7-a25e-5ba6-b7af-2535ddcff59c"))
+  (global_label "PORT_BRAKE_RELEASE_CMD"
+    (shape bidirectional)
+    (at 67.31 66.04 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "65c48ebb-8515-54ed-84ad-5c60505bfdcf"))
+  (wire
+    (pts
+      (xy 82.55 71.12)
+      (xy 67.31 71.12))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "c2f18b36-f5a5-561e-99bd-21488fe90aa5"))
+  (global_label "HOME_POS"
+    (shape bidirectional)
+    (at 67.31 71.12 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "2e3dfed6-9e23-5fb9-95a5-a1edbfb5d5b1"))
+  (wire
+    (pts
+      (xy 82.55 76.2)
+      (xy 67.31 76.2))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "bd85f30e-32af-5afc-9e4f-e65ddfeeedb9"))
+  (global_label "PORT_ENC_A"
+    (shape bidirectional)
+    (at 67.31 76.2 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "9718c84b-d148-5d7d-aba4-e078532cebe8"))
+  (wire
+    (pts
+      (xy 82.55 81.28)
+      (xy 67.31 81.28))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "a3745dd2-3ba6-5411-a309-00cc8aa17b5e"))
+  (global_label "PORT_ENC_Z"
+    (shape bidirectional)
+    (at 67.31 81.28 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "3a0c6842-fd1e-5621-b9c7-a69cfc0dfb16"))
+  (wire
+    (pts
+      (xy 82.55 86.36)
+      (xy 67.31 86.36))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "c9b63e0c-a47c-560e-bca0-0036ce04715e"))
+  (global_label "STAR_ENC_B"
+    (shape bidirectional)
+    (at 67.31 86.36 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "d3e9be43-90fd-57de-a955-d3cf75c6fa5a"))
+  (wire
+    (pts
+      (xy 82.55 91.44)
+      (xy 67.31 91.44))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "23cc8b8c-4186-580f-ac5d-287981f1c61c"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 67.31 91.44 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "590e9fb7-5f37-548e-be67-a2c2cab42847"))
+  (wire
+    (pts
+      (xy 82.55 96.52)
+      (xy 67.31 96.52))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "b7797c1c-174b-551b-88bd-6769d386acd7"))
+  (global_label "STM32_SCL"
+    (shape bidirectional)
+    (at 67.31 96.52 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "2ebd772c-d575-5769-9731-8250712a6a93"))
+  (wire
+    (pts
+      (xy 82.55 101.6)
+      (xy 67.31 101.6))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "7087a584-7823-520d-bdaf-b461bbc186ba"))
+  (global_label "TX_CAN"
+    (shape bidirectional)
+    (at 67.31 101.6 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "c63c57a5-c07c-5606-9126-3b7728256ac0"))
+  (wire
+    (pts
+      (xy 82.55 106.68)
+      (xy 67.31 106.68))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "a2326a17-d6e8-54b1-98e2-1dc71579c142"))
+  (global_label "Silent_Mode"
+    (shape bidirectional)
+    (at 67.31 106.68 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "e9d61c3b-460f-5b1e-8f0f-a07466bc7398"))
+  (wire
+    (pts
+      (xy 82.55 111.76)
+      (xy 67.31 111.76))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "5c2b5805-5704-5da9-969c-688e123095f3"))
+  (global_label "PIVOT_MODBUS_RX"
+    (shape bidirectional)
+    (at 67.31 111.76 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "3b612fe4-dd6b-52dc-ac14-f5c88fda3981"))
+  (wire
+    (pts
+      (xy 82.55 116.84)
+      (xy 67.31 116.84))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "ce2590c5-2acc-5060-a311-c4893ed19b79"))
+  (global_label "NRST"
+    (shape bidirectional)
+    (at 67.31 116.84 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "a02879f4-059f-5aea-a1c7-ff2b0f441ca1"))
+  (wire
+    (pts
+      (xy 82.55 121.92)
+      (xy 67.31 121.92))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "01ac7034-8b29-5323-8536-fffe3059e031"))
+  (global_label "B2B_5V_IN"
+    (shape bidirectional)
+    (at 67.31 121.92 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "b1a19367-af85-55d2-9503-3fe8aea10a02"))
+  (wire
+    (pts
+      (xy 82.55 127.0)
+      (xy 67.31 127.0))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "31b55b16-b20a-53be-aae1-f486d96cbc7a"))
+  (global_label "3V3_DIG"
+    (shape bidirectional)
+    (at 67.31 127.0 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "5a12db08-821a-5611-8c3a-c48a41a29848"))
+  (wire
+    (pts
+      (xy 82.55 132.08)
+      (xy 67.31 132.08))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "9e95e0e5-ab65-5d0b-ad18-a5d07c9dc36b"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 67.31 132.08 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "3af17b5a-97bc-5cfd-99d1-13f4500c516c"))
+  (wire
+    (pts
+      (xy 107.95 60.96)
+      (xy 123.19 60.96))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "c010e2e8-eeab-5245-bad5-ef96c66008b5"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 123.19 60.96 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "4d604ac8-c89a-59d5-9508-94a345faed06"))
+  (wire
+    (pts
+      (xy 107.95 66.04)
+      (xy 123.19 66.04))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "86208384-4e4c-5637-aab9-8456cea81ba4"))
+  (global_label "STAR_BRAKE_RELEASE_CMD"
+    (shape bidirectional)
+    (at 123.19 66.04 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "ce6e9c80-4703-5db2-b201-7dc1081f921b"))
+  (wire
+    (pts
+      (xy 107.95 71.12)
+      (xy 123.19 71.12))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "9a7aaf60-1998-52ab-a270-4ae252557dcf"))
+  (global_label "E_STOP_OK"
+    (shape bidirectional)
+    (at 123.19 71.12 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "58d9ee2b-918f-570e-95ec-304160b16e31"))
+  (wire
+    (pts
+      (xy 107.95 76.2)
+      (xy 123.19 76.2))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "9341d57c-756d-5d75-ae1e-3bfbd0f6bce6"))
+  (global_label "PORT_ENC_B"
+    (shape bidirectional)
+    (at 123.19 76.2 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "b872005d-36f1-5545-b767-add7543e35bf"))
+  (wire
+    (pts
+      (xy 107.95 81.28)
+      (xy 123.19 81.28))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "4eeea282-eb46-58af-b8af-7c2d1c202ffc"))
+  (global_label "STAR_ENC_A"
+    (shape bidirectional)
+    (at 123.19 81.28 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "c47efbb9-d41f-59e2-925b-a27cce255f64"))
+  (wire
+    (pts
+      (xy 107.95 86.36)
+      (xy 123.19 86.36))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "9eb94e52-8272-5c21-92ac-1efe3a3b969a"))
+  (global_label "STAR_ENC_Z"
+    (shape bidirectional)
+    (at 123.19 86.36 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "29acf25b-cec2-5dfa-bc8f-b411700f78f6"))
+  (wire
+    (pts
+      (xy 107.95 91.44)
+      (xy 123.19 91.44))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "a71ea2f5-e5f6-5521-97ad-0093fc4259d1"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 123.19 91.44 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "01460891-1911-5c8f-9cc4-9156c42948cd"))
+  (wire
+    (pts
+      (xy 107.95 96.52)
+      (xy 123.19 96.52))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "f5b021a3-4107-5b59-a314-704638967130"))
+  (global_label "STM32_SDA"
+    (shape bidirectional)
+    (at 123.19 96.52 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "c99b0493-e7c0-563f-87f5-6f5779c87858"))
+  (wire
+    (pts
+      (xy 107.95 101.6)
+      (xy 123.19 101.6))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e577cdd5-8a1a-5f33-b856-92b7c7e9d53a"))
+  (global_label "RX_CAN"
+    (shape bidirectional)
+    (at 123.19 101.6 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "6f855c12-05d8-5da4-b54e-c53edd10da12"))
+  (wire
+    (pts
+      (xy 107.95 106.68)
+      (xy 123.19 106.68))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "0674adc5-fe8a-56f6-ae51-009dd61530f4"))
+  (global_label "PIVOT_MODBUS_TX"
+    (shape bidirectional)
+    (at 123.19 106.68 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "6f8ea592-702d-5f15-a451-140b51ee0363"))
+  (wire
+    (pts
+      (xy 107.95 111.76)
+      (xy 123.19 111.76))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "9c34ef33-365d-5c3c-984c-35ddcef4604f"))
+  (global_label "PIVOT_MODBUS_DE"
+    (shape bidirectional)
+    (at 123.19 111.76 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "63d2c530-d4ef-5886-8c1c-8c6c2b53a808"))
+  (wire
+    (pts
+      (xy 107.95 116.84)
+      (xy 123.19 116.84))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "9f20ac80-f2ff-5f0c-9299-c053621aa9c5"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 123.19 116.84 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "4594393b-e859-5c97-9628-d3e26566c4ff"))
+  (wire
+    (pts
+      (xy 107.95 121.92)
+      (xy 123.19 121.92))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "66be0c4b-acfa-5964-a951-f827134ec8b5"))
+  (global_label "B2B_5V_IN"
+    (shape bidirectional)
+    (at 123.19 121.92 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "734d3dd3-9ef4-5c47-88ec-6af86892f4e3"))
+  (wire
+    (pts
+      (xy 107.95 127.0)
+      (xy 123.19 127.0))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "fd84c485-9288-5b80-9d12-74699fec27c6"))
+  (global_label "3V3_DIG"
+    (shape bidirectional)
+    (at 123.19 127.0 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "e1475acc-2361-54dc-8224-76060caaf38c"))
+  (wire
+    (pts
+      (xy 107.95 132.08)
+      (xy 123.19 132.08))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "66b188af-389b-51cc-b094-c6d89121ee77"))
+  (global_label "GND"
+    (shape bidirectional)
+    (at 123.19 132.08 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "1d96dfc2-347e-5271-b23b-29bc7eadf708"))
   (symbol
     (lib_id "Mechanical:MountingHole")
-    (at 340.36 248.92 0)
+    (at 225.0 220.0 0)
     (unit 1)
     (exclude_from_sim no)
     (in_bom no)
@@ -2904,52 +2474,119 @@
     (dnp no)
     (uuid "ef9a0e1f-ce44-5401-89f1-2123d2982523")
     (property "Reference" "H33"
-      (at 340.36 243.84 0)
+      (at 225.0 214.92 0)
       (effects
         (font
           (size 1.27 1.27))))
     (property "Value" "M3 STACK SUPPORT"
-      (at 340.36 246.38 0)
+      (at 225.0 217.46 0)
       (effects
         (font
           (size 1.27 1.27))))
     (property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-      (at 340.36 248.92 0)
+      (at 225.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Datasheet" ""
-      (at 340.36 248.92 0)
+      (at 225.0 220.0 0)
       (effects
         (font
-          (size 1.27 1.27))))
+          (size 1.27 1.27))
+        (hide yes)))
     (property "Description" ""
-      (at 340.36 248.92 0)
+      (at 225.0 220.0 0)
       (effects
         (font
-          (size 1.27 1.27))))
+          (size 1.27 1.27))
+        (hide yes)))
     (instances
       (project "Elevation_Controller"
         (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/6fdf4713-7b80-53e0-8a3f-44ca7cb4cca8"
           (reference "H33")
           (unit 1))))
-  (property "BOM Review" "Hole only. Four shared 12 mm supports per stack; support material, screws and washers are not selected here." (at 340.36 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "N/A" (at 340.36 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PCB FEATURE" (at 340.36 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Status" "N/A" (at 340.36 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Basis" "PCB feature" (at 340.36 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Max (degC)" "N/A" (at 340.36 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Min (degC)" "N/A" (at 340.36 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "N/A" (at 340.36 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "PCB mounting hole" (at 340.36 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Assembly" "PCB feature - no purchased component" (at 340.36 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "N/A" (at 340.36 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Manufacturer" "N/A" (at 340.36 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "MPN" "N/A" (at 340.36 248.92 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "BOM Review" "Hole only. Four shared 12 mm supports per stack; support material, screws and washers are not selected here."
+      (at 225.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "N/A"
+      (at 225.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PCB FEATURE"
+      (at 225.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "N/A"
+      (at 225.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "PCB feature"
+      (at 225.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "N/A"
+      (at 225.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "N/A"
+      (at 225.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "N/A"
+      (at 225.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "PCB mounting hole"
+      (at 225.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Assembly" "PCB feature - no purchased component"
+      (at 225.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "N/A"
+      (at 225.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "N/A"
+      (at 225.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "N/A"
+      (at 225.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Mechanical:MountingHole")
-    (at 294.64 248.92 0)
+    (at 180.0 220.0 0)
     (unit 1)
     (exclude_from_sim no)
     (in_bom no)
@@ -2957,120 +2594,933 @@
     (dnp no)
     (uuid "f9a9e7f6-6ee6-5bad-9242-d704121d8ef5")
     (property "Reference" "H32"
-      (at 294.64 243.84 0)
+      (at 180.0 214.92 0)
       (effects
         (font
           (size 1.27 1.27))))
     (property "Value" "M3 STACK SUPPORT"
-      (at 294.64 246.38 0)
+      (at 180.0 217.46 0)
       (effects
         (font
           (size 1.27 1.27))))
     (property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-      (at 294.64 248.92 0)
+      (at 180.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Datasheet" ""
-      (at 294.64 248.92 0)
+      (at 180.0 220.0 0)
       (effects
         (font
-          (size 1.27 1.27))))
+          (size 1.27 1.27))
+        (hide yes)))
     (property "Description" ""
-      (at 294.64 248.92 0)
+      (at 180.0 220.0 0)
       (effects
         (font
-          (size 1.27 1.27))))
+          (size 1.27 1.27))
+        (hide yes)))
     (instances
       (project "Elevation_Controller"
         (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/6fdf4713-7b80-53e0-8a3f-44ca7cb4cca8"
           (reference "H32")
           (unit 1))))
-  (property "BOM Review" "Hole only. Four shared 12 mm supports per stack; support material, screws and washers are not selected here." (at 294.64 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "N/A" (at 294.64 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PCB FEATURE" (at 294.64 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Status" "N/A" (at 294.64 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Basis" "PCB feature" (at 294.64 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Max (degC)" "N/A" (at 294.64 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Min (degC)" "N/A" (at 294.64 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "N/A" (at 294.64 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "PCB mounting hole" (at 294.64 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Assembly" "PCB feature - no purchased component" (at 294.64 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "N/A" (at 294.64 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Manufacturer" "N/A" (at 294.64 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "MPN" "N/A" (at 294.64 248.92 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "BOM Review" "Hole only. Four shared 12 mm supports per stack; support material, screws and washers are not selected here."
+      (at 180.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "N/A"
+      (at 180.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PCB FEATURE"
+      (at 180.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "N/A"
+      (at 180.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "PCB feature"
+      (at 180.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "N/A"
+      (at 180.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "N/A"
+      (at 180.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "N/A"
+      (at 180.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "PCB mounting hole"
+      (at 180.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Assembly" "PCB feature - no purchased component"
+      (at 180.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "N/A"
+      (at 180.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "N/A"
+      (at 180.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "N/A"
+      (at 180.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
+  (text "P6 STACK INTERFACE - incompatible with P4/P5 pinout"
+    (at 25.4 20.32 0)
+    (effects
+      (font
+        (size 2.54 2.54))
+      (justify left top))
+    (uuid "bd46c514-cee3-5f80-b924-0d5fd28cc3f3"))
+  (text "J30 CLEAN LOGIC / STM32 GROUND"
+    (at 35.56 35.56 0)
+    (effects
+      (font
+        (size 1.524 1.524))
+      (justify left top))
+    (uuid "304d2822-fa16-5760-acae-1c366bcce260"))
+  (text "J31 FIELD SUPPLIES / -BATT RETURN\nSSI local 5 V and preregulator connections retained"
+    (at 233.68 35.56 0)
+    (effects
+      (font
+        (size 1.524 1.524))
+      (justify left top))
+    (uuid "b5186989-37f9-58b6-a2be-615fc54f8166"))
+  (text "Keep J30 clean copper separate from J31 field copper. No field current on STM32 grounds.\nParallel supply contacts retained; confirm actual loads and derating before release."
+    (at 25.4 175.26 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left top))
+    (uuid "febc411c-bbc6-5e93-bc72-8a90ad352567"))
   (symbol
-    (lib_id "Controller_Power:GND")
-    (at 73.66 119.38 0)
+    (lib_id "power:PWR_FLAG")
+    (at 40.64 152.4 0)
     (unit 1)
     (exclude_from_sim no)
     (in_bom yes)
     (on_board yes)
     (dnp no)
-    (uuid "fccad653-96e0-5c1a-9543-bb8bbac18a51")
-    (property "Reference" "#PWRP40180"
-      (at 73.66 119.38 270)
+    (uuid "9e4ba407-f4b2-58b5-b9c2-70795088c3fc")
+    (property "Reference" "#FLGP61"
+      (at 40.64 154.305 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)
+        (hide yes)))
+    (property "Value" "PWR_FLAG"
+      (at 40.64 147.32 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 40.64 152.4 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Value" "GND"
-      (at 71.12 121.285 0)
+    (property "Datasheet" ""
+      (at 40.64 152.4 0)
       (effects
         (font
           (size 1.27 1.27))
-        (justify right)))
-    (property "Footprint" ""
-      (at 73.66 119.38 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Datasheet" ""
-      (at 73.66 119.38 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
+        (hide yes)))
     (property "Description" ""
-      (at 73.66 119.38 0)
+      (at 40.64 152.4 0)
       (effects
         (font
-          (size 1.27 1.27))))
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "hierarchy_path" "/74ecd43a-6c87-54e8-8e8e-353108e4b3d7/b1622f31-e380-5224-aac0-e9fc7fd1696e"
+      (at 43.18 157.4799 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Assembly" "FIT"
+      (at -281.94 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "N/A"
+      (at -281.94 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "N/A"
+      (at -281.94 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "PCB feature"
+      (at -281.94 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "N/A"
+      (at -281.94 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Source" "N/A"
+      (at -281.94 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC Part #" "N/A"
+      (at -281.94 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Library" "N/A"
+      (at -281.94 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Stock Snapshot" "N/A"
+      (at -281.94 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "DigiKey Part #" "N/A"
+      (at -281.94 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "DigiKey Status" "N/A"
+      (at -281.94 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Data Checked" "2026-09-18"
+      (at -281.94 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
     (pin "1"
-      (uuid "be0eef8f-0176-5bb4-aa08-baac387230aa"))
+      (uuid "bbd52c33-689d-59fa-9f57-f0ab10a80a46"))
     (instances
       (project "Elevation_Controller"
         (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/6fdf4713-7b80-53e0-8a3f-44ca7cb4cca8"
-          (reference "#PWRP40180")
+          (reference "#FLGP61")
           (unit 1)))))
-  (global_label "PIVOT_MODBUS_TX"
-    (shape output)
-    (at 276.86 83.82 180)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify right))
-    (uuid "9c08891f-afad-5a38-834e-ae587c0ee9bb"))
-  (global_label "PIVOT_MODBUS_RX"
-    (shape input)
-    (at 312.42 83.82 0)
+  (global_label "-BATT"
+    (shape bidirectional)
+    (at 40.64 152.4 0)
     (effects
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "7d6b3050-5a34-5544-b1e0-d8dfbe2a6344"))
-  (global_label "PIVOT_MODBUS_DE"
-    (shape output)
-    (at 312.42 93.98 0)
+    (uuid "765d32fc-e2ce-5c5c-b091-1635e1adbfa0"))
+  (symbol
+    (lib_id "power:PWR_FLAG")
+    (at 91.44 152.4 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "8f0852bd-62c3-5465-b5d5-ee3270c9db7a")
+    (property "Reference" "#FLGP62"
+      (at 91.44 154.305 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)
+        (hide yes)))
+    (property "Value" "PWR_FLAG"
+      (at 91.44 147.32 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 91.44 152.4 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 91.44 152.4 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Description" ""
+      (at 91.44 152.4 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "hierarchy_path" "/74ecd43a-6c87-54e8-8e8e-353108e4b3d7/b1622f31-e380-5224-aac0-e9fc7fd1696e"
+      (at 93.98 157.4799 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Assembly" "FIT"
+      (at -231.14 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "N/A"
+      (at -231.14 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "N/A"
+      (at -231.14 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "PCB feature"
+      (at -231.14 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "N/A"
+      (at -231.14 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Source" "N/A"
+      (at -231.14 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC Part #" "N/A"
+      (at -231.14 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Library" "N/A"
+      (at -231.14 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Stock Snapshot" "N/A"
+      (at -231.14 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "DigiKey Part #" "N/A"
+      (at -231.14 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "DigiKey Status" "N/A"
+      (at -231.14 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Data Checked" "2026-09-18"
+      (at -231.14 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "bbd52c33-689d-59fa-9f57-f0ab10a80a46"))
+    (instances
+      (project "Elevation_Controller"
+        (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/6fdf4713-7b80-53e0-8a3f-44ca7cb4cca8"
+          (reference "#FLGP62")
+          (unit 1)))))
+  (global_label "+5V_FIELD"
+    (shape bidirectional)
+    (at 91.44 152.4 0)
     (effects
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "63a9f3d9-18e9-5b53-a026-b82ac40aa053"))
-  (text "P4.1: J31-13 TX, J31-14 RX, J31-18 DE -> isolated pivot Modbus RTU.\nThese replace three P4 ground contacts. Mate only matching P4.1 boards.\nUSART2: PD5 TX, PD6 RX, PD4 hardware DE, AF7. DE defaults low on carrier."
-    (at 20.32 137.16 0)
+    (uuid "f93f2671-cda5-57eb-b9fe-ecd2eb453bae"))
+  (symbol
+    (lib_id "power:PWR_FLAG")
+    (at 142.24 152.4 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "0bd6e5b7-d433-54d0-a8b6-7c838471350b")
+    (property "Reference" "#FLGP63"
+      (at 142.24 154.305 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)
+        (hide yes)))
+    (property "Value" "PWR_FLAG"
+      (at 142.24 147.32 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 142.24 152.4 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 142.24 152.4 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Description" ""
+      (at 142.24 152.4 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "hierarchy_path" "/74ecd43a-6c87-54e8-8e8e-353108e4b3d7/b1622f31-e380-5224-aac0-e9fc7fd1696e"
+      (at 144.78 157.4799 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Assembly" "FIT"
+      (at -180.34 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "N/A"
+      (at -180.34 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "N/A"
+      (at -180.34 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "PCB feature"
+      (at -180.34 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "N/A"
+      (at -180.34 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Source" "N/A"
+      (at -180.34 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC Part #" "N/A"
+      (at -180.34 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Library" "N/A"
+      (at -180.34 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Stock Snapshot" "N/A"
+      (at -180.34 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "DigiKey Part #" "N/A"
+      (at -180.34 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "DigiKey Status" "N/A"
+      (at -180.34 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Data Checked" "2026-09-18"
+      (at -180.34 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "bbd52c33-689d-59fa-9f57-f0ab10a80a46"))
+    (instances
+      (project "Elevation_Controller"
+        (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/6fdf4713-7b80-53e0-8a3f-44ca7cb4cca8"
+          (reference "#FLGP63")
+          (unit 1)))))
+  (global_label "+6.5V_ENC_PORT"
+    (shape bidirectional)
+    (at 142.24 152.4 0)
     (effects
       (font
         (size 1.27 1.27))
-      (justify left top))
-    (uuid "2daedbee-3181-5144-8c07-8f917a0725bc")))
+      (justify left))
+    (uuid "dfe79cfc-a2b9-53f2-85e5-3d1729b8381d"))
+  (symbol
+    (lib_id "power:PWR_FLAG")
+    (at 193.04 152.4 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "ad6ad944-0c72-552f-8dd1-d0bff0f89b01")
+    (property "Reference" "#FLGP64"
+      (at 193.04 154.305 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)
+        (hide yes)))
+    (property "Value" "PWR_FLAG"
+      (at 193.04 147.32 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 193.04 152.4 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 193.04 152.4 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Description" ""
+      (at 193.04 152.4 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "hierarchy_path" "/74ecd43a-6c87-54e8-8e8e-353108e4b3d7/b1622f31-e380-5224-aac0-e9fc7fd1696e"
+      (at 195.58 157.4799 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Assembly" "FIT"
+      (at -129.54 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "N/A"
+      (at -129.54 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "N/A"
+      (at -129.54 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "PCB feature"
+      (at -129.54 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "N/A"
+      (at -129.54 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Source" "N/A"
+      (at -129.54 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC Part #" "N/A"
+      (at -129.54 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Library" "N/A"
+      (at -129.54 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Stock Snapshot" "N/A"
+      (at -129.54 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "DigiKey Part #" "N/A"
+      (at -129.54 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "DigiKey Status" "N/A"
+      (at -129.54 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Data Checked" "2026-09-18"
+      (at -129.54 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "bbd52c33-689d-59fa-9f57-f0ab10a80a46"))
+    (instances
+      (project "Elevation_Controller"
+        (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/6fdf4713-7b80-53e0-8a3f-44ca7cb4cca8"
+          (reference "#FLGP64")
+          (unit 1)))))
+  (global_label "+5V_ENC_PORT"
+    (shape bidirectional)
+    (at 193.03999999999996 152.4 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "358967da-837c-55d9-b866-02165eccfa91"))
+  (symbol
+    (lib_id "power:PWR_FLAG")
+    (at 243.84 152.4 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "fbce2509-af86-5283-897f-476c4a147ffe")
+    (property "Reference" "#FLGP65"
+      (at 243.84 154.305 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)
+        (hide yes)))
+    (property "Value" "PWR_FLAG"
+      (at 243.84 147.32 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 243.84 152.4 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 243.84 152.4 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Description" ""
+      (at 243.84 152.4 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "hierarchy_path" "/74ecd43a-6c87-54e8-8e8e-353108e4b3d7/b1622f31-e380-5224-aac0-e9fc7fd1696e"
+      (at 246.38 157.4799 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Assembly" "FIT"
+      (at -78.74 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "N/A"
+      (at -78.74 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "N/A"
+      (at -78.74 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "PCB feature"
+      (at -78.74 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "N/A"
+      (at -78.74 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Source" "N/A"
+      (at -78.74 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC Part #" "N/A"
+      (at -78.74 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Library" "N/A"
+      (at -78.74 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Stock Snapshot" "N/A"
+      (at -78.74 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "DigiKey Part #" "N/A"
+      (at -78.74 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "DigiKey Status" "N/A"
+      (at -78.74 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Data Checked" "2026-09-18"
+      (at -78.74 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "bbd52c33-689d-59fa-9f57-f0ab10a80a46"))
+    (instances
+      (project "Elevation_Controller"
+        (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/6fdf4713-7b80-53e0-8a3f-44ca7cb4cca8"
+          (reference "#FLGP65")
+          (unit 1)))))
+  (global_label "+6.5V_ENC_STAR"
+    (shape bidirectional)
+    (at 243.83999999999997 152.4 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "1ad91694-854e-522c-8824-37997cee173e"))
+  (symbol
+    (lib_id "power:PWR_FLAG")
+    (at 294.64 152.4 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "e4cb92ed-a6c5-52e1-9a60-0729abe46b00")
+    (property "Reference" "#FLGP66"
+      (at 294.64 154.305 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)
+        (hide yes)))
+    (property "Value" "PWR_FLAG"
+      (at 294.64 147.32 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 294.64 152.4 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 294.64 152.4 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Description" ""
+      (at 294.64 152.4 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "hierarchy_path" "/74ecd43a-6c87-54e8-8e8e-353108e4b3d7/b1622f31-e380-5224-aac0-e9fc7fd1696e"
+      (at 297.18 157.4799 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Assembly" "FIT"
+      (at -27.94 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "N/A"
+      (at -27.94 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "N/A"
+      (at -27.94 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "PCB feature"
+      (at -27.94 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "N/A"
+      (at -27.94 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Source" "N/A"
+      (at -27.94 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC Part #" "N/A"
+      (at -27.94 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Library" "N/A"
+      (at -27.94 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Stock Snapshot" "N/A"
+      (at -27.94 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "DigiKey Part #" "N/A"
+      (at -27.94 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "DigiKey Status" "N/A"
+      (at -27.94 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Data Checked" "2026-09-18"
+      (at -27.94 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "bbd52c33-689d-59fa-9f57-f0ab10a80a46"))
+    (instances
+      (project "Elevation_Controller"
+        (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/6fdf4713-7b80-53e0-8a3f-44ca7cb4cca8"
+          (reference "#FLGP66")
+          (unit 1)))))
+  (global_label "+5V_ENC_STAR"
+    (shape bidirectional)
+    (at 294.64 152.4 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "62e6b990-0dcb-5b3e-91bb-06a7bdc1111b")))

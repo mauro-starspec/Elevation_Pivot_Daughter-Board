@@ -7,6 +7,8 @@ import matplotlib.pyplot as plt
 from matplotlib.patches import Rectangle, Circle
 
 ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'outputs/placement'
+if json.loads((ROOT/'assembly/stack_interface.json').read_text()).get('revision')=='P6':
+    raise SystemExit('Historical P5 plotter. Current P6 face previews are in docs/reviews/p6/.')
 data=json.loads((OUT/'inventory.json').read_text())
 colors=['#157c89','#9264af','#b6781f','#cf5c5c','#398b60','#657b9c','#aa6c95','#5f8c23','#a7734c','#547b81','#805848','#726ca9']
 for board,records in data.items():

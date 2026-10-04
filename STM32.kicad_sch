@@ -6,7 +6,7 @@
   (title_block
     (title "Elevation to custom STM32 controller")
     (date "2026-10-03")
-    (rev "P4.1 MODBUS")
+    (rev "P6 COMPACT")
     (company "Starspec"))
   (lib_symbols
     (symbol "Stack:Stack_2x15"
@@ -1054,26 +1054,29 @@
               (font
                 (size 1.27 1.27))))))
       (embedded_fonts no)))
+  (sheet_instances
+    (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/3f9c8f12-0f4f-4aa4-9cc2-9b6623511d78"
+      (page "2")))
   (symbol
     (lib_id "Stack:Stack_2x15")
-    (at 91.44 53.34 0)
+    (at 95.25 60.96 0)
     (unit 1)
     (in_bom yes)
     (on_board yes)
     (dnp no)
     (uuid "2a5fa737-cd5b-5d44-8a75-22d99c39f4fd")
     (property "Reference" "J30"
-      (at 91.44 43.18000000000001 0)
+      (at 95.25 50.8 0)
       (effects
         (font
           (size 1.27 1.27))))
     (property "Value" "SSW-115-01-S-D"
-      (at 91.44 46.99 0)
+      (at 95.25 54.61 0)
       (effects
         (font
           (size 1.27 1.27))))
     (property "Footprint" "Stack:Samtec_SSW-115-01-S-D"
-      (at 91.44 53.34 0)
+      (at 95.25 60.96 0)
       (effects
         (font
           (size 1.27 1.27))
@@ -1143,748 +1146,620 @@
         (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/3f9c8f12-0f4f-4aa4-9cc2-9b6623511d78"
           (reference "J30")
           (unit 1))))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 91.44 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Assembly" "FIT" (at 91.44 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +125 C" (at 91.44 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 91.44 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Data Checked" "UNDATED legacy record" (at 91.44 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "No verified JLCPCB ID; source or consign" (at 91.44 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Review" "Verify physical mating at the planned 12 mm stack gap." (at 91.44 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Footprint Status" "Paired geometry checked; physical mating approval pending" (at 91.44 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Resistor" (at 91.44 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Status" "Manufacturer rating recorded; system requirement pending" (at 91.44 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Checked" "2026-10-03" (at 91.44 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Source" "https://suddendocs.samtec.com/productspecs/tsw-ssw.pdf" (at 91.44 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Basis" "Operating with gold contacts" (at 91.44 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Max (degC)" "125" (at 91.44 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Min (degC)" "-55" (at 91.44 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Datasheet" "https://suddendocs.samtec.com/productspecs/tsw-ssw.pdf" (at 91.44 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "UNVERIFIED" (at 91.44 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Manufacturer" "Samtec" (at 91.44 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "MPN" "SSW-115-01-S-D" (at 91.44 53.34 0) (effects (font (size 1.27 1.27)) (hide yes))))
-  (wire
-    (pts
-      (xy 78.74 53.34)
-      (xy 73.66 53.34))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "e2e7c604-1a1f-5cd8-811d-7223e36c0500"))
-  (symbol
-    (lib_id "Power_Custom:GND_STM32")
-    (at 73.66 53.34 0)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (uuid "cace7c55-50ba-520a-a8c3-23b2bc2f61a7")
-    (property "Reference" "#PWRP4C001"
-      (at 73.66 53.34 0)
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 95.25 60.96 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Value" "GND_STM32"
-      (at 71.12 55.245 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right)))
-    (pin "1"
-      (uuid "dedc4e8e-f97c-57bf-8428-d971c3afe81c"))
-    (instances
-      (project "Elevation_Pivot_Daughter-Board"
-        (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/3f9c8f12-0f4f-4aa4-9cc2-9b6623511d78"
-          (reference "#PWRP4C001")
-          (unit 1)))))
-  (wire
-    (pts
-      (xy 104.14 53.34)
-      (xy 109.22 53.34))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "3d0daf8e-e651-5575-80ed-71e4bccd37ab"))
-  (symbol
-    (lib_id "Power_Custom:GND_STM32")
-    (at 109.22 53.34 0)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (uuid "6c303360-f2c0-57b2-9121-18ad195138ad")
-    (property "Reference" "#PWRP4C002"
-      (at 109.22 53.34 0)
+    (property "Assembly" "FIT"
+      (at 95.25 60.96 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Value" "GND_STM32"
-      (at 111.76 55.245 0)
+    (property "Operating Temperature" "-55 to +125 C"
+      (at 95.25 60.96 0)
       (effects
         (font
           (size 1.27 1.27))
-        (justify left)))
-    (pin "1"
-      (uuid "2510a9f8-a983-5002-95e7-c240c9df2427"))
-    (instances
-      (project "Elevation_Pivot_Daughter-Board"
-        (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/3f9c8f12-0f4f-4aa4-9cc2-9b6623511d78"
-          (reference "#PWRP4C002")
-          (unit 1)))))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 95.25 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Data Checked" "UNDATED legacy record"
+      (at 95.25 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "No verified JLCPCB ID; source or consign"
+      (at 95.25 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Review" "Verify physical mating at the planned 12 mm stack gap."
+      (at 95.25 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Footprint Status" "Paired geometry checked; physical mating approval pending"
+      (at 95.25 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Resistor"
+      (at 95.25 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "Manufacturer rating recorded; system requirement pending"
+      (at 95.25 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Checked" "2026-10-03"
+      (at 95.25 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Source" "https://suddendocs.samtec.com/productspecs/tsw-ssw.pdf"
+      (at 95.25 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "Operating with gold contacts"
+      (at 95.25 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "125"
+      (at 95.25 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "-55"
+      (at 95.25 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" "https://suddendocs.samtec.com/productspecs/tsw-ssw.pdf"
+      (at 95.25 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "UNVERIFIED"
+      (at 95.25 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "Samtec"
+      (at 95.25 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "SSW-115-01-S-D"
+      (at 95.25 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
-      (xy 78.74 58.42)
-      (xy 73.66 58.42))
+      (xy 82.55 60.96)
+      (xy 67.31 60.96))
     (stroke
       (width 0)
       (type default))
-    (uuid "5254a133-3f9f-599a-8738-7ba7acb8269e"))
-  (hierarchical_label "PORT_STR8_STEP_CMD"
-    (shape input)
-    (at 73.66 58.42 180)
+    (uuid "5a084ec6-73b9-50de-a41d-38130fcb9257"))
+  (global_label "GND_STM32"
+    (shape bidirectional)
+    (at 67.31 60.96 180)
     (effects
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "0e41cc40-bde5-5d58-a5d1-4ebf0aa101e7"))
+    (uuid "a2a5b9e6-c609-53e4-a348-0a6bee71ef1f"))
   (wire
     (pts
-      (xy 104.14 58.42)
-      (xy 109.22 58.42))
+      (xy 107.95 60.96)
+      (xy 123.19 60.96))
     (stroke
       (width 0)
       (type default))
-    (uuid "92264ef2-fe27-5067-ba8b-a75cb546c4a6"))
-  (hierarchical_label "STAR_STR8_STEP_CMD"
-    (shape input)
-    (at 109.22 58.42 0)
+    (uuid "9a8483d0-4e7e-55ff-8072-93d653ff4f9c"))
+  (global_label "GND_STM32"
+    (shape bidirectional)
+    (at 123.19 60.96 0)
     (effects
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "30e6dbe2-d73d-5983-83fd-8e0655f478f2"))
+    (uuid "0ee015d5-d787-506c-bf42-a04a435c3ae0"))
   (wire
     (pts
-      (xy 78.74 63.5)
-      (xy 73.66 63.5))
+      (xy 82.55 66.04)
+      (xy 67.31 66.04))
     (stroke
       (width 0)
       (type default))
-    (uuid "59d4ca2a-c125-5b04-a076-da3cd43dd9c9"))
-  (hierarchical_label "PORT_STR8_DIR_CMD"
-    (shape input)
-    (at 73.66 63.5 180)
+    (uuid "2b2640c3-f611-583a-b3c1-dcb14a96d2f2"))
+  (global_label "PORT_BRAKE_RELEASE_CMD"
+    (shape bidirectional)
+    (at 67.31 66.04 180)
     (effects
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "c01b507a-30fe-5fe3-b899-16db61b65d3e"))
+    (uuid "c8b42bc6-4ad6-58b9-b799-bd0337315863"))
   (wire
     (pts
-      (xy 104.14 63.5)
-      (xy 109.22 63.5))
+      (xy 107.95 66.04)
+      (xy 123.19 66.04))
     (stroke
       (width 0)
       (type default))
-    (uuid "a041e6cb-3d1a-59ce-b252-142d11ee087b"))
-  (hierarchical_label "STAR_STR8_DIR_CMD"
-    (shape input)
-    (at 109.22 63.5 0)
+    (uuid "3d585352-4a15-5df0-964f-603e21761161"))
+  (global_label "STAR_BRAKE_RELEASE_CMD"
+    (shape bidirectional)
+    (at 123.19 66.04 0)
     (effects
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "aa22c969-07a2-54c5-84c7-d1a8ae0e8065"))
+    (uuid "97ee2e3d-ea09-5402-8693-bd1ac3dd6bbe"))
   (wire
     (pts
-      (xy 78.74 68.58)
-      (xy 73.66 68.58))
+      (xy 82.55 71.12)
+      (xy 67.31 71.12))
     (stroke
       (width 0)
       (type default))
-    (uuid "c8e38d0d-94fe-5563-a29b-657f10afa990"))
-  (hierarchical_label "PORT_STR8_DISABLE"
-    (shape input)
-    (at 73.66 68.58 180)
+    (uuid "b2c9331e-fe81-5526-8f39-359d7d9ca785"))
+  (global_label "HOME_POS"
+    (shape bidirectional)
+    (at 67.31 71.12 180)
     (effects
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "01033fe1-b8bf-5ad5-9858-5f2589363166"))
+    (uuid "571a455d-496f-5a44-82f2-68f05449cf3f"))
   (wire
     (pts
-      (xy 104.14 68.58)
-      (xy 109.22 68.58))
+      (xy 107.95 71.12)
+      (xy 123.19 71.12))
     (stroke
       (width 0)
       (type default))
-    (uuid "e3dc1e67-d432-50d8-8391-95416c3f6cf4"))
-  (hierarchical_label "STAR_STR8_DISABLE"
-    (shape input)
-    (at 109.22 68.58 0)
+    (uuid "e602c955-491f-5446-98b2-74b3a2be0062"))
+  (global_label "E_STOP_OK"
+    (shape bidirectional)
+    (at 123.19 71.12 0)
     (effects
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "29e8c308-447a-58a1-8fad-96e06a16e272"))
+    (uuid "51577a7e-ae02-5e08-b914-fbc7ee40ea67"))
   (wire
     (pts
-      (xy 78.74 73.66)
-      (xy 73.66 73.66))
+      (xy 82.55 76.2)
+      (xy 67.31 76.2))
     (stroke
       (width 0)
       (type default))
-    (uuid "45d16e40-656b-5744-bb3d-eb4671811851"))
-  (hierarchical_label "PORT_STR8_FAULT"
-    (shape output)
-    (at 73.66 73.66 180)
+    (uuid "f9423686-3500-53da-92f3-fc0ece1b8abc"))
+  (global_label "PORT_ENC_A"
+    (shape bidirectional)
+    (at 67.31 76.2 180)
     (effects
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "74b0fa76-fe8e-5a07-8b83-75d4d73a53c3"))
+    (uuid "58039c1c-c637-5f32-a8a2-b41c0469a818"))
   (wire
     (pts
-      (xy 104.14 73.66)
-      (xy 109.22 73.66))
+      (xy 107.95 76.2)
+      (xy 123.19 76.2))
     (stroke
       (width 0)
       (type default))
-    (uuid "afb50b8a-9348-5537-bb3b-17adb00163cb"))
-  (hierarchical_label "STAR_STR8_FAULT"
-    (shape output)
-    (at 109.22 73.66 0)
+    (uuid "c09437e7-7757-5a17-95d6-9e3724ac4e26"))
+  (global_label "PORT_ENC_B"
+    (shape bidirectional)
+    (at 123.19 76.2 0)
     (effects
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "198e60c6-e8a5-5819-ba66-04bf98571800"))
+    (uuid "dc6a67da-fadf-5a52-ac56-8a35abd79a49"))
   (wire
     (pts
-      (xy 78.74 78.74)
-      (xy 73.66 78.74))
+      (xy 82.55 81.28)
+      (xy 67.31 81.28))
     (stroke
       (width 0)
       (type default))
-    (uuid "43d6c74c-e300-5620-a598-64f5a881ab9d"))
-  (symbol
-    (lib_id "Power_Custom:GND_STM32")
-    (at 73.66 78.74 0)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (uuid "372b41dc-e800-51e7-9888-cd4f439c406c")
-    (property "Reference" "#PWRP4C003"
-      (at 73.66 78.74 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "Value" "GND_STM32"
-      (at 71.12 80.645 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right)))
-    (pin "1"
-      (uuid "986497d8-8b77-527b-b97e-56d42c35d859"))
-    (instances
-      (project "Elevation_Pivot_Daughter-Board"
-        (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/3f9c8f12-0f4f-4aa4-9cc2-9b6623511d78"
-          (reference "#PWRP4C003")
-          (unit 1)))))
-  (wire
-    (pts
-      (xy 104.14 78.74)
-      (xy 109.22 78.74))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "c5083445-e89f-5b0d-9f9f-14be0ac58a7b"))
-  (symbol
-    (lib_id "Power_Custom:GND_STM32")
-    (at 109.22 78.74 0)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (uuid "141a052e-87a1-57bf-b970-63a2bf1af8e9")
-    (property "Reference" "#PWRP4C004"
-      (at 109.22 78.74 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "Value" "GND_STM32"
-      (at 111.76 80.645 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left)))
-    (pin "1"
-      (uuid "f9392adc-1d25-5fac-a01f-b4299f3e67e8"))
-    (instances
-      (project "Elevation_Pivot_Daughter-Board"
-        (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/3f9c8f12-0f4f-4aa4-9cc2-9b6623511d78"
-          (reference "#PWRP4C004")
-          (unit 1)))))
-  (wire
-    (pts
-      (xy 78.74 83.82)
-      (xy 73.66 83.82))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "2a34811d-6a0e-53d7-86cf-4731e8d5f7d2"))
-  (hierarchical_label "PORT_SSI_CLK"
-    (shape input)
-    (at 73.66 83.82 180)
+    (uuid "a87770d6-9f74-5be7-9735-6a0c19c580f5"))
+  (global_label "PORT_ENC_Z"
+    (shape bidirectional)
+    (at 67.31 81.28 180)
     (effects
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "d0e2a388-445b-576a-8022-9caae0f8dcf0"))
+    (uuid "ee70d944-5a56-5663-8352-a5f689b9d23f"))
   (wire
     (pts
-      (xy 104.14 83.82)
-      (xy 109.22 83.82))
+      (xy 107.95 81.28)
+      (xy 123.19 81.28))
     (stroke
       (width 0)
       (type default))
-    (uuid "2e0ff8ff-256c-546b-8c8f-dd018d7d52e3"))
-  (hierarchical_label "STAR_SSI_CLK"
-    (shape input)
-    (at 109.22 83.82 0)
+    (uuid "fb7695ce-128e-5283-92df-1b10fa8870bf"))
+  (global_label "STAR_ENC_A"
+    (shape bidirectional)
+    (at 123.19 81.28 0)
     (effects
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "f2d7c4ab-28fe-5be1-842b-ae0a102b987b"))
+    (uuid "77e20fec-887f-58c2-98fd-8ac998e5caee"))
   (wire
     (pts
-      (xy 78.74 88.9)
-      (xy 73.66 88.9))
+      (xy 82.55 86.36)
+      (xy 67.31 86.36))
     (stroke
       (width 0)
       (type default))
-    (uuid "957a2afd-d3bc-5288-8ca4-16e975eb686d"))
-  (hierarchical_label "PORT_SSI_DATA"
-    (shape output)
-    (at 73.66 88.9 180)
+    (uuid "27660ef9-9a0a-5641-9954-3f597e041128"))
+  (global_label "STAR_ENC_B"
+    (shape bidirectional)
+    (at 67.31 86.36 180)
     (effects
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "d868bb6e-c802-5a2a-9345-557975546a1c"))
+    (uuid "8d3dc31d-92d7-5524-83af-a549a9b15ee7"))
   (wire
     (pts
-      (xy 104.14 88.9)
-      (xy 109.22 88.9))
+      (xy 107.95 86.36)
+      (xy 123.19 86.36))
     (stroke
       (width 0)
       (type default))
-    (uuid "c2b44649-a8e4-5d15-9482-2b2d363b5a01"))
-  (hierarchical_label "STAR_SSI_DATA"
-    (shape output)
-    (at 109.22 88.9 0)
+    (uuid "a94ccf0e-16a5-55fa-9565-c2707e82ec12"))
+  (global_label "STAR_ENC_Z"
+    (shape bidirectional)
+    (at 123.19 86.36 0)
     (effects
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "589cc8d1-38e7-5c71-b43d-7ca843d8b730"))
+    (uuid "81009558-c9c7-503f-9c09-06ee5b7dca1b"))
   (wire
     (pts
-      (xy 78.74 93.98)
-      (xy 73.66 93.98))
+      (xy 82.55 91.44)
+      (xy 67.31 91.44))
     (stroke
       (width 0)
       (type default))
-    (uuid "32181358-d17c-53fa-9073-fa285e6f0b36"))
-  (hierarchical_label "PORT_ENC_PRESET_N"
-    (shape input)
-    (at 73.66 93.98 180)
+    (uuid "68f0516c-2410-5d1e-8a69-8a101a127d66"))
+  (global_label "GND_STM32"
+    (shape bidirectional)
+    (at 67.31 91.44 180)
     (effects
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "a1c84a9c-832c-5204-9c10-1c82d8e50a4d"))
+    (uuid "e0d59e70-bcad-5929-85f1-7993ac600cef"))
   (wire
     (pts
-      (xy 104.14 93.98)
-      (xy 109.22 93.98))
+      (xy 107.95 91.44)
+      (xy 123.19 91.44))
     (stroke
       (width 0)
       (type default))
-    (uuid "2cf3f439-9e4b-57ed-a29d-5e359aa8efb1"))
-  (hierarchical_label "STAR_ENC_PRESET_N"
-    (shape input)
-    (at 109.22 93.98 0)
+    (uuid "e41a39ec-5fbb-53ae-99c7-44ae3e5885ab"))
+  (global_label "GND_STM32"
+    (shape bidirectional)
+    (at 123.19 91.44 0)
     (effects
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "078750e9-be3f-5650-9188-68e5717e3006"))
+    (uuid "126e313e-34ce-5c21-8c67-c5dce3026bef"))
   (wire
     (pts
-      (xy 78.74 99.06)
-      (xy 73.66 99.06))
+      (xy 82.55 96.52)
+      (xy 67.31 96.52))
     (stroke
       (width 0)
       (type default))
-    (uuid "1a1d0387-de34-562d-bc0c-8a0e469f79db"))
-  (hierarchical_label "PORT_BRAKE_RELEASE_CMD"
-    (shape input)
-    (at 73.66 99.06 180)
+    (uuid "1c6649c0-9125-5c36-bbf7-0d4fbf1ba3d1"))
+  (global_label "STM32_SCL"
+    (shape bidirectional)
+    (at 67.31 96.52 180)
     (effects
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "5e4b5fb8-a31a-5b6c-9cc6-ee369e649ddd"))
+    (uuid "908df723-f392-508a-ace9-44c5b2dd682f"))
   (wire
     (pts
-      (xy 104.14 99.06)
-      (xy 109.22 99.06))
+      (xy 107.95 96.52)
+      (xy 123.19 96.52))
     (stroke
       (width 0)
       (type default))
-    (uuid "957720d4-a430-5374-a61c-2810427bf93a"))
-  (hierarchical_label "STAR_BRAKE_RELEASE_CMD"
-    (shape input)
-    (at 109.22 99.06 0)
+    (uuid "58d5e648-0c68-5a33-834e-222e77340225"))
+  (global_label "STM32_SDA"
+    (shape bidirectional)
+    (at 123.19 96.52 0)
     (effects
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "c594f558-b4d6-5218-97c6-fca42d28acbb"))
+    (uuid "8a3cede6-6658-5410-bc3f-541d0eebe961"))
   (wire
     (pts
-      (xy 78.74 104.14)
-      (xy 73.66 104.14))
+      (xy 82.55 101.6)
+      (xy 67.31 101.6))
     (stroke
       (width 0)
       (type default))
-    (uuid "336eb83a-0b08-5139-850c-01e378d6f316"))
-  (symbol
-    (lib_id "Power_Custom:GND_STM32")
-    (at 73.66 104.14 0)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (uuid "9b26466b-76d5-5cd3-a2ae-4575dd51842f")
-    (property "Reference" "#PWRP4C005"
-      (at 73.66 104.14 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "Value" "GND_STM32"
-      (at 71.12 106.045 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right)))
-    (pin "1"
-      (uuid "1a47efe2-11fd-541d-81b9-beae2d6e33b8"))
-    (instances
-      (project "Elevation_Pivot_Daughter-Board"
-        (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/3f9c8f12-0f4f-4aa4-9cc2-9b6623511d78"
-          (reference "#PWRP4C005")
-          (unit 1)))))
-  (wire
-    (pts
-      (xy 104.14 104.14)
-      (xy 109.22 104.14))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "febce19c-3b28-5041-9154-d2dd509dbc27"))
-  (symbol
-    (lib_id "Power_Custom:GND_STM32")
-    (at 109.22 104.14 0)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (uuid "e995e861-fff8-5606-a131-95ca5f548b9c")
-    (property "Reference" "#PWRP4C006"
-      (at 109.22 104.14 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "Value" "GND_STM32"
-      (at 111.76 106.045 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left)))
-    (pin "1"
-      (uuid "bab1fcf7-40bd-539e-b4b0-93433a5aa0b3"))
-    (instances
-      (project "Elevation_Pivot_Daughter-Board"
-        (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/3f9c8f12-0f4f-4aa4-9cc2-9b6623511d78"
-          (reference "#PWRP4C006")
-          (unit 1)))))
-  (wire
-    (pts
-      (xy 78.74 109.22)
-      (xy 73.66 109.22))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "579464e9-7308-5773-965c-03cf1a8a5af1"))
-  (hierarchical_label "HOME_POS"
-    (shape output)
-    (at 73.66 109.22 180)
+    (uuid "e8858a6e-c4fb-5843-864b-59ba8dbc65ba"))
+  (global_label "TX_CAN"
+    (shape bidirectional)
+    (at 67.31 101.6 180)
     (effects
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "dd2b9090-6a84-59c7-a5d5-d464ac6c4a96"))
+    (uuid "208cf20a-ebca-5dc0-a48d-ccc5dd3d7e39"))
   (wire
     (pts
-      (xy 104.14 109.22)
-      (xy 109.22 109.22))
+      (xy 107.95 101.6)
+      (xy 123.19 101.6))
     (stroke
       (width 0)
       (type default))
-    (uuid "47d7f822-8012-5142-bf3e-26bf6c5e203f"))
-  (hierarchical_label "E_STOP_OK"
-    (shape output)
-    (at 109.22 109.22 0)
+    (uuid "dba12429-b8f8-5ce9-b78b-8ac5895ca9b5"))
+  (global_label "RX_CAN"
+    (shape bidirectional)
+    (at 123.19 101.6 0)
     (effects
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "1e88e9df-7759-5fab-9f98-3d20af7be3ed"))
+    (uuid "efdeea60-ded5-582f-83b6-a6c8518d731c"))
   (wire
     (pts
-      (xy 78.74 114.3)
-      (xy 73.66 114.3))
+      (xy 82.55 106.68)
+      (xy 67.31 106.68))
     (stroke
       (width 0)
       (type default))
-    (uuid "47e558c4-83da-5e5a-8f19-879ff7fe2242"))
-  (symbol
-    (lib_id "Power_Custom:+5V_STM32")
-    (at 73.66 114.3 0)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (uuid "61d9f690-66e1-511f-b8c2-b95494880b56")
-    (property "Reference" "#PWRP4C007"
-      (at 73.66 114.3 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "Value" "+5V_STM32"
-      (at 71.12 112.395 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right)))
-    (pin "1"
-      (uuid "00c1cb25-c57e-55a7-b6ea-7060df56f1f6"))
-    (instances
-      (project "Elevation_Pivot_Daughter-Board"
-        (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/3f9c8f12-0f4f-4aa4-9cc2-9b6623511d78"
-          (reference "#PWRP4C007")
-          (unit 1)))))
-  (wire
-    (pts
-      (xy 104.14 114.3)
-      (xy 109.22 114.3))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "a8091943-85a7-5915-ac32-ad390eaf79f5"))
-  (symbol
-    (lib_id "Power_Custom:+5V_STM32")
-    (at 109.22 114.3 0)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (uuid "02cb98cc-c181-5d9f-89ee-cce4412e8c81")
-    (property "Reference" "#PWRP4C008"
-      (at 109.22 114.3 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "Value" "+5V_STM32"
-      (at 111.76 112.395 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left)))
-    (pin "1"
-      (uuid "0f0e13b1-ab56-5337-b5ec-17cd1e290e9d"))
-    (instances
-      (project "Elevation_Pivot_Daughter-Board"
-        (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/3f9c8f12-0f4f-4aa4-9cc2-9b6623511d78"
-          (reference "#PWRP4C008")
-          (unit 1)))))
-  (wire
-    (pts
-      (xy 78.74 119.38)
-      (xy 73.66 119.38))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "f73221dd-07d3-56ef-a893-22e8dd884e60"))
-  (symbol
-    (lib_id "Power_Custom:GND_STM32")
-    (at 73.66 119.38 0)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (uuid "5cf592da-e25e-5a50-9406-7c9290aba89c")
-    (property "Reference" "#PWRP4C009"
-      (at 73.66 119.38 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "Value" "GND_STM32"
-      (at 71.12 121.285 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right)))
-    (pin "1"
-      (uuid "9291dcb1-d96b-5de0-bab7-9e7d2443dfc5"))
-    (instances
-      (project "Elevation_Pivot_Daughter-Board"
-        (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/3f9c8f12-0f4f-4aa4-9cc2-9b6623511d78"
-          (reference "#PWRP4C009")
-          (unit 1)))))
-  (wire
-    (pts
-      (xy 104.14 119.38)
-      (xy 109.22 119.38))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "c23b2473-af6b-5f90-a0a8-3af7d1a2103b"))
-  (symbol
-    (lib_id "Power_Custom:GND_STM32")
-    (at 109.22 119.38 0)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (uuid "b4fe7ecb-d14a-513b-8067-062e1ad34e29")
-    (property "Reference" "#PWRP4C010"
-      (at 109.22 119.38 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "Value" "GND_STM32"
-      (at 111.76 121.285 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left)))
-    (pin "1"
-      (uuid "a7dfb997-9fe9-5bd0-95e6-3aac22306033"))
-    (instances
-      (project "Elevation_Pivot_Daughter-Board"
-        (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/3f9c8f12-0f4f-4aa4-9cc2-9b6623511d78"
-          (reference "#PWRP4C010")
-          (unit 1)))))
-  (wire
-    (pts
-      (xy 78.74 124.46)
-      (xy 73.66 124.46))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "28411307-f163-5776-98a2-263efa30f77a"))
-  (symbol
-    (lib_id "Power_Custom:+3V3_STM32")
-    (at 58.42 124.46 0)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (uuid "04d6d5df-0e9f-583d-88a0-bbf003ff10b6")
-    (property "Reference" "#PWRP4C011"
-      (at 58.42 124.46 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "Value" "+3V3_STM32"
-      (at 55.88 122.555 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right)))
-    (pin "1"
-      (uuid "f03dfc0f-8d78-59c0-8240-cdec6c10e4f2"))
-    (instances
-      (project "Elevation_Pivot_Daughter-Board"
-        (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/3f9c8f12-0f4f-4aa4-9cc2-9b6623511d78"
-          (reference "#PWRP4C011")
-          (unit 1)))))
-  (wire
-    (pts
-      (xy 104.14 124.46)
-      (xy 109.22 124.46))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "b9f70d7c-3b57-5acb-91f2-58f4b3eb3d13"))
-  (symbol
-    (lib_id "Power_Custom:+3V3_STM32")
-    (at 124.46 124.46 0)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (uuid "2a5b9f36-4337-51c4-8c39-e11ee0610e65")
-    (property "Reference" "#PWRP4C012"
-      (at 124.46 124.46 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "Value" "+3V3_STM32"
-      (at 127.0 122.555 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left)))
-    (pin "1"
-      (uuid "b57221e2-b882-58a2-b0d4-775469037be9"))
-    (instances
-      (project "Elevation_Pivot_Daughter-Board"
-        (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/3f9c8f12-0f4f-4aa4-9cc2-9b6623511d78"
-          (reference "#PWRP4C012")
-          (unit 1)))))
-  (text "Elevation top-side socket | 30 contacts"
-    (at 35.559999999999995 35.56 0)
+    (uuid "cff0ebd9-bc3a-5040-bb25-dae6d8fb6a8c"))
+  (global_label "Silent_Mode"
+    (shape bidirectional)
+    (at 67.31 106.68 180)
     (effects
       (font
         (size 1.27 1.27))
-      (justify left top))
-    (uuid "a8e6827f-8e3b-539b-82ee-0d281c4278f0"))
+      (justify right))
+    (uuid "28ef8c81-855c-5bf0-800e-1ef0c8a2f138"))
+  (wire
+    (pts
+      (xy 107.95 106.68)
+      (xy 123.19 106.68))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "5f458e02-8c02-5ebc-8cf7-16ba0c84d342"))
+  (global_label "PIVOT_MODBUS_TX"
+    (shape bidirectional)
+    (at 123.19 106.68 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "95be0a5b-7d56-5538-874c-8da1ddaf8e6c"))
+  (wire
+    (pts
+      (xy 82.55 111.76)
+      (xy 67.31 111.76))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "5d432edc-542d-5ed9-842b-3604ce8daf0f"))
+  (global_label "PIVOT_MODBUS_RX"
+    (shape bidirectional)
+    (at 67.31 111.76 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "36b29a07-8229-5415-834e-7358dd9e21d5"))
+  (wire
+    (pts
+      (xy 107.95 111.76)
+      (xy 123.19 111.76))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "2db17cb8-24bc-512b-8f1e-c6bcef0bea21"))
+  (global_label "PIVOT_MODBUS_DE"
+    (shape bidirectional)
+    (at 123.19 111.76 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "24111e4f-e116-5e61-a994-af9f8f5d100f"))
+  (wire
+    (pts
+      (xy 82.55 116.84)
+      (xy 67.31 116.84))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "6f8b561e-0507-50b6-a83a-cb4776521222"))
+  (global_label "CTRL_NRST"
+    (shape bidirectional)
+    (at 67.31 116.84 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "4aec5cdb-110e-5130-8fa5-3bbb0a97f51a"))
+  (wire
+    (pts
+      (xy 107.95 116.84)
+      (xy 123.19 116.84))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "25c94d01-ff74-53bc-8414-09d1270af17d"))
+  (global_label "GND_STM32"
+    (shape bidirectional)
+    (at 123.19 116.84 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "38c42aca-8f6b-568b-95a0-676bd42332df"))
+  (wire
+    (pts
+      (xy 82.55 121.92)
+      (xy 67.31 121.92))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "128f520c-f363-50c9-b80c-d68bc21f4ddf"))
+  (global_label "+5V_STM32"
+    (shape bidirectional)
+    (at 67.31 121.92 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "e9348ea7-dbe0-5fca-95c4-4eb3b23f3b52"))
+  (wire
+    (pts
+      (xy 107.95 121.92)
+      (xy 123.19 121.92))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "9186f864-d40c-5299-9c17-52db2add4d5e"))
+  (global_label "+5V_STM32"
+    (shape bidirectional)
+    (at 123.19 121.92 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "0eb12ed9-3476-59af-ad66-7dafbd5f905d"))
+  (wire
+    (pts
+      (xy 82.55 127.0)
+      (xy 67.31 127.0))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "f685b9f6-ff36-5aa9-b72f-67c155f330f0"))
+  (global_label "+3V3_STM32"
+    (shape bidirectional)
+    (at 67.31 127.0 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "1306b013-158a-5060-98ea-3eb5d5a0e351"))
+  (wire
+    (pts
+      (xy 107.95 127.0)
+      (xy 123.19 127.0))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "46013e63-18de-5c76-a8d4-403bc58b1ec5"))
+  (global_label "+3V3_STM32"
+    (shape bidirectional)
+    (at 123.19 127.0 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "a4dca325-083f-55a7-8638-87031b45fb58"))
+  (wire
+    (pts
+      (xy 82.55 132.08)
+      (xy 67.31 132.08))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "36a86df5-bd70-56e3-a73c-a59d414e8669"))
+  (global_label "GND_STM32"
+    (shape bidirectional)
+    (at 67.31 132.08 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "08408975-769f-5fcf-9143-601e7e2e1739"))
+  (wire
+    (pts
+      (xy 107.95 132.08)
+      (xy 123.19 132.08))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "8b0eb798-8b2c-500d-b367-65e2f8c31be2"))
+  (global_label "GND_STM32"
+    (shape bidirectional)
+    (at 123.19 132.08 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "8c0524c4-91f0-5b92-926e-6eb4f41f7140"))
   (symbol
     (lib_id "Stack:Stack_2x10")
-    (at 294.64 53.34 0)
+    (at 292.1 60.96 0)
     (unit 1)
     (in_bom yes)
     (on_board yes)
     (dnp no)
     (uuid "67806ed9-9db2-5d9e-8138-c94f926d52bb")
     (property "Reference" "J31"
-      (at 294.64 43.18000000000001 0)
+      (at 292.1 50.8 0)
       (effects
         (font
           (size 1.27 1.27))))
     (property "Value" "SSW-110-01-S-D"
-      (at 294.64 46.99 0)
+      (at 292.1 54.61 0)
       (effects
         (font
           (size 1.27 1.27))))
     (property "Footprint" "Stack:Samtec_SSW-110-01-S-D"
-      (at 294.64 53.34 0)
+      (at 292.1 60.96 0)
       (effects
         (font
           (size 1.27 1.27))
@@ -1934,511 +1809,461 @@
         (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/3f9c8f12-0f4f-4aa4-9cc2-9b6623511d78"
           (reference "J31")
           (unit 1))))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 294.64 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Assembly" "FIT" (at 294.64 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +125 C" (at 294.64 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 294.64 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Data Checked" "UNDATED legacy record" (at 294.64 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "No verified JLCPCB ID; source or consign" (at 294.64 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Review" "Verify physical mating at the planned 12 mm stack gap." (at 294.64 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Footprint Status" "Paired geometry checked; physical mating approval pending" (at 294.64 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Resistor" (at 294.64 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Status" "Manufacturer rating recorded; system requirement pending" (at 294.64 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Checked" "2026-10-03" (at 294.64 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Source" "https://suddendocs.samtec.com/productspecs/tsw-ssw.pdf" (at 294.64 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Basis" "Operating with gold contacts" (at 294.64 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Max (degC)" "125" (at 294.64 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Min (degC)" "-55" (at 294.64 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Datasheet" "https://suddendocs.samtec.com/productspecs/tsw-ssw.pdf" (at 294.64 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "UNVERIFIED" (at 294.64 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Manufacturer" "Samtec" (at 294.64 53.34 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "MPN" "SSW-110-01-S-D" (at 294.64 53.34 0) (effects (font (size 1.27 1.27)) (hide yes))))
-  (wire
-    (pts
-      (xy 281.94 53.34)
-      (xy 276.86 53.34))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "82bf7f7b-59d8-5c5d-bff0-59ad0c153f0d"))
-  (hierarchical_label "PORT_ENC_A"
-    (shape output)
-    (at 276.86 53.34 180)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify right))
-    (uuid "488b1fab-2512-5dba-9ab6-1aa7ebf0aaeb"))
-  (wire
-    (pts
-      (xy 307.34 53.34)
-      (xy 312.42 53.34))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "982addab-3f64-5bd9-8dca-bb474e760e13"))
-  (hierarchical_label "PORT_ENC_B"
-    (shape output)
-    (at 312.42 53.34 0)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify left))
-    (uuid "95e48f4c-63a4-5975-a493-4e32d32f38fc"))
-  (wire
-    (pts
-      (xy 281.94 58.42)
-      (xy 276.86 58.42))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "1c998a61-ce4e-5f7e-afd0-8a10c0ba7d4b"))
-  (symbol
-    (lib_id "Power_Custom:GND_STM32")
-    (at 276.86 58.42 0)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (uuid "3334eab3-7077-598c-9136-c450392ea0c0")
-    (property "Reference" "#PWRP4C013"
-      (at 276.86 58.42 0)
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 292.1 60.96 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Value" "GND_STM32"
-      (at 274.32 60.325 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right)))
-    (pin "1"
-      (uuid "60faa16d-ea5c-5083-a79e-d386d0233e18"))
-    (instances
-      (project "Elevation_Pivot_Daughter-Board"
-        (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/3f9c8f12-0f4f-4aa4-9cc2-9b6623511d78"
-          (reference "#PWRP4C013")
-          (unit 1)))))
-  (wire
-    (pts
-      (xy 307.34 58.42)
-      (xy 312.42 58.42))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "de207e0f-caaa-5a6c-bbd3-e887c1a24055"))
-  (symbol
-    (lib_id "Power_Custom:GND_STM32")
-    (at 312.42 58.42 0)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (uuid "0bd6b264-b134-5caa-8063-1584f6042504")
-    (property "Reference" "#PWRP4C014"
-      (at 312.42 58.42 0)
+    (property "Assembly" "FIT"
+      (at 292.1 60.96 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Value" "GND_STM32"
-      (at 314.96 60.325 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left)))
-    (pin "1"
-      (uuid "1d9a2054-0f67-5ace-9898-70ff7569bb93"))
-    (instances
-      (project "Elevation_Pivot_Daughter-Board"
-        (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/3f9c8f12-0f4f-4aa4-9cc2-9b6623511d78"
-          (reference "#PWRP4C014")
-          (unit 1)))))
-  (wire
-    (pts
-      (xy 281.94 63.5)
-      (xy 276.86 63.5))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "b9fcafa8-186b-57e5-84f2-5df34a137207"))
-  (hierarchical_label "STAR_ENC_A"
-    (shape output)
-    (at 276.86 63.5 180)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify right))
-    (uuid "5e86f4ca-7882-54ca-bd77-41aa4113442f"))
-  (wire
-    (pts
-      (xy 307.34 63.5)
-      (xy 312.42 63.5))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "0f05d937-4a51-5eb7-989b-e1ea503b10e0"))
-  (hierarchical_label "STAR_ENC_B"
-    (shape output)
-    (at 312.42 63.5 0)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify left))
-    (uuid "5733e31b-52d4-5c26-bb17-8163b1f0b1fd"))
-  (wire
-    (pts
-      (xy 281.94 68.58)
-      (xy 276.86 68.58))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "7ee5b0e7-176a-5be6-bcb4-7c48f945548d"))
-  (hierarchical_label "PORT_ENC_Z"
-    (shape output)
-    (at 276.86 68.58 180)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify right))
-    (uuid "2ac1f96e-8515-5baa-9065-64a14ae3162f"))
-  (wire
-    (pts
-      (xy 307.34 68.58)
-      (xy 312.42 68.58))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "df77a316-74c5-50a7-95c5-7aa063ed6f33"))
-  (hierarchical_label "STAR_ENC_Z"
-    (shape output)
-    (at 312.42 68.58 0)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify left))
-    (uuid "b05d3a32-1a1e-54f2-8afa-47fec67f6889"))
-  (wire
-    (pts
-      (xy 281.94 73.66)
-      (xy 276.86 73.66))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "290f6138-05ad-52e6-a979-e96dfc06ba75"))
-  (symbol
-    (lib_id "Power_Custom:GND_STM32")
-    (at 276.86 73.66 0)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (uuid "09aeba47-ccb9-5ef8-9d7d-0bf0b1e7b9ac")
-    (property "Reference" "#PWRP4C015"
-      (at 276.86 73.66 0)
+    (property "Operating Temperature" "-55 to +125 C"
+      (at 292.1 60.96 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Value" "GND_STM32"
-      (at 274.32 75.565 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right)))
-    (pin "1"
-      (uuid "390e26f5-80b0-5879-8656-ec523cd8fe84"))
-    (instances
-      (project "Elevation_Pivot_Daughter-Board"
-        (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/3f9c8f12-0f4f-4aa4-9cc2-9b6623511d78"
-          (reference "#PWRP4C015")
-          (unit 1)))))
-  (wire
-    (pts
-      (xy 307.34 73.66)
-      (xy 312.42 73.66))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "4589e0c6-b4fb-541f-8b31-69731af52039"))
-  (symbol
-    (lib_id "Power_Custom:GND_STM32")
-    (at 312.42 73.66 0)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (uuid "6afe7833-b27f-5f97-9c07-1cd4681f5601")
-    (property "Reference" "#PWRP4C016"
-      (at 312.42 73.66 0)
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 292.1 60.96 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
-    (property "Value" "GND_STM32"
-      (at 314.96 75.565 0)
+    (property "Supplier Data Checked" "UNDATED legacy record"
+      (at 292.1 60.96 0)
       (effects
         (font
           (size 1.27 1.27))
-        (justify left)))
-    (pin "1"
-      (uuid "3ac733a7-725e-5815-ab7e-33755e5fe0ef"))
-    (instances
-      (project "Elevation_Pivot_Daughter-Board"
-        (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/3f9c8f12-0f4f-4aa4-9cc2-9b6623511d78"
-          (reference "#PWRP4C016")
-          (unit 1)))))
+        (hide yes)))
+    (property "JLCPCB Status" "No verified JLCPCB ID; source or consign"
+      (at 292.1 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Review" "Verify physical mating at the planned 12 mm stack gap."
+      (at 292.1 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Footprint Status" "Paired geometry checked; physical mating approval pending"
+      (at 292.1 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Resistor"
+      (at 292.1 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "Manufacturer rating recorded; system requirement pending"
+      (at 292.1 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Checked" "2026-10-03"
+      (at 292.1 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Source" "https://suddendocs.samtec.com/productspecs/tsw-ssw.pdf"
+      (at 292.1 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "Operating with gold contacts"
+      (at 292.1 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "125"
+      (at 292.1 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "-55"
+      (at 292.1 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" "https://suddendocs.samtec.com/productspecs/tsw-ssw.pdf"
+      (at 292.1 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "UNVERIFIED"
+      (at 292.1 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "Samtec"
+      (at 292.1 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "SSW-110-01-S-D"
+      (at 292.1 60.96 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
-      (xy 281.94 78.74)
-      (xy 276.86 78.74))
+      (xy 279.4 60.96)
+      (xy 264.16 60.96))
     (stroke
       (width 0)
       (type default))
-    (uuid "43a54a59-661e-5633-9964-789849dd1cef"))
-  (hierarchical_label "STM32_SCL"
+    (uuid "a31771c4-6eb9-5372-a284-16682272f213"))
+  (global_label "-BATT"
     (shape bidirectional)
-    (at 276.86 78.74 180)
+    (at 264.16 60.96 180)
     (effects
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "470fb632-31be-55f6-a013-2af961b413cb"))
+    (uuid "c3804023-a660-5bf7-9651-f9f51ff39e30"))
   (wire
     (pts
-      (xy 307.34 78.74)
-      (xy 312.42 78.74))
+      (xy 304.8 60.96)
+      (xy 320.04 60.96))
     (stroke
       (width 0)
       (type default))
-    (uuid "4ce5c65f-244f-548c-b3e9-7cd81cbe9db9"))
-  (hierarchical_label "STM32_SDA"
+    (uuid "c25277b1-32b8-5485-9961-157774331ce8"))
+  (global_label "-BATT"
     (shape bidirectional)
-    (at 312.42 78.74 0)
+    (at 320.04 60.96 0)
     (effects
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "4a3cd85b-5895-5912-8774-a8a90b331485"))
+    (uuid "2d441201-f775-59a6-b852-1450e16df412"))
   (wire
     (pts
-      (xy 281.94 83.82)
-      (xy 276.86 83.82))
+      (xy 279.4 66.04)
+      (xy 264.16 66.04))
     (stroke
       (width 0)
       (type default))
-    (uuid "82d1a7a0-2cb0-5bf8-8c75-b07941185130"))
-  (wire
-    (pts
-      (xy 307.34 83.82)
-      (xy 312.42 83.82))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "379773f8-d766-53a6-a38e-a9c062cc520b"))
-  (wire
-    (pts
-      (xy 281.94 88.9)
-      (xy 276.86 88.9))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "2446a109-ebf7-5317-ae52-e0b8ae304e29"))
-  (hierarchical_label "TX_CAN"
-    (shape input)
-    (at 276.86 88.9 180)
+    (uuid "007102f0-fca0-52ea-baca-019755f77b76"))
+  (global_label "-BATT"
+    (shape bidirectional)
+    (at 264.16 66.04 180)
     (effects
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "c1178f52-1d4e-502c-a9b3-e0f1678b53cd"))
+    (uuid "8c603673-bf2c-5a57-ab48-74a65f1fabbf"))
   (wire
     (pts
-      (xy 307.34 88.9)
-      (xy 312.42 88.9))
+      (xy 304.8 66.04)
+      (xy 320.04 66.04))
     (stroke
       (width 0)
       (type default))
-    (uuid "993c0f19-272a-5081-96f6-b9c7c42019e8"))
-  (hierarchical_label "RX_CAN"
-    (shape output)
-    (at 312.42 88.9 0)
+    (uuid "406ebef1-7d01-5845-9f41-fa6c9d485174"))
+  (global_label "-BATT"
+    (shape bidirectional)
+    (at 320.04 66.04 0)
     (effects
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "6bfd9af9-f834-5a61-a261-fd2b3a76468e"))
+    (uuid "dcb27738-2e4b-5cfa-afd4-b23301afe374"))
   (wire
     (pts
-      (xy 281.94 93.98)
-      (xy 276.86 93.98))
+      (xy 279.4 71.12)
+      (xy 264.16 71.12))
     (stroke
       (width 0)
       (type default))
-    (uuid "cb5543fc-ab98-57ef-81c4-ee553eb21e65"))
-  (hierarchical_label "Silent_Mode"
-    (shape input)
-    (at 276.86 93.98 180)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify right))
-    (uuid "552f1bf5-3c49-5dd9-abd8-c2d4e8213016"))
-  (wire
-    (pts
-      (xy 307.34 93.98)
-      (xy 312.42 93.98))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "3e47543d-46e5-56ab-92e9-0a45c7c75ff0"))
-  (wire
-    (pts
-      (xy 281.94 99.06)
-      (xy 276.86 99.06))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "f682ab62-3c72-51f3-894f-9fe9c799bdf5"))
-  (global_label "CTRL_NRST"
+    (uuid "36b71a41-d38c-5551-81b9-af05ae759bf8"))
+  (global_label "+5V_FIELD"
     (shape bidirectional)
-    (at 276.86 99.06 180)
+    (at 264.16 71.12 180)
     (effects
       (font
         (size 1.27 1.27))
       (justify right))
-    (uuid "a386c615-cbef-543c-9004-cd7858afd764"))
+    (uuid "dabf1050-9195-5691-a88a-6132ff7d9fbb"))
   (wire
     (pts
-      (xy 307.34 99.06)
-      (xy 312.42 99.06))
+      (xy 304.8 71.12)
+      (xy 320.04 71.12))
     (stroke
       (width 0)
       (type default))
-    (uuid "a59f6091-0a17-5965-951b-1983db943384"))
-  (symbol
-    (lib_id "Power_Custom:GND_STM32")
-    (at 312.42 99.06 0)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (uuid "1aa60217-a0af-5713-93e3-e8b2f44f6039")
-    (property "Reference" "#PWRP4C020"
-      (at 312.42 99.06 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "Value" "GND_STM32"
-      (at 314.96 100.965 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left)))
-    (pin "1"
-      (uuid "3b7797d4-ebb7-5d70-acb7-ce49fb0f1ca2"))
-    (instances
-      (project "Elevation_Pivot_Daughter-Board"
-        (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/3f9c8f12-0f4f-4aa4-9cc2-9b6623511d78"
-          (reference "#PWRP4C020")
-          (unit 1)))))
-  (text "Elevation top-side socket | 20 contacts"
-    (at 238.76 35.56 0)
+    (uuid "ad3fe715-955f-5941-bd3e-d4f0d6e69555"))
+  (global_label "+5V_FIELD"
+    (shape bidirectional)
+    (at 320.04 71.12 0)
     (effects
       (font
         (size 1.27 1.27))
-      (justify left top))
-    (uuid "545bf658-f654-5dca-8334-3205cdfb466e"))
-  (text "MATCHED TWO-BOARD INTERFACE | J30 30 CONTACTS + J31 20 CONTACTS"
-    (at 20.32 17.78 0)
-    (effects
-      (font
-        (size 1.778 1.778))
-      (justify left top))
-    (uuid "22d33860-3440-5a09-a8ae-0cd071fbaf82"))
-  (text "J30 mates to J30; J31 mates to J31, same pin number to same pin number.\n5 V: elevation PS4 -> controller. 3.3 V: controller buck -> elevation MCU-side logic.\nAll signal returns use GND_STM32 / controller GND. No field return crosses these connectors.\nMechanical definition: assembly/stack_interface.json. Nominal facing-board gap: 12 mm."
-    (at 20.32 172.72 0)
+      (justify left))
+    (uuid "0ae850d7-23a9-5bf1-8da9-6846d6ed6397"))
+  (wire
+    (pts
+      (xy 279.4 76.2)
+      (xy 264.16 76.2))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "5fb875c5-22a8-5623-a1da-d3ce3f4cd5ec"))
+  (global_label "-BATT"
+    (shape bidirectional)
+    (at 264.16 76.2 180)
     (effects
       (font
         (size 1.27 1.27))
-      (justify left top))
-    (uuid "83129e4f-88d3-58fa-ae66-bc76695ada00"))
-  (symbol
-    (lib_id "power:PWR_FLAG")
-    (at 264.16 226.06 0)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (uuid "bbdd9ec3-e8a0-5931-8203-bda6da6410ff")
-    (property "Reference" "#FLG330"
-      (at 264.16 220.98 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "Value" "PWR_FLAG"
-      (at 264.16 223.52 0)
-      (effects
-        (font
-          (size 1.27 1.27))))
-    (property "Footprint" ""
-      (at 264.16 226.06 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (pin "1"
-      (uuid "970b8aa6-8077-5383-abad-b4424b725457"))
-    (instances
-      (project "Elevation_Pivot_Daughter-Board"
-        (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/3f9c8f12-0f4f-4aa4-9cc2-9b6623511d78"
-          (reference "#FLG330")
-          (unit 1)))))
-  (symbol
-    (lib_id "Power_Custom:+3V3_STM32")
-    (at 271.78 226.06 0)
-    (unit 1)
-    (in_bom yes)
-    (on_board yes)
-    (uuid "d0921e35-d658-5dc4-aee6-537046a59897")
-    (property "Reference" "#PWRP4C021"
-      (at 271.78 226.06 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (hide yes)))
-    (property "Value" "+3V3_STM32"
-      (at 274.32 224.155 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left)))
-    (pin "1"
-      (uuid "7b44347e-e9f8-5c44-8823-7647f1954370"))
-    (instances
-      (project "Elevation_Pivot_Daughter-Board"
-        (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/3f9c8f12-0f4f-4aa4-9cc2-9b6623511d78"
-          (reference "#PWRP4C021")
-          (unit 1)))))
+      (justify right))
+    (uuid "4958913c-c4fe-580b-bb44-85cc4ecb1ffa"))
+  (wire
+    (pts
+      (xy 304.8 76.2)
+      (xy 320.04 76.2))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "69c0320c-a1d3-53e2-85a6-0da9d17a410d"))
+  (global_label "-BATT"
+    (shape bidirectional)
+    (at 320.04 76.2 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "090539f9-b594-5eb0-822a-d70f51e8741f"))
+  (wire
+    (pts
+      (xy 279.4 81.28)
+      (xy 264.16 81.28))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "ef8eead6-377a-5182-a6a2-88e46c9367f2"))
+  (global_label "+6.5V_ENC_PORT"
+    (shape bidirectional)
+    (at 264.16 81.28 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "272c055c-8401-510c-a68a-2da8384bb37f"))
+  (wire
+    (pts
+      (xy 304.8 81.28)
+      (xy 320.04 81.28))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "a2b27591-23dc-5c29-8932-ad6b486de5fd"))
+  (global_label "+6.5V_ENC_PORT"
+    (shape bidirectional)
+    (at 320.04 81.28 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "47a818dc-b7ce-52b6-b80f-0d6767b9d101"))
+  (wire
+    (pts
+      (xy 279.4 86.36)
+      (xy 264.16 86.36))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "71ebba5d-d896-522a-b177-8e2021225ca5"))
+  (global_label "+5V_ENC_PORT"
+    (shape bidirectional)
+    (at 264.16 86.36 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "d1655187-cebe-5a44-9abb-6a37445396f6"))
+  (wire
+    (pts
+      (xy 304.8 86.36)
+      (xy 320.04 86.36))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "ff05f85b-8572-56ba-b4cb-8cbd64b28778"))
+  (global_label "+5V_ENC_PORT"
+    (shape bidirectional)
+    (at 320.04 86.36 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "4e99dc4b-26a2-5b04-82be-1c20a687a9d5"))
+  (wire
+    (pts
+      (xy 279.4 91.44)
+      (xy 264.16 91.44))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "20e0ee56-8379-5c25-bc2b-839cba5ab98a"))
+  (global_label "-BATT"
+    (shape bidirectional)
+    (at 264.16 91.44 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "05d78a12-6dd6-5b97-8fce-de256ee678f7"))
+  (wire
+    (pts
+      (xy 304.8 91.44)
+      (xy 320.04 91.44))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "0037b36e-878e-5455-90c7-c7c1d341d180"))
+  (global_label "-BATT"
+    (shape bidirectional)
+    (at 320.04 91.44 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "26cb698d-2286-508a-a2ed-48f62adff105"))
+  (wire
+    (pts
+      (xy 279.4 96.52)
+      (xy 264.16 96.52))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "6c58a496-a4b0-5481-b52f-eb431615eec2"))
+  (global_label "+6.5V_ENC_STAR"
+    (shape bidirectional)
+    (at 264.16 96.52 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "8e71a9b2-c4ee-575d-9af2-376d5060d9bb"))
+  (wire
+    (pts
+      (xy 304.8 96.52)
+      (xy 320.04 96.52))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "8a54dd1b-2722-5bea-9587-02075774f7d5"))
+  (global_label "+6.5V_ENC_STAR"
+    (shape bidirectional)
+    (at 320.04 96.52 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "606d5afc-81c1-53d7-8307-1eb61ddac624"))
+  (wire
+    (pts
+      (xy 279.4 101.6)
+      (xy 264.16 101.6))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "76ccb710-ff2f-5cec-bb93-7adaf8f68039"))
+  (global_label "+5V_ENC_STAR"
+    (shape bidirectional)
+    (at 264.16 101.6 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "c0933ed0-7414-510a-b2d4-447a033631c9"))
+  (wire
+    (pts
+      (xy 304.8 101.6)
+      (xy 320.04 101.6))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e1e01422-0b38-5c33-98c7-0e9edcc2d16c"))
+  (global_label "+5V_ENC_STAR"
+    (shape bidirectional)
+    (at 320.04 101.6 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "dc560e2d-9750-5c24-9bbd-5c1d658a8b1a"))
+  (wire
+    (pts
+      (xy 279.4 106.68)
+      (xy 264.16 106.68))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "b6ce667f-3ef2-5bb2-88cb-270d44f8c105"))
+  (global_label "-BATT"
+    (shape bidirectional)
+    (at 264.16 106.68 180)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify right))
+    (uuid "3dbae85f-a53b-5ad7-883e-e57062bdd1f1"))
+  (wire
+    (pts
+      (xy 304.8 106.68)
+      (xy 320.04 106.68))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "7ce50166-563b-5098-b5a0-a6e94c850c47"))
+  (global_label "-BATT"
+    (shape bidirectional)
+    (at 320.04 106.68 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "75dbe2f9-0480-5b5e-9822-0ace01818b81"))
   (symbol
     (lib_id "Connector:TestPoint")
-    (at 325.12 226.06 0)
+    (at 81.28 200.66 0)
     (unit 1)
     (in_bom no)
     (on_board yes)
     (dnp no)
     (uuid "49813856-f76d-5907-9adf-b90d17fa959f")
     (property "Reference" "TP30"
-      (at 325.12 220.98 0)
+      (at 81.28 195.58 0)
       (effects
         (font
           (size 1.27 1.27))))
     (property "Value" "CTRL_NRST"
-      (at 325.12 223.52 0)
+      (at 81.28 198.12 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
-      (at 325.12 226.06 0)
+      (at 81.28 200.66 0)
       (effects
         (font
           (size 1.27 1.27))
@@ -2450,29 +2275,89 @@
         (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/3f9c8f12-0f4f-4aa4-9cc2-9b6623511d78"
           (reference "TP30")
           (unit 1))))
-  (property "JLCPCB Status" "N/A" (at 325.12 226.06 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PCB FEATURE" (at 325.12 226.06 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Status" "N/A" (at 325.12 226.06 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Basis" "PCB feature" (at 325.12 226.06 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Max (degC)" "N/A" (at 325.12 226.06 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Min (degC)" "N/A" (at 325.12 226.06 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "N/A" (at 325.12 226.06 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "PCB test pad" (at 325.12 226.06 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Assembly" "PCB feature - no purchased component" (at 325.12 226.06 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "N/A" (at 325.12 226.06 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Manufacturer" "N/A" (at 325.12 226.06 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "MPN" "N/A" (at 325.12 226.06 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "JLCPCB Status" "N/A"
+      (at 81.28 200.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PCB FEATURE"
+      (at 81.28 200.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "N/A"
+      (at 81.28 200.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "PCB feature"
+      (at 81.28 200.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "N/A"
+      (at 81.28 200.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "N/A"
+      (at 81.28 200.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "N/A"
+      (at 81.28 200.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "PCB test pad"
+      (at 81.28 200.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Assembly" "PCB feature - no purchased component"
+      (at 81.28 200.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "N/A"
+      (at 81.28 200.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "N/A"
+      (at 81.28 200.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "N/A"
+      (at 81.28 200.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (global_label "CTRL_NRST"
     (shape bidirectional)
-    (at 325.12 226.06 0)
+    (at 81.28 200.66 0)
     (effects
       (font
         (size 1.27 1.27))
       (justify left))
-    (uuid "3b5d67cc-fa3c-5063-91cf-00e26d67acaa"))
+    (uuid "495377cb-d690-5687-b2e6-91e8358e46fe"))
   (symbol
     (lib_id "Mechanical:MountingHole")
-    (at 30.48 248.92 0)
+    (at -1035.0 220.0 0)
     (unit 1)
     (exclude_from_sim no)
     (in_bom no)
@@ -2481,67 +2366,67 @@
     (fields_autoplaced yes)
     (uuid "b6c70c10-7fe0-40d8-8569-b9e347505d51")
     (property "Reference" "H5"
-      (at 33.02 247.6499 0)
+      (at -1032.46 218.7299 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left)))
     (property "Value" "MountingHole"
-      (at 33.02 250.1899 0)
+      (at -1032.46 221.2699 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left)))
     (property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_TopBottom"
-      (at 30.48 248.92 0)
+      (at -1035.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Datasheet" "~"
-      (at 30.48 248.92 0)
+      (at -1035.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Description" "Mounting Hole without connection"
-      (at 30.48 248.92 0)
+      (at -1035.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "MANUFACTURER_PART_NUMBER" "N/A"
-      (at 30.48 248.92 0)
+      (at -1035.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Manufacturer" "N/A"
-      (at 30.48 248.92 0)
+      (at -1035.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "VENDOR" ""
-      (at 30.48 248.92 0)
+      (at -1035.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "LCSC" "N/A"
-      (at 30.48 248.92 0)
+      (at -1035.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "BOM Notes" "daughter-board corner mounting hole; PCB feature only and excluded from BOM/placement."
-      (at 30.48 248.92 0)
+      (at -1035.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Operating Temperature" "N/A"
-      (at 30.48 248.92 0)
+      (at -1035.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
@@ -2551,18 +2436,63 @@
         (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/3f9c8f12-0f4f-4aa4-9cc2-9b6623511d78"
           (reference "H5")
           (unit 1))))
-  (property "JLCPCB Status" "N/A" (at 30.48 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PCB FEATURE" (at 30.48 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Status" "N/A" (at 30.48 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Basis" "PCB feature" (at 30.48 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Max (degC)" "N/A" (at 30.48 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Min (degC)" "N/A" (at 30.48 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "PCB mounting hole" (at 30.48 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Assembly" "PCB feature - no purchased component" (at 30.48 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "MPN" "N/A" (at 30.48 248.92 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "JLCPCB Status" "N/A"
+      (at -1035.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PCB FEATURE"
+      (at -1035.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "N/A"
+      (at -1035.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "PCB feature"
+      (at -1035.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "N/A"
+      (at -1035.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "N/A"
+      (at -1035.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "PCB mounting hole"
+      (at -1035.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Assembly" "PCB feature - no purchased component"
+      (at -1035.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "N/A"
+      (at -1035.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Mechanical:MountingHole")
-    (at 66.04 248.92 0)
+    (at -990.0 220.0 0)
     (unit 1)
     (exclude_from_sim no)
     (in_bom no)
@@ -2571,67 +2501,67 @@
     (fields_autoplaced yes)
     (uuid "a267fb5f-05f8-4802-9163-27d8f05c5fda")
     (property "Reference" "H6"
-      (at 68.58 247.6499 0)
+      (at -987.46 218.7299 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left)))
     (property "Value" "MountingHole"
-      (at 68.58 250.1899 0)
+      (at -987.46 221.2699 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left)))
     (property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_TopBottom"
-      (at 66.04 248.92 0)
+      (at -990.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Datasheet" "~"
-      (at 66.04 248.92 0)
+      (at -990.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Description" "Mounting Hole without connection"
-      (at 66.04 248.92 0)
+      (at -990.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "MANUFACTURER_PART_NUMBER" "N/A"
-      (at 66.04 248.92 0)
+      (at -990.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Manufacturer" "N/A"
-      (at 66.04 248.92 0)
+      (at -990.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "VENDOR" ""
-      (at 66.04 248.92 0)
+      (at -990.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "LCSC" "N/A"
-      (at 66.04 248.92 0)
+      (at -990.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "BOM Notes" "daughter-board corner mounting hole; PCB feature only and excluded from BOM/placement."
-      (at 66.04 248.92 0)
+      (at -990.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Operating Temperature" "N/A"
-      (at 66.04 248.92 0)
+      (at -990.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
@@ -2641,18 +2571,63 @@
         (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/3f9c8f12-0f4f-4aa4-9cc2-9b6623511d78"
           (reference "H6")
           (unit 1))))
-  (property "JLCPCB Status" "N/A" (at 66.04 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PCB FEATURE" (at 66.04 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Status" "N/A" (at 66.04 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Basis" "PCB feature" (at 66.04 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Max (degC)" "N/A" (at 66.04 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Min (degC)" "N/A" (at 66.04 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "PCB mounting hole" (at 66.04 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Assembly" "PCB feature - no purchased component" (at 66.04 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "MPN" "N/A" (at 66.04 248.92 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "JLCPCB Status" "N/A"
+      (at -990.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PCB FEATURE"
+      (at -990.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "N/A"
+      (at -990.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "PCB feature"
+      (at -990.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "N/A"
+      (at -990.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "N/A"
+      (at -990.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "PCB mounting hole"
+      (at -990.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Assembly" "PCB feature - no purchased component"
+      (at -990.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "N/A"
+      (at -990.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Mechanical:MountingHole")
-    (at 101.6 248.92 0)
+    (at -945.0 220.0 0)
     (unit 1)
     (exclude_from_sim no)
     (in_bom no)
@@ -2661,67 +2636,67 @@
     (fields_autoplaced yes)
     (uuid "cba97c55-d9af-4ba9-b88f-55bec9b81e2d")
     (property "Reference" "H7"
-      (at 104.14 247.6499 0)
+      (at -942.46 218.7299 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left)))
     (property "Value" "MountingHole"
-      (at 104.14 250.1899 0)
+      (at -942.46 221.2699 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left)))
     (property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_TopBottom"
-      (at 101.6 248.92 0)
+      (at -945.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Datasheet" "~"
-      (at 101.6 248.92 0)
+      (at -945.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Description" "Mounting Hole without connection"
-      (at 101.6 248.92 0)
+      (at -945.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "MANUFACTURER_PART_NUMBER" "N/A"
-      (at 101.6 248.92 0)
+      (at -945.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Manufacturer" "N/A"
-      (at 101.6 248.92 0)
+      (at -945.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "VENDOR" ""
-      (at 101.6 248.92 0)
+      (at -945.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "LCSC" "N/A"
-      (at 101.6 248.92 0)
+      (at -945.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "BOM Notes" "daughter-board corner mounting hole; PCB feature only and excluded from BOM/placement."
-      (at 101.6 248.92 0)
+      (at -945.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Operating Temperature" "N/A"
-      (at 101.6 248.92 0)
+      (at -945.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
@@ -2731,18 +2706,63 @@
         (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/3f9c8f12-0f4f-4aa4-9cc2-9b6623511d78"
           (reference "H7")
           (unit 1))))
-  (property "JLCPCB Status" "N/A" (at 101.6 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PCB FEATURE" (at 101.6 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Status" "N/A" (at 101.6 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Basis" "PCB feature" (at 101.6 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Max (degC)" "N/A" (at 101.6 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Min (degC)" "N/A" (at 101.6 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "PCB mounting hole" (at 101.6 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Assembly" "PCB feature - no purchased component" (at 101.6 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "MPN" "N/A" (at 101.6 248.92 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "JLCPCB Status" "N/A"
+      (at -945.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PCB FEATURE"
+      (at -945.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "N/A"
+      (at -945.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "PCB feature"
+      (at -945.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "N/A"
+      (at -945.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "N/A"
+      (at -945.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "PCB mounting hole"
+      (at -945.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Assembly" "PCB feature - no purchased component"
+      (at -945.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "N/A"
+      (at -945.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Mechanical:MountingHole")
-    (at 137.16 248.92 0)
+    (at -900.0 220.0 0)
     (unit 1)
     (exclude_from_sim no)
     (in_bom no)
@@ -2751,67 +2771,67 @@
     (fields_autoplaced yes)
     (uuid "7edcc426-ecf0-4182-a644-7c40789374ad")
     (property "Reference" "H8"
-      (at 139.7 247.6499 0)
+      (at -897.46 218.7299 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left)))
     (property "Value" "MountingHole"
-      (at 139.7 250.1899 0)
+      (at -897.46 221.2699 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left)))
     (property "Footprint" "MountingHole:MountingHole_3.5mm_Pad_TopBottom"
-      (at 137.16 248.92 0)
+      (at -900.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Datasheet" "~"
-      (at 137.16 248.92 0)
+      (at -900.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Description" "Mounting Hole without connection"
-      (at 137.16 248.92 0)
+      (at -900.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "MANUFACTURER_PART_NUMBER" "N/A"
-      (at 137.16 248.92 0)
+      (at -900.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Manufacturer" "N/A"
-      (at 137.16 248.92 0)
+      (at -900.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "VENDOR" ""
-      (at 137.16 248.92 0)
+      (at -900.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "LCSC" "N/A"
-      (at 137.16 248.92 0)
+      (at -900.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "BOM Notes" "daughter-board corner mounting hole; PCB feature only and excluded from BOM/placement."
-      (at 137.16 248.92 0)
+      (at -900.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
         (hide yes)))
     (property "Operating Temperature" "N/A"
-      (at 137.16 248.92 0)
+      (at -900.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
@@ -2821,35 +2841,80 @@
         (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/3f9c8f12-0f4f-4aa4-9cc2-9b6623511d78"
           (reference "H8")
           (unit 1))))
-  (property "JLCPCB Status" "N/A" (at 137.16 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PCB FEATURE" (at 137.16 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Status" "N/A" (at 137.16 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Basis" "PCB feature" (at 137.16 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Max (degC)" "N/A" (at 137.16 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Min (degC)" "N/A" (at 137.16 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "PCB mounting hole" (at 137.16 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Assembly" "PCB feature - no purchased component" (at 137.16 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "MPN" "N/A" (at 137.16 248.92 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "JLCPCB Status" "N/A"
+      (at -900.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PCB FEATURE"
+      (at -900.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "N/A"
+      (at -900.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "PCB feature"
+      (at -900.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "N/A"
+      (at -900.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "N/A"
+      (at -900.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "PCB mounting hole"
+      (at -900.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Assembly" "PCB feature - no purchased component"
+      (at -900.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "N/A"
+      (at -900.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Mechanical:MountingHole")
-    (at 203.2 248.92 0)
+    (at 90.0 220.0 0)
     (unit 1)
     (in_bom no)
     (on_board yes)
     (dnp no)
     (uuid "f3729216-7bbc-51b9-85d1-edab81ac1745")
     (property "Reference" "H30"
-      (at 203.2 243.83999999999997 0)
+      (at 90.0 214.92 0)
       (effects
         (font
           (size 1.27 1.27))))
     (property "Value" "M3 STACK SUPPORT"
-      (at 203.2 246.38 0)
+      (at 90.0 217.46 0)
       (effects
         (font
           (size 1.27 1.27))))
     (property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-      (at 203.2 248.92 0)
+      (at 90.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
@@ -2859,39 +2924,104 @@
         (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/3f9c8f12-0f4f-4aa4-9cc2-9b6623511d78"
           (reference "H30")
           (unit 1))))
-  (property "BOM Review" "Hole only. Four shared 12 mm supports per stack; support material, screws and washers are not selected here." (at 203.2 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "N/A" (at 203.2 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PCB FEATURE" (at 203.2 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Status" "N/A" (at 203.2 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Basis" "PCB feature" (at 203.2 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Max (degC)" "N/A" (at 203.2 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Min (degC)" "N/A" (at 203.2 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "N/A" (at 203.2 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "PCB mounting hole" (at 203.2 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Assembly" "PCB feature - no purchased component" (at 203.2 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "N/A" (at 203.2 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Manufacturer" "N/A" (at 203.2 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "MPN" "N/A" (at 203.2 248.92 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "BOM Review" "Hole only. Four shared 12 mm supports per stack; support material, screws and washers are not selected here."
+      (at 90.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "N/A"
+      (at 90.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PCB FEATURE"
+      (at 90.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "N/A"
+      (at 90.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "PCB feature"
+      (at 90.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "N/A"
+      (at 90.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "N/A"
+      (at 90.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "N/A"
+      (at 90.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "PCB mounting hole"
+      (at 90.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Assembly" "PCB feature - no purchased component"
+      (at 90.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "N/A"
+      (at 90.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "N/A"
+      (at 90.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "N/A"
+      (at 90.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Mechanical:MountingHole")
-    (at 248.92 248.92 0)
+    (at 135.0 220.0 0)
     (unit 1)
     (in_bom no)
     (on_board yes)
     (dnp no)
     (uuid "08aaee16-f6f4-5cf6-a648-e9f4883c2b3c")
     (property "Reference" "H31"
-      (at 248.92 243.83999999999997 0)
+      (at 135.0 214.92 0)
       (effects
         (font
           (size 1.27 1.27))))
     (property "Value" "M3 STACK SUPPORT"
-      (at 248.92 246.38 0)
+      (at 135.0 217.46 0)
       (effects
         (font
           (size 1.27 1.27))))
     (property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-      (at 248.92 248.92 0)
+      (at 135.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
@@ -2901,39 +3031,104 @@
         (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/3f9c8f12-0f4f-4aa4-9cc2-9b6623511d78"
           (reference "H31")
           (unit 1))))
-  (property "BOM Review" "Hole only. Four shared 12 mm supports per stack; support material, screws and washers are not selected here." (at 248.92 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "N/A" (at 248.92 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PCB FEATURE" (at 248.92 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Status" "N/A" (at 248.92 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Basis" "PCB feature" (at 248.92 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Max (degC)" "N/A" (at 248.92 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Min (degC)" "N/A" (at 248.92 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "N/A" (at 248.92 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "PCB mounting hole" (at 248.92 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Assembly" "PCB feature - no purchased component" (at 248.92 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "N/A" (at 248.92 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Manufacturer" "N/A" (at 248.92 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "MPN" "N/A" (at 248.92 248.92 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "BOM Review" "Hole only. Four shared 12 mm supports per stack; support material, screws and washers are not selected here."
+      (at 135.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "N/A"
+      (at 135.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PCB FEATURE"
+      (at 135.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "N/A"
+      (at 135.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "PCB feature"
+      (at 135.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "N/A"
+      (at 135.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "N/A"
+      (at 135.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "N/A"
+      (at 135.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "PCB mounting hole"
+      (at 135.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Assembly" "PCB feature - no purchased component"
+      (at 135.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "N/A"
+      (at 135.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "N/A"
+      (at 135.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "N/A"
+      (at 135.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Mechanical:MountingHole")
-    (at 294.64 248.92 0)
+    (at 180.0 220.0 0)
     (unit 1)
     (in_bom no)
     (on_board yes)
     (dnp no)
     (uuid "2657aa7c-7c2d-50ad-87f4-372b36e4b48e")
     (property "Reference" "H32"
-      (at 294.64 243.83999999999997 0)
+      (at 180.0 214.92 0)
       (effects
         (font
           (size 1.27 1.27))))
     (property "Value" "M3 STACK SUPPORT"
-      (at 294.64 246.38 0)
+      (at 180.0 217.46 0)
       (effects
         (font
           (size 1.27 1.27))))
     (property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-      (at 294.64 248.92 0)
+      (at 180.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
@@ -2943,39 +3138,104 @@
         (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/3f9c8f12-0f4f-4aa4-9cc2-9b6623511d78"
           (reference "H32")
           (unit 1))))
-  (property "BOM Review" "Hole only. Four shared 12 mm supports per stack; support material, screws and washers are not selected here." (at 294.64 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "N/A" (at 294.64 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PCB FEATURE" (at 294.64 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Status" "N/A" (at 294.64 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Basis" "PCB feature" (at 294.64 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Max (degC)" "N/A" (at 294.64 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Min (degC)" "N/A" (at 294.64 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "N/A" (at 294.64 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "PCB mounting hole" (at 294.64 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Assembly" "PCB feature - no purchased component" (at 294.64 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "N/A" (at 294.64 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Manufacturer" "N/A" (at 294.64 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "MPN" "N/A" (at 294.64 248.92 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "BOM Review" "Hole only. Four shared 12 mm supports per stack; support material, screws and washers are not selected here."
+      (at 180.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "N/A"
+      (at 180.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PCB FEATURE"
+      (at 180.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "N/A"
+      (at 180.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "PCB feature"
+      (at 180.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "N/A"
+      (at 180.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "N/A"
+      (at 180.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "N/A"
+      (at 180.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "PCB mounting hole"
+      (at 180.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Assembly" "PCB feature - no purchased component"
+      (at 180.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "N/A"
+      (at 180.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "N/A"
+      (at 180.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "N/A"
+      (at 180.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Mechanical:MountingHole")
-    (at 340.36 248.92 0)
+    (at 225.0 220.0 0)
     (unit 1)
     (in_bom no)
     (on_board yes)
     (dnp no)
     (uuid "c4a44c02-7610-5887-a68a-8420b062409f")
     (property "Reference" "H33"
-      (at 340.36 243.83999999999997 0)
+      (at 225.0 214.92 0)
       (effects
         (font
           (size 1.27 1.27))))
     (property "Value" "M3 STACK SUPPORT"
-      (at 340.36 246.38 0)
+      (at 225.0 217.46 0)
       (effects
         (font
           (size 1.27 1.27))))
     (property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
-      (at 340.36 248.92 0)
+      (at 225.0 220.0 0)
       (effects
         (font
           (size 1.27 1.27))
@@ -2985,90 +3245,241 @@
         (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/3f9c8f12-0f4f-4aa4-9cc2-9b6623511d78"
           (reference "H33")
           (unit 1))))
-  (property "BOM Review" "Hole only. Four shared 12 mm supports per stack; support material, screws and washers are not selected here." (at 340.36 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "N/A" (at 340.36 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PCB FEATURE" (at 340.36 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Status" "N/A" (at 340.36 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Basis" "PCB feature" (at 340.36 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Max (degC)" "N/A" (at 340.36 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Min (degC)" "N/A" (at 340.36 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "N/A" (at 340.36 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "PCB mounting hole" (at 340.36 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Assembly" "PCB feature - no purchased component" (at 340.36 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "N/A" (at 340.36 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Manufacturer" "N/A" (at 340.36 248.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "MPN" "N/A" (at 340.36 248.92 0) (effects (font (size 1.27 1.27)) (hide yes))))
-  (sheet_instances
-    (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/3f9c8f12-0f4f-4aa4-9cc2-9b6623511d78"
-      (page "2")))
-  (wire
-    (pts
-      (xy 73.66 124.46)
-      (xy 66.04 124.46))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "d5e9903b-e3fd-5ba7-b0e7-2e49fb992578"))
-  (wire
-    (pts
-      (xy 109.22 124.46)
-      (xy 116.84 124.46))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "edf9a290-9091-55b1-8a1f-fbbe1bd1492e"))
-  (wire
-    (pts
-      (xy 264.16 226.06)
-      (xy 271.78 226.06))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "96e98b5f-b3e3-5b8a-9d45-ace465efc1dd"))
-  (wire
-    (pts
-      (xy 66.04 124.46)
-      (xy 58.42 124.46))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "5c00ad70-0994-5fae-95f9-0730de02d9b8"))
-  (wire
-    (pts
-      (xy 116.84 124.46)
-      (xy 124.46 124.46))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "e8d21c10-6db1-5966-9904-9aeb43109810"))
-  (hierarchical_label "PIVOT_MODBUS_TX"
-    (shape input)
-    (at 276.86 83.82 180)
+    (property "BOM Review" "Hole only. Four shared 12 mm supports per stack; support material, screws and washers are not selected here."
+      (at 225.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "N/A"
+      (at 225.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PCB FEATURE"
+      (at 225.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "N/A"
+      (at 225.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "PCB feature"
+      (at 225.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "N/A"
+      (at 225.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "N/A"
+      (at 225.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "N/A"
+      (at 225.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "PCB mounting hole"
+      (at 225.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Assembly" "PCB feature - no purchased component"
+      (at 225.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "N/A"
+      (at 225.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "N/A"
+      (at 225.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "N/A"
+      (at 225.0 220.0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
+  (text "P6 STACK INTERFACE - incompatible with P4/P5 pinout"
+    (at 25.4 20.32 0)
     (effects
       (font
-        (size 1.27 1.27))
-      (justify right))
-    (uuid "ce0a9d98-dc44-5db4-ab19-51ad5a9511ca"))
-  (hierarchical_label "PIVOT_MODBUS_RX"
-    (shape output)
-    (at 312.42 83.82 0)
+        (size 2.54 2.54))
+      (justify left top))
+    (uuid "209ff086-94e6-5beb-93dd-d682bdbacc34"))
+  (text "J30 CLEAN LOGIC / STM32 GROUND"
+    (at 35.56 35.56 0)
     (effects
       (font
-        (size 1.27 1.27))
-      (justify left))
-    (uuid "47bf8af9-40ae-5832-857a-f3fb8544aa27"))
-  (hierarchical_label "PIVOT_MODBUS_DE"
-    (shape input)
-    (at 312.42 93.98 0)
+        (size 1.524 1.524))
+      (justify left top))
+    (uuid "7238fffe-a2a7-5fe2-a841-4164f28955ff"))
+  (text "J31 FIELD SUPPLIES / -BATT RETURN\nSSI local 5 V and preregulator connections retained"
+    (at 233.68 35.56 0)
     (effects
       (font
-        (size 1.27 1.27))
-      (justify left))
-    (uuid "97f29374-dcf8-5357-a630-6d1efa074efa"))
-  (text "P4.1: J31-13 TX, J31-14 RX, J31-18 DE -> isolated pivot Modbus RTU.\nThese replace three P4 ground contacts. Mate only matching P4.1 boards.\nUSART2: PD5 TX, PD6 RX, PD4 hardware DE, AF7. DE defaults low on carrier."
-    (at 20.32 137.16 0)
+        (size 1.524 1.524))
+      (justify left top))
+    (uuid "e73559dc-6134-5633-9a0e-3b1cabd8a391"))
+  (text "Keep J30 clean copper separate from J31 field copper. No field current on STM32 grounds.\nParallel supply contacts retained; confirm actual loads and derating before release."
+    (at 25.4 175.26 0)
     (effects
       (font
         (size 1.27 1.27))
       (justify left top))
-    (uuid "f846bbd5-a2a7-5d29-a61c-9bd3a643ef2d")))
+    (uuid "3733e4e8-d647-5324-a186-ae3323cf2edb"))
+  (symbol
+    (lib_id "power:PWR_FLAG")
+    (at 40.64 152.4 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "0991c95c-fc6c-5a77-a74c-dd7bf305ecc4")
+    (property "Reference" "#FLGP61"
+      (at 40.64 154.305 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)
+        (hide yes)))
+    (property "Value" "PWR_FLAG"
+      (at 40.64 147.32 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 40.64 152.4 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 40.64 152.4 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Description" ""
+      (at 40.64 152.4 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "hierarchy_path" "/74ecd43a-6c87-54e8-8e8e-353108e4b3d7/b1622f31-e380-5224-aac0-e9fc7fd1696e"
+      (at 43.18 157.4799 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Assembly" "FIT"
+      (at -281.94 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "N/A"
+      (at -281.94 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "N/A"
+      (at -281.94 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "PCB feature"
+      (at -281.94 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "N/A"
+      (at -281.94 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Source" "N/A"
+      (at -281.94 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC Part #" "N/A"
+      (at -281.94 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Library" "N/A"
+      (at -281.94 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Stock Snapshot" "N/A"
+      (at -281.94 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "DigiKey Part #" "N/A"
+      (at -281.94 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "DigiKey Status" "N/A"
+      (at -281.94 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Data Checked" "2026-09-18"
+      (at -281.94 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "bbd52c33-689d-59fa-9f57-f0ab10a80a46"))
+    (instances
+      (project "Elevation_Pivot_Daughter-Board"
+        (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/3f9c8f12-0f4f-4aa4-9cc2-9b6623511d78"
+          (reference "#FLGP61")
+          (unit 1)))))
+  (global_label "+3V3_STM32"
+    (shape bidirectional)
+    (at 40.64 152.4 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "d97506ba-a01b-5522-a78f-93d5e9402bff")))

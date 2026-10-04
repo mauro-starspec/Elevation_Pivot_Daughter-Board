@@ -11,6 +11,8 @@ import pymupdf as pdf
 ROOT=Path(__file__).resolve().parents[1]
 OUT=ROOT/'outputs'; OUT.mkdir(exist_ok=True)
 DATA=json.loads((ROOT/'assembly/stack_interface.json').read_text())
+if DATA.get('revision')=='P6':
+    raise SystemExit('Historical P4/P5 PDF exporter. For P6 use the native projects and docs/reviews/p6 previews; the old assembly cover is superseded.')
 REPORT=json.loads((OUT/'p4_stack_validation.json').read_text())
 CLI=shutil.which('kicad-cli') or 'C:/Program Files/KiCad/9.0/bin/kicad-cli.exe'
 for name,project in [('Controller','controller/Elevation_Controller'),('Elevation','Elevation_Pivot_Daughter-Board')]:

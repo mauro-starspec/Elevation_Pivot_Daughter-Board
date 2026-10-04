@@ -7,316 +7,17 @@
   (title_block
     (title "Elevation Pivot Daughter Board")
     (date "2026-10-03")
-    (rev "P4.1 MODBUS")
+    (rev "P6 COMPACT")
     (company "Starspec")
     (comment 4 "Mauro M. Coutinho"))
   (lib_symbols)
-  (text "Up to 1.0 uF: Stick with 0805.\n1.0 uF to 10 uF: This is the \"gray area.\" Depends on the voltage. Try 1206\nAbove 10 uF: Switch to 1210."
-    (exclude_from_sim no)
-    (at 27.94 -45.466 0)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify left))
-    (uuid "31d39f2c-f00f-4d8f-a870-81862583b0bf"))
-  (text "Controller RJ45 -> Ethernet cable/switch -> FMP100-50-IPM"
-    (exclude_from_sim no)
-    (at 60.96 13.97 0)
-    (effects
-      (font
-        (size 1.27 1.27)))
-    (uuid "7414c2aa-5c88-4f08-91b5-f9c2913409ba"))
-  (text "P4.1: custom STM32 controller on a matched two-board stack.\nTwo SSI + two motor encoders; onboard TH1/TH2 retained.\nJ30/J31: 32 signals + reset + 5 V / 3.3 V / ground.\nPivot Modbus RTU added. External PSRB controls device power."
-    (exclude_from_sim no)
-    (at 233.68 238.76 0)
-    (effects
-      (font
-        (size 1.016 1.016))
-      (justify left top))
-    (uuid "81ed0143-7710-5373-8908-04a097d2ba71"))
-  (wire
-    (pts
-      (xy 142.24 257.81)
-      (xy 68.58 257.81))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "09a6e28d-7014-41fa-bf11-300fdb479151"))
-  (wire
-    (pts
-      (xy 68.58 30.48)
-      (xy 143.51 30.48))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "0ce57794-8d58-5b4c-8eef-f44bae8cef7c"))
-  (wire
-    (pts
-      (xy 68.58 157.48)
-      (xy 143.51 157.48))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "15b7de36-35e5-40a2-b4c1-a418e8d7d774"))
-  (wire
-    (pts
-      (xy 68.58 215.9)
-      (xy 142.24 215.9))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "16aed960-3e63-43be-aff6-ef68460ffce7"))
-  (wire
-    (pts
-      (xy 198.12 73.66)
-      (xy 189.23 73.66))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "1f4a4637-71a4-4683-8e1b-426349b78f5c"))
-  (wire
-    (pts
-      (xy 68.58 54.61)
-      (xy 143.51 54.61))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "303dac14-433e-56ae-bfd5-99c8bad0e521"))
-  (wire
-    (pts
-      (xy 68.58 99.06)
-      (xy 143.51 99.06))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "3621acc0-32a6-4beb-9b19-0e7725c0a763"))
-  (wire
-    (pts
-      (xy 68.58 50.8)
-      (xy 143.51 50.8))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "38577c6a-02b1-582f-adb1-3e19ad78f7ef"))
-  (wire
-    (pts
-      (xy 68.58 74.93)
-      (xy 143.51 74.93))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "42949c27-7003-4962-bff3-409b962eb9d5"))
-  (wire
-    (pts
-      (xy 68.58 151.13)
-      (xy 143.51 151.13))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "587b6c34-5d81-415a-8767-530578466c73"))
-  (wire
-    (pts
-      (xy 68.58 110.49)
-      (xy 143.51 110.49))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "5ddde8be-05dd-471b-b173-be7d2f232e15"))
-  (wire
-    (pts
-      (xy 68.58 26.67)
-      (xy 143.51 26.67))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "5fd2e7e8-5834-5576-a4ac-7d78d4d20bdf"))
-  (wire
-    (pts
-      (xy 68.58 254)
-      (xy 142.24 254))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "67c6b9f7-9533-4daf-8026-55385f994e5e"))
-  (wire
-    (pts
-      (xy 189.23 69.85)
-      (xy 203.2 69.85))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "6f25babd-7615-4894-9d31-57e8da55562e"))
-  (wire
-    (pts
-      (xy 68.58 200.66)
-      (xy 142.24 200.66))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "7d80b3e9-5270-4251-8420-a80ec6c56b74"))
-  (wire
-    (pts
-      (xy 68.58 250.19)
-      (xy 142.24 250.19))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "822c8133-0601-4570-8fc9-06a8643ee3ff"))
-  (wire
-    (pts
-      (xy 198.12 88.9)
-      (xy 198.12 73.66))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "83eac0e6-8f2b-42c4-9f52-a4ac52e76f31"))
-  (wire
-    (pts
-      (xy 68.58 135.89)
-      (xy 143.51 135.89))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "87fe58af-1d78-4cc2-8a8b-0d3fd577d8a5"))
-  (wire
-    (pts
-      (xy 203.2 69.85)
-      (xy 203.2 95.25))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "8968be8c-e742-4f20-9b0f-6803765a5302"))
-  (wire
-    (pts
-      (xy 68.58 204.47)
-      (xy 142.24 204.47))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "8fb77881-a04d-4b5e-b020-889d3051b7ae"))
-  (wire
-    (pts
-      (xy 68.58 177.8)
-      (xy 143.51 177.8))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "94704fc1-8087-478b-bf02-cbdfe8cf78b3"))
-  (wire
-    (pts
-      (xy 68.58 140.97)
-      (xy 143.51 140.97))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "9f4b3b39-f0b1-4ea8-b56d-aac1e35cb368"))
-  (wire
-    (pts
-      (xy 68.58 130.81)
-      (xy 143.51 130.81))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "9f961b7e-a72d-4bfe-bde5-2c2ed084ac9a"))
-  (wire
-    (pts
-      (xy 187.96 88.9)
-      (xy 198.12 88.9))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "a0b3fd7b-6b29-4ee0-93dd-e2a3878e716d"))
-  (wire
-    (pts
-      (xy 68.58 69.85)
-      (xy 143.51 69.85))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "a6a1c529-57c3-4f32-88dd-a2c4b0ab0bf3"))
-  (wire
-    (pts
-      (xy 68.58 219.71)
-      (xy 142.24 219.71))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "b06de186-6e82-42c4-b323-7db19c8697b8"))
-  (wire
-    (pts
-      (xy 68.58 46.99)
-      (xy 143.51 46.99))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "b46ca9da-29bf-577d-b885-ddc966b66100"))
-  (wire
-    (pts
-      (xy 68.58 167.64)
-      (xy 143.51 167.64))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "c712b308-3c5e-4f30-9195-80839ac70319"))
-  (wire
-    (pts
-      (xy 68.58 22.86)
-      (xy 143.51 22.86))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "cbd64e6f-fc5b-5033-819d-af64a8265299"))
-  (wire
-    (pts
-      (xy 68.58 162.56)
-      (xy 143.51 162.56))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "e80c1f09-cd09-427d-af91-5b1d953e3562"))
-  (wire
-    (pts
-      (xy 68.58 105.41)
-      (xy 143.51 105.41))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "f3fd6411-b87f-4e18-823f-7cdc62b6ff31"))
-  (wire
-    (pts
-      (xy 68.58 172.72)
-      (xy 143.51 172.72))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "f5d582c7-87ab-4df6-972d-2d9f85e7bbbe"))
-  (wire
-    (pts
-      (xy 68.58 95.25)
-      (xy 143.51 95.25))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "f7439fc6-8c9d-4ad9-96bc-543c563ba174"))
-  (wire
-    (pts
-      (xy 203.2 95.25)
-      (xy 187.96 95.25))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "fdb41d62-d243-4bc9-8932-26ac584e43b5"))
-  (wire
-    (pts
-      (xy 68.58 146.05)
-      (xy 143.51 146.05))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "feafa3cc-cc9a-48b5-b402-8f08404fba55"))
+  (sheet_instances
+    (path "/"
+      (page "1")))
+  (embedded_fonts no)
   (sheet
-    (at 143.51 64.77)
-    (size 45.72 13.97)
+    (at 25.4 60.96)
+    (size 111.76 25.4)
     (exclude_from_sim no)
     (in_bom yes)
     (on_board yes)
@@ -328,52 +29,24 @@
       (color 0 0 0 0.0))
     (uuid "17b8fa8c-be91-49fa-a99e-b377fef04af4")
     (property "Sheetname" "ADS1115"
-      (at 143.51 64.0584 0)
+      (at 25.4 59.69 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left bottom)))
     (property "Sheetfile" "ADS1115.kicad_sch"
-      (at 165.1 62.23 0)
+      (at 25.4 88.9 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left top)))
-    (pin "PORT_BRAKE_CURR" input
-      (at 189.23 73.66 0)
-      (uuid "984b5862-047b-4a9c-ba96-470c3dedf7fa")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right)))
-    (pin "STAR_BRAKE_CURR" input
-      (at 189.23 69.85 0)
-      (uuid "aa2fc3c8-110f-4a85-8041-c3c31cb2ece0")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right)))
-    (pin "STM32_SCL" input
-      (at 143.51 69.85 180)
-      (uuid "e905c3d0-a887-4185-ad9e-f2b4a153817a")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left)))
-    (pin "STM32_SDA" bidirectional
-      (at 143.51 74.93 180)
-      (uuid "653e3a1b-6734-4545-82e7-02829693cf50")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left)))
     (instances
       (project "Elevation_Pivot_Daughter-Board"
         (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d"
-          (page "9")))))
+          (page "2")))))
   (sheet
-    (at 143.51 19.05)
-    (size 76.2 40.64)
+    (at 154.94 60.96)
+    (size 111.76 25.4)
     (exclude_from_sim no)
     (in_bom yes)
     (on_board yes)
@@ -385,186 +58,24 @@
       (color 0 0 0 0.0))
     (uuid "2e710e11-24fc-53a2-ac67-6179fd34ea44")
     (property "Sheetname" "Pivot_Encoder_Port"
-      (at 143.51 16.51 0)
+      (at 154.94 59.69 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left)))
     (property "Sheetfile" "Pivot_Encoder_Port.kicad_sch"
-      (at 170.18 16.51 0)
+      (at 154.94 88.9 0)
       (effects
         (font
           (size 1.016 1.016))
         (justify left)))
-    (pin "PORT_ENC_A" output
-      (at 143.51 22.86 180)
-      (uuid "5b391911-c9ff-5006-9f63-5e2fcdf10a5e")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left)))
-    (pin "PORT_ENC_B" output
-      (at 143.51 26.67 180)
-      (uuid "841c3a03-4ade-56c6-bc53-2ddd84b3cd95")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left)))
-    (pin "PORT_ENC_Z" output
-      (at 143.51 30.48 180)
-      (uuid "7a98b804-f518-53d7-b017-8aa4ff3a8c2a")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left)))
     (instances
       (project "Elevation_Pivot_Daughter-Board"
         (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d"
-          (page "10"))))
-    (pin "STAR_ENC_A" output
-      (at 143.51 46.99 180)
-      (uuid "bf1ba9b6-cdc1-5de6-8658-f9d4d18736de")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left)))
-    (pin "STAR_ENC_B" output
-      (at 143.51 50.8 180)
-      (uuid "8e4c3826-e7a2-5e31-8c75-79ae3f10074f")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left)))
-    (pin "STAR_ENC_Z" output
-      (at 143.51 54.61 180)
-      (uuid "ec852a1b-3779-5fcb-9f0d-14a73c8f29db")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left)))
-    (pin "STAR_ENC_A_RX" input
-      (at 219.71 22.86 0)
-      (uuid "dda0fa2e-935a-5364-85e3-bea0b514a05c")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right)))
-    (pin "STAR_ENC_B_RX" input
-      (at 219.71 26.67 0)
-      (uuid "c65a9c8c-22a1-55de-aa5c-7d00b1be965b")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right)))
-    (pin "STAR_ENC_Z_RX" input
-      (at 219.71 30.48 0)
-      (uuid "028d4541-20aa-5ae3-a547-c2366dadac35")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right))))
+          (page "3")))))
   (sheet
-    (at 143.51 124.46)
-    (size 33.02 63.5)
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (stroke
-      (width 0.1524)
-      (type solid))
-    (fill
-      (color 0 0 0 0.0))
-    (uuid "32d2e4f0-d417-4e3e-aa66-6e1c3db35079")
-    (property "Sheetname" "Stepper"
-      (at 143.51 123.19 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left bottom)))
-    (property "Sheetfile" "Stepper.kicad_sch"
-      (at 177.1146 158.75 90)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left top)))
-    (pin "PORT_STR8_DIR_CMD" input
-      (at 143.51 135.89 180)
-      (uuid "879b73c7-eac6-4364-833f-d91a34f0695d")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left)))
-    (pin "PORT_STR8_DISABLE" input
-      (at 143.51 140.97 180)
-      (uuid "c010efd7-8833-4713-9fae-7e9edbe386e0")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left)))
-    (pin "PORT_STR8_FAULT" output
-      (at 143.51 146.05 180)
-      (uuid "869c9ae6-cca8-47f9-81d4-cda68b4a45c7")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left)))
-    (pin "PORT_STR8_STEP_CMD" input
-      (at 143.51 130.81 180)
-      (uuid "de59d7e8-80d7-4657-89d2-f6a9a4cff503")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left)))
-    (pin "STAR_STR8_DIR_CMD" input
-      (at 143.51 162.56 180)
-      (uuid "2ca09ec7-410d-4823-88b7-6b20e826ce49")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left)))
-    (pin "STAR_STR8_DISABLE" input
-      (at 143.51 167.64 180)
-      (uuid "1664f9b2-284a-4806-9969-c593d8adb620")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left)))
-    (pin "STAR_STR8_FAULT" output
-      (at 143.51 172.72 180)
-      (uuid "1e9c559e-af29-4757-8cf7-23ba321401d8")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left)))
-    (pin "STAR_STR8_STEP_CMD" input
-      (at 143.51 157.48 180)
-      (uuid "3c5c887e-9631-415f-8e49-9633115eef50")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left)))
-    (pin "PORT_ENC_PRESET" input
-      (at 143.51 151.13 180)
-      (uuid "f8748885-7b20-4c45-a4aa-f9b18518a3bd")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left)))
-    (pin "STAR_ENC_PRESET" input
-      (at 143.51 177.8 180)
-      (uuid "2b9ebc4a-899e-455f-ab34-90a246c32507")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left)))
-    (instances
-      (project "Elevation_Pivot_Daughter-Board"
-        (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d"
-          (page "7")))))
-  (sheet
-    (at 339.09 93.98)
-    (size 24.13 25.4)
+    (at 284.48 60.96)
+    (size 111.76 25.4)
     (exclude_from_sim no)
     (in_bom yes)
     (on_board yes)
@@ -577,13 +88,13 @@
       (color 0 0 0 0.0))
     (uuid "3be31935-de41-4925-b1be-c3dd6e96a5f6")
     (property "Sheetname" "LTC4364"
-      (at 339.09 93.2684 0)
+      (at 284.47999999999996 59.69 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left bottom)))
     (property "Sheetfile" "LTC4364.kicad_sch"
-      (at 339.09 119.9646 0)
+      (at 284.47999999999996 88.9 0)
       (effects
         (font
           (size 1.27 1.27))
@@ -591,10 +102,10 @@
     (instances
       (project "Elevation_Pivot_Daughter-Board"
         (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d"
-          (page "3")))))
+          (page "4")))))
   (sheet
-    (at 35.56 20.32)
-    (size 33.02 243.84)
+    (at 25.4 106.68)
+    (size 111.76 25.4)
     (exclude_from_sim no)
     (in_bom yes)
     (on_board yes)
@@ -607,248 +118,24 @@
       (color 0 0 0 0.0))
     (uuid "3f9c8f12-0f4f-4aa4-9cc2-9b6623511d78")
     (property "Sheetname" "Controller_Interface"
-      (at 35.56 19.6084 0)
+      (at 25.4 105.41000000000001 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left bottom)))
     (property "Sheetfile" "STM32.kicad_sch"
-      (at 35.56 264.7446 0)
+      (at 25.4 134.62 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left top)))
-    (pin "E_STOP_OK" input
-      (at 68.58 95.25 0)
-      (uuid "db5c2b36-e508-432d-9879-089d6df8739f")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right)))
-    (pin "HOME_POS" input
-      (at 68.58 99.06 0)
-      (uuid "81c6c270-2e21-4cff-aeac-da3f18f11205")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right)))
-    (pin "PORT_BRAKE_RELEASE_CMD" output
-      (at 68.58 105.41 0)
-      (uuid "84c0ea4c-977a-4945-ae69-63d7d1c3b03a")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right)))
-    (pin "STAR_BRAKE_RELEASE_CMD" output
-      (at 68.58 110.49 0)
-      (uuid "6078533f-207d-4098-95c5-ff08b525ac9e")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right)))
-    (pin "RX_CAN" input
-      (at 68.58 257.81 0)
-      (uuid "c890a05c-c8c6-44d9-b962-9392da7fe2f0")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right)))
-    (pin "Silent_Mode" output
-      (at 68.58 250.19 0)
-      (uuid "306843ba-bb7e-48e3-826e-a485f0f5649d")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right)))
-    (pin "STM32_SCL" output
-      (at 68.58 69.85 0)
-      (uuid "2bc31b49-729d-49ba-9584-d05577d570f5")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right)))
-    (pin "STM32_SDA" bidirectional
-      (at 68.58 74.93 0)
-      (uuid "9838f14c-8513-4e79-b7d0-cf3dc6aea8da")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right)))
-    (pin "TX_CAN" output
-      (at 68.58 254 0)
-      (uuid "77125e1d-0b70-4579-9791-664c6b61fffe")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right)))
-    (pin "PORT_SSI_CLK" output
-      (at 68.58 200.66 0)
-      (uuid "7be29863-724b-4d85-8834-5a1530421782")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right)))
-    (pin "PORT_SSI_DATA" input
-      (at 68.58 204.47 0)
-      (uuid "36bf942d-d7ba-47f1-8fbd-14eb2cc47eb5")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right)))
-    (pin "STAR_SSI_CLK" output
-      (at 68.58 215.9 0)
-      (uuid "833ce18a-aa3e-41f9-864b-73d35867a9a2")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right)))
-    (pin "STAR_SSI_DATA" input
-      (at 68.58 219.71 0)
-      (uuid "c0e0f596-3e9e-48b6-adfd-493872af0afd")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right)))
-    (pin "PORT_STR8_DIR_CMD" output
-      (at 68.58 135.89 0)
-      (uuid "e8ce13fe-487d-43b1-ab00-5f315cbec459")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right)))
-    (pin "PORT_STR8_DISABLE" output
-      (at 68.58 140.97 0)
-      (uuid "d5919ce6-1850-4f21-acad-4e74ab40b897")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right)))
-    (pin "PORT_STR8_FAULT" input
-      (at 68.58 146.05 0)
-      (uuid "23f061a6-b3ab-4659-9c85-7a683de38e0e")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right)))
-    (pin "PORT_STR8_STEP_CMD" output
-      (at 68.58 130.81 0)
-      (uuid "64bbbc5f-f31d-463c-b6b2-ee6c7d3c515b")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right)))
-    (pin "STAR_STR8_DIR_CMD" output
-      (at 68.58 162.56 0)
-      (uuid "2efb0454-c533-49ea-9ddf-c79e4822b9d3")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right)))
-    (pin "STAR_STR8_DISABLE" output
-      (at 68.58 167.64 0)
-      (uuid "faa782d6-755e-4576-9cf7-736528393da6")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right)))
-    (pin "STAR_STR8_FAULT" input
-      (at 68.58 172.72 0)
-      (uuid "7a0a75fa-87e2-48de-b01f-73188eedd553")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right)))
-    (pin "STAR_STR8_STEP_CMD" output
-      (at 68.58 157.48 0)
-      (uuid "cba788ee-17fd-4da3-8286-8dc8c6eb373b")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right)))
-    (pin "PORT_ENC_PRESET_N" output
-      (at 68.58 151.13 0)
-      (uuid "ed70dc44-b25d-42fe-aa8b-0e685ed7316d")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right)))
-    (pin "STAR_ENC_PRESET_N" output
-      (at 68.58 177.8 0)
-      (uuid "7649a73f-055b-4c41-acd0-6ff55eb7caae")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right)))
-    (pin "PORT_ENC_A" input
-      (at 68.58 22.86 0)
-      (uuid "ff448145-3af3-58ec-96ac-0b1af29f4a7b")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right)))
-    (pin "PORT_ENC_B" input
-      (at 68.58 26.67 0)
-      (uuid "87b7ad30-755a-5d3a-8127-b3f4ca7877ad")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right)))
-    (pin "PORT_ENC_Z" input
-      (at 68.58 30.48 0)
-      (uuid "8aa6736f-cbad-5808-a049-313e35b380d1")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right)))
-    (pin "STAR_ENC_A" input
-      (at 68.58 46.99 0)
-      (uuid "548de492-a55b-54e2-b1f8-3e3d2df29141")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right)))
-    (pin "STAR_ENC_B" input
-      (at 68.58 50.8 0)
-      (uuid "53bae42c-d8cc-51c9-86fb-afc16438387a")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right)))
-    (pin "STAR_ENC_Z" input
-      (at 68.58 54.61 0)
-      (uuid "d7a5a5be-9c76-5acb-9681-ad92567de582")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right)))
     (instances
       (project "Elevation_Pivot_Daughter-Board"
         (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d"
-          (page "2"))))
-    (pin "PIVOT_MODBUS_TX" output
-      (at 68.58 228.6 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right))
-      (uuid "3a92ea06-0383-57e2-8cf8-4af331d1159d"))
-    (pin "PIVOT_MODBUS_RX" input
-      (at 68.58 232.41 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right))
-      (uuid "798a1679-cb65-5b7a-bcac-4b7fa9acdf47"))
-    (pin "PIVOT_MODBUS_DE" output
-      (at 68.58 236.22 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right))
-      (uuid "9f3110df-6367-5d22-8365-75389a9bd171")))
+          (page "5")))))
   (sheet
-    (at 142.24 242.57)
-    (size 38.1 24.13)
+    (at 154.94 106.68)
+    (size 111.76 25.4)
     (exclude_from_sim no)
     (in_bom yes)
     (on_board yes)
@@ -860,45 +147,24 @@
       (color 0 0 0 0.0))
     (uuid "523e9d74-0733-4f68-aa67-b0ec5bd88b9c")
     (property "Sheetname" "ServoMotor"
-      (at 142.24 241.8584 0)
+      (at 154.94 105.41000000000001 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left bottom)))
     (property "Sheetfile" "ServoMotor.kicad_sch"
-      (at 181.61 266.7 90)
+      (at 154.94 134.62 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left top)))
-    (pin "RX_CAN" output
-      (at 142.24 257.81 180)
-      (uuid "643fe58f-b241-4fe4-9d59-14bacc5d8316")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left)))
-    (pin "Silent_Mode" input
-      (at 142.24 250.19 180)
-      (uuid "c638a8fc-73c8-47c7-8633-a983bf17afe3")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left)))
-    (pin "TX_CAN" input
-      (at 142.24 254 180)
-      (uuid "128ef187-311f-405c-ad44-a51188be673d")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left)))
     (instances
       (project "Elevation_Pivot_Daughter-Board"
         (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d"
-          (page "8")))))
+          (page "6")))))
   (sheet
-    (at 143.51 87.63)
-    (size 44.45 26.67)
+    (at 284.48 106.68)
+    (size 111.76 25.4)
     (exclude_from_sim no)
     (in_bom yes)
     (on_board yes)
@@ -910,66 +176,24 @@
       (color 0 0 0 0.0))
     (uuid "6765969a-e8c4-4024-a99d-060a4869a208")
     (property "Sheetname" "Brakes"
-      (at 143.51 86.9184 0)
+      (at 284.47999999999996 105.41000000000001 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left bottom)))
     (property "Sheetfile" "Brakes.kicad_sch"
-      (at 165.1 85.09 0)
+      (at 284.47999999999996 134.62 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left top)))
-    (pin "E_STOP_OK" output
-      (at 143.51 95.25 180)
-      (uuid "42a40048-9cab-40c6-a453-c4c557b4a88b")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left)))
-    (pin "HOME_POS" output
-      (at 143.51 99.06 180)
-      (uuid "a8cfb28b-549b-44d0-b63c-e64296c3828d")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left)))
-    (pin "PORT_BRAKE_CURR" output
-      (at 187.96 88.9 0)
-      (uuid "8271506c-005f-4b48-a217-71f8531f986d")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right)))
-    (pin "PORT_BRAKE_RELEASE_CMD" input
-      (at 143.51 105.41 180)
-      (uuid "26edcf29-3e33-44e3-9ee4-9a7d7eb3626f")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left)))
-    (pin "STAR_BRAKE_CURR" output
-      (at 187.96 95.25 0)
-      (uuid "cc0db44d-e6d4-4272-b6d8-e32b1ac2fad3")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify right)))
-    (pin "STAR_BRAKE_RELEASE_CMD" input
-      (at 143.51 110.49 180)
-      (uuid "6d79dba9-6ed5-4c59-97b1-c881dd33ac33")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left)))
     (instances
       (project "Elevation_Pivot_Daughter-Board"
         (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d"
-          (page "5")))))
+          (page "7")))))
   (sheet
-    (at 337.82 49.53)
-    (size 24.13 25.4)
+    (at 25.4 152.4)
+    (size 111.76 25.4)
     (exclude_from_sim no)
     (in_bom yes)
     (on_board yes)
@@ -982,13 +206,13 @@
       (color 0 0 0 0.0))
     (uuid "a758a419-0bc2-4a38-adcd-f0c29b2c9208")
     (property "Sheetname" "DC DC Step down"
-      (at 337.82 48.8184 0)
+      (at 25.4 151.13 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left bottom)))
     (property "Sheetfile" "DC_DC_Step_Down.kicad_sch"
-      (at 337.82 75.5146 0)
+      (at 25.4 180.34 0)
       (effects
         (font
           (size 1.27 1.27))
@@ -996,10 +220,10 @@
     (instances
       (project "Elevation_Pivot_Daughter-Board"
         (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d"
-          (page "4")))))
+          (page "8")))))
   (sheet
-    (at 254 19.05)
-    (size 57.15 16.51)
+    (at 154.94 152.4)
+    (size 111.76 25.4)
     (exclude_from_sim no)
     (in_bom yes)
     (on_board yes)
@@ -1011,13 +235,13 @@
       (color 0 0 0 0.0))
     (uuid "aaef5caf-c763-5ff0-9a29-93dc06652472")
     (property "Sheetname" "Pivot_Encoder_Star"
-      (at 254 16.51 0)
+      (at 154.94 151.13 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left)))
     (property "Sheetfile" "Pivot_Encoder_Star.kicad_sch"
-      (at 281.94 16.51 0)
+      (at 154.94 180.34 0)
       (effects
         (font
           (size 1.016 1.016))
@@ -1025,220 +249,10 @@
     (instances
       (project "Elevation_Pivot_Daughter-Board"
         (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d"
-          (page "11"))))
-    (pin "STAR_ENC_A_RX" output
-      (at 254 22.86 180)
-      (uuid "d68760d4-230e-5598-8775-fd4cc20fc9d3")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left)))
-    (pin "STAR_ENC_B_RX" output
-      (at 254 26.67 180)
-      (uuid "c20d9210-fa7b-5303-a4d4-41a657c0026d")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left)))
-    (pin "STAR_ENC_Z_RX" output
-      (at 254 30.48 180)
-      (uuid "1f137806-0acb-50ca-87dd-f3def57ef591")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left))))
+          (page "9")))))
   (sheet
-    (at 142.24 196.85)
-    (size 36.83 26.67)
-    (exclude_from_sim no)
-    (in_bom yes)
-    (on_board yes)
-    (dnp no)
-    (stroke
-      (width 0.1524)
-      (type solid))
-    (fill
-      (color 0 0 0 0.0))
-    (uuid "edc2c25e-cbd2-4f51-8e64-f3792119425c")
-    (property "Sheetname" "SSI_Encoder"
-      (at 142.24 196.1384 0)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left bottom)))
-    (property "Sheetfile" "SSI_Encoder.kicad_sch"
-      (at 180.34 223.52 90)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left top)))
-    (pin "PORT_SSI_CLK" input
-      (at 142.24 200.66 180)
-      (uuid "c6958a71-2232-4114-a790-52db0849e39b")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left)))
-    (pin "PORT_SSI_DATA" output
-      (at 142.24 204.47 180)
-      (uuid "297ea099-a1d1-4d41-9de4-4310a00b6d76")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left)))
-    (pin "STAR_SSI_CLK" input
-      (at 142.24 215.9 180)
-      (uuid "19e563f3-ee18-478a-bb60-81806b361381")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left)))
-    (pin "STAR_SSI_DATA" output
-      (at 142.24 219.71 180)
-      (uuid "b0af9847-fa44-40b9-a075-54d1b9ce68cf")
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left)))
-    (instances
-      (project "Elevation_Pivot_Daughter-Board"
-        (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d"
-          (page "6")))))
-  (sheet_instances
-    (path "/"
-      (page "1")))
-  (embedded_fonts no)
-  (wire
-    (pts
-      (xy 219.71 22.86)
-      (xy 254 22.86))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "c13dd4c6-bb1e-5f85-84b7-6dec915156c4"))
-  (wire
-    (pts
-      (xy 219.71 26.67)
-      (xy 254 26.67))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "acadddba-7f9b-5f51-83de-7d9cbaecedb9"))
-  (wire
-    (pts
-      (xy 219.71 30.48)
-      (xy 254 30.48))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "a1b18f93-762c-533d-b512-29d27e53f95e"))
-  (text "Shared isolation U101\nPort + Star A/B/Z"
-    (at 151.13 35.56 0)
-    (effects
-      (font
-        (size 1.016 1.016))
-      (justify left top))
-    (uuid "1efd8f18-c47c-531e-b9a7-f655425e30f1"))
-  (text "Receiver outputs to shared isolator"
-    (at 254 39.37 0)
-    (effects
-      (font
-        (size 1.016 1.016))
-      (justify left top))
-    (uuid "f9854123-f6a7-5cf3-b580-c34b9183a567"))
-  (wire
-    (pts
-      (xy 68.58 228.6)
-      (xy 76.2 228.6))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "8c07850f-0f9c-5bdc-bbb5-a6974bd30362"))
-  (label "PIVOT_MODBUS_TX"
-    (at 76.2 228.6 0)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify left))
-    (uuid "e8663b32-b776-52da-be32-5891e80dff5a"))
-  (wire
-    (pts
-      (xy 254 160.02)
-      (xy 246.38 160.02))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "d934fcbd-ee49-5a3e-bfa4-6704fc0fefa2"))
-  (label "PIVOT_MODBUS_TX"
-    (at 246.38 160.02 180)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify right))
-    (uuid "959c090b-5511-5c71-b3a9-4e73f905bb0b"))
-  (wire
-    (pts
-      (xy 68.58 232.41)
-      (xy 76.2 232.41))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "25ca22d9-e67a-5a28-9fb3-9d1a318845b3"))
-  (label "PIVOT_MODBUS_RX"
-    (at 76.2 232.41 0)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify left))
-    (uuid "67e35926-f7a9-509a-9bb8-0e4c062afee6"))
-  (wire
-    (pts
-      (xy 254 167.64000000000001)
-      (xy 246.38 167.64))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "3afa1ecf-5690-5be6-8eef-9298b65d3a16"))
-  (label "PIVOT_MODBUS_RX"
-    (at 246.38 167.64 180)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify right))
-    (uuid "bfddbe9b-9e24-5f10-b759-375d1ddc7cf4"))
-  (wire
-    (pts
-      (xy 68.58 236.22)
-      (xy 76.2 236.22))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "f86fc621-afba-5a5b-bcdb-f3cc66954367"))
-  (label "PIVOT_MODBUS_DE"
-    (at 76.2 236.22 0)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify left))
-    (uuid "009e4937-1e1f-5f7d-aef5-55ae4e72a13b"))
-  (wire
-    (pts
-      (xy 254 175.26000000000002)
-      (xy 246.38 175.26))
-    (stroke
-      (width 0)
-      (type default))
-    (uuid "a1d51d3f-833d-5c9c-91b9-1111f9935616"))
-  (label "PIVOT_MODBUS_DE"
-    (at 246.38 175.26 180)
-    (effects
-      (font
-        (size 1.27 1.27))
-      (justify right))
-    (uuid "8b9d70bd-4ef5-56f7-a02b-14902b1b9333"))
-  (sheet
-    (at 254 152.4)
-    (size 83.82 35.56)
+    (at 284.48 152.4)
+    (size 111.76 25.4)
     (stroke
       (width 0)
       (type default))
@@ -1246,13 +260,13 @@
       (color 0 0 0 0))
     (uuid "bc719b03-93e7-5d7a-bbb6-362bbb1ca736")
     (property "Sheetname" "Pivot_Modbus"
-      (at 254 151.638 0)
+      (at 284.47999999999996 151.13 0)
       (effects
         (font
           (size 1.27 1.27))
         (justify left bottom)))
     (property "Sheetfile" "Pivot_Modbus.kicad_sch"
-      (at 254 188.722 0)
+      (at 284.47999999999996 180.34 0)
       (effects
         (font
           (size 1.27 1.27))
@@ -1260,32 +274,18 @@
     (instances
       (project "Elevation_Pivot_Daughter-Board"
         (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d"
-          (page "12"))))
-    (pin "PIVOT_MODBUS_TX" input
-      (at 254 160.02 180)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left))
-      (uuid "97fe96e3-f1ee-503d-a484-6c73c1d0ef20"))
-    (pin "PIVOT_MODBUS_RX" output
-      (at 254 167.64000000000001 180)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left))
-      (uuid "b60fb49f-a05e-5cd7-b1db-4eea3c196a29"))
-    (pin "PIVOT_MODBUS_DE" input
-      (at 254 175.26000000000002 180)
-      (effects
-        (font
-          (size 1.27 1.27))
-        (justify left))
-      (uuid "c38de3db-30bd-5065-8a38-54f920bb3332")))
-  (text "Isolated RS-485 for pivot servo\nDE9 / termination / bus bias"
-    (at 256.54 198.12 0)
+          (page "10")))))
+  (text "P6 COMPACT STACK - 80 x 130 mm placement attempt"
+    (at 25.4 20.32 0)
     (effects
       (font
-        (size 1.27 1.27))
+        (size 2.54 2.54))
       (justify left top))
-    (uuid "0dbeba9e-5858-501a-84ec-a7115899dccd")))
+    (uuid "fcb56fd7-d202-5aff-9c73-a02789a99311"))
+  (text "P6 pinout only. J30: clean logic. J31: field power. Never mate with P4/P5 boards.\nCircuit functions and BOM selections retained; no routing."
+    (at 25.4 30.48 0)
+    (effects
+      (font
+        (size 1.524 1.524))
+      (justify left top))
+    (uuid "2b7a7ba3-7e19-5787-b668-e3e4294e92ef")))

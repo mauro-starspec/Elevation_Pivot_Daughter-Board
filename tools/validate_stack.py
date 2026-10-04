@@ -215,4 +215,7 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    if json.loads((ROOT/'assembly/stack_interface.json').read_text()).get('revision')=='P6':
+        import runpy
+        runpy.run_path(str(ROOT/'tools/validate_compact_all.py'),run_name='__main__')
+    else:main()

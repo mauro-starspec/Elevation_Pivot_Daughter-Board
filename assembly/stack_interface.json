@@ -1,5 +1,5 @@
 {
-  "revision": "P4.1",
+  "revision": "P6",
   "controller_source_commit": "2328ccb",
   "elevation_source_commit": "0c9ba1f",
   "board_gap_mm": 12.0,
@@ -10,224 +10,256 @@
       "mcu_gpio": "PE9",
       "mcu_pad": "60",
       "direction_at_mcu": "output",
-      "function": "TIM1_CH1 / AF1"
+      "function": "TIM1_CH1 / AF1",
+      "crosses_stack": false
     },
     {
       "signal": "STAR_STR8_STEP_CMD",
       "mcu_gpio": "PA0",
       "mcu_pad": "34",
       "direction_at_mcu": "output",
-      "function": "TIM5_CH1 / AF2"
+      "function": "TIM5_CH1 / AF2",
+      "crosses_stack": false
     },
     {
       "signal": "PORT_STR8_DIR_CMD",
       "mcu_gpio": "PE11",
       "mcu_pad": "64",
       "direction_at_mcu": "output",
-      "function": "GPIO"
+      "function": "GPIO",
+      "crosses_stack": false
     },
     {
       "signal": "STAR_STR8_DIR_CMD",
       "mcu_gpio": "PE8",
       "mcu_pad": "59",
       "direction_at_mcu": "output",
-      "function": "GPIO"
+      "function": "GPIO",
+      "crosses_stack": false
     },
     {
       "signal": "PORT_STR8_DISABLE",
       "mcu_gpio": "PE13",
       "mcu_pad": "66",
       "direction_at_mcu": "output",
-      "function": "GPIO"
+      "function": "GPIO",
+      "crosses_stack": false
     },
     {
       "signal": "STAR_STR8_DISABLE",
       "mcu_gpio": "PE10",
       "mcu_pad": "63",
       "direction_at_mcu": "output",
-      "function": "GPIO"
+      "function": "GPIO",
+      "crosses_stack": false
     },
     {
       "signal": "PORT_STR8_FAULT",
       "mcu_gpio": "PE14",
       "mcu_pad": "67",
       "direction_at_mcu": "input",
-      "function": "GPIO"
+      "function": "GPIO",
+      "crosses_stack": false
     },
     {
       "signal": "STAR_STR8_FAULT",
       "mcu_gpio": "PE6",
       "mcu_pad": "5",
       "direction_at_mcu": "input",
-      "function": "GPIO"
+      "function": "GPIO",
+      "crosses_stack": false
     },
     {
       "signal": "PORT_SSI_CLK",
       "mcu_gpio": "PB10",
       "mcu_pad": "69",
       "direction_at_mcu": "output",
-      "function": "GPIO"
+      "function": "GPIO",
+      "crosses_stack": false
     },
     {
       "signal": "STAR_SSI_CLK",
       "mcu_gpio": "PE2",
       "mcu_pad": "1",
       "direction_at_mcu": "output",
-      "function": "GPIO"
+      "function": "GPIO",
+      "crosses_stack": false
     },
     {
       "signal": "PORT_SSI_DATA",
       "mcu_gpio": "PC2_C",
       "mcu_pad": "28",
       "direction_at_mcu": "input",
-      "function": "PC2 digital via closed analog switch"
+      "function": "PC2 digital via closed analog switch",
+      "crosses_stack": false
     },
     {
       "signal": "STAR_SSI_DATA",
       "mcu_gpio": "PE5",
       "mcu_pad": "4",
       "direction_at_mcu": "input",
-      "function": "GPIO"
+      "function": "GPIO",
+      "crosses_stack": false
     },
     {
       "signal": "PORT_ENC_PRESET_N",
       "mcu_gpio": "PG2",
       "mcu_pad": "87",
       "direction_at_mcu": "output",
-      "function": "GPIO"
+      "function": "GPIO",
+      "crosses_stack": false
     },
     {
       "signal": "STAR_ENC_PRESET_N",
       "mcu_gpio": "PG3",
       "mcu_pad": "88",
       "direction_at_mcu": "output",
-      "function": "GPIO"
+      "function": "GPIO",
+      "crosses_stack": false
     },
     {
       "signal": "PORT_BRAKE_RELEASE_CMD",
       "mcu_gpio": "PD11",
       "mcu_pad": "80",
       "direction_at_mcu": "output",
-      "function": "GPIO"
+      "function": "GPIO",
+      "crosses_stack": true
     },
     {
       "signal": "STAR_BRAKE_RELEASE_CMD",
       "mcu_gpio": "PD12",
       "mcu_pad": "81",
       "direction_at_mcu": "output",
-      "function": "GPIO"
+      "function": "GPIO",
+      "crosses_stack": true
     },
     {
       "signal": "HOME_POS",
       "mcu_gpio": "PD13",
       "mcu_pad": "82",
       "direction_at_mcu": "input",
-      "function": "GPIO"
+      "function": "GPIO",
+      "crosses_stack": true
     },
     {
       "signal": "E_STOP_OK",
       "mcu_gpio": "PD15",
       "mcu_pad": "86",
       "direction_at_mcu": "input",
-      "function": "GPIO"
+      "function": "GPIO",
+      "crosses_stack": true
     },
     {
       "signal": "PORT_ENC_A",
       "mcu_gpio": "PA5",
       "mcu_pad": "41",
       "direction_at_mcu": "input",
-      "function": "TIM2_CH1 / AF1"
+      "function": "TIM2_CH1 / AF1",
+      "crosses_stack": true
     },
     {
       "signal": "PORT_ENC_B",
       "mcu_gpio": "PB3",
       "mcu_pad": "133",
       "direction_at_mcu": "input",
-      "function": "TIM2_CH2 / AF1"
+      "function": "TIM2_CH2 / AF1",
+      "crosses_stack": true
     },
     {
       "signal": "STAR_ENC_A",
       "mcu_gpio": "PC6",
       "mcu_pad": "96",
       "direction_at_mcu": "input",
-      "function": "TIM3_CH1 / AF2"
+      "function": "TIM3_CH1 / AF2",
+      "crosses_stack": true
     },
     {
       "signal": "STAR_ENC_B",
       "mcu_gpio": "PC7",
       "mcu_pad": "97",
       "direction_at_mcu": "input",
-      "function": "TIM3_CH2 / AF2"
+      "function": "TIM3_CH2 / AF2",
+      "crosses_stack": true
     },
     {
       "signal": "PORT_ENC_Z",
       "mcu_gpio": "PE4",
       "mcu_pad": "3",
       "direction_at_mcu": "input",
-      "function": "EXTI4"
+      "function": "EXTI4",
+      "crosses_stack": true
     },
     {
       "signal": "STAR_ENC_Z",
       "mcu_gpio": "PE3",
       "mcu_pad": "2",
       "direction_at_mcu": "input",
-      "function": "EXTI3"
+      "function": "EXTI3",
+      "crosses_stack": true
     },
     {
       "signal": "STM32_SCL",
       "mcu_gpio": "PB8",
       "mcu_pad": "139",
       "direction_at_mcu": "bidirectional",
-      "function": "I2C1_SCL / AF4"
+      "function": "I2C1_SCL / AF4",
+      "crosses_stack": true
     },
     {
       "signal": "STM32_SDA",
       "mcu_gpio": "PB9",
       "mcu_pad": "140",
       "direction_at_mcu": "bidirectional",
-      "function": "I2C1_SDA / AF4"
+      "function": "I2C1_SDA / AF4",
+      "crosses_stack": true
     },
     {
       "signal": "TX_CAN",
       "mcu_gpio": "PD1",
       "mcu_pad": "115",
       "direction_at_mcu": "output",
-      "function": "FDCAN1_TX / AF9"
+      "function": "FDCAN1_TX / AF9",
+      "crosses_stack": true
     },
     {
       "signal": "RX_CAN",
       "mcu_gpio": "PD0",
       "mcu_pad": "114",
       "direction_at_mcu": "input",
-      "function": "FDCAN1_RX / AF9"
+      "function": "FDCAN1_RX / AF9",
+      "crosses_stack": true
     },
     {
       "signal": "Silent_Mode",
       "mcu_gpio": "PE7",
       "mcu_pad": "58",
       "direction_at_mcu": "output",
-      "function": "GPIO"
+      "function": "GPIO",
+      "crosses_stack": true
     },
     {
       "signal": "PIVOT_MODBUS_TX",
       "mcu_gpio": "PD5",
       "mcu_pad": "119",
       "direction_at_mcu": "output",
-      "function": "USART2_TX / AF7"
+      "function": "USART2_TX / AF7",
+      "crosses_stack": true
     },
     {
       "signal": "PIVOT_MODBUS_RX",
       "mcu_gpio": "PD6",
       "mcu_pad": "122",
       "direction_at_mcu": "input",
-      "function": "USART2_RX / AF7"
+      "function": "USART2_RX / AF7",
+      "crosses_stack": true
     },
     {
       "signal": "PIVOT_MODBUS_DE",
       "mcu_gpio": "PD4",
       "mcu_pad": "118",
       "direction_at_mcu": "output",
-      "function": "USART2_RTS_DE / AF7"
+      "function": "USART2_RTS_DE / AF7",
+      "crosses_stack": true
     }
   ],
   "connectors": {
@@ -238,86 +270,86 @@
       "pins": {
         "1": "GND",
         "2": "GND",
-        "3": "PORT_STR8_STEP_CMD",
-        "4": "STAR_STR8_STEP_CMD",
-        "5": "PORT_STR8_DIR_CMD",
-        "6": "STAR_STR8_DIR_CMD",
-        "7": "PORT_STR8_DISABLE",
-        "8": "STAR_STR8_DISABLE",
-        "9": "PORT_STR8_FAULT",
-        "10": "STAR_STR8_FAULT",
-        "11": "GND",
-        "12": "GND",
-        "13": "PORT_SSI_CLK",
-        "14": "STAR_SSI_CLK",
-        "15": "PORT_SSI_DATA",
-        "16": "STAR_SSI_DATA",
-        "17": "PORT_ENC_PRESET_N",
-        "18": "STAR_ENC_PRESET_N",
-        "19": "PORT_BRAKE_RELEASE_CMD",
-        "20": "STAR_BRAKE_RELEASE_CMD",
-        "21": "GND",
-        "22": "GND",
-        "23": "HOME_POS",
-        "24": "E_STOP_OK",
+        "3": "PORT_BRAKE_RELEASE_CMD",
+        "4": "STAR_BRAKE_RELEASE_CMD",
+        "5": "HOME_POS",
+        "6": "E_STOP_OK",
+        "7": "PORT_ENC_A",
+        "8": "PORT_ENC_B",
+        "9": "PORT_ENC_Z",
+        "10": "STAR_ENC_A",
+        "11": "STAR_ENC_B",
+        "12": "STAR_ENC_Z",
+        "13": "GND",
+        "14": "GND",
+        "15": "STM32_SCL",
+        "16": "STM32_SDA",
+        "17": "TX_CAN",
+        "18": "RX_CAN",
+        "19": "Silent_Mode",
+        "20": "PIVOT_MODBUS_TX",
+        "21": "PIVOT_MODBUS_RX",
+        "22": "PIVOT_MODBUS_DE",
+        "23": "NRST",
+        "24": "GND",
         "25": "B2B_5V_IN",
         "26": "B2B_5V_IN",
-        "27": "GND",
-        "28": "GND",
-        "29": "3V3_DIG",
-        "30": "3V3_DIG"
+        "27": "3V3_DIG",
+        "28": "3V3_DIG",
+        "29": "GND",
+        "30": "GND"
       },
       "controller_origin_xy_mm": [
-        80.54,
-        100
+        40,
+        82.46
       ],
       "controller_side": "B.Cu",
-      "controller_angle_deg": 180,
+      "controller_angle_deg": 270,
       "elevation_origin_xy_mm": [
-        78,
-        100
+        40,
+        85
       ],
       "elevation_side": "F.Cu",
-      "elevation_angle_deg": 0
+      "elevation_angle_deg": 90
     },
     "J31": {
       "rows": 10,
       "controller_part": "TSW-110-07-S-D",
       "elevation_part": "SSW-110-01-S-D",
       "pins": {
-        "1": "PORT_ENC_A",
-        "2": "PORT_ENC_B",
-        "3": "GND",
-        "4": "GND",
-        "5": "STAR_ENC_A",
-        "6": "STAR_ENC_B",
-        "7": "PORT_ENC_Z",
-        "8": "STAR_ENC_Z",
-        "9": "GND",
-        "10": "GND",
-        "11": "STM32_SCL",
-        "12": "STM32_SDA",
-        "13": "PIVOT_MODBUS_TX",
-        "14": "PIVOT_MODBUS_RX",
-        "15": "TX_CAN",
-        "16": "RX_CAN",
-        "17": "Silent_Mode",
-        "18": "PIVOT_MODBUS_DE",
-        "19": "NRST",
-        "20": "GND"
+        "1": "-BATT",
+        "2": "-BATT",
+        "3": "-BATT",
+        "4": "-BATT",
+        "5": "+5V_FIELD",
+        "6": "+5V_FIELD",
+        "7": "-BATT",
+        "8": "-BATT",
+        "9": "+6.5V_ENC_PORT",
+        "10": "+6.5V_ENC_PORT",
+        "11": "+5V_ENC_PORT",
+        "12": "+5V_ENC_PORT",
+        "13": "-BATT",
+        "14": "-BATT",
+        "15": "+6.5V_ENC_STAR",
+        "16": "+6.5V_ENC_STAR",
+        "17": "+5V_ENC_STAR",
+        "18": "+5V_ENC_STAR",
+        "19": "-BATT",
+        "20": "-BATT"
       },
       "controller_origin_xy_mm": [
-        82.54,
-        143
+        40,
+        94.46
       ],
       "controller_side": "B.Cu",
-      "controller_angle_deg": 180,
+      "controller_angle_deg": 270,
       "elevation_origin_xy_mm": [
-        80,
-        143
+        40,
+        97
       ],
       "elevation_side": "F.Cu",
-      "elevation_angle_deg": 0
+      "elevation_angle_deg": 90
     }
   },
   "controller_origin_mm": [
@@ -329,12 +361,12 @@
     20
   ],
   "controller_outline_mm": [
-    120,
-    200
+    80,
+    130
   ],
   "elevation_outline_mm": [
-    120,
-    200
+    80,
+    130
   ],
   "controller_to_elevation_translation_mm": [
     0,
@@ -342,24 +374,43 @@
   ],
   "supports_controller_xy_mm": {
     "H30": [
-      43,
-      26
+      25,
+      25
     ],
     "H31": [
-      112,
-      26
+      95,
+      25
     ],
     "H32": [
-      56,
-      213
+      25,
+      145
     ],
     "H33": [
-      103,
-      213
+      95,
+      145
     ]
   },
-  "interface_compatibility": "Electrical pinout P4.1; mate only the matching P5 mechanical pair. Earlier P4 board coordinates differ.",
-  "mechanical_revision": "P5 placement only",
-  "carrier_population_face": "B.Cu except stacking sockets",
-  "controller_population_face": "F.Cu except stacking headers"
+  "interface_compatibility": "P6 ONLY. J30 clean logic, J31 field supplies. Never mate with P4/P5 boards.",
+  "mechanical_revision": "P6 compact placement attempt",
+  "carrier_population_face": "Both; tall converters and field sockets B.Cu outward; small interfaces F.Cu inward",
+  "controller_population_face": "Both; field sockets, Ethernet, USB and debug F.Cu outward; MCU/power B.Cu inward",
+  "enclosure_holes_elevation_xy_mm": {
+    "H7": [
+      25,
+      80
+    ],
+    "H5": [
+      95,
+      80
+    ],
+    "H8": [
+      36,
+      145
+    ],
+    "H6": [
+      84,
+      145
+    ]
+  },
+  "placement_inventory": "outputs/compact/inventory.json"
 }

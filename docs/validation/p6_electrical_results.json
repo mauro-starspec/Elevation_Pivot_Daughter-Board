@@ -1,0 +1,19 @@
+{
+  "revision": "P6 compact",
+  "preserved_checkpoint": "29b4387",
+  "preserved_assembled_net_groups": 373,
+  "all_503_component_values_and_footprints_preserved": true,
+  "native_BOM_metadata_preserved": true,
+  "erc": {
+    "controller": {
+      "violations": 0,
+      "parts": 258
+    },
+    "elevation": {
+      "violations": 0,
+      "parts": 245
+    }
+  },
+  "moved_parts": 92,
+  "native_BOM_presets_preserved": true
+}

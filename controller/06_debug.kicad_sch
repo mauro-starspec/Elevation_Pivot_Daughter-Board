@@ -1,4937 +1,3821 @@
 (kicad_sch
-	(version 20250114)
-	(generator "eeschema")
-	(generator_version "9.0")
-	(uuid "636737cc-764a-5aed-8b24-49bf31fc28cb")
-	(paper "A3")
-	(title_block
-		(title "Elevation Controller - STDC14 Debug")
-		(date "2026-10-03")
-		(rev "P4 REVIEW")
-	)
-	(lib_symbols
-		(symbol "Connector:Conn_ST_STDC14"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at -8.89 16.51 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(property "Value" "Conn_ST_STDC14"
-				(at 17.78 16.51 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right bottom)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.st.com/content/ccc/resource/technical/document/user_manual/group1/99/49/91/b6/b2/3a/46/e5/DM00526767/files/DM00526767.pdf/jcr:content/translations/en.DM00526767.pdf"
-				(at -8.89 -31.75 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "ST Debug Connector, standard ARM Cortex-M SWD and JTAG interface plus UART"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "ST STM32 Cortex Debug Connector ARM SWD JTAG"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "PinHeader?2x07?P1.27mm*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Conn_ST_STDC14_0_1"
-				(rectangle
-					(start -10.16 15.24)
-					(end 10.16 -15.24)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "Conn_ST_STDC14_1_1"
-				(pin no_connect line
-					(at -10.16 5.08 0)
-					(length 2.54)
-					(hide yes)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at -10.16 2.54 0)
-					(length 2.54)
-					(hide yes)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -2.54 -17.78 90)
-					(length 2.54)
-					(name "GNDDetect"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 17.78 270)
-					(length 2.54)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -17.78 90)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -17.78 90)
-					(length 2.54)
-					(hide yes)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin open_collector line
-					(at 12.7 12.7 180)
-					(length 2.54)
-					(name "~{RST}"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 12.7 7.62 180)
-					(length 2.54)
-					(name "JCLK/SWCLK"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 12.7 5.08 180)
-					(length 2.54)
-					(name "JTMS/SWDIO"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 12.7 2.54 180)
-					(length 2.54)
-					(name "JTDO/SWO"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 12.7 0 180)
-					(length 2.54)
-					(name "JTDI/NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 12.7 -5.08 180)
-					(length 2.54)
-					(name "JRCLK/NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 12.7 -10.16 180)
-					(length 2.54)
-					(name "VCP_RX"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 12.7 -12.7 180)
-					(length 2.54)
-					(name "VCP_TX"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Connector:TestPoint"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.762)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "TP"
-				(at 0 6.858 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "TestPoint"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 5.08 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "test point"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "test point tp"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Pin* Test*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "TestPoint_0_1"
-				(circle
-					(center 0 3.302)
-					(radius 0.762)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "TestPoint_1_1"
-				(pin passive line
-					(at 0 0 90)
-					(length 2.54)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Controller_Power:3V3_DIG"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR093"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "3V3_DIG"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "3V3_DIG_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "3V3_DIG_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Controller_Power:GND"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR0155"
-				(at 0 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "GND"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "GND_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "GND_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:R"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 2.032 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "R res resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Power_Protection:TPD2EUSB30A"
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at 0 6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "TPD2EUSB30A"
-				(at 7.62 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:Texas_DRT-3"
-				(at -19.05 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/tpd2eusb30a.pdf"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "2-Channel ESD Protection for Super-Speed USB 3.0 Interface, DRT-3"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "ESD protection USB 3.0"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Texas*DRT*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "TPD2EUSB30A_0_1"
-				(rectangle
-					(start -5.08 5.08)
-					(end 5.08 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 0) (xy -3.175 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 2.54) (xy -2.54 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 -1.27) (xy -2.54 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -3.175 3.81)
-					(end 3.175 -3.81)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -3.175 0)
-					(radius 0.2794)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 1.27) (xy -3.81 1.27) (xy -3.175 2.54) (xy -2.54 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 -2.54) (xy -3.81 -2.54) (xy -3.175 -1.27) (xy -2.54 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 3.81)
-					(radius 0.2794)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 3.81) (xy 0 -5.08)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 -3.81)
-					(radius 0.2794)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 -0.508) (xy -0.635 -0.508) (xy 0 0.762) (xy 0.635 -0.508)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 0.762) (xy -0.762 0.762) (xy -0.762 0.508)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 3.81 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -1.27) (xy 3.81 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 3.175 0)
-					(radius 0.2794)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 1.27) (xy 2.54 1.27) (xy 3.175 2.54) (xy 3.81 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 -2.54) (xy 2.54 -2.54) (xy 3.175 -1.27) (xy 3.81 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 0) (xy 3.175 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "TPD2EUSB30A_1_1"
-				(pin passive line
-					(at -10.16 0 0)
-					(length 5.08)
-					(name "D+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -10.16 90)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 10.16 0 180)
-					(length 5.08)
-					(name "D-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Power_Protection:TPD4E05U06DQA"
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at -0.635 8.89 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "TPD4E05U06DQA"
-				(at 1.905 -10.16 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_SON:USON-10_2.5x1.0mm_P0.5mm"
-				(at 1.905 -12.065 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tpd4e05u06.pdf"
-				(at 1.905 -13.97 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description" "4-Channel ESD Protection for Super-Speed USB 3.0 Interface, USON-10"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "ESD protection USB 3.0"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "USON*2.5x1.0mm*P0.5mm*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "TPD4E05U06DQA_0_0"
-				(rectangle
-					(start -5.715 6.477)
-					(end 5.715 -6.604)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.175 -6.604) (xy -3.175 6.477)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 6.477) (xy 0 -6.604)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.175 6.477) (xy 3.175 -6.604)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "TPD4E05U06DQA_0_1"
-				(polyline
-					(pts
-						(xy -7.747 2.54) (xy -3.175 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -7.62 7.62)
-					(end 7.62 -7.62)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy -7.62 -2.54) (xy -5.715 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -5.715 -2.54)
-					(radius 0.2794)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 5.08) (xy -6.35 5.08)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 3.81) (xy -6.35 3.81) (xy -5.715 5.08) (xy -5.08 3.81)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 -3.81) (xy -6.35 -3.81)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 -5.08) (xy -6.35 -5.08) (xy -5.715 -3.81) (xy -5.08 -5.08)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -3.175 6.477)
-					(radius 0.2794)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center -3.175 2.54)
-					(radius 0.2794)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center -3.175 -6.604)
-					(radius 0.2794)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 5.08) (xy -3.81 5.08)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 3.81) (xy -3.81 3.81) (xy -3.175 5.08) (xy -2.54 3.81)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 -3.81) (xy -3.81 -3.81)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 -5.08) (xy -3.81 -5.08) (xy -3.175 -3.81) (xy -2.54 -5.08)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.635 0.889) (xy -1.016 0.635)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 6.477)
-					(radius 0.2794)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -6.604) (xy 0 -7.62)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 -6.604)
-					(radius 0.2794)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 0.889) (xy -0.635 0.889)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 0.889) (xy 1.016 1.143)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 -0.381) (xy -0.635 -0.381) (xy 0 0.889) (xy 0.635 -0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 3.175 6.477)
-					(radius 0.2794)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 3.175 -2.54)
-					(radius 0.2794)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 3.175 -6.604)
-					(radius 0.2794)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 5.08) (xy 2.54 5.08)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 3.81) (xy 2.54 3.81) (xy 3.175 5.08) (xy 3.81 3.81)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 -3.81) (xy 2.54 -3.81)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 -5.08) (xy 2.54 -5.08) (xy 3.175 -3.81) (xy 3.81 -5.08)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 5.715 2.54)
-					(radius 0.2794)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 6.35 5.08) (xy 5.08 5.08)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 6.35 3.81) (xy 5.08 3.81) (xy 5.715 5.08) (xy 6.35 3.81)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 6.35 -3.81) (xy 5.08 -3.81)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 6.35 -5.08) (xy 5.08 -5.08) (xy 5.715 -3.81) (xy 6.35 -5.08)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 2.54) (xy 5.715 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -2.54) (xy 3.175 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "TPD4E05U06DQA_1_1"
-				(pin free line
-					(at -12.7 7.62 0)
-					(length 5.08)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 2.54 0)
-					(length 5.08)
-					(name "D1+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -12.7 -2.54 0)
-					(length 5.08)
-					(name "D1-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin free line
-					(at -12.7 -7.62 0)
-					(length 5.08)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -12.7 90)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -12.7 90)
-					(length 5.08)
-					(hide yes)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin free line
-					(at 12.7 7.62 180)
-					(length 5.08)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 2.54 180)
-					(length 5.08)
-					(name "D2+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 -2.54 180)
-					(length 5.08)
-					(name "D2-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin free line
-					(at 12.7 -7.62 180)
-					(length 5.08)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-	)
-	(text "J601: external ST-LINK through STDC14.\nPin 8 (SWO) is NC: PB3 is required by Port encoder B.\nSWDIO, SWCLK, NRST and PD8/PD9 UART remain connected."
-		(exclude_from_sim no)
-		(at 20.32 241.3 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "b18ba190-b722-588f-ba40-d6d6f494ebc4")
-	)
-	(text "SWD PROGRAMMING / RESET / VIRTUAL COM PORT"
-		(exclude_from_sim no)
-		(at 20.32 17.78 0)
-		(effects
-			(font
-				(size 1.778 1.778)
-			)
-			(justify left top)
-		)
-		(uuid "d99b487d-de4a-5556-9a39-f197fca16a7f")
-	)
-	(no_connect
-		(at 217.17 107.95)
-		(uuid "3205423c-a472-59a9-bcc7-d6a2dfc5a1f1")
-	)
-	(no_connect
-		(at 191.77 102.87)
-		(uuid "34c2bc06-e40d-5a21-91d2-5b094598d456")
-	)
-	(no_connect
-		(at 97.79 124.46)
-		(uuid "67b4ce28-eeed-5f0b-bbf1-95ef6368b9e7")
-	)
-	(no_connect
-		(at 217.17 118.11)
-		(uuid "a76a5f70-3526-5cbb-ba59-a5ca2426d3e1")
-	)
-	(no_connect
-		(at 97.79 129.54)
-		(uuid "b58bae97-1c5e-575e-a0eb-477b4032f313")
-	)
-	(no_connect
-		(at 191.77 118.11)
-		(uuid "bb36dba5-39ae-5897-9875-80687dd8383a")
-	)
-	(no_connect
-		(at 97.79 121.92)
-		(uuid "e376a8bb-856d-51e3-ba1f-8bdf80be27fe")
-	)
-	(no_connect
-		(at 217.17 102.87)
-		(uuid "f1e84698-3a4f-5320-bfed-7c3813615898")
-	)
-	(wire
-		(pts
-			(xy 99.06 119.38) (xy 97.79 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "03f08918-d904-4a5d-97fc-434ca32bcb5c")
-	)
-	(wire
-		(pts
-			(xy 82.55 144.78) (xy 82.55 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0aa981a1-8681-4b02-99ea-b4c7a01794c4")
-	)
-	(wire
-		(pts
-			(xy 82.55 144.78) (xy 85.09 144.78)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "35e44185-256c-5e6f-a61d-681be16be7a6")
-	)
-	(wire
-		(pts
-			(xy 85.09 144.78) (xy 85.09 142.24)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6f05a370-8db3-40bd-a752-02685e2d3bb1")
-	)
-	(wire
-		(pts
-			(xy 99.06 137.16) (xy 97.79 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7b8d7a4e-91ce-42eb-bbc8-dc05084f5296")
-	)
-	(wire
-		(pts
-			(xy 99.06 134.62) (xy 97.79 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bcd8fb20-deeb-45a5-81e3-d8b9378c2b0c")
-	)
-	(wire
-		(pts
-			(xy 99.06 116.84) (xy 97.79 116.84)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e403eab1-ffe3-48c9-979c-79b69ea5d383")
-	)
-	(wire
-		(pts
-			(xy 99.06 111.76) (xy 97.79 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ffacf2aa-88fc-43de-ae98-c09c9de19633")
-	)
-	(label "STDC_SWCLK"
-		(at 99.06 116.84 0)
-		(effects
-			(font
-				(size 0.9 0.9)
-			)
-			(justify left)
-		)
-		(uuid "0bbbaf86-b40b-5e97-94a6-17bdb2df7e20")
-	)
-	(label "STDC_VCP_FROM_MCU"
-		(at 99.06 137.16 0)
-		(effects
-			(font
-				(size 0.9 0.9)
-			)
-			(justify left)
-		)
-		(uuid "1213b8dd-d196-5032-b170-4b484bb6521f")
-	)
-	(label "STDC_SWDIO"
-		(at 191.77 107.95 180)
-		(effects
-			(font
-				(size 0.9 0.9)
-			)
-			(justify right)
-		)
-		(uuid "226aa3db-cd2d-5e72-81f5-d61e131124b5")
-	)
-	(label "STDC_NRST"
-		(at 99.06 111.76 0)
-		(effects
-			(font
-				(size 0.9 0.9)
-			)
-			(justify left)
-		)
-		(uuid "30f47946-30a5-56f1-bf3b-1d02fad4011c")
-	)
-	(label "STDC_SWDIO"
-		(at 99.06 119.38 0)
-		(effects
-			(font
-				(size 0.9 0.9)
-			)
-			(justify left)
-		)
-		(uuid "3b7e9f5f-832d-5707-88a5-a872df5c5638")
-	)
-	(label "STDC_NRST"
-		(at 346.71 121.92 180)
-		(effects
-			(font
-				(size 0.9 0.9)
-			)
-			(justify right)
-		)
-		(uuid "4579057e-f8c6-5aa8-931d-e7d69c5bd2d5")
-	)
-	(label "STDC_SWDIO"
-		(at 295.91 82.55 180)
-		(effects
-			(font
-				(size 0.9 0.9)
-			)
-			(justify right)
-		)
-		(uuid "4abd4733-0560-5cfc-a6f0-fe8c9b0d8833")
-	)
-	(label "STDC_SWCLK"
-		(at 191.77 113.03 180)
-		(effects
-			(font
-				(size 0.9 0.9)
-			)
-			(justify right)
-		)
-		(uuid "4f287530-c9cb-5066-b4c9-ba420519b563")
-	)
-	(label "STDC_VCP_TO_MCU"
-		(at 295.91 162.56 180)
-		(effects
-			(font
-				(size 0.9 0.9)
-			)
-			(justify right)
-		)
-		(uuid "6143815e-cd9d-5e93-9de8-e74a45decda4")
-	)
-	(label "STDC_SWCLK"
-		(at 346.71 82.55 180)
-		(effects
-			(font
-				(size 0.9 0.9)
-			)
-			(justify right)
-		)
-		(uuid "8c023f3a-6e74-5db3-ba67-7a650f5bda8d")
-	)
-	(label "STDC_VCP_TO_MCU"
-		(at 194.31 165.1 180)
-		(effects
-			(font
-				(size 0.9 0.9)
-			)
-			(justify right)
-		)
-		(uuid "8c96b6c3-0fb7-5fbe-a226-0f0ccf907dd6")
-	)
-	(label "STDC_NRST"
-		(at 217.17 113.03 0)
-		(effects
-			(font
-				(size 0.9 0.9)
-			)
-			(justify left)
-		)
-		(uuid "b75f5197-f1cf-5c66-80ac-06ab9c7f54d0")
-	)
-	(label "STDC_VCP_TO_MCU"
-		(at 99.06 134.62 0)
-		(effects
-			(font
-				(size 0.9 0.9)
-			)
-			(justify left)
-		)
-		(uuid "c225af8e-ed81-5515-9758-f2df4a535f58")
-	)
-	(label "STDC_VCP_FROM_MCU"
-		(at 214.63 165.1 0)
-		(effects
-			(font
-				(size 0.9 0.9)
-			)
-			(justify left)
-		)
-		(uuid "c2ffa232-6750-507b-a3cc-0d079d59b1d7")
-	)
-	(label "STDC_VCP_FROM_MCU"
-		(at 346.71 162.56 180)
-		(effects
-			(font
-				(size 0.9 0.9)
-			)
-			(justify right)
-		)
-		(uuid "cf9c0875-a27c-50c1-91ab-02aa39bdb913")
-	)
-	(global_label "VCP_TX"
-		(shape passive)
-		(at 354.33 162.56 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "11e612d5-8eb4-528f-8ad6-59ed1c6e92f8")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 354.33 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "NRST"
-		(shape passive)
-		(at 354.33 121.92 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "3c70d61f-0439-5a36-92a1-ee53f3503742")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 354.33 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SWCLK"
-		(shape passive)
-		(at 325.12 204.47 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "7b1530c5-b0fc-52b9-8903-19a0b38d8c6e")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 325.12 204.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "VCP_RX"
-		(shape passive)
-		(at 303.53 162.56 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "899d3204-934c-5a7a-b774-81fbbac92898")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 303.53 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SWDIO"
-		(shape passive)
-		(at 284.48 204.47 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "a045f0b1-df3b-57e4-ae16-fd6528fd7624")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 284.48 204.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SWDIO"
-		(shape passive)
-		(at 303.53 82.55 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "c42500a9-d994-5bb8-bb6e-3f07575a14c1")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 303.53 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "NRST"
-		(shape passive)
-		(at 364.49 204.47 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "d0e0710d-34d9-5a68-9be7-dd78fb61f231")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 364.49 204.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SWCLK"
-		(shape passive)
-		(at 354.33 82.55 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "d32905e3-a804-57a5-b13d-099d37e990fb")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 354.33 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Controller_Power:GND")
-		(at 82.55 144.78 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "08407d2a-bef9-59c6-b5a7-afe4ecc742ee")
-		(property "Reference" "#PWRP40169"
-			(at 82.55 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 82.55 149.225 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 82.55 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 82.55 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 82.55 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2c81ac2e-420a-531b-9fea-77d820376f6c")
-		)
-		(instances
-			(project "Elevation_Controller"
-				(path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/375122c4-fe73-5d01-8eb0-c0f62d3c74f4"
-					(reference "#PWRP40169")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 350.52 162.56 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "12e32a06-b061-5870-a5b2-56686a95141c")
-		(property "Reference" "R606"
-			(at 350.52 164.592 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "22R"
-			(at 350.52 160.02 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 348.742 162.56 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
-			(at 350.52 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 350.52 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Placement" "MCU_SIDE"
-			(at 353.06 167.6399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "hierarchy_path" "/74ecd43a-6c87-54e8-8e8e-353108e4b3d7/16f53a77-eb98-5a06-a45c-896ce35e7eff"
-			(at 353.06 167.6399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CRCW080522R0FKEA"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Vishay"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Assembly" "FIT"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Min (degC)" "-55"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Max (degC)" "155"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Basis" "Operating"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Status" "Inherited rating; system requirement pending"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Source" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C844832"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Library" "Extended"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Stock Snapshot" "13007"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Part #" "541-22.0CCT-ND"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Status" "VERIFIED"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Data Checked" "2026-09-18"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "59d5984d-afb3-59ca-b347-cd4ba59a77db")
-		)
-		(pin "2"
-			(uuid "97dcebd9-e43b-58f0-86c1-c5a5bcbee3d8")
-		)
-		(instances
-			(project "Elevation_Controller"
-				(path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/375122c4-fe73-5d01-8eb0-c0f62d3c74f4"
-					(reference "R606")
-					(unit 1)
-				)
-			)
-		)
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 350.52 162.56 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 350.52 162.56 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Resistor" (at 350.52 162.56 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +155 C" (at 350.52 162.56 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 350.52 162.56 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability" (at 350.52 162.56 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "C844832" (at 350.52 162.56 0) (effects (font (size 1.27 1.27)) (hide yes))))
-	(symbol
-		(lib_id "Device:R")
-		(at 299.72 82.55 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1bfecb34-02ab-5bc2-b33b-bcf255666cc8")
-		(property "Reference" "R601"
-			(at 300.99 85.09 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "22R"
-			(at 300.99 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 297.942 82.55 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
-			(at 299.72 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 299.72 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Placement" "MCU_SIDE"
-			(at 302.26 87.6299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "hierarchy_path" "/74ecd43a-6c87-54e8-8e8e-353108e4b3d7/16f53a77-eb98-5a06-a45c-896ce35e7eff"
-			(at 302.26 87.6299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CRCW080522R0FKEA"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Vishay"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Assembly" "FIT"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Min (degC)" "-55"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Max (degC)" "155"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Basis" "Operating"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Status" "Inherited rating; system requirement pending"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Source" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C844832"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Library" "Extended"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Stock Snapshot" "13007"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Part #" "541-22.0CCT-ND"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Status" "VERIFIED"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Data Checked" "2026-09-18"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1e426777-b474-5ab6-9e23-caf1dabf5549")
-		)
-		(pin "2"
-			(uuid "938dddd9-40bb-5250-98cb-af8624f90d21")
-		)
-		(instances
-			(project "Elevation_Controller"
-				(path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/375122c4-fe73-5d01-8eb0-c0f62d3c74f4"
-					(reference "R601")
-					(unit 1)
-				)
-			)
-		)
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 299.72 82.55 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 299.72 82.55 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Resistor" (at 299.72 82.55 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +155 C" (at 299.72 82.55 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 299.72 82.55 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability" (at 299.72 82.55 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "C844832" (at 299.72 82.55 0) (effects (font (size 1.27 1.27)) (hide yes))))
-	(symbol
-		(lib_id "Power_Protection:TPD2EUSB30A")
-		(at 204.47 165.1 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "303a90c8-4838-531e-ac05-a6e54fef82c8")
-		(property "Reference" "U602"
-			(at 198.12 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TPD2EUSB30ADRTR"
-			(at 207.01 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:Texas_DRT-3"
-			(at 185.42 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tpd2eusb30a.pdf"
-			(at 204.47 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 204.47 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at 207.01 170.1799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "TPD2EUSB30ADRTR"
-			(at 207.01 170.1799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "hierarchy_path" "/74ecd43a-6c87-54e8-8e8e-353108e4b3d7/16f53a77-eb98-5a06-a45c-896ce35e7eff"
-			(at 207.01 170.1799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Assembly" "FIT"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Min (degC)" "-40"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Max (degC)" "85"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Basis" "Ambient"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Status" "Inherited rating; system requirement pending"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Source" "https://www.ti.com/lit/ds/symlink/tpd2eusb30a.pdf"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C94934"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Library" "Extended"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Stock Snapshot" "5439"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Part #" "296-28153-1-ND"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Status" "VERIFIED"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Data Checked" "2026-09-18"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "02b01e8c-f381-5c8e-9f99-60bb148a75a2")
-		)
-		(pin "3"
-			(uuid "497532d7-1100-5dff-9579-106f78b9e1d1")
-		)
-		(pin "2"
-			(uuid "7e7405d8-9ed8-5f13-9827-68e1c056d268")
-		)
-		(instances
-			(project "Elevation_Controller"
-				(path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/375122c4-fe73-5d01-8eb0-c0f62d3c74f4"
-					(reference "U602")
-					(unit 1)
-				)
-			)
-		)
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 204.47 165.1 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 204.47 165.1 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "TPD2EUSB30ADRTR" (at 204.47 165.1 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-40 to +85 C" (at 204.47 165.1 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 204.47 165.1 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability" (at 204.47 165.1 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "C94934" (at 204.47 165.1 0) (effects (font (size 1.27 1.27)) (hide yes))))
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 325.12 204.47 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "42ea5735-41d6-5253-aa7d-de7d3e9b96c0")
-		(property "Reference" "TP602"
-			(at 325.12 211.328 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SWCLK"
-			(at 325.12 209.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
-			(at 330.2 204.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 325.12 204.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 325.12 204.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "hierarchy_path" "/74ecd43a-6c87-54e8-8e8e-353108e4b3d7/16f53a77-eb98-5a06-a45c-896ce35e7eff"
-			(at 327.66 209.5499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Assembly" "PCB feature - no purchased component"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Min (degC)" "N/A"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Max (degC)" "N/A"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Basis" "PCB feature"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Status" "N/A"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Source" "N/A"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "N/A"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Library" "N/A"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Stock Snapshot" "N/A"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Part #" "N/A"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Status" "N/A"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Data Checked" "2026-09-18"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e45d4a67-3db5-5538-a201-f6834f4c4dbf")
-		)
-		(instances
-			(project "Elevation_Controller"
-				(path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/375122c4-fe73-5d01-8eb0-c0f62d3c74f4"
-					(reference "TP602")
-					(unit 1)
-				)
-			)
-		)
-  (property "JLCPCB Status" "N/A" (at 325.12 204.47 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PCB FEATURE" (at 325.12 204.47 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "N/A" (at 325.12 204.47 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "PCB test pad" (at 325.12 204.47 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "N/A" (at 325.12 204.47 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Manufacturer" "N/A" (at 325.12 204.47 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "MPN" "N/A" (at 325.12 204.47 0) (effects (font (size 1.27 1.27)) (hide yes))))
-	(symbol
-		(lib_id "Device:R")
-		(at 299.72 162.56 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "54e62a3e-fc0d-5220-92ce-1447eed41bef")
-		(property "Reference" "R605"
-			(at 299.72 164.592 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "22R"
-			(at 298.45 160.02 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 297.942 162.56 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
-			(at 299.72 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 299.72 162.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Placement" "MCU_SIDE"
-			(at 302.26 167.6399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "hierarchy_path" "/74ecd43a-6c87-54e8-8e8e-353108e4b3d7/16f53a77-eb98-5a06-a45c-896ce35e7eff"
-			(at 302.26 167.6399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CRCW080522R0FKEA"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Vishay"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Assembly" "FIT"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Min (degC)" "-55"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Max (degC)" "155"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Basis" "Operating"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Status" "Inherited rating; system requirement pending"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Source" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C844832"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Library" "Extended"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Stock Snapshot" "13007"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Part #" "541-22.0CCT-ND"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Status" "VERIFIED"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Data Checked" "2026-09-18"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7776dd84-e202-5169-a83b-c27ad304e3bc")
-		)
-		(pin "2"
-			(uuid "3aee4984-0d39-55da-b13a-eab04668aec8")
-		)
-		(instances
-			(project "Elevation_Controller"
-				(path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/375122c4-fe73-5d01-8eb0-c0f62d3c74f4"
-					(reference "R605")
-					(unit 1)
-				)
-			)
-		)
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 299.72 162.56 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 299.72 162.56 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Resistor" (at 299.72 162.56 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +155 C" (at 299.72 162.56 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 299.72 162.56 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability" (at 299.72 162.56 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "C844832" (at 299.72 162.56 0) (effects (font (size 1.27 1.27)) (hide yes))))
-	(symbol
-		(lib_id "Controller_Power:GND")
-		(at 204.47 123.19 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "57998a81-9a79-5fc6-8221-40864de75b1b")
-		(property "Reference" "#PWRP40166"
-			(at 204.47 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 204.47 127.635 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 204.47 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 204.47 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 204.47 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "904851c6-5ccc-5ae0-b433-f12aaaab0eff")
-		)
-		(instances
-			(project "Elevation_Controller"
-				(path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/375122c4-fe73-5d01-8eb0-c0f62d3c74f4"
-					(reference "#PWRP40166")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 350.52 82.55 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5e307ace-94f3-5ea3-a8c5-17a38e7a3572")
-		(property "Reference" "R602"
-			(at 350.52 85.09 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "22R"
-			(at 350.52 80.01 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 348.742 82.55 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
-			(at 350.52 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 350.52 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Placement" "MCU_SIDE"
-			(at 353.06 87.6299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "hierarchy_path" "/74ecd43a-6c87-54e8-8e8e-353108e4b3d7/16f53a77-eb98-5a06-a45c-896ce35e7eff"
-			(at 353.06 87.6299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CRCW080522R0FKEA"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Vishay"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Assembly" "FIT"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Min (degC)" "-55"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Max (degC)" "155"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Basis" "Operating"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Status" "Inherited rating; system requirement pending"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Source" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C844832"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Library" "Extended"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Stock Snapshot" "13007"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Part #" "541-22.0CCT-ND"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Status" "VERIFIED"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Data Checked" "2026-09-18"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a359fb68-7947-55b1-b827-787cc5701ffa")
-		)
-		(pin "2"
-			(uuid "3fd25507-1f0c-5b6e-8aff-f9175621937e")
-		)
-		(instances
-			(project "Elevation_Controller"
-				(path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/375122c4-fe73-5d01-8eb0-c0f62d3c74f4"
-					(reference "R602")
-					(unit 1)
-				)
-			)
-		)
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 350.52 82.55 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 350.52 82.55 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Resistor" (at 350.52 82.55 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +155 C" (at 350.52 82.55 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 350.52 82.55 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability" (at 350.52 82.55 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "C844832" (at 350.52 82.55 0) (effects (font (size 1.27 1.27)) (hide yes))))
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 364.49 204.47 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "7d0790df-b3a8-5521-9df9-b75fa2edcc6b")
-		(property "Reference" "TP603"
-			(at 364.49 211.328 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "NRST"
-			(at 364.49 209.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
-			(at 369.57 204.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 364.49 204.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 364.49 204.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "hierarchy_path" "/74ecd43a-6c87-54e8-8e8e-353108e4b3d7/16f53a77-eb98-5a06-a45c-896ce35e7eff"
-			(at 367.03 209.5499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Assembly" "PCB feature - no purchased component"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Min (degC)" "N/A"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Max (degC)" "N/A"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Basis" "PCB feature"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Status" "N/A"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Source" "N/A"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "N/A"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Library" "N/A"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Stock Snapshot" "N/A"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Part #" "N/A"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Status" "N/A"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Data Checked" "2026-09-18"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "890e1d39-5972-54d3-a6cd-cd95d4a8c817")
-		)
-		(instances
-			(project "Elevation_Controller"
-				(path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/375122c4-fe73-5d01-8eb0-c0f62d3c74f4"
-					(reference "TP603")
-					(unit 1)
-				)
-			)
-		)
-  (property "JLCPCB Status" "N/A" (at 364.49 204.47 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PCB FEATURE" (at 364.49 204.47 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "N/A" (at 364.49 204.47 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "PCB test pad" (at 364.49 204.47 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "N/A" (at 364.49 204.47 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Manufacturer" "N/A" (at 364.49 204.47 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "MPN" "N/A" (at 364.49 204.47 0) (effects (font (size 1.27 1.27)) (hide yes))))
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 284.48 204.47 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(dnp no)
-		(uuid "8488fd6c-5c7b-5ad3-8ff7-aee1d4eee822")
-		(property "Reference" "TP601"
-			(at 284.48 211.328 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SWDIO"
-			(at 284.48 209.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
-			(at 289.56 204.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 284.48 204.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 284.48 204.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "hierarchy_path" "/74ecd43a-6c87-54e8-8e8e-353108e4b3d7/16f53a77-eb98-5a06-a45c-896ce35e7eff"
-			(at 287.02 209.5499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Assembly" "PCB feature - no purchased component"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Min (degC)" "N/A"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Max (degC)" "N/A"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Basis" "PCB feature"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Status" "N/A"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Source" "N/A"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "N/A"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Library" "N/A"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Stock Snapshot" "N/A"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Part #" "N/A"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Status" "N/A"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Data Checked" "2026-09-18"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a0ea5eae-a2b2-5e3c-a013-e2118d272956")
-		)
-		(instances
-			(project "Elevation_Controller"
-				(path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/375122c4-fe73-5d01-8eb0-c0f62d3c74f4"
-					(reference "TP601")
-					(unit 1)
-				)
-			)
-		)
-  (property "JLCPCB Status" "N/A" (at 284.48 204.47 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PCB FEATURE" (at 284.48 204.47 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "N/A" (at 284.48 204.47 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "PCB test pad" (at 284.48 204.47 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "N/A" (at 284.48 204.47 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Manufacturer" "N/A" (at 284.48 204.47 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "MPN" "N/A" (at 284.48 204.47 0) (effects (font (size 1.27 1.27)) (hide yes))))
-	(symbol
-		(lib_id "Power_Protection:TPD4E05U06DQA")
-		(at 204.47 110.49 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9d07ec58-215a-5fac-993c-47d0d8c2fcac")
-		(property "Reference" "U601"
-			(at 198.12 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "TPD4E05U06DQAR"
-			(at 206.375 100.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SON:USON-10_2.5x1.0mm_P0.5mm"
-			(at 206.375 98.425 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tpd4e05u06.pdf"
-			(at 204.47 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 204.47 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Texas Instruments"
-			(at 207.01 115.5699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "TPD4E05U06DQAR"
-			(at 207.01 115.5699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "hierarchy_path" "/74ecd43a-6c87-54e8-8e8e-353108e4b3d7/16f53a77-eb98-5a06-a45c-896ce35e7eff"
-			(at 207.01 115.5699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Assembly" "FIT"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Min (degC)" "-40"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Max (degC)" "125"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Basis" "Operating"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Status" "Inherited rating; system requirement pending"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Source" "https://www.ti.com/lit/ds/symlink/tpd4e05u06.pdf"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C22390021"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Library" "Extended"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Stock Snapshot" "103416"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Part #" "296-35765-1-ND"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Status" "VERIFIED"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Data Checked" "2026-09-18"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "10"
-			(uuid "007ef49c-72f8-55a3-b0dd-3bb0de2666fe")
-		)
-		(pin "1"
-			(uuid "5920a57b-8dcc-5b33-a163-6cf5549014ba")
-		)
-		(pin "2"
-			(uuid "d364c7d3-8052-5936-8cba-72309c5cd369")
-		)
-		(pin "9"
-			(uuid "870a1452-136b-54e6-8a25-75303b072b60")
-		)
-		(pin "3"
-			(uuid "f1af8445-9514-510c-a271-cfa05eb3f050")
-		)
-		(pin "8"
-			(uuid "416c33c0-f952-5a1c-b4ff-b41efe2512ec")
-		)
-		(pin "7"
-			(uuid "b3c98ab7-570f-5619-928b-98237359844d")
-		)
-		(pin "4"
-			(uuid "df6fb34e-da92-52b8-ba8f-df016097a7d6")
-		)
-		(pin "5"
-			(uuid "924be048-21e0-53f4-af9d-8016aa62f52b")
-		)
-		(pin "6"
-			(uuid "4e2a152f-cce6-5cda-997c-6e11f4edd9cc")
-		)
-		(instances
-			(project "Elevation_Controller"
-				(path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/375122c4-fe73-5d01-8eb0-c0f62d3c74f4"
-					(reference "U601")
-					(unit 1)
-				)
-			)
-		)
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 204.47 110.49 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 204.47 110.49 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "TPD4E05U06DQAR" (at 204.47 110.49 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-40 to +125 C" (at 204.47 110.49 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 204.47 110.49 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability" (at 204.47 110.49 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "C22390021" (at 204.47 110.49 0) (effects (font (size 1.27 1.27)) (hide yes))))
-	(symbol
-		(lib_id "Connector:Conn_ST_STDC14")
-		(at 85.09 124.46 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "a625214f-012a-5d1c-8603-80c3bcc6d6de")
-		(property "Reference" "J601"
-			(at 76.2 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "FTSH-107-01-L-DV-K"
-			(at 90.17 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "ProtoFlow:Samtec_FTSH-107-01-L-DV-K"
-			(at 85.09 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.samtec.com/products/ftsh-107-01-l-dv-k"
-			(at 85.09 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 85.09 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Samtec"
-			(at 87.63 129.5399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "FTSH-107-01-L-DV-K"
-			(at 87.63 129.5399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint_Status" "CONTROLLED_FROM_SAMTEC_REV_H_RECOMMENDED_LAYOUT"
-			(at 87.63 129.5399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "hierarchy_path" "/74ecd43a-6c87-54e8-8e8e-353108e4b3d7/16f53a77-eb98-5a06-a45c-896ce35e7eff"
-			(at 87.63 129.5399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Assembly" "FIT"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Min (degC)" "-55"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Max (degC)" "125"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Basis" "Operating"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Status" "Inherited rating; system requirement pending"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Source" "https://www.samtec.com/products/ftsh-107-01-l-dv-k"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C5307809"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Library" "Extended"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Stock Snapshot" "309"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Part #" "SAM9449-ND"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Status" "VERIFIED"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Data Checked" "2026-09-18"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e945293c-1f52-524b-92f9-106be6522c7d")
-		)
-		(pin "2"
-			(uuid "aca78a3e-d83a-5a16-a7c3-7279564eea2b")
-		)
-		(pin "11"
-			(uuid "72ba947b-2b76-59d0-9f69-451a21b399dc")
-		)
-		(pin "3"
-			(uuid "e2e68c05-346c-5de0-af33-56857fc34bf8")
-		)
-		(pin "5"
-			(uuid "78fb27e3-c831-5481-8683-7cee0a646fa7")
-		)
-		(pin "7"
-			(uuid "b41d9c09-07f5-5363-baed-33637087ac0c")
-		)
-		(pin "12"
-			(uuid "fbdb2c38-b862-5bf0-9a61-cc0a6a51d20b")
-		)
-		(pin "6"
-			(uuid "02c08124-5799-5ee7-8d91-acbfbaf3f7de")
-		)
-		(pin "4"
-			(uuid "3788304c-c232-54ea-9e47-ad2ff4f62d31")
-		)
-		(pin "8"
-			(uuid "4257f792-6408-5e8a-b47d-57357206f7b7")
-		)
-		(pin "10"
-			(uuid "d535eb23-646b-5b79-997c-9cde0c9d05eb")
-		)
-		(pin "9"
-			(uuid "f7c3a8d3-1a32-5e18-98bd-a0f779786326")
-		)
-		(pin "13"
-			(uuid "d746d580-6b3f-570b-911c-e7d58197844f")
-		)
-		(pin "14"
-			(uuid "c3975f1c-511e-5293-b58b-215da245a1c7")
-		)
-		(instances
-			(project "Elevation_Controller"
-				(path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/375122c4-fe73-5d01-8eb0-c0f62d3c74f4"
-					(reference "J601")
-					(unit 1)
-				)
-			)
-		)
-  (property "Footprint Status" "CONTROLLED_FROM_SAMTEC_REV_H_RECOMMENDED_LAYOUT" (at 85.09 124.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 85.09 124.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "FTSH-107-01-L-DV-K" (at 85.09 124.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +125 C" (at 85.09 124.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 85.09 124.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability" (at 85.09 124.46 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "C5307809" (at 85.09 124.46 0) (effects (font (size 1.27 1.27)) (hide yes))))
-	(symbol
-		(lib_id "Controller_Power:3V3_DIG")
-		(at 85.09 106.68 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e4b38bbb-cd4c-5376-83aa-ed8cdee02e0c")
-		(property "Reference" "#PWRP40171"
-			(at 85.09 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "3V3_DIG"
-			(at 85.09 102.235 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 85.09 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 85.09 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 85.09 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "53063eb8-1481-54f1-b576-50d798d5a1bd")
-		)
-		(instances
-			(project "Elevation_Controller"
-				(path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/375122c4-fe73-5d01-8eb0-c0f62d3c74f4"
-					(reference "#PWRP40171")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Controller_Power:GND")
-		(at 204.47 175.26 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e649a519-9154-5505-ab75-00f1b131ade0")
-		(property "Reference" "#PWRP40170"
-			(at 204.47 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 204.47 179.705 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 204.47 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 204.47 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 204.47 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a82ace34-5210-5b90-9f90-8d06b257167e")
-		)
-		(instances
-			(project "Elevation_Controller"
-				(path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/375122c4-fe73-5d01-8eb0-c0f62d3c74f4"
-					(reference "#PWRP40170")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 350.52 121.92 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e838690a-0f18-5f1f-b2aa-9dd519de7eff")
-		(property "Reference" "R604"
-			(at 350.52 123.952 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "22R"
-			(at 349.25 119.38 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 348.742 121.92 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
-			(at 350.52 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 350.52 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Placement" "MCU_SIDE"
-			(at 353.06 126.9999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "hierarchy_path" "/74ecd43a-6c87-54e8-8e8e-353108e4b3d7/16f53a77-eb98-5a06-a45c-896ce35e7eff"
-			(at 353.06 126.9999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "CRCW080522R0FKEA"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Vishay"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Assembly" "FIT"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Min (degC)" "-55"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Max (degC)" "155"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Basis" "Operating"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Status" "Inherited rating; system requirement pending"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Temp Source" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C844832"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Library" "Extended"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Stock Snapshot" "13007"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Part #" "541-22.0CCT-ND"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "DigiKey Status" "VERIFIED"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Data Checked" "2026-09-18"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "79e2cf25-19d7-544e-ac16-3b5e33aa784c")
-		)
-		(pin "2"
-			(uuid "60545c2d-4c44-5e2e-ae47-e99d28c90aa7")
-		)
-		(instances
-			(project "Elevation_Controller"
-				(path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/375122c4-fe73-5d01-8eb0-c0f62d3c74f4"
-					(reference "R604")
-					(unit 1)
-				)
-			)
-		)
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 350.52 121.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 350.52 121.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Resistor" (at 350.52 121.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +155 C" (at 350.52 121.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 350.52 121.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability" (at 350.52 121.92 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "C844832" (at 350.52 121.92 0) (effects (font (size 1.27 1.27)) (hide yes))))
-)
+  (version 20250114)
+  (generator "eeschema")
+  (generator_version "9.0")
+  (uuid "636737cc-764a-5aed-8b24-49bf31fc28cb")
+  (paper "A3")
+  (title_block
+    (title "Elevation Controller - STDC14 Debug")
+    (date "2026-10-03")
+    (rev "P6 COMPACT"))
+  (lib_symbols
+    (symbol "Connector:Conn_ST_STDC14"
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "J"
+        (at -8.89 16.51 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify right)))
+      (property "Value" "Conn_ST_STDC14"
+        (at 17.78 16.51 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify right bottom)))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "Datasheet" "https://www.st.com/content/ccc/resource/technical/document/user_manual/group1/99/49/91/b6/b2/3a/46/e5/DM00526767/files/DM00526767.pdf/jcr:content/translations/en.DM00526767.pdf"
+        (at -8.89 -31.75 90)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "Description" "ST Debug Connector, standard ARM Cortex-M SWD and JTAG interface plus UART"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "ki_keywords" "ST STM32 Cortex Debug Connector ARM SWD JTAG"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "ki_fp_filters" "PinHeader?2x07?P1.27mm*"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (symbol "Conn_ST_STDC14_0_1"
+        (rectangle
+          (start -10.16 15.24)
+          (end 10.16 -15.24)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background))))
+      (symbol "Conn_ST_STDC14_1_1"
+        (pin no_connect line
+          (at -10.16 5.08 0)
+          (length 2.54)
+          (hide yes)
+          (name "NC"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin no_connect line
+          (at -10.16 2.54 0)
+          (length 2.54)
+          (hide yes)
+          (name "NC"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -2.54 -17.78 90)
+          (length 2.54)
+          (name "GNDDetect"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "11"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin power_in line
+          (at 0 17.78 270)
+          (length 2.54)
+          (name "VCC"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "3"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin power_in line
+          (at 0 -17.78 90)
+          (length 2.54)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "5"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -17.78 90)
+          (length 2.54)
+          (hide yes)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "7"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin open_collector line
+          (at 12.7 12.7 180)
+          (length 2.54)
+          (name "~{RST}"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "12"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin output line
+          (at 12.7 7.62 180)
+          (length 2.54)
+          (name "JCLK/SWCLK"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "6"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin bidirectional line
+          (at 12.7 5.08 180)
+          (length 2.54)
+          (name "JTMS/SWDIO"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "4"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin input line
+          (at 12.7 2.54 180)
+          (length 2.54)
+          (name "JTDO/SWO"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "8"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin output line
+          (at 12.7 0 180)
+          (length 2.54)
+          (name "JTDI/NC"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "10"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin input line
+          (at 12.7 -5.08 180)
+          (length 2.54)
+          (name "JRCLK/NC"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "9"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin output line
+          (at 12.7 -10.16 180)
+          (length 2.54)
+          (name "VCP_RX"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "13"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin input line
+          (at 12.7 -12.7 180)
+          (length 2.54)
+          (name "VCP_TX"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "14"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "Connector:TestPoint"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0.762)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "TP"
+        (at 0 6.858 0)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "TestPoint"
+        (at 0 5.08 0)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 5.08 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "Datasheet" "~"
+        (at 5.08 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "Description" "test point"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "ki_keywords" "test point tp"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "ki_fp_filters" "Pin* Test*"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (symbol "TestPoint_0_1"
+        (circle
+          (center 0 3.302)
+          (radius 0.762)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "TestPoint_1_1"
+        (pin passive line
+          (at 0 0 90)
+          (length 2.54)
+          (name "1"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "Controller_Power:3V3_DIG"
+      (power)
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "#PWR093"
+        (at 0 -3.81 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "Value" "3V3_DIG"
+        (at 0 5.08 0)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "Description" "Power symbol creates a global label with name \"+3.3V\""
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "ki_keywords" "global power"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (symbol "3V3_DIG_0_1"
+        (polyline
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "3V3_DIG_1_1"
+        (pin power_in line
+          (at 0 0 90)
+          (length 0)
+          (name "~"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "Controller_Power:GND"
+      (power)
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0)
+        (hide yes))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "#PWR0155"
+        (at 0 -6.35 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "Value" "GND"
+        (at 0 -5.08 0)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "Datasheet" ""
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "Description" "Power symbol creates a global label with name \"GND1\" , ground"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "ki_keywords" "global power"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (symbol "GND_0_1"
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 -1.27)
+            (xy 1.27 -1.27)
+            (xy 0 -2.54)
+            (xy -1.27 -1.27)
+            (xy 0 -1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "GND_1_1"
+        (pin power_in line
+          (at 0 0 270)
+          (length 0)
+          (name "~"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "Device:R"
+      (pin_numbers
+        (hide yes))
+      (pin_names
+        (offset 0))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "R"
+        (at 2.032 0 90)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "R"
+        (at 0 0 90)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" ""
+        (at -1.778 0 90)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "Datasheet" "~"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "Description" "Resistor"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "ki_keywords" "R res resistor"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "ki_fp_filters" "R_*"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (symbol "R_0_1"
+        (rectangle
+          (start -1.016 -2.54)
+          (end 1.016 2.54)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "R_1_1"
+        (pin passive line
+          (at 0 3.81 270)
+          (length 1.27)
+          (name "~"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -3.81 90)
+          (length 1.27)
+          (name "~"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "Power_Protection:TPD2EUSB30A"
+      (pin_names
+        (offset 0))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "U"
+        (at 0 6.35 0)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "TPD2EUSB30A"
+        (at 7.62 -7.62 0)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Footprint" "Package_TO_SOT_SMD:Texas_DRT-3"
+        (at -19.05 -7.62 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "Datasheet" "http://www.ti.com/lit/ds/symlink/tpd2eusb30a.pdf"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "Description" "2-Channel ESD Protection for Super-Speed USB 3.0 Interface, DRT-3"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "ki_keywords" "ESD protection USB 3.0"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "ki_fp_filters" "Texas*DRT*"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (symbol "TPD2EUSB30A_0_1"
+        (rectangle
+          (start -5.08 5.08)
+          (end 5.08 -5.08)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (polyline
+          (pts
+            (xy -5.08 0)
+            (xy -3.175 0))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -3.81 2.54)
+            (xy -2.54 2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -3.81 -1.27)
+            (xy -2.54 -1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -3.175 3.81)
+          (end 3.175 -3.81)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (circle
+          (center -3.175 0)
+          (radius 0.2794)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type outline)))
+        (polyline
+          (pts
+            (xy -2.54 1.27)
+            (xy -3.81 1.27)
+            (xy -3.175 2.54)
+            (xy -2.54 1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -2.54 -2.54)
+            (xy -3.81 -2.54)
+            (xy -3.175 -1.27)
+            (xy -2.54 -2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (circle
+          (center 0 3.81)
+          (radius 0.2794)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type outline)))
+        (polyline
+          (pts
+            (xy 0 3.81)
+            (xy 0 -5.08))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (circle
+          (center 0 -3.81)
+          (radius 0.2794)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type outline)))
+        (polyline
+          (pts
+            (xy 0.635 -0.508)
+            (xy -0.635 -0.508)
+            (xy 0 0.762)
+            (xy 0.635 -0.508))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0.762 0.762)
+            (xy -0.762 0.762)
+            (xy -0.762 0.508))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 2.54 2.54)
+            (xy 3.81 2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 2.54 -1.27)
+            (xy 3.81 -1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (circle
+          (center 3.175 0)
+          (radius 0.2794)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type outline)))
+        (polyline
+          (pts
+            (xy 3.81 1.27)
+            (xy 2.54 1.27)
+            (xy 3.175 2.54)
+            (xy 3.81 1.27))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 3.81 -2.54)
+            (xy 2.54 -2.54)
+            (xy 3.175 -1.27)
+            (xy 3.81 -2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 5.08 0)
+            (xy 3.175 0))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "TPD2EUSB30A_1_1"
+        (pin passive line
+          (at -10.16 0 0)
+          (length 5.08)
+          (name "D+"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -10.16 90)
+          (length 5.08)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "3"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 10.16 0 180)
+          (length 5.08)
+          (name "D-"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no))
+    (symbol "Power_Protection:TPD4E05U06DQA"
+      (pin_names
+        (offset 0))
+      (exclude_from_sim no)
+      (in_bom yes)
+      (on_board yes)
+      (property "Reference" "U"
+        (at -0.635 8.89 0)
+        (effects
+          (font
+            (size 1.27 1.27))))
+      (property "Value" "TPD4E05U06DQA"
+        (at 1.905 -10.16 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)))
+      (property "Footprint" "Package_SON:USON-10_2.5x1.0mm_P0.5mm"
+        (at 1.905 -12.065 0)
+        (effects
+          (font
+            (size 1.27 1.27)
+            (italic yes))
+          (justify left)
+          (hide yes)))
+      (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tpd4e05u06.pdf"
+        (at 1.905 -13.97 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (justify left)
+          (hide yes)))
+      (property "Description" "4-Channel ESD Protection for Super-Speed USB 3.0 Interface, USON-10"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "ki_keywords" "ESD protection USB 3.0"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (property "ki_fp_filters" "USON*2.5x1.0mm*P0.5mm*"
+        (at 0 0 0)
+        (effects
+          (font
+            (size 1.27 1.27))
+          (hide yes)))
+      (symbol "TPD4E05U06DQA_0_0"
+        (rectangle
+          (start -5.715 6.477)
+          (end 5.715 -6.604)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -3.175 -6.604)
+            (xy -3.175 6.477))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0 6.477)
+            (xy 0 -6.604))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 3.175 6.477)
+            (xy 3.175 -6.604))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "TPD4E05U06DQA_0_1"
+        (polyline
+          (pts
+            (xy -7.747 2.54)
+            (xy -3.175 2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (rectangle
+          (start -7.62 7.62)
+          (end 7.62 -7.62)
+          (stroke
+            (width 0.254)
+            (type default))
+          (fill
+            (type background)))
+        (polyline
+          (pts
+            (xy -7.62 -2.54)
+            (xy -5.715 -2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (circle
+          (center -5.715 -2.54)
+          (radius 0.2794)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type outline)))
+        (polyline
+          (pts
+            (xy -5.08 5.08)
+            (xy -6.35 5.08))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -5.08 3.81)
+            (xy -6.35 3.81)
+            (xy -5.715 5.08)
+            (xy -5.08 3.81))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -5.08 -3.81)
+            (xy -6.35 -3.81))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -5.08 -5.08)
+            (xy -6.35 -5.08)
+            (xy -5.715 -3.81)
+            (xy -5.08 -5.08))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (circle
+          (center -3.175 6.477)
+          (radius 0.2794)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type outline)))
+        (circle
+          (center -3.175 2.54)
+          (radius 0.2794)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type outline)))
+        (circle
+          (center -3.175 -6.604)
+          (radius 0.2794)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type outline)))
+        (polyline
+          (pts
+            (xy -2.54 5.08)
+            (xy -3.81 5.08))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -2.54 3.81)
+            (xy -3.81 3.81)
+            (xy -3.175 5.08)
+            (xy -2.54 3.81))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -2.54 -3.81)
+            (xy -3.81 -3.81))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -2.54 -5.08)
+            (xy -3.81 -5.08)
+            (xy -3.175 -3.81)
+            (xy -2.54 -5.08))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy -0.635 0.889)
+            (xy -1.016 0.635))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (circle
+          (center 0 6.477)
+          (radius 0.2794)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type outline)))
+        (polyline
+          (pts
+            (xy 0 -6.604)
+            (xy 0 -7.62))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (circle
+          (center 0 -6.604)
+          (radius 0.2794)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type outline)))
+        (polyline
+          (pts
+            (xy 0.635 0.889)
+            (xy -0.635 0.889))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0.635 0.889)
+            (xy 1.016 1.143))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 0.635 -0.381)
+            (xy -0.635 -0.381)
+            (xy 0 0.889)
+            (xy 0.635 -0.381))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (circle
+          (center 3.175 6.477)
+          (radius 0.2794)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type outline)))
+        (circle
+          (center 3.175 -2.54)
+          (radius 0.2794)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type outline)))
+        (circle
+          (center 3.175 -6.604)
+          (radius 0.2794)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type outline)))
+        (polyline
+          (pts
+            (xy 3.81 5.08)
+            (xy 2.54 5.08))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 3.81 3.81)
+            (xy 2.54 3.81)
+            (xy 3.175 5.08)
+            (xy 3.81 3.81))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 3.81 -3.81)
+            (xy 2.54 -3.81))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 3.81 -5.08)
+            (xy 2.54 -5.08)
+            (xy 3.175 -3.81)
+            (xy 3.81 -5.08))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (circle
+          (center 5.715 2.54)
+          (radius 0.2794)
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type outline)))
+        (polyline
+          (pts
+            (xy 6.35 5.08)
+            (xy 5.08 5.08))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 6.35 3.81)
+            (xy 5.08 3.81)
+            (xy 5.715 5.08)
+            (xy 6.35 3.81))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 6.35 -3.81)
+            (xy 5.08 -3.81))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 6.35 -5.08)
+            (xy 5.08 -5.08)
+            (xy 5.715 -3.81)
+            (xy 6.35 -5.08))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 7.62 2.54)
+            (xy 5.715 2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none)))
+        (polyline
+          (pts
+            (xy 7.62 -2.54)
+            (xy 3.175 -2.54))
+          (stroke
+            (width 0)
+            (type default))
+          (fill
+            (type none))))
+      (symbol "TPD4E05U06DQA_1_1"
+        (pin free line
+          (at -12.7 7.62 0)
+          (length 5.08)
+          (name "NC"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "10"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -12.7 2.54 0)
+          (length 5.08)
+          (name "D1+"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "1"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at -12.7 -2.54 0)
+          (length 5.08)
+          (name "D1-"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "2"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin free line
+          (at -12.7 -7.62 0)
+          (length 5.08)
+          (name "NC"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "9"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin power_in line
+          (at 0 -12.7 90)
+          (length 5.08)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "3"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 0 -12.7 90)
+          (length 5.08)
+          (hide yes)
+          (name "GND"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "8"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin free line
+          (at 12.7 7.62 180)
+          (length 5.08)
+          (name "NC"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "7"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 12.7 2.54 180)
+          (length 5.08)
+          (name "D2+"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "4"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin passive line
+          (at 12.7 -2.54 180)
+          (length 5.08)
+          (name "D2-"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "5"
+            (effects
+              (font
+                (size 1.27 1.27)))))
+        (pin free line
+          (at 12.7 -7.62 180)
+          (length 5.08)
+          (name "NC"
+            (effects
+              (font
+                (size 1.27 1.27))))
+          (number "6"
+            (effects
+              (font
+                (size 1.27 1.27))))))
+      (embedded_fonts no)))
+  (text "J601: external ST-LINK through STDC14.\nPin 8 (SWO) is NC: PB3 is required by Port encoder B.\nSWDIO, SWCLK, NRST and PD8/PD9 UART remain connected."
+    (exclude_from_sim no)
+    (at 20.32 241.3 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left top))
+    (uuid "b18ba190-b722-588f-ba40-d6d6f494ebc4"))
+  (text "SWD PROGRAMMING / RESET / VIRTUAL COM PORT"
+    (exclude_from_sim no)
+    (at 20.32 17.78 0)
+    (effects
+      (font
+        (size 1.778 1.778))
+      (justify left top))
+    (uuid "d99b487d-de4a-5556-9a39-f197fca16a7f"))
+  (no_connect
+    (at 217.17 107.95)
+    (uuid "3205423c-a472-59a9-bcc7-d6a2dfc5a1f1"))
+  (no_connect
+    (at 191.77 102.87)
+    (uuid "34c2bc06-e40d-5a21-91d2-5b094598d456"))
+  (no_connect
+    (at 97.79 124.46)
+    (uuid "67b4ce28-eeed-5f0b-bbf1-95ef6368b9e7"))
+  (no_connect
+    (at 217.17 118.11)
+    (uuid "a76a5f70-3526-5cbb-ba59-a5ca2426d3e1"))
+  (no_connect
+    (at 97.79 129.54)
+    (uuid "b58bae97-1c5e-575e-a0eb-477b4032f313"))
+  (no_connect
+    (at 191.77 118.11)
+    (uuid "bb36dba5-39ae-5897-9875-80687dd8383a"))
+  (no_connect
+    (at 97.79 121.92)
+    (uuid "e376a8bb-856d-51e3-ba1f-8bdf80be27fe"))
+  (no_connect
+    (at 217.17 102.87)
+    (uuid "f1e84698-3a4f-5320-bfed-7c3813615898"))
+  (wire
+    (pts
+      (xy 99.06 119.38)
+      (xy 97.79 119.38))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "03f08918-d904-4a5d-97fc-434ca32bcb5c"))
+  (wire
+    (pts
+      (xy 82.55 144.78)
+      (xy 82.55 142.24))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "0aa981a1-8681-4b02-99ea-b4c7a01794c4"))
+  (wire
+    (pts
+      (xy 82.55 144.78)
+      (xy 85.09 144.78))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "35e44185-256c-5e6f-a61d-681be16be7a6"))
+  (wire
+    (pts
+      (xy 85.09 144.78)
+      (xy 85.09 142.24))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "6f05a370-8db3-40bd-a752-02685e2d3bb1"))
+  (wire
+    (pts
+      (xy 99.06 137.16)
+      (xy 97.79 137.16))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "7b8d7a4e-91ce-42eb-bbc8-dc05084f5296"))
+  (wire
+    (pts
+      (xy 99.06 134.62)
+      (xy 97.79 134.62))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "bcd8fb20-deeb-45a5-81e3-d8b9378c2b0c"))
+  (wire
+    (pts
+      (xy 99.06 116.84)
+      (xy 97.79 116.84))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "e403eab1-ffe3-48c9-979c-79b69ea5d383"))
+  (wire
+    (pts
+      (xy 99.06 111.76)
+      (xy 97.79 111.76))
+    (stroke
+      (width 0)
+      (type default))
+    (uuid "ffacf2aa-88fc-43de-ae98-c09c9de19633"))
+  (label "STDC_SWCLK"
+    (at 99.06 116.84 0)
+    (effects
+      (font
+        (size 0.9 0.9))
+      (justify left))
+    (uuid "0bbbaf86-b40b-5e97-94a6-17bdb2df7e20"))
+  (label "STDC_VCP_FROM_MCU"
+    (at 99.06 137.16 0)
+    (effects
+      (font
+        (size 0.9 0.9))
+      (justify left))
+    (uuid "1213b8dd-d196-5032-b170-4b484bb6521f"))
+  (label "STDC_SWDIO"
+    (at 191.77 107.95 180)
+    (effects
+      (font
+        (size 0.9 0.9))
+      (justify right))
+    (uuid "226aa3db-cd2d-5e72-81f5-d61e131124b5"))
+  (label "STDC_NRST"
+    (at 99.06 111.76 0)
+    (effects
+      (font
+        (size 0.9 0.9))
+      (justify left))
+    (uuid "30f47946-30a5-56f1-bf3b-1d02fad4011c"))
+  (label "STDC_SWDIO"
+    (at 99.06 119.38 0)
+    (effects
+      (font
+        (size 0.9 0.9))
+      (justify left))
+    (uuid "3b7e9f5f-832d-5707-88a5-a872df5c5638"))
+  (label "STDC_NRST"
+    (at 346.71 121.92 180)
+    (effects
+      (font
+        (size 0.9 0.9))
+      (justify right))
+    (uuid "4579057e-f8c6-5aa8-931d-e7d69c5bd2d5"))
+  (label "STDC_SWDIO"
+    (at 295.91 82.55 180)
+    (effects
+      (font
+        (size 0.9 0.9))
+      (justify right))
+    (uuid "4abd4733-0560-5cfc-a6f0-fe8c9b0d8833"))
+  (label "STDC_SWCLK"
+    (at 191.77 113.03 180)
+    (effects
+      (font
+        (size 0.9 0.9))
+      (justify right))
+    (uuid "4f287530-c9cb-5066-b4c9-ba420519b563"))
+  (label "STDC_VCP_TO_MCU"
+    (at 295.91 162.56 180)
+    (effects
+      (font
+        (size 0.9 0.9))
+      (justify right))
+    (uuid "6143815e-cd9d-5e93-9de8-e74a45decda4"))
+  (label "STDC_SWCLK"
+    (at 346.71 82.55 180)
+    (effects
+      (font
+        (size 0.9 0.9))
+      (justify right))
+    (uuid "8c023f3a-6e74-5db3-ba67-7a650f5bda8d"))
+  (label "STDC_VCP_TO_MCU"
+    (at 194.31 165.1 180)
+    (effects
+      (font
+        (size 0.9 0.9))
+      (justify right))
+    (uuid "8c96b6c3-0fb7-5fbe-a226-0f0ccf907dd6"))
+  (label "STDC_NRST"
+    (at 217.17 113.03 0)
+    (effects
+      (font
+        (size 0.9 0.9))
+      (justify left))
+    (uuid "b75f5197-f1cf-5c66-80ac-06ab9c7f54d0"))
+  (label "STDC_VCP_TO_MCU"
+    (at 99.06 134.62 0)
+    (effects
+      (font
+        (size 0.9 0.9))
+      (justify left))
+    (uuid "c225af8e-ed81-5515-9758-f2df4a535f58"))
+  (label "STDC_VCP_FROM_MCU"
+    (at 214.63 165.1 0)
+    (effects
+      (font
+        (size 0.9 0.9))
+      (justify left))
+    (uuid "c2ffa232-6750-507b-a3cc-0d079d59b1d7"))
+  (label "STDC_VCP_FROM_MCU"
+    (at 346.71 162.56 180)
+    (effects
+      (font
+        (size 0.9 0.9))
+      (justify right))
+    (uuid "cf9c0875-a27c-50c1-91ab-02aa39bdb913"))
+  (global_label "VCP_TX"
+    (shape passive)
+    (at 354.33 162.56 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "11e612d5-8eb4-528f-8ad6-59ed1c6e92f8")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 354.33 162.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
+  (global_label "NRST"
+    (shape passive)
+    (at 354.33 121.92 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "3c70d61f-0439-5a36-92a1-ee53f3503742")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 354.33 121.92 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
+  (global_label "SWCLK"
+    (shape passive)
+    (at 325.12 204.47 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "7b1530c5-b0fc-52b9-8903-19a0b38d8c6e")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 325.12 204.47 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
+  (global_label "VCP_RX"
+    (shape passive)
+    (at 303.53 162.56 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "899d3204-934c-5a7a-b774-81fbbac92898")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 303.53 162.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
+  (global_label "SWDIO"
+    (shape passive)
+    (at 284.48 204.47 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "a045f0b1-df3b-57e4-ae16-fd6528fd7624")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 284.48 204.47 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
+  (global_label "SWDIO"
+    (shape passive)
+    (at 303.53 82.55 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "c42500a9-d994-5bb8-bb6e-3f07575a14c1")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 303.53 82.55 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
+  (global_label "NRST"
+    (shape passive)
+    (at 364.49 204.47 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "d0e0710d-34d9-5a68-9be7-dd78fb61f231")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 364.49 204.47 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
+  (global_label "SWCLK"
+    (shape passive)
+    (at 354.33 82.55 0)
+    (effects
+      (font
+        (size 1.27 1.27))
+      (justify left))
+    (uuid "d32905e3-a804-57a5-b13d-099d37e990fb")
+    (property "Intersheetrefs" "${INTERSHEET_REFS}"
+      (at 354.33 82.55 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
+  (symbol
+    (lib_id "Controller_Power:GND")
+    (at 82.55 144.78 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "08407d2a-bef9-59c6-b5a7-afe4ecc742ee")
+    (property "Reference" "#PWRP40169"
+      (at 82.55 144.78 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 82.55 149.225 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 82.55 144.78 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Datasheet" ""
+      (at 82.55 144.78 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Description" ""
+      (at 82.55 144.78 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (pin "1"
+      (uuid "2c81ac2e-420a-531b-9fea-77d820376f6c"))
+    (instances
+      (project "Elevation_Controller"
+        (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/375122c4-fe73-5d01-8eb0-c0f62d3c74f4"
+          (reference "#PWRP40169")
+          (unit 1)))))
+  (symbol
+    (lib_id "Device:R")
+    (at 350.52 162.56 90)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "12e32a06-b061-5870-a5b2-56686a95141c")
+    (property "Reference" "R606"
+      (at 350.52 164.592 90)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "22R"
+      (at 350.52 160.02 90)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 348.742 162.56 90)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+      (at 350.52 162.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Description" ""
+      (at 350.52 162.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Placement" "MCU_SIDE"
+      (at 353.06 167.6399 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "hierarchy_path" "/74ecd43a-6c87-54e8-8e8e-353108e4b3d7/16f53a77-eb98-5a06-a45c-896ce35e7eff"
+      (at 353.06 167.6399 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "CRCW080522R0FKEA"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "Vishay"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Assembly" "FIT"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "-55"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "155"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "Operating"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "Inherited rating; system requirement pending"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Source" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC Part #" "C844832"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Library" "Extended"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Stock Snapshot" "13007"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "DigiKey Part #" "541-22.0CCT-ND"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "DigiKey Status" "VERIFIED"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Data Checked" "2026-09-18"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "59d5984d-afb3-59ca-b347-cd4ba59a77db"))
+    (pin "2"
+      (uuid "97dcebd9-e43b-58f0-86c1-c5a5bcbee3d8"))
+    (instances
+      (project "Elevation_Controller"
+        (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/375122c4-fe73-5d01-8eb0-c0f62d3c74f4"
+          (reference "R606")
+          (unit 1))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 350.52 162.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 350.52 162.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Resistor"
+      (at 350.52 162.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-55 to +155 C"
+      (at 350.52 162.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 350.52 162.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability"
+      (at 350.52 162.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "C844832"
+      (at 350.52 162.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
+  (symbol
+    (lib_id "Device:R")
+    (at 299.72 82.55 90)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "1bfecb34-02ab-5bc2-b33b-bcf255666cc8")
+    (property "Reference" "R601"
+      (at 300.99 85.09 90)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "22R"
+      (at 300.99 80.01 90)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 297.942 82.55 90)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+      (at 299.72 82.55 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Description" ""
+      (at 299.72 82.55 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Placement" "MCU_SIDE"
+      (at 302.26 87.6299 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "hierarchy_path" "/74ecd43a-6c87-54e8-8e8e-353108e4b3d7/16f53a77-eb98-5a06-a45c-896ce35e7eff"
+      (at 302.26 87.6299 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "CRCW080522R0FKEA"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "Vishay"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Assembly" "FIT"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "-55"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "155"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "Operating"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "Inherited rating; system requirement pending"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Source" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC Part #" "C844832"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Library" "Extended"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Stock Snapshot" "13007"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "DigiKey Part #" "541-22.0CCT-ND"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "DigiKey Status" "VERIFIED"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Data Checked" "2026-09-18"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "1e426777-b474-5ab6-9e23-caf1dabf5549"))
+    (pin "2"
+      (uuid "938dddd9-40bb-5250-98cb-af8624f90d21"))
+    (instances
+      (project "Elevation_Controller"
+        (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/375122c4-fe73-5d01-8eb0-c0f62d3c74f4"
+          (reference "R601")
+          (unit 1))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 299.72 82.55 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 299.72 82.55 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Resistor"
+      (at 299.72 82.55 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-55 to +155 C"
+      (at 299.72 82.55 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 299.72 82.55 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability"
+      (at 299.72 82.55 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "C844832"
+      (at 299.72 82.55 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
+  (symbol
+    (lib_id "Power_Protection:TPD2EUSB30A")
+    (at 204.47 165.1 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "303a90c8-4838-531e-ac05-a6e54fef82c8")
+    (property "Reference" "U602"
+      (at 198.12 158.75 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "TPD2EUSB30ADRTR"
+      (at 207.01 158.75 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Package_TO_SOT_SMD:Texas_DRT-3"
+      (at 185.42 157.48 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tpd2eusb30a.pdf"
+      (at 204.47 165.1 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Description" ""
+      (at 204.47 165.1 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Manufacturer" "Texas Instruments"
+      (at 207.01 170.1799 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "TPD2EUSB30ADRTR"
+      (at 207.01 170.1799 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "hierarchy_path" "/74ecd43a-6c87-54e8-8e8e-353108e4b3d7/16f53a77-eb98-5a06-a45c-896ce35e7eff"
+      (at 207.01 170.1799 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Assembly" "FIT"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "-40"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "85"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "Ambient"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "Inherited rating; system requirement pending"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Source" "https://www.ti.com/lit/ds/symlink/tpd2eusb30a.pdf"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC Part #" "C94934"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Library" "Extended"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Stock Snapshot" "5439"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "DigiKey Part #" "296-28153-1-ND"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "DigiKey Status" "VERIFIED"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Data Checked" "2026-09-18"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "02b01e8c-f381-5c8e-9f99-60bb148a75a2"))
+    (pin "3"
+      (uuid "497532d7-1100-5dff-9579-106f78b9e1d1"))
+    (pin "2"
+      (uuid "7e7405d8-9ed8-5f13-9827-68e1c056d268"))
+    (instances
+      (project "Elevation_Controller"
+        (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/375122c4-fe73-5d01-8eb0-c0f62d3c74f4"
+          (reference "U602")
+          (unit 1))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 204.47 165.1 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 204.47 165.1 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "TPD2EUSB30ADRTR"
+      (at 204.47 165.1 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-40 to +85 C"
+      (at 204.47 165.1 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 204.47 165.1 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability"
+      (at 204.47 165.1 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "C94934"
+      (at 204.47 165.1 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 325.12 204.47 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "42ea5735-41d6-5253-aa7d-de7d3e9b96c0")
+    (property "Reference" "TP602"
+      (at 325.12 211.328 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "SWCLK"
+      (at 325.12 209.55 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)
+        (hide yes)))
+    (property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+      (at 330.2 204.47 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 325.12 204.47 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Description" ""
+      (at 325.12 204.47 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "hierarchy_path" "/74ecd43a-6c87-54e8-8e8e-353108e4b3d7/16f53a77-eb98-5a06-a45c-896ce35e7eff"
+      (at 327.66 209.5499 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Assembly" "PCB feature - no purchased component"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "N/A"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "N/A"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "PCB feature"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "N/A"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Source" "N/A"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC Part #" "N/A"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Library" "N/A"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Stock Snapshot" "N/A"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "DigiKey Part #" "N/A"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "DigiKey Status" "N/A"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Data Checked" "2026-09-18"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "e45d4a67-3db5-5538-a201-f6834f4c4dbf"))
+    (instances
+      (project "Elevation_Controller"
+        (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/375122c4-fe73-5d01-8eb0-c0f62d3c74f4"
+          (reference "TP602")
+          (unit 1))))
+    (property "JLCPCB Status" "N/A"
+      (at 325.12 204.47 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PCB FEATURE"
+      (at 325.12 204.47 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "N/A"
+      (at 325.12 204.47 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "PCB test pad"
+      (at 325.12 204.47 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "N/A"
+      (at 325.12 204.47 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "N/A"
+      (at 325.12 204.47 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "N/A"
+      (at 325.12 204.47 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
+  (symbol
+    (lib_id "Device:R")
+    (at 299.72 162.56 90)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "54e62a3e-fc0d-5220-92ce-1447eed41bef")
+    (property "Reference" "R605"
+      (at 299.72 164.592 90)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "22R"
+      (at 298.45 160.02 90)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 297.942 162.56 90)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+      (at 299.72 162.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Description" ""
+      (at 299.72 162.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Placement" "MCU_SIDE"
+      (at 302.26 167.6399 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "hierarchy_path" "/74ecd43a-6c87-54e8-8e8e-353108e4b3d7/16f53a77-eb98-5a06-a45c-896ce35e7eff"
+      (at 302.26 167.6399 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "CRCW080522R0FKEA"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "Vishay"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Assembly" "FIT"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "-55"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "155"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "Operating"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "Inherited rating; system requirement pending"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Source" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC Part #" "C844832"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Library" "Extended"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Stock Snapshot" "13007"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "DigiKey Part #" "541-22.0CCT-ND"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "DigiKey Status" "VERIFIED"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Data Checked" "2026-09-18"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "7776dd84-e202-5169-a83b-c27ad304e3bc"))
+    (pin "2"
+      (uuid "3aee4984-0d39-55da-b13a-eab04668aec8"))
+    (instances
+      (project "Elevation_Controller"
+        (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/375122c4-fe73-5d01-8eb0-c0f62d3c74f4"
+          (reference "R605")
+          (unit 1))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 299.72 162.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 299.72 162.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Resistor"
+      (at 299.72 162.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-55 to +155 C"
+      (at 299.72 162.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 299.72 162.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability"
+      (at 299.72 162.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "C844832"
+      (at 299.72 162.56 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
+  (symbol
+    (lib_id "Controller_Power:GND")
+    (at 204.47 123.19 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "57998a81-9a79-5fc6-8221-40864de75b1b")
+    (property "Reference" "#PWRP40166"
+      (at 204.47 123.19 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 204.47 127.635 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 204.47 123.19 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Datasheet" ""
+      (at 204.47 123.19 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Description" ""
+      (at 204.47 123.19 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (pin "1"
+      (uuid "904851c6-5ccc-5ae0-b433-f12aaaab0eff"))
+    (instances
+      (project "Elevation_Controller"
+        (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/375122c4-fe73-5d01-8eb0-c0f62d3c74f4"
+          (reference "#PWRP40166")
+          (unit 1)))))
+  (symbol
+    (lib_id "Device:R")
+    (at 350.52 82.55 90)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "5e307ace-94f3-5ea3-a8c5-17a38e7a3572")
+    (property "Reference" "R602"
+      (at 350.52 85.09 90)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "22R"
+      (at 350.52 80.01 90)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 348.742 82.55 90)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+      (at 350.52 82.55 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Description" ""
+      (at 350.52 82.55 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Placement" "MCU_SIDE"
+      (at 353.06 87.6299 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "hierarchy_path" "/74ecd43a-6c87-54e8-8e8e-353108e4b3d7/16f53a77-eb98-5a06-a45c-896ce35e7eff"
+      (at 353.06 87.6299 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "CRCW080522R0FKEA"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "Vishay"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Assembly" "FIT"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "-55"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "155"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "Operating"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "Inherited rating; system requirement pending"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Source" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC Part #" "C844832"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Library" "Extended"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Stock Snapshot" "13007"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "DigiKey Part #" "541-22.0CCT-ND"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "DigiKey Status" "VERIFIED"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Data Checked" "2026-09-18"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "a359fb68-7947-55b1-b827-787cc5701ffa"))
+    (pin "2"
+      (uuid "3fd25507-1f0c-5b6e-8aff-f9175621937e"))
+    (instances
+      (project "Elevation_Controller"
+        (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/375122c4-fe73-5d01-8eb0-c0f62d3c74f4"
+          (reference "R602")
+          (unit 1))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 350.52 82.55 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 350.52 82.55 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Resistor"
+      (at 350.52 82.55 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-55 to +155 C"
+      (at 350.52 82.55 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 350.52 82.55 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability"
+      (at 350.52 82.55 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "C844832"
+      (at 350.52 82.55 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 364.49 204.47 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "7d0790df-b3a8-5521-9df9-b75fa2edcc6b")
+    (property "Reference" "TP603"
+      (at 364.49 211.328 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "NRST"
+      (at 364.49 209.55 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)
+        (hide yes)))
+    (property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+      (at 369.57 204.47 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 364.49 204.47 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Description" ""
+      (at 364.49 204.47 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "hierarchy_path" "/74ecd43a-6c87-54e8-8e8e-353108e4b3d7/16f53a77-eb98-5a06-a45c-896ce35e7eff"
+      (at 367.03 209.5499 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Assembly" "PCB feature - no purchased component"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "N/A"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "N/A"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "PCB feature"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "N/A"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Source" "N/A"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC Part #" "N/A"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Library" "N/A"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Stock Snapshot" "N/A"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "DigiKey Part #" "N/A"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "DigiKey Status" "N/A"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Data Checked" "2026-09-18"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "890e1d39-5972-54d3-a6cd-cd95d4a8c817"))
+    (instances
+      (project "Elevation_Controller"
+        (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/375122c4-fe73-5d01-8eb0-c0f62d3c74f4"
+          (reference "TP603")
+          (unit 1))))
+    (property "JLCPCB Status" "N/A"
+      (at 364.49 204.47 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PCB FEATURE"
+      (at 364.49 204.47 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "N/A"
+      (at 364.49 204.47 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "PCB test pad"
+      (at 364.49 204.47 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "N/A"
+      (at 364.49 204.47 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "N/A"
+      (at 364.49 204.47 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "N/A"
+      (at 364.49 204.47 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
+  (symbol
+    (lib_id "Connector:TestPoint")
+    (at 284.48 204.47 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom no)
+    (on_board yes)
+    (dnp no)
+    (uuid "8488fd6c-5c7b-5ad3-8ff7-aee1d4eee822")
+    (property "Reference" "TP601"
+      (at 284.48 211.328 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "SWDIO"
+      (at 284.48 209.55 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)
+        (hide yes)))
+    (property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm"
+      (at 289.56 204.47 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" ""
+      (at 284.48 204.47 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Description" ""
+      (at 284.48 204.47 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "hierarchy_path" "/74ecd43a-6c87-54e8-8e8e-353108e4b3d7/16f53a77-eb98-5a06-a45c-896ce35e7eff"
+      (at 287.02 209.5499 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Assembly" "PCB feature - no purchased component"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "N/A"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "N/A"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "PCB feature"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "N/A"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Source" "N/A"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC Part #" "N/A"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Library" "N/A"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Stock Snapshot" "N/A"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "DigiKey Part #" "N/A"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "DigiKey Status" "N/A"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Data Checked" "2026-09-18"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "a0ea5eae-a2b2-5e3c-a013-e2118d272956"))
+    (instances
+      (project "Elevation_Controller"
+        (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/375122c4-fe73-5d01-8eb0-c0f62d3c74f4"
+          (reference "TP601")
+          (unit 1))))
+    (property "JLCPCB Status" "N/A"
+      (at 284.48 204.47 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PCB FEATURE"
+      (at 284.48 204.47 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "N/A"
+      (at 284.48 204.47 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "PCB test pad"
+      (at 284.48 204.47 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "N/A"
+      (at 284.48 204.47 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "N/A"
+      (at 284.48 204.47 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "N/A"
+      (at 284.48 204.47 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
+  (symbol
+    (lib_id "Power_Protection:TPD4E05U06DQA")
+    (at 204.47 110.49 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "9d07ec58-215a-5fac-993c-47d0d8c2fcac")
+    (property "Reference" "U601"
+      (at 198.12 100.33 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "TPD4E05U06DQAR"
+      (at 206.375 100.33 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Package_SON:USON-10_2.5x1.0mm_P0.5mm"
+      (at 206.375 98.425 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/tpd4e05u06.pdf"
+      (at 204.47 110.49 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Description" ""
+      (at 204.47 110.49 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Manufacturer" "Texas Instruments"
+      (at 207.01 115.5699 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "TPD4E05U06DQAR"
+      (at 207.01 115.5699 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "hierarchy_path" "/74ecd43a-6c87-54e8-8e8e-353108e4b3d7/16f53a77-eb98-5a06-a45c-896ce35e7eff"
+      (at 207.01 115.5699 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Assembly" "FIT"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "-40"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "125"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "Operating"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "Inherited rating; system requirement pending"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Source" "https://www.ti.com/lit/ds/symlink/tpd4e05u06.pdf"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC Part #" "C22390021"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Library" "Extended"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Stock Snapshot" "103416"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "DigiKey Part #" "296-35765-1-ND"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "DigiKey Status" "VERIFIED"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Data Checked" "2026-09-18"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "10"
+      (uuid "007ef49c-72f8-55a3-b0dd-3bb0de2666fe"))
+    (pin "1"
+      (uuid "5920a57b-8dcc-5b33-a163-6cf5549014ba"))
+    (pin "2"
+      (uuid "d364c7d3-8052-5936-8cba-72309c5cd369"))
+    (pin "9"
+      (uuid "870a1452-136b-54e6-8a25-75303b072b60"))
+    (pin "3"
+      (uuid "f1af8445-9514-510c-a271-cfa05eb3f050"))
+    (pin "8"
+      (uuid "416c33c0-f952-5a1c-b4ff-b41efe2512ec"))
+    (pin "7"
+      (uuid "b3c98ab7-570f-5619-928b-98237359844d"))
+    (pin "4"
+      (uuid "df6fb34e-da92-52b8-ba8f-df016097a7d6"))
+    (pin "5"
+      (uuid "924be048-21e0-53f4-af9d-8016aa62f52b"))
+    (pin "6"
+      (uuid "4e2a152f-cce6-5cda-997c-6e11f4edd9cc"))
+    (instances
+      (project "Elevation_Controller"
+        (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/375122c4-fe73-5d01-8eb0-c0f62d3c74f4"
+          (reference "U601")
+          (unit 1))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 204.47 110.49 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 204.47 110.49 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "TPD4E05U06DQAR"
+      (at 204.47 110.49 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-40 to +125 C"
+      (at 204.47 110.49 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 204.47 110.49 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability"
+      (at 204.47 110.49 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "C22390021"
+      (at 204.47 110.49 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
+  (symbol
+    (lib_id "Connector:Conn_ST_STDC14")
+    (at 85.09 124.46 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "a625214f-012a-5d1c-8603-80c3bcc6d6de")
+    (property "Reference" "J601"
+      (at 76.2 106.68 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "FTSH-107-01-L-DV-K"
+      (at 90.17 106.68 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "ProtoFlow:Samtec_FTSH-107-01-L-DV-K"
+      (at 85.09 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" "https://www.samtec.com/products/ftsh-107-01-l-dv-k"
+      (at 85.09 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Description" ""
+      (at 85.09 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Manufacturer" "Samtec"
+      (at 87.63 129.5399 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "FTSH-107-01-L-DV-K"
+      (at 87.63 129.5399 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Footprint_Status" "CONTROLLED_FROM_SAMTEC_REV_H_RECOMMENDED_LAYOUT"
+      (at 87.63 129.5399 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "hierarchy_path" "/74ecd43a-6c87-54e8-8e8e-353108e4b3d7/16f53a77-eb98-5a06-a45c-896ce35e7eff"
+      (at 87.63 129.5399 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Assembly" "FIT"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "-55"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "125"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "Operating"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "Inherited rating; system requirement pending"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Source" "https://www.samtec.com/products/ftsh-107-01-l-dv-k"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC Part #" "C5307809"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Library" "Extended"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Stock Snapshot" "309"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "DigiKey Part #" "SAM9449-ND"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "DigiKey Status" "VERIFIED"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Data Checked" "2026-09-18"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "e945293c-1f52-524b-92f9-106be6522c7d"))
+    (pin "2"
+      (uuid "aca78a3e-d83a-5a16-a7c3-7279564eea2b"))
+    (pin "11"
+      (uuid "72ba947b-2b76-59d0-9f69-451a21b399dc"))
+    (pin "3"
+      (uuid "e2e68c05-346c-5de0-af33-56857fc34bf8"))
+    (pin "5"
+      (uuid "78fb27e3-c831-5481-8683-7cee0a646fa7"))
+    (pin "7"
+      (uuid "b41d9c09-07f5-5363-baed-33637087ac0c"))
+    (pin "12"
+      (uuid "fbdb2c38-b862-5bf0-9a61-cc0a6a51d20b"))
+    (pin "6"
+      (uuid "02c08124-5799-5ee7-8d91-acbfbaf3f7de"))
+    (pin "4"
+      (uuid "3788304c-c232-54ea-9e47-ad2ff4f62d31"))
+    (pin "8"
+      (uuid "4257f792-6408-5e8a-b47d-57357206f7b7"))
+    (pin "10"
+      (uuid "d535eb23-646b-5b79-997c-9cde0c9d05eb"))
+    (pin "9"
+      (uuid "f7c3a8d3-1a32-5e18-98bd-a0f779786326"))
+    (pin "13"
+      (uuid "d746d580-6b3f-570b-911c-e7d58197844f"))
+    (pin "14"
+      (uuid "c3975f1c-511e-5293-b58b-215da245a1c7"))
+    (instances
+      (project "Elevation_Controller"
+        (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/375122c4-fe73-5d01-8eb0-c0f62d3c74f4"
+          (reference "J601")
+          (unit 1))))
+    (property "Footprint Status" "CONTROLLED_FROM_SAMTEC_REV_H_RECOMMENDED_LAYOUT"
+      (at 85.09 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 85.09 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "FTSH-107-01-L-DV-K"
+      (at 85.09 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-55 to +125 C"
+      (at 85.09 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 85.09 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability"
+      (at 85.09 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "C5307809"
+      (at 85.09 124.46 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
+  (symbol
+    (lib_id "Controller_Power:3V3_DIG")
+    (at 85.09 106.68 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "e4b38bbb-cd4c-5376-83aa-ed8cdee02e0c")
+    (property "Reference" "#PWRP40171"
+      (at 85.09 106.68 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Value" "3V3_DIG"
+      (at 85.09 102.235 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 85.09 106.68 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Datasheet" ""
+      (at 85.09 106.68 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Description" ""
+      (at 85.09 106.68 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (pin "1"
+      (uuid "53063eb8-1481-54f1-b576-50d798d5a1bd"))
+    (instances
+      (project "Elevation_Controller"
+        (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/375122c4-fe73-5d01-8eb0-c0f62d3c74f4"
+          (reference "#PWRP40171")
+          (unit 1)))))
+  (symbol
+    (lib_id "Controller_Power:GND")
+    (at 204.47 175.26 0)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "e649a519-9154-5505-ab75-00f1b131ade0")
+    (property "Reference" "#PWRP40170"
+      (at 204.47 175.26 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Value" "GND"
+      (at 204.47 179.705 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Footprint" ""
+      (at 204.47 175.26 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Datasheet" ""
+      (at 204.47 175.26 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Description" ""
+      (at 204.47 175.26 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (pin "1"
+      (uuid "a82ace34-5210-5b90-9f90-8d06b257167e"))
+    (instances
+      (project "Elevation_Controller"
+        (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/375122c4-fe73-5d01-8eb0-c0f62d3c74f4"
+          (reference "#PWRP40170")
+          (unit 1)))))
+  (symbol
+    (lib_id "Device:R")
+    (at 350.52 121.92 90)
+    (unit 1)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (uuid "e838690a-0f18-5f1f-b2aa-9dd519de7eff")
+    (property "Reference" "R604"
+      (at 350.52 123.952 90)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Value" "22R"
+      (at 349.25 119.38 90)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left)))
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+      (at 348.742 121.92 90)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+      (at 350.52 121.92 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Description" ""
+      (at 350.52 121.92 0)
+      (effects
+        (font
+          (size 1.27 1.27))))
+    (property "Placement" "MCU_SIDE"
+      (at 353.06 126.9999 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "hierarchy_path" "/74ecd43a-6c87-54e8-8e8e-353108e4b3d7/16f53a77-eb98-5a06-a45c-896ce35e7eff"
+      (at 353.06 126.9999 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "CRCW080522R0FKEA"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "Vishay"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Assembly" "FIT"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "-55"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "155"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "Operating"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "Inherited rating; system requirement pending"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Source" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC Part #" "C844832"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Library" "Extended"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Stock Snapshot" "13007"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "DigiKey Part #" "541-22.0CCT-ND"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "DigiKey Status" "VERIFIED"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Data Checked" "2026-09-18"
+      (at 0 0 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (pin "1"
+      (uuid "79e2cf25-19d7-544e-ac16-3b5e33aa784c"))
+    (pin "2"
+      (uuid "60545c2d-4c44-5e2e-ae47-e99d28c90aa7"))
+    (instances
+      (project "Elevation_Controller"
+        (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/375122c4-fe73-5d01-8eb0-c0f62d3c74f4"
+          (reference "R604")
+          (unit 1))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 350.52 121.92 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 350.52 121.92 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Resistor"
+      (at 350.52 121.92 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-55 to +155 C"
+      (at 350.52 121.92 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 350.52 121.92 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability"
+      (at 350.52 121.92 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "C844832"
+      (at 350.52 121.92 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))))

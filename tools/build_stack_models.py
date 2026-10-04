@@ -28,7 +28,7 @@ def connector(rows,socket):
 models={}
 for rows in (15,10):
     for sock in (False,True):name,shape=connector(rows,sock);models[name]=shape
-assembly=cq.Assembly(name='Elevation_P5_nominal_stack' if DATA.get('mechanical_revision','').startswith('P5') else 'Elevation_P4_nominal_stack')
+assembly=cq.Assembly(name='Elevation_'+DATA.get('mechanical_revision','P4').split()[0]+'_nominal_stack')
 thick=DATA['pcb_thickness_mm'];gap=DATA['board_gap_mm'];cx,cy=DATA['controller_to_elevation_translation_mm']
 # Assembly XY follows KiCad X and inverted Y. Elevation top copper is z=0.
 for controller in (False,True):
@@ -40,7 +40,8 @@ for controller in (False,True):
     holes=[]
     for x,y in DATA['supports_controller_xy_mm'].values():holes.append((x+cx,-y-cy))
     if not controller:
-        holes.extend([(134,-26),(134,-214),(26,-26),(26,-214)] if DATA.get('mechanical_revision','').startswith('P5')
+        holes.extend([(x,-y) for x,y in DATA['enclosure_holes_elevation_xy_mm'].values()] if 'enclosure_holes_elevation_xy_mm' in DATA else
+                     [(134,-26),(134,-214),(26,-26),(26,-214)] if DATA.get('mechanical_revision','').startswith('P5')
                      else [(164,-26),(164,-182.5),(84,-26),(84,-182.5)])
     cutter=cq.Workplane('XY').pushPoints(holes).circle(1.6).extrude(30,both=True)
     body=body.cut(cutter)
@@ -48,18 +49,18 @@ for controller in (False,True):
 for ref,info in DATA['connectors'].items():
     # Socket front orientation 0; header back orientation 180 mirrors X in plan.
     sx,sy=info['elevation_origin_xy_mm']
-    socket=models['Samtec_'+info['elevation_part']].translate((sx,-sy,0))
+    socket=models['Samtec_'+info['elevation_part']].rotate((0,0,0),(0,0,1),info.get('elevation_angle_deg',0)).translate((sx,-sy,0))
     hx,hy=info['controller_origin_xy_mm'];hx+=cx;hy+=cy
-    header=models['Samtec_'+info['controller_part']].rotate((0,0,0),(0,1,0),180).translate((hx,-hy,gap))
+    header=models['Samtec_'+info['controller_part']].rotate((0,0,0),(0,1,0),180).rotate((0,0,0),(0,0,1),info.get('controller_angle_deg',180)-180).translate((hx,-hy,gap))
     assembly.add(socket,name=ref+'_socket',color=cq.Color(.16,.16,.16))
     assembly.add(header,name=ref+'_header',color=cq.Color(.22,.22,.22))
 for ref,(x,y) in DATA['supports_controller_xy_mm'].items():
     spacer=cq.Workplane('XY').circle(3).circle(1.6).extrude(gap).translate((x+cx,-y-cy,0))
     assembly.add(spacer,name=ref+'_12mm_spacer',color=cq.Color(.72,.72,.74))
-if DATA.get('mechanical_revision','').startswith('P5'):
+if DATA.get('mechanical_revision','').startswith(('P5','P6')):
     # Conservative rectangular converter envelopes make the outward-facing
     # population strategy explicit. These are not vendor solid models.
-    inventory=json.loads((ROOT/'outputs/placement/inventory.json').read_text())
+    inventory=json.loads((ROOT/DATA.get('placement_inventory','outputs/placement/inventory.json')).read_text())
     for f in inventory['elevation']:
         if f['ref'] not in ('PS1','PS2','PS4','PS5','PS6','PS10','PS11'):continue
         x0,y0,x1,y1=f['box'];height=10.2 if f['ref']=='PS4' else 17.5

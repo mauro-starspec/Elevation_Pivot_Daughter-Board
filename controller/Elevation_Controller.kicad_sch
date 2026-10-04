@@ -1,370 +1,320 @@
 (kicad_sch
-	(version 20250114)
-	(generator "eeschema")
-	(generator_version "9.0")
-	(uuid "f90044e7-7c5d-5957-9ff6-c9223a43c712")
-	(paper "A3")
-	(title_block
-		(title "Elevation STM32H723 Controller")
-		(date "2026-10-03")
-		(rev "P4.1 MODBUS")
-		(company "Starspec")
-	)
-	(lib_symbols)
-	(text "32 application signals, including USART2 pivot Modbus; shared 3.3 V logic, isolated 5 V from PS4.\nEthernet / USB / SWD on this board. Field transceivers and isolation on the elevation board.\nJ31-13/14/18 are TX/RX/DE: mate matching P4.1 boards. Pin map: assembly/stack_interface.json."
-		(exclude_from_sim no)
-		(at 20.32 254 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "14184db4-cf7b-5179-90fa-cdc4b5fbcf38")
-	)
-	(text "CUSTOM STM32H723 CONTROLLER FOR THE ELEVATION / PIVOT BOARD"
-		(exclude_from_sim no)
-		(at 20.32 15.24 0)
-		(effects
-			(font
-				(size 1.778 1.778)
-			)
-			(justify left top)
-		)
-		(uuid "6194db3b-04d2-5ddb-921c-5063905c9fec")
-	)
-	(sheet
-		(at 223.52 142.24)
-		(size 139.7 30.48)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "375122c4-fe73-5d01-8eb0-c0f62d3c74f4")
-		(property "Sheetname" "SWD and VCP"
-			(at 223.52 140.97 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "06_debug.kicad_sch"
-			(at 223.52 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "Elevation_Controller"
-				(path "/f90044e7-7c5d-5957-9ff6-c9223a43c712"
-					(page "7")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 30.48 193.04)
-		(size 139.7 30.48)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "6fdf4713-7b80-53e0-8a3f-44ca7cb4cca8")
-		(property "Sheetname" "Stacking connectors"
-			(at 30.48 191.77 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "07_stack_interface.kicad_sch"
-			(at 30.48 224.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "Elevation_Controller"
-				(path "/f90044e7-7c5d-5957-9ff6-c9223a43c712"
-					(page "8")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 30.48 40.64)
-		(size 139.7 30.48)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "8e43de0d-cb4b-5d61-beb6-2ea179aa2071")
-		(property "Sheetname" "5 V input protection"
-			(at 30.48 39.37 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "01_power_input_5v.kicad_sch"
-			(at 30.48 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "Elevation_Controller"
-				(path "/f90044e7-7c5d-5957-9ff6-c9223a43c712"
-					(page "2")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 30.48 91.44)
-		(size 139.7 30.48)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "9344b517-ffd3-5899-8171-c594a60a9dc5")
-		(property "Sheetname" "STM32 core clocks and reset"
-			(at 30.48 90.17 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "03_mcu_core.kicad_sch"
-			(at 30.48 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "Elevation_Controller"
-				(path "/f90044e7-7c5d-5957-9ff6-c9223a43c712"
-					(page "4")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 30.48 142.24)
-		(size 139.7 30.48)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "c97c58ee-25b7-50be-9652-d6b04194194f")
-		(property "Sheetname" "USB-C"
-			(at 30.48 140.97 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "05_usb.kicad_sch"
-			(at 30.48 173.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "Elevation_Controller"
-				(path "/f90044e7-7c5d-5957-9ff6-c9223a43c712"
-					(page "6")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 223.52 91.44)
-		(size 139.7 30.48)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "f44c58ef-4e6d-576d-9a7f-b745589be461")
-		(property "Sheetname" "Ethernet"
-			(at 223.52 90.17 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "04_ethernet.kicad_sch"
-			(at 223.52 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "Elevation_Controller"
-				(path "/f90044e7-7c5d-5957-9ff6-c9223a43c712"
-					(page "5")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 223.52 193.04)
-		(size 139.7 30.48)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "fbda4e2c-8c79-5ea7-92e0-b2d16ac6e6e0")
-		(property "Sheetname" "Watchdog and status"
-			(at 223.52 191.77 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "09_board_health.kicad_sch"
-			(at 223.52 224.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "Elevation_Controller"
-				(path "/f90044e7-7c5d-5957-9ff6-c9223a43c712"
-					(page "9")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 223.52 40.64)
-		(size 139.7 30.48)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "fd4c1488-7846-5aba-84de-2b90d83bfb75")
-		(property "Sheetname" "3.3 V power and VDDA filter"
-			(at 223.52 39.37 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "02_power_secondary.kicad_sch"
-			(at 223.52 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "Elevation_Controller"
-				(path "/f90044e7-7c5d-5957-9ff6-c9223a43c712"
-					(page "3")
-				)
-			)
-		)
-	)
-	(sheet_instances
-		(path "/"
-			(page "1")
-		)
-	)
-	(embedded_fonts no)
-)
+  (version 20250114)
+  (generator "eeschema")
+  (generator_version "9.0")
+  (uuid "f90044e7-7c5d-5957-9ff6-c9223a43c712")
+  (paper "A3")
+  (title_block
+    (title "Elevation STM32H723 Controller")
+    (date "2026-10-03")
+    (rev "P6 COMPACT")
+    (company "Starspec"))
+  (lib_symbols)
+  (sheet_instances
+    (path "/"
+      (page "1")))
+  (embedded_fonts no)
+  (sheet
+    (at 25.4 60.96)
+    (size 111.76 25.4)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (stroke
+      (width 0)
+      (type solid))
+    (fill
+      (color 0 0 0 0.0))
+    (uuid "375122c4-fe73-5d01-8eb0-c0f62d3c74f4")
+    (property "Sheetname" "SWD and VCP"
+      (at 25.4 59.69 0)
+      (effects
+        (font
+          (size 1.524 1.524))
+        (justify left bottom)))
+    (property "Sheetfile" "06_debug.kicad_sch"
+      (at 25.4 88.9 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left top)))
+    (instances
+      (project "Elevation_Controller"
+        (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712"
+          (page "2")))))
+  (sheet
+    (at 154.94 60.96)
+    (size 111.76 25.4)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (stroke
+      (width 0)
+      (type solid))
+    (fill
+      (color 0 0 0 0.0))
+    (uuid "6fdf4713-7b80-53e0-8a3f-44ca7cb4cca8")
+    (property "Sheetname" "Stacking connectors"
+      (at 154.94 59.69 0)
+      (effects
+        (font
+          (size 1.524 1.524))
+        (justify left bottom)))
+    (property "Sheetfile" "07_stack_interface.kicad_sch"
+      (at 154.94 88.9 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left top)))
+    (instances
+      (project "Elevation_Controller"
+        (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712"
+          (page "3")))))
+  (sheet
+    (at 284.48 60.96)
+    (size 111.76 25.4)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (stroke
+      (width 0)
+      (type solid))
+    (fill
+      (color 0 0 0 0.0))
+    (uuid "8e43de0d-cb4b-5d61-beb6-2ea179aa2071")
+    (property "Sheetname" "5 V input protection"
+      (at 284.47999999999996 59.69 0)
+      (effects
+        (font
+          (size 1.524 1.524))
+        (justify left bottom)))
+    (property "Sheetfile" "01_power_input_5v.kicad_sch"
+      (at 284.47999999999996 88.9 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left top)))
+    (instances
+      (project "Elevation_Controller"
+        (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712"
+          (page "4")))))
+  (sheet
+    (at 25.4 106.68)
+    (size 111.76 25.4)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (stroke
+      (width 0)
+      (type solid))
+    (fill
+      (color 0 0 0 0.0))
+    (uuid "9344b517-ffd3-5899-8171-c594a60a9dc5")
+    (property "Sheetname" "STM32 core clocks and reset"
+      (at 25.4 105.41000000000001 0)
+      (effects
+        (font
+          (size 1.524 1.524))
+        (justify left bottom)))
+    (property "Sheetfile" "03_mcu_core.kicad_sch"
+      (at 25.4 134.62 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left top)))
+    (instances
+      (project "Elevation_Controller"
+        (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712"
+          (page "5")))))
+  (sheet
+    (at 154.94 106.68)
+    (size 111.76 25.4)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (stroke
+      (width 0)
+      (type solid))
+    (fill
+      (color 0 0 0 0.0))
+    (uuid "c97c58ee-25b7-50be-9652-d6b04194194f")
+    (property "Sheetname" "USB-C"
+      (at 154.94 105.41000000000001 0)
+      (effects
+        (font
+          (size 1.524 1.524))
+        (justify left bottom)))
+    (property "Sheetfile" "05_usb.kicad_sch"
+      (at 154.94 134.62 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left top)))
+    (instances
+      (project "Elevation_Controller"
+        (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712"
+          (page "6")))))
+  (sheet
+    (at 284.48 106.68)
+    (size 111.76 25.4)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (stroke
+      (width 0)
+      (type solid))
+    (fill
+      (color 0 0 0 0.0))
+    (uuid "f44c58ef-4e6d-576d-9a7f-b745589be461")
+    (property "Sheetname" "Ethernet"
+      (at 284.47999999999996 105.41000000000001 0)
+      (effects
+        (font
+          (size 1.524 1.524))
+        (justify left bottom)))
+    (property "Sheetfile" "04_ethernet.kicad_sch"
+      (at 284.47999999999996 134.62 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left top)))
+    (instances
+      (project "Elevation_Controller"
+        (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712"
+          (page "7")))))
+  (sheet
+    (at 25.4 152.4)
+    (size 111.76 25.4)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (stroke
+      (width 0)
+      (type solid))
+    (fill
+      (color 0 0 0 0.0))
+    (uuid "fbda4e2c-8c79-5ea7-92e0-b2d16ac6e6e0")
+    (property "Sheetname" "Watchdog and status"
+      (at 25.4 151.13 0)
+      (effects
+        (font
+          (size 1.524 1.524))
+        (justify left bottom)))
+    (property "Sheetfile" "09_board_health.kicad_sch"
+      (at 25.4 180.34 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left top)))
+    (instances
+      (project "Elevation_Controller"
+        (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712"
+          (page "8")))))
+  (sheet
+    (at 154.94 152.4)
+    (size 111.76 25.4)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (stroke
+      (width 0)
+      (type solid))
+    (fill
+      (color 0 0 0 0.0))
+    (uuid "fd4c1488-7846-5aba-84de-2b90d83bfb75")
+    (property "Sheetname" "3.3 V power and VDDA filter"
+      (at 154.94 151.13 0)
+      (effects
+        (font
+          (size 1.524 1.524))
+        (justify left bottom)))
+    (property "Sheetfile" "02_power_secondary.kicad_sch"
+      (at 154.94 180.34 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left top)))
+    (instances
+      (project "Elevation_Controller"
+        (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712"
+          (page "9")))))
+  (sheet
+    (at 284.48 152.4)
+    (size 111.76 25.4)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (fill
+      (color 0 0 0 0.0))
+    (uuid "32d2e4f0-d417-4e3e-aa66-6e1c3db35079")
+    (property "Sheetname" "Stepper"
+      (at 284.47999999999996 151.13 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "10_stepper_interfaces.kicad_sch"
+      (at 284.47999999999996 180.34 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left top)))
+    (instances
+      (project "Elevation_Controller"
+        (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712"
+          (page "10")))))
+  (sheet
+    (at 25.4 198.12)
+    (size 111.76 25.4)
+    (exclude_from_sim no)
+    (in_bom yes)
+    (on_board yes)
+    (dnp no)
+    (stroke
+      (width 0.1524)
+      (type solid))
+    (fill
+      (color 0 0 0 0.0))
+    (uuid "edc2c25e-cbd2-4f51-8e64-f3792119425c")
+    (property "Sheetname" "SSI_Encoder"
+      (at 25.4 196.85 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left bottom)))
+    (property "Sheetfile" "11_ssi_interfaces.kicad_sch"
+      (at 25.4 226.06 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (justify left top)))
+    (instances
+      (project "Elevation_Controller"
+        (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712"
+          (page "11")))))
+  (text "P6 COMPACT STACK - 80 x 130 mm placement attempt"
+    (at 25.4 20.32 0)
+    (effects
+      (font
+        (size 2.54 2.54))
+      (justify left top))
+    (uuid "6042c716-7c37-55d7-ba2f-35202314611e"))
+  (text "P6 pinout only. J30: clean logic. J31: field power. Never mate with P4/P5 boards.\nCircuit functions and BOM selections retained; no routing."
+    (at 25.4 30.48 0)
+    (effects
+      (font
+        (size 1.524 1.524))
+      (justify left top))
+    (uuid "9a39f4bb-0386-5dd9-8c43-d3b92f9c606f")))

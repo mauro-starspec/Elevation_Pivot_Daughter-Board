@@ -6,7 +6,7 @@
   (title_block
     (title "Pivot servo - isolated Modbus RTU / RS-485")
     (date "2026-10-03")
-    (rev "P4.1 MODBUS")
+    (rev "P6 COMPACT")
     (company "Starspec"))
   (lib_symbols
     (symbol "Stack:ISO1410DWR"
@@ -1341,24 +1341,114 @@
         (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/bc719b03-93e7-5d7a-bbb6-362bbb1ca736"
           (reference "U160")
           (unit 1))))
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 149.86 96.52 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 149.86 96.52 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Assembly" "FIT" (at 149.86 96.52 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-40 to +125 C" (at 149.86 96.52 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "Exact catalog match; stock not verified" (at 149.86 96.52 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Data Checked" "2026-10-03" (at 149.86 96.52 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Status" "Manufacturer rating recorded; system requirement pending" (at 149.86 96.52 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Checked" "2026-10-03" (at 149.86 96.52 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Source" "https://www.ti.com/lit/ds/symlink/iso1410.pdf" (at 149.86 96.52 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "https://jlcpcb.com/partdetail/TexasInstruments-ISO1410DWR/C2671566" (at 149.86 96.52 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Library" "Extended" (at 149.86 96.52 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Basis" "Ambient" (at 149.86 96.52 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Max (degC)" "125" (at 149.86 96.52 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Min (degC)" "-40" (at 149.86 96.52 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Isolated half-duplex RS-485 transceiver for pivot Modbus RTU, 500 kbit/s" (at 149.86 96.52 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "C2671566" (at 149.86 96.52 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Manufacturer" "Texas Instruments" (at 149.86 96.52 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "MPN" "ISO1410DWR" (at 149.86 96.52 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 149.86 96.52 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 149.86 96.52 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Assembly" "FIT"
+      (at 149.86 96.52 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-40 to +125 C"
+      (at 149.86 96.52 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "Exact catalog match; stock not verified"
+      (at 149.86 96.52 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Data Checked" "2026-10-03"
+      (at 149.86 96.52 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "Manufacturer rating recorded; system requirement pending"
+      (at 149.86 96.52 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Checked" "2026-10-03"
+      (at 149.86 96.52 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Source" "https://www.ti.com/lit/ds/symlink/iso1410.pdf"
+      (at 149.86 96.52 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "https://jlcpcb.com/partdetail/TexasInstruments-ISO1410DWR/C2671566"
+      (at 149.86 96.52 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Library" "Extended"
+      (at 149.86 96.52 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "Ambient"
+      (at 149.86 96.52 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "125"
+      (at 149.86 96.52 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "-40"
+      (at 149.86 96.52 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Isolated half-duplex RS-485 transceiver for pivot Modbus RTU, 500 kbit/s"
+      (at 149.86 96.52 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "C2671566"
+      (at 149.86 96.52 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "Texas Instruments"
+      (at 149.86 96.52 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "ISO1410DWR"
+      (at 149.86 96.52 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 139.7 60.96)
@@ -1571,7 +1661,7 @@
       (width 0)
       (type default))
     (uuid "1a998497-46c8-5ceb-997a-dbcd3b928b78"))
-  (hierarchical_label "PIVOT_MODBUS_RX"
+  (global_label "PIVOT_MODBUS_RX"
     (shape output)
     (at 91.44 81.28 180)
     (effects
@@ -1587,7 +1677,7 @@
       (width 0)
       (type default))
     (uuid "ef4c2595-6ef2-54bd-83ee-13a067e4b59d"))
-  (hierarchical_label "PIVOT_MODBUS_TX"
+  (global_label "PIVOT_MODBUS_TX"
     (shape input)
     (at 91.44 106.68 180)
     (effects
@@ -1632,7 +1722,7 @@
     (diameter 0)
     (color 0 0 0 0)
     (uuid "10259c58-1183-5294-86ab-3ce9c95e213a"))
-  (hierarchical_label "PIVOT_MODBUS_DE"
+  (global_label "PIVOT_MODBUS_DE"
     (shape input)
     (at 91.44 96.52 180)
     (effects
@@ -1705,23 +1795,108 @@
         (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/bc719b03-93e7-5d7a-bbb6-362bbb1ca736"
           (reference "C160")
           (unit 1))))
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 40.64 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 40.64 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Decoupling capacitor" (at 40.64 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Assembly" "FIT" (at 40.64 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Status" "Inherited rating; system requirement pending" (at 40.64 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Source" "Legacy schematic field; primary-source verification pending" (at 40.64 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Basis" "Legacy rating; ambient/junction basis unverified" (at 40.64 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Max (degC)" "125" (at 40.64 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Min (degC)" "-55" (at 40.64 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 40.64 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Data Checked" "UNDATED legacy record" (at 40.64 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability" (at 40.64 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +125 C" (at 40.64 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Datasheet" "~" (at 40.64 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "C28233" (at 40.64 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Manufacturer" "Samsung Electro-Mechanics" (at 40.64 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "MPN" "CL21B104KCFNNNE" (at 40.64 172.72 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 40.64 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 40.64 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Decoupling capacitor"
+      (at 40.64 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Assembly" "FIT"
+      (at 40.64 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "Inherited rating; system requirement pending"
+      (at 40.64 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Source" "Legacy schematic field; primary-source verification pending"
+      (at 40.64 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "Legacy rating; ambient/junction basis unverified"
+      (at 40.64 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "125"
+      (at 40.64 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "-55"
+      (at 40.64 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 40.64 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Data Checked" "UNDATED legacy record"
+      (at 40.64 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability"
+      (at 40.64 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-55 to +125 C"
+      (at 40.64 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" "~"
+      (at 40.64 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "C28233"
+      (at 40.64 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 40.64 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "CL21B104KCFNNNE"
+      (at 40.64 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 40.64 168.91)
@@ -1837,29 +2012,144 @@
         (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/bc719b03-93e7-5d7a-bbb6-362bbb1ca736"
           (reference "C161")
           (unit 1))))
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 76.2 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 76.2 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Decoupling capacitor" (at 76.2 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Assembly" "FIT" (at 76.2 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Status" "Inherited rating; system requirement pending" (at 76.2 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +125 C" (at 76.2 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 76.2 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "No verified JLCPCB ID; source or consign" (at 76.2 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Voltage" "25V" (at 76.2 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Dielectric" "X7R" (at 76.2 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Data Checked" "2026-09-18" (at 76.2 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "DigiKey Status" "VERIFIED" (at 76.2 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "DigiKey Part #" "445-14533-1-ND" (at 76.2 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Stock Snapshot" "0" (at 76.2 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Library" "NOT_LISTED" (at 76.2 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Source" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C2012X7R1E105K085AB" (at 76.2 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Basis" "Operating" (at 76.2 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Max (degC)" "125" (at 76.2 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Min (degC)" "-55" (at 76.2 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C2012X7R1E105K085AB" (at 76.2 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "NOT_LISTED" (at 76.2 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Manufacturer" "TDK" (at 76.2 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "MPN" "C2012X7R1E105K085AB" (at 76.2 172.72 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 76.2 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 76.2 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Decoupling capacitor"
+      (at 76.2 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Assembly" "FIT"
+      (at 76.2 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "Inherited rating; system requirement pending"
+      (at 76.2 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-55 to +125 C"
+      (at 76.2 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 76.2 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "No verified JLCPCB ID; source or consign"
+      (at 76.2 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Voltage" "25V"
+      (at 76.2 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Dielectric" "X7R"
+      (at 76.2 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Data Checked" "2026-09-18"
+      (at 76.2 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "DigiKey Status" "VERIFIED"
+      (at 76.2 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "DigiKey Part #" "445-14533-1-ND"
+      (at 76.2 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Stock Snapshot" "0"
+      (at 76.2 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Library" "NOT_LISTED"
+      (at 76.2 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Source" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C2012X7R1E105K085AB"
+      (at 76.2 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "Operating"
+      (at 76.2 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "125"
+      (at 76.2 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "-55"
+      (at 76.2 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C2012X7R1E105K085AB"
+      (at 76.2 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "NOT_LISTED"
+      (at 76.2 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "TDK"
+      (at 76.2 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "C2012X7R1E105K085AB"
+      (at 76.2 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 76.2 168.91)
@@ -1975,23 +2265,108 @@
         (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/bc719b03-93e7-5d7a-bbb6-362bbb1ca736"
           (reference "C162")
           (unit 1))))
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 243.84 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 243.84 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Decoupling capacitor" (at 243.84 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Assembly" "FIT" (at 243.84 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Status" "Inherited rating; system requirement pending" (at 243.84 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Source" "Legacy schematic field; primary-source verification pending" (at 243.84 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Basis" "Legacy rating; ambient/junction basis unverified" (at 243.84 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Max (degC)" "125" (at 243.84 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Min (degC)" "-55" (at 243.84 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 243.84 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Data Checked" "UNDATED legacy record" (at 243.84 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability" (at 243.84 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +125 C" (at 243.84 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Datasheet" "~" (at 243.84 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "C28233" (at 243.84 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Manufacturer" "Samsung Electro-Mechanics" (at 243.84 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "MPN" "CL21B104KCFNNNE" (at 243.84 172.72 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 243.84 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 243.84 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Decoupling capacitor"
+      (at 243.84 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Assembly" "FIT"
+      (at 243.84 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "Inherited rating; system requirement pending"
+      (at 243.84 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Source" "Legacy schematic field; primary-source verification pending"
+      (at 243.84 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "Legacy rating; ambient/junction basis unverified"
+      (at 243.84 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "125"
+      (at 243.84 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "-55"
+      (at 243.84 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 243.84 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Data Checked" "UNDATED legacy record"
+      (at 243.84 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability"
+      (at 243.84 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-55 to +125 C"
+      (at 243.84 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" "~"
+      (at 243.84 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "C28233"
+      (at 243.84 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "Samsung Electro-Mechanics"
+      (at 243.84 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "CL21B104KCFNNNE"
+      (at 243.84 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 243.84 168.91)
@@ -2107,29 +2482,144 @@
         (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/bc719b03-93e7-5d7a-bbb6-362bbb1ca736"
           (reference "C163")
           (unit 1))))
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 279.4 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 279.4 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Decoupling capacitor" (at 279.4 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Assembly" "FIT" (at 279.4 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Status" "Inherited rating; system requirement pending" (at 279.4 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +125 C" (at 279.4 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 279.4 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "No verified JLCPCB ID; source or consign" (at 279.4 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Voltage" "25V" (at 279.4 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Dielectric" "X7R" (at 279.4 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Data Checked" "2026-09-18" (at 279.4 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "DigiKey Status" "VERIFIED" (at 279.4 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "DigiKey Part #" "445-14533-1-ND" (at 279.4 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Stock Snapshot" "0" (at 279.4 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Library" "NOT_LISTED" (at 279.4 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Source" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C2012X7R1E105K085AB" (at 279.4 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Basis" "Operating" (at 279.4 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Max (degC)" "125" (at 279.4 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Min (degC)" "-55" (at 279.4 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C2012X7R1E105K085AB" (at 279.4 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "NOT_LISTED" (at 279.4 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Manufacturer" "TDK" (at 279.4 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "MPN" "C2012X7R1E105K085AB" (at 279.4 172.72 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 279.4 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 279.4 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Decoupling capacitor"
+      (at 279.4 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Assembly" "FIT"
+      (at 279.4 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "Inherited rating; system requirement pending"
+      (at 279.4 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-55 to +125 C"
+      (at 279.4 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 279.4 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "No verified JLCPCB ID; source or consign"
+      (at 279.4 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Voltage" "25V"
+      (at 279.4 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Dielectric" "X7R"
+      (at 279.4 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Data Checked" "2026-09-18"
+      (at 279.4 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "DigiKey Status" "VERIFIED"
+      (at 279.4 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "DigiKey Part #" "445-14533-1-ND"
+      (at 279.4 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Stock Snapshot" "0"
+      (at 279.4 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Library" "NOT_LISTED"
+      (at 279.4 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Source" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C2012X7R1E105K085AB"
+      (at 279.4 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "Operating"
+      (at 279.4 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "125"
+      (at 279.4 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "-55"
+      (at 279.4 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C2012X7R1E105K085AB"
+      (at 279.4 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "NOT_LISTED"
+      (at 279.4 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "TDK"
+      (at 279.4 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "C2012X7R1E105K085AB"
+      (at 279.4 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 279.4 168.91)
@@ -2245,23 +2735,108 @@
         (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/bc719b03-93e7-5d7a-bbb6-362bbb1ca736"
           (reference "R160")
           (unit 1))))
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 119.38 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 119.38 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Resistor" (at 119.38 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Assembly" "FIT" (at 119.38 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Status" "Inherited rating; system requirement pending" (at 119.38 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Source" "Legacy schematic field; primary-source verification pending" (at 119.38 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Basis" "Legacy rating; ambient/junction basis unverified" (at 119.38 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Max (degC)" "155" (at 119.38 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Min (degC)" "-55" (at 119.38 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 119.38 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Data Checked" "UNDATED legacy record" (at 119.38 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability" (at 119.38 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +155 C" (at 119.38 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Datasheet" "~" (at 119.38 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "C84376" (at 119.38 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Manufacturer" "Yageo" (at 119.38 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "MPN" "RC0805FR-0710KL" (at 119.38 172.72 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 119.38 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 119.38 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Resistor"
+      (at 119.38 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Assembly" "FIT"
+      (at 119.38 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "Inherited rating; system requirement pending"
+      (at 119.38 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Source" "Legacy schematic field; primary-source verification pending"
+      (at 119.38 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "Legacy rating; ambient/junction basis unverified"
+      (at 119.38 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "155"
+      (at 119.38 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "-55"
+      (at 119.38 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 119.38 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Data Checked" "UNDATED legacy record"
+      (at 119.38 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability"
+      (at 119.38 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-55 to +155 C"
+      (at 119.38 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" "~"
+      (at 119.38 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "C84376"
+      (at 119.38 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "Yageo"
+      (at 119.38 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "RC0805FR-0710KL"
+      (at 119.38 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 119.38 168.91)
@@ -2310,7 +2885,8 @@
       (width 0)
       (type default))
     (uuid "c121e6e9-8d17-59c1-9f25-81789cff7dd7"))
-  (label "PIVOT_MODBUS_TX"
+  (global_label "PIVOT_MODBUS_TX"
+    (shape bidirectional)
     (at 119.38 181.61 0)
     (effects
       (font
@@ -2352,23 +2928,108 @@
         (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/bc719b03-93e7-5d7a-bbb6-362bbb1ca736"
           (reference "R161")
           (unit 1))))
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 160.02 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 160.02 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Resistor" (at 160.02 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Assembly" "FIT" (at 160.02 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Status" "Inherited rating; system requirement pending" (at 160.02 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Source" "Legacy schematic field; primary-source verification pending" (at 160.02 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Basis" "Legacy rating; ambient/junction basis unverified" (at 160.02 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Max (degC)" "155" (at 160.02 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Min (degC)" "-55" (at 160.02 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 160.02 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Data Checked" "UNDATED legacy record" (at 160.02 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability" (at 160.02 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +155 C" (at 160.02 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Datasheet" "~" (at 160.02 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "C84376" (at 160.02 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Manufacturer" "Yageo" (at 160.02 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "MPN" "RC0805FR-0710KL" (at 160.02 172.72 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 160.02 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 160.02 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Resistor"
+      (at 160.02 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Assembly" "FIT"
+      (at 160.02 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "Inherited rating; system requirement pending"
+      (at 160.02 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Source" "Legacy schematic field; primary-source verification pending"
+      (at 160.02 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "Legacy rating; ambient/junction basis unverified"
+      (at 160.02 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "155"
+      (at 160.02 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "-55"
+      (at 160.02 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 160.02 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Data Checked" "UNDATED legacy record"
+      (at 160.02 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability"
+      (at 160.02 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-55 to +155 C"
+      (at 160.02 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" "~"
+      (at 160.02 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "C84376"
+      (at 160.02 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "Yageo"
+      (at 160.02 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "RC0805FR-0710KL"
+      (at 160.02 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 160.02 168.91)
@@ -2417,7 +3078,8 @@
       (width 0)
       (type default))
     (uuid "b836a20c-e545-53b0-ac2d-c81ff3602ac6"))
-  (label "PIVOT_MODBUS_RX"
+  (global_label "PIVOT_MODBUS_RX"
+    (shape bidirectional)
     (at 160.02 181.61 0)
     (effects
       (font
@@ -2459,23 +3121,108 @@
         (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/bc719b03-93e7-5d7a-bbb6-362bbb1ca736"
           (reference "R162")
           (unit 1))))
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 200.66 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 200.66 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Resistor" (at 200.66 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Assembly" "FIT" (at 200.66 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Status" "Inherited rating; system requirement pending" (at 200.66 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Source" "Legacy schematic field; primary-source verification pending" (at 200.66 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Basis" "Legacy rating; ambient/junction basis unverified" (at 200.66 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Max (degC)" "155" (at 200.66 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Min (degC)" "-55" (at 200.66 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 200.66 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Data Checked" "UNDATED legacy record" (at 200.66 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability" (at 200.66 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +155 C" (at 200.66 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Datasheet" "~" (at 200.66 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "C84376" (at 200.66 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Manufacturer" "Yageo" (at 200.66 172.72 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "MPN" "RC0805FR-0710KL" (at 200.66 172.72 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 200.66 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 200.66 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Resistor"
+      (at 200.66 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Assembly" "FIT"
+      (at 200.66 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "Inherited rating; system requirement pending"
+      (at 200.66 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Source" "Legacy schematic field; primary-source verification pending"
+      (at 200.66 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "Legacy rating; ambient/junction basis unverified"
+      (at 200.66 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "155"
+      (at 200.66 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "-55"
+      (at 200.66 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 200.66 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Data Checked" "UNDATED legacy record"
+      (at 200.66 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability"
+      (at 200.66 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-55 to +155 C"
+      (at 200.66 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" "~"
+      (at 200.66 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "C84376"
+      (at 200.66 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "Yageo"
+      (at 200.66 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "RC0805FR-0710KL"
+      (at 200.66 172.72 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 200.66 176.53)
@@ -2524,7 +3271,8 @@
       (width 0)
       (type default))
     (uuid "f4ee8a8e-f97b-5f8d-851b-ab2ce083cbe8"))
-  (label "PIVOT_MODBUS_DE"
+  (global_label "PIVOT_MODBUS_DE"
+    (shape bidirectional)
     (at 200.66 163.83 0)
     (effects
       (font
@@ -2586,27 +3334,132 @@
         (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/bc719b03-93e7-5d7a-bbb6-362bbb1ca736"
           (reference "J22")
           (unit 1))))
-  (property "Description" "9-pin D-SUB connector, socket (female), right angle, mounting holes" (at 365.76 88.9 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 365.76 88.9 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Assembly" "FIT" (at 365.76 88.9 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Library" "UNVERIFIED" (at 365.76 88.9 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "LCSC exact match; JLC assembly availability unverified" (at 365.76 88.9 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Data Checked" "2026-10-03" (at 365.76 88.9 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Status" "Manufacturer rating recorded; system requirement pending" (at 365.76 88.9 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Checked" "2026-10-03" (at 365.76 88.9 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Source" "https://www.te.com/en/product-5747844-4.html" (at 365.76 88.9 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Review" "Same MPN as existing DE9 connectors. Verify exact pin grid, mounting holes, board-edge setback and cable clearance before layout release." (at 365.76 88.9 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Footprint Status" "REVIEW: compare exact TE drawing to generic KiCad footprint" (at 365.76 88.9 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "https://www.lcsc.com/de/product-detail/C305941.html" (at 365.76 88.9 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Basis" "Operating" (at 365.76 88.9 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Max (degC)" "105" (at 365.76 88.9 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Min (degC)" "-55" (at 365.76 88.9 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "DE9 female right-angle PCB connector" (at 365.76 88.9 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +105 C" (at 365.76 88.9 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Datasheet" "https://www.te.com/en/product-5747844-4.html" (at 365.76 88.9 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "C305941" (at 365.76 88.9 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Manufacturer" "TE Connectivity" (at 365.76 88.9 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "MPN" "5747844-4" (at 365.76 88.9 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Description" "9-pin D-SUB connector, socket (female), right angle, mounting holes"
+      (at 365.76 88.9 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 365.76 88.9 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Assembly" "FIT"
+      (at 365.76 88.9 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Library" "UNVERIFIED"
+      (at 365.76 88.9 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "LCSC exact match; JLC assembly availability unverified"
+      (at 365.76 88.9 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Data Checked" "2026-10-03"
+      (at 365.76 88.9 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "Manufacturer rating recorded; system requirement pending"
+      (at 365.76 88.9 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Checked" "2026-10-03"
+      (at 365.76 88.9 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Source" "https://www.te.com/en/product-5747844-4.html"
+      (at 365.76 88.9 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Review" "Same MPN as existing DE9 connectors. Verify exact pin grid, mounting holes, board-edge setback and cable clearance before layout release."
+      (at 365.76 88.9 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Footprint Status" "REVIEW: compare exact TE drawing to generic KiCad footprint"
+      (at 365.76 88.9 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "https://www.lcsc.com/de/product-detail/C305941.html"
+      (at 365.76 88.9 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "Operating"
+      (at 365.76 88.9 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "105"
+      (at 365.76 88.9 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "-55"
+      (at 365.76 88.9 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "DE9 female right-angle PCB connector"
+      (at 365.76 88.9 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-55 to +105 C"
+      (at 365.76 88.9 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" "https://www.te.com/en/product-5747844-4.html"
+      (at 365.76 88.9 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "C305941"
+      (at 365.76 88.9 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "TE Connectivity"
+      (at 365.76 88.9 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "5747844-4"
+      (at 365.76 88.9 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 358.14 99.06)
@@ -2770,23 +3623,108 @@
         (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/bc719b03-93e7-5d7a-bbb6-362bbb1ca736"
           (reference "R163")
           (unit 1))))
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 243.84 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 243.84 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Resistor" (at 243.84 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Assembly" "FIT" (at 243.84 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Status" "Inherited rating; system requirement pending" (at 243.84 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Source" "Legacy schematic field; primary-source verification pending" (at 243.84 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Basis" "Legacy rating; ambient/junction basis unverified" (at 243.84 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Max (degC)" "155" (at 243.84 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Min (degC)" "-55" (at 243.84 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 243.84 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Data Checked" "UNDATED legacy record" (at 243.84 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability" (at 243.84 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +155 C" (at 243.84 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Datasheet" "~" (at 243.84 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "C114536" (at 243.84 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Manufacturer" "Yageo" (at 243.84 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "MPN" "RC0805FR-07560RL" (at 243.84 58.42 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 243.84 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 243.84 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Resistor"
+      (at 243.84 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Assembly" "FIT"
+      (at 243.84 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "Inherited rating; system requirement pending"
+      (at 243.84 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Source" "Legacy schematic field; primary-source verification pending"
+      (at 243.84 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "Legacy rating; ambient/junction basis unverified"
+      (at 243.84 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "155"
+      (at 243.84 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "-55"
+      (at 243.84 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 243.84 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Data Checked" "UNDATED legacy record"
+      (at 243.84 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability"
+      (at 243.84 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-55 to +155 C"
+      (at 243.84 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" "~"
+      (at 243.84 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "C114536"
+      (at 243.84 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "Yageo"
+      (at 243.84 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "RC0805FR-07560RL"
+      (at 243.84 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Jumper:SolderJumper_2_Bridged")
     (at 243.84 73.66 90)
@@ -2820,18 +3758,78 @@
         (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/bc719b03-93e7-5d7a-bbb6-362bbb1ca736"
           (reference "JP160")
           (unit 1))))
-  (property "JLCPCB Status" "N/A" (at 243.84 73.66 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PCB FEATURE" (at 243.84 73.66 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Status" "N/A" (at 243.84 73.66 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Basis" "PCB feature" (at 243.84 73.66 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Max (degC)" "N/A" (at 243.84 73.66 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Min (degC)" "N/A" (at 243.84 73.66 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "N/A" (at 243.84 73.66 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "PCB solder jumper" (at 243.84 73.66 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Assembly" "PCB feature - no purchased component" (at 243.84 73.66 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "N/A" (at 243.84 73.66 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Manufacturer" "N/A" (at 243.84 73.66 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "MPN" "N/A" (at 243.84 73.66 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "JLCPCB Status" "N/A"
+      (at 243.84 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PCB FEATURE"
+      (at 243.84 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "N/A"
+      (at 243.84 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "PCB feature"
+      (at 243.84 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "N/A"
+      (at 243.84 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "N/A"
+      (at 243.84 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "N/A"
+      (at 243.84 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "PCB solder jumper"
+      (at 243.84 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Assembly" "PCB feature - no purchased component"
+      (at 243.84 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "N/A"
+      (at 243.84 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "N/A"
+      (at 243.84 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "N/A"
+      (at 243.84 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 243.84 62.23)
@@ -2930,23 +3928,108 @@
         (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/bc719b03-93e7-5d7a-bbb6-362bbb1ca736"
           (reference "R164")
           (unit 1))))
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 279.4 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 279.4 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Resistor" (at 279.4 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Assembly" "FIT" (at 279.4 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Status" "Inherited rating; system requirement pending" (at 279.4 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Source" "Legacy schematic field; primary-source verification pending" (at 279.4 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Basis" "Legacy rating; ambient/junction basis unverified" (at 279.4 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Max (degC)" "155" (at 279.4 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Min (degC)" "-55" (at 279.4 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 279.4 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Data Checked" "UNDATED legacy record" (at 279.4 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability" (at 279.4 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +155 C" (at 279.4 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Datasheet" "~" (at 279.4 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "C114536" (at 279.4 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Manufacturer" "Yageo" (at 279.4 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "MPN" "RC0805FR-07560RL" (at 279.4 58.42 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 279.4 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 279.4 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Resistor"
+      (at 279.4 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Assembly" "FIT"
+      (at 279.4 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "Inherited rating; system requirement pending"
+      (at 279.4 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Source" "Legacy schematic field; primary-source verification pending"
+      (at 279.4 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "Legacy rating; ambient/junction basis unverified"
+      (at 279.4 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "155"
+      (at 279.4 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "-55"
+      (at 279.4 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 279.4 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Data Checked" "UNDATED legacy record"
+      (at 279.4 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability"
+      (at 279.4 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-55 to +155 C"
+      (at 279.4 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" "~"
+      (at 279.4 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "C114536"
+      (at 279.4 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "Yageo"
+      (at 279.4 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "RC0805FR-07560RL"
+      (at 279.4 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Jumper:SolderJumper_2_Bridged")
     (at 279.4 73.66 90)
@@ -2980,18 +4063,78 @@
         (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/bc719b03-93e7-5d7a-bbb6-362bbb1ca736"
           (reference "JP161")
           (unit 1))))
-  (property "JLCPCB Status" "N/A" (at 279.4 73.66 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PCB FEATURE" (at 279.4 73.66 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Status" "N/A" (at 279.4 73.66 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Basis" "PCB feature" (at 279.4 73.66 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Max (degC)" "N/A" (at 279.4 73.66 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Min (degC)" "N/A" (at 279.4 73.66 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "N/A" (at 279.4 73.66 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "PCB solder jumper" (at 279.4 73.66 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Assembly" "PCB feature - no purchased component" (at 279.4 73.66 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "N/A" (at 279.4 73.66 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Manufacturer" "N/A" (at 279.4 73.66 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "MPN" "N/A" (at 279.4 73.66 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "JLCPCB Status" "N/A"
+      (at 279.4 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PCB FEATURE"
+      (at 279.4 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "N/A"
+      (at 279.4 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "PCB feature"
+      (at 279.4 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "N/A"
+      (at 279.4 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "N/A"
+      (at 279.4 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "N/A"
+      (at 279.4 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "PCB solder jumper"
+      (at 279.4 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Assembly" "PCB feature - no purchased component"
+      (at 279.4 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "N/A"
+      (at 279.4 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "N/A"
+      (at 279.4 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "N/A"
+      (at 279.4 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 279.4 62.23)
@@ -3090,28 +4233,138 @@
         (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/bc719b03-93e7-5d7a-bbb6-362bbb1ca736"
           (reference "R165")
           (unit 1))))
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 314.96 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 314.96 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Assembly" "FIT" (at 314.96 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +155 C" (at 314.96 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Library" "UNVERIFIED" (at 314.96 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "LCSC exact match; JLC assembly availability unverified" (at 314.96 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Data Checked" "2026-10-03" (at 314.96 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Status" "Manufacturer rating recorded; system requirement pending" (at 314.96 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Checked" "2026-10-03" (at 314.96 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L" (at 314.96 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Source" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L" (at 314.96 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Voltage" "200 V maximum working" (at 314.96 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Tolerance" "1%" (at 314.96 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Power" "0.5 W at 70 C" (at 314.96 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Basis" "Operating; power derates above 70 C" (at 314.96 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Max (degC)" "155" (at 314.96 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Min (degC)" "-55" (at 314.96 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "https://www.lcsc.com/product-detail/C137105.html" (at 314.96 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Modbus 120 ohm bus termination resistor" (at 314.96 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "C137105" (at 314.96 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Manufacturer" "Yageo" (at 314.96 58.42 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "MPN" "RC1210FR-07120RL" (at 314.96 58.42 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 314.96 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 314.96 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Assembly" "FIT"
+      (at 314.96 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-55 to +155 C"
+      (at 314.96 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Library" "UNVERIFIED"
+      (at 314.96 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "LCSC exact match; JLC assembly availability unverified"
+      (at 314.96 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Data Checked" "2026-10-03"
+      (at 314.96 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "Manufacturer rating recorded; system requirement pending"
+      (at 314.96 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Checked" "2026-10-03"
+      (at 314.96 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Datasheet" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+      (at 314.96 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Source" "https://www.yageogroup.com/content/datasheet/asset/file/PYU-RC_GROUP_51_ROHS_L"
+      (at 314.96 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Voltage" "200 V maximum working"
+      (at 314.96 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Tolerance" "1%"
+      (at 314.96 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Power" "0.5 W at 70 C"
+      (at 314.96 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "Operating; power derates above 70 C"
+      (at 314.96 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "155"
+      (at 314.96 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "-55"
+      (at 314.96 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "https://www.lcsc.com/product-detail/C137105.html"
+      (at 314.96 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Modbus 120 ohm bus termination resistor"
+      (at 314.96 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "C137105"
+      (at 314.96 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "Yageo"
+      (at 314.96 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "RC1210FR-07120RL"
+      (at 314.96 58.42 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Jumper:SolderJumper_2_Bridged")
     (at 314.96 73.66 90)
@@ -3145,18 +4398,78 @@
         (path "/0771dda4-723b-4b91-a7fd-3d93384c8b3d/bc719b03-93e7-5d7a-bbb6-362bbb1ca736"
           (reference "JP162")
           (unit 1))))
-  (property "JLCPCB Status" "N/A" (at 314.96 73.66 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PCB FEATURE" (at 314.96 73.66 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Status" "N/A" (at 314.96 73.66 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Basis" "PCB feature" (at 314.96 73.66 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Max (degC)" "N/A" (at 314.96 73.66 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Temp Min (degC)" "N/A" (at 314.96 73.66 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "N/A" (at 314.96 73.66 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "PCB solder jumper" (at 314.96 73.66 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Assembly" "PCB feature - no purchased component" (at 314.96 73.66 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "N/A" (at 314.96 73.66 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Manufacturer" "N/A" (at 314.96 73.66 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "MPN" "N/A" (at 314.96 73.66 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "JLCPCB Status" "N/A"
+      (at 314.96 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PCB FEATURE"
+      (at 314.96 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Status" "N/A"
+      (at 314.96 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Basis" "PCB feature"
+      (at 314.96 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Max (degC)" "N/A"
+      (at 314.96 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Temp Min (degC)" "N/A"
+      (at 314.96 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "N/A"
+      (at 314.96 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "PCB solder jumper"
+      (at 314.96 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Assembly" "PCB feature - no purchased component"
+      (at 314.96 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "N/A"
+      (at 314.96 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "N/A"
+      (at 314.96 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "N/A"
+      (at 314.96 73.66 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (wire
     (pts
       (xy 314.96 62.23)

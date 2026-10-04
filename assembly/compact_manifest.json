@@ -1,0 +1,3625 @@
+{
+  "revision": "P6 compact attempt",
+  "preserved_commit": "29b4387",
+  "size_mm": [
+    80,
+    130
+  ],
+  "moved_sheets": {
+    "Stepper.kicad_sch": "10_stepper_interfaces.kicad_sch",
+    "SSI_Encoder.kicad_sch": "11_ssi_interfaces.kicad_sch"
+  },
+  "reference_mapping": [
+    {
+      "source_board": "controller",
+      "source_ref": "C5",
+      "board": "controller",
+      "ref": "C5",
+      "source_sheet": "/STM32 core clocks and reset/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "TP101",
+      "board": "controller",
+      "ref": "TP101",
+      "source_sheet": "/5 V input protection/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R410",
+      "board": "controller",
+      "ref": "R410",
+      "source_sheet": "/Ethernet/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R422",
+      "board": "controller",
+      "ref": "R422",
+      "source_sheet": "/Ethernet/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R211",
+      "board": "controller",
+      "ref": "R211",
+      "source_sheet": "/3.3 V power and VDDA filter/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C401",
+      "board": "controller",
+      "ref": "C401",
+      "source_sheet": "/Ethernet/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C14",
+      "board": "controller",
+      "ref": "C14",
+      "source_sheet": "/STM32 core clocks and reset/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R423",
+      "board": "controller",
+      "ref": "R423",
+      "source_sheet": "/Ethernet/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C27",
+      "board": "controller",
+      "ref": "C27",
+      "source_sheet": "/STM32 core clocks and reset/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R418",
+      "board": "controller",
+      "ref": "R418",
+      "source_sheet": "/Ethernet/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "H31",
+      "board": "controller",
+      "ref": "H31",
+      "source_sheet": "/Stacking connectors/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R501",
+      "board": "controller",
+      "ref": "R501",
+      "source_sheet": "/USB-C/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R403",
+      "board": "controller",
+      "ref": "R403",
+      "source_sheet": "/Ethernet/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "U902",
+      "board": "controller",
+      "ref": "U902",
+      "source_sheet": "/Watchdog and status/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "U101",
+      "board": "controller",
+      "ref": "U101",
+      "source_sheet": "/5 V input protection/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R416",
+      "board": "controller",
+      "ref": "R416",
+      "source_sheet": "/Ethernet/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R420",
+      "board": "controller",
+      "ref": "R420",
+      "source_sheet": "/Ethernet/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "U403",
+      "board": "controller",
+      "ref": "U403",
+      "source_sheet": "/Ethernet/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R1",
+      "board": "controller",
+      "ref": "R1",
+      "source_sheet": "/STM32 core clocks and reset/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C7",
+      "board": "controller",
+      "ref": "C7",
+      "source_sheet": "/STM32 core clocks and reset/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C16",
+      "board": "controller",
+      "ref": "C16",
+      "source_sheet": "/STM32 core clocks and reset/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "Y401",
+      "board": "controller",
+      "ref": "Y401",
+      "source_sheet": "/Ethernet/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R606",
+      "board": "controller",
+      "ref": "R606",
+      "source_sheet": "/SWD and VCP/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R605",
+      "board": "controller",
+      "ref": "R605",
+      "source_sheet": "/SWD and VCP/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C407",
+      "board": "controller",
+      "ref": "C407",
+      "source_sheet": "/Ethernet/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "TP211",
+      "board": "controller",
+      "ref": "TP211",
+      "source_sheet": "/3.3 V power and VDDA filter/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C404",
+      "board": "controller",
+      "ref": "C404",
+      "source_sheet": "/Ethernet/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R419",
+      "board": "controller",
+      "ref": "R419",
+      "source_sheet": "/Ethernet/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R2",
+      "board": "controller",
+      "ref": "R2",
+      "source_sheet": "/STM32 core clocks and reset/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "TP904",
+      "board": "controller",
+      "ref": "TP904",
+      "source_sheet": "/Watchdog and status/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "D501",
+      "board": "controller",
+      "ref": "D501",
+      "source_sheet": "/USB-C/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C21",
+      "board": "controller",
+      "ref": "C21",
+      "source_sheet": "/STM32 core clocks and reset/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R417",
+      "board": "controller",
+      "ref": "R417",
+      "source_sheet": "/Ethernet/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "TP502",
+      "board": "controller",
+      "ref": "TP502",
+      "source_sheet": "/USB-C/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C405",
+      "board": "controller",
+      "ref": "C405",
+      "source_sheet": "/Ethernet/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C409",
+      "board": "controller",
+      "ref": "C409",
+      "source_sheet": "/Ethernet/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C12",
+      "board": "controller",
+      "ref": "C12",
+      "source_sheet": "/STM32 core clocks and reset/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C222",
+      "board": "controller",
+      "ref": "C222",
+      "source_sheet": "/3.3 V power and VDDA filter/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R914",
+      "board": "controller",
+      "ref": "R914",
+      "source_sheet": "/Watchdog and status/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C412",
+      "board": "controller",
+      "ref": "C412",
+      "source_sheet": "/Ethernet/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R604",
+      "board": "controller",
+      "ref": "R604",
+      "source_sheet": "/SWD and VCP/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R103",
+      "board": "controller",
+      "ref": "R103",
+      "source_sheet": "/5 V input protection/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R503",
+      "board": "controller",
+      "ref": "R503",
+      "source_sheet": "/USB-C/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C213",
+      "board": "controller",
+      "ref": "C213",
+      "source_sheet": "/3.3 V power and VDDA filter/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "U601",
+      "board": "controller",
+      "ref": "U601",
+      "source_sheet": "/SWD and VCP/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R911",
+      "board": "controller",
+      "ref": "R911",
+      "source_sheet": "/Watchdog and status/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C218",
+      "board": "controller",
+      "ref": "C218",
+      "source_sheet": "/3.3 V power and VDDA filter/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C8",
+      "board": "controller",
+      "ref": "C8",
+      "source_sheet": "/STM32 core clocks and reset/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R913",
+      "board": "controller",
+      "ref": "R913",
+      "source_sheet": "/Watchdog and status/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "H32",
+      "board": "controller",
+      "ref": "H32",
+      "source_sheet": "/Stacking connectors/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C2",
+      "board": "controller",
+      "ref": "C2",
+      "source_sheet": "/STM32 core clocks and reset/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "TP212",
+      "board": "controller",
+      "ref": "TP212",
+      "source_sheet": "/3.3 V power and VDDA filter/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C211",
+      "board": "controller",
+      "ref": "C211",
+      "source_sheet": "/3.3 V power and VDDA filter/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R912",
+      "board": "controller",
+      "ref": "R912",
+      "source_sheet": "/Watchdog and status/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R601",
+      "board": "controller",
+      "ref": "R601",
+      "source_sheet": "/SWD and VCP/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R421",
+      "board": "controller",
+      "ref": "R421",
+      "source_sheet": "/Ethernet/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C20",
+      "board": "controller",
+      "ref": "C20",
+      "source_sheet": "/STM32 core clocks and reset/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "D902",
+      "board": "controller",
+      "ref": "D902",
+      "source_sheet": "/Watchdog and status/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C103",
+      "board": "controller",
+      "ref": "C103",
+      "source_sheet": "/5 V input protection/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "SW1",
+      "board": "controller",
+      "ref": "SW1",
+      "source_sheet": "/STM32 core clocks and reset/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R413",
+      "board": "controller",
+      "ref": "R413",
+      "source_sheet": "/Ethernet/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C105",
+      "board": "controller",
+      "ref": "C105",
+      "source_sheet": "/5 V input protection/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C410",
+      "board": "controller",
+      "ref": "C410",
+      "source_sheet": "/Ethernet/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C216",
+      "board": "controller",
+      "ref": "C216",
+      "source_sheet": "/3.3 V power and VDDA filter/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "TP201",
+      "board": "controller",
+      "ref": "TP201",
+      "source_sheet": "/3.3 V power and VDDA filter/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R504",
+      "board": "controller",
+      "ref": "R504",
+      "source_sheet": "/USB-C/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R404",
+      "board": "controller",
+      "ref": "R404",
+      "source_sheet": "/Ethernet/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "U1",
+      "board": "controller",
+      "ref": "U1",
+      "source_sheet": "/STM32 core clocks and reset/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C4",
+      "board": "controller",
+      "ref": "C4",
+      "source_sheet": "/STM32 core clocks and reset/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "U602",
+      "board": "controller",
+      "ref": "U602",
+      "source_sheet": "/SWD and VCP/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C11",
+      "board": "controller",
+      "ref": "C11",
+      "source_sheet": "/STM32 core clocks and reset/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "U501",
+      "board": "controller",
+      "ref": "U501",
+      "source_sheet": "/USB-C/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C215",
+      "board": "controller",
+      "ref": "C215",
+      "source_sheet": "/3.3 V power and VDDA filter/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "D904",
+      "board": "controller",
+      "ref": "D904",
+      "source_sheet": "/Watchdog and status/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C13",
+      "board": "controller",
+      "ref": "C13",
+      "source_sheet": "/STM32 core clocks and reset/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "U402",
+      "board": "controller",
+      "ref": "U402",
+      "source_sheet": "/Ethernet/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C104",
+      "board": "controller",
+      "ref": "C104",
+      "source_sheet": "/5 V input protection/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C10",
+      "board": "controller",
+      "ref": "C10",
+      "source_sheet": "/STM32 core clocks and reset/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R508",
+      "board": "controller",
+      "ref": "R508",
+      "source_sheet": "/USB-C/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R502",
+      "board": "controller",
+      "ref": "R502",
+      "source_sheet": "/USB-C/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R101",
+      "board": "controller",
+      "ref": "R101",
+      "source_sheet": "/5 V input protection/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "H30",
+      "board": "controller",
+      "ref": "H30",
+      "source_sheet": "/Stacking connectors/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "D903",
+      "board": "controller",
+      "ref": "D903",
+      "source_sheet": "/Watchdog and status/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C501",
+      "board": "controller",
+      "ref": "C501",
+      "source_sheet": "/USB-C/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "TP103",
+      "board": "controller",
+      "ref": "TP103",
+      "source_sheet": "/5 V input protection/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R5",
+      "board": "controller",
+      "ref": "R5",
+      "source_sheet": "/STM32 core clocks and reset/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "L201",
+      "board": "controller",
+      "ref": "L201",
+      "source_sheet": "/3.3 V power and VDDA filter/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C17",
+      "board": "controller",
+      "ref": "C17",
+      "source_sheet": "/STM32 core clocks and reset/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R4",
+      "board": "controller",
+      "ref": "R4",
+      "source_sheet": "/STM32 core clocks and reset/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "Y2",
+      "board": "controller",
+      "ref": "Y2",
+      "source_sheet": "/STM32 core clocks and reset/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C102",
+      "board": "controller",
+      "ref": "C102",
+      "source_sheet": "/5 V input protection/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "U202",
+      "board": "controller",
+      "ref": "U202",
+      "source_sheet": "/3.3 V power and VDDA filter/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R3",
+      "board": "controller",
+      "ref": "R3",
+      "source_sheet": "/STM32 core clocks and reset/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C3",
+      "board": "controller",
+      "ref": "C3",
+      "source_sheet": "/STM32 core clocks and reset/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "TP909",
+      "board": "controller",
+      "ref": "TP909",
+      "source_sheet": "/Watchdog and status/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C406",
+      "board": "controller",
+      "ref": "C406",
+      "source_sheet": "/Ethernet/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "TP910",
+      "board": "controller",
+      "ref": "TP910",
+      "source_sheet": "/Watchdog and status/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C23",
+      "board": "controller",
+      "ref": "C23",
+      "source_sheet": "/STM32 core clocks and reset/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "TP503",
+      "board": "controller",
+      "ref": "TP503",
+      "source_sheet": "/USB-C/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R507",
+      "board": "controller",
+      "ref": "R507",
+      "source_sheet": "/USB-C/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "FB201",
+      "board": "controller",
+      "ref": "FB201",
+      "source_sheet": "/3.3 V power and VDDA filter/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "FB401",
+      "board": "controller",
+      "ref": "FB401",
+      "source_sheet": "/Ethernet/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "Y1",
+      "board": "controller",
+      "ref": "Y1",
+      "source_sheet": "/STM32 core clocks and reset/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C1",
+      "board": "controller",
+      "ref": "C1",
+      "source_sheet": "/STM32 core clocks and reset/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "TP102",
+      "board": "controller",
+      "ref": "TP102",
+      "source_sheet": "/5 V input protection/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "D901",
+      "board": "controller",
+      "ref": "D901",
+      "source_sheet": "/Watchdog and status/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C24",
+      "board": "controller",
+      "ref": "C24",
+      "source_sheet": "/STM32 core clocks and reset/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C902",
+      "board": "controller",
+      "ref": "C902",
+      "source_sheet": "/Watchdog and status/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R401",
+      "board": "controller",
+      "ref": "R401",
+      "source_sheet": "/Ethernet/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C403",
+      "board": "controller",
+      "ref": "C403",
+      "source_sheet": "/Ethernet/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "J401",
+      "board": "controller",
+      "ref": "J401",
+      "source_sheet": "/Ethernet/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C214",
+      "board": "controller",
+      "ref": "C214",
+      "source_sheet": "/3.3 V power and VDDA filter/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C402",
+      "board": "controller",
+      "ref": "C402",
+      "source_sheet": "/Ethernet/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "TP601",
+      "board": "controller",
+      "ref": "TP601",
+      "source_sheet": "/SWD and VCP/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R102",
+      "board": "controller",
+      "ref": "R102",
+      "source_sheet": "/5 V input protection/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "J601",
+      "board": "controller",
+      "ref": "J601",
+      "source_sheet": "/SWD and VCP/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C19",
+      "board": "controller",
+      "ref": "C19",
+      "source_sheet": "/STM32 core clocks and reset/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "J501",
+      "board": "controller",
+      "ref": "J501",
+      "source_sheet": "/USB-C/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R425",
+      "board": "controller",
+      "ref": "R425",
+      "source_sheet": "/Ethernet/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C408",
+      "board": "controller",
+      "ref": "C408",
+      "source_sheet": "/Ethernet/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R411",
+      "board": "controller",
+      "ref": "R411",
+      "source_sheet": "/Ethernet/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R415",
+      "board": "controller",
+      "ref": "R415",
+      "source_sheet": "/Ethernet/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R412",
+      "board": "controller",
+      "ref": "R412",
+      "source_sheet": "/Ethernet/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "TP905",
+      "board": "controller",
+      "ref": "TP905",
+      "source_sheet": "/Watchdog and status/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R405",
+      "board": "controller",
+      "ref": "R405",
+      "source_sheet": "/Ethernet/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "SW2",
+      "board": "controller",
+      "ref": "SW2",
+      "source_sheet": "/STM32 core clocks and reset/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R409",
+      "board": "controller",
+      "ref": "R409",
+      "source_sheet": "/Ethernet/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R402",
+      "board": "controller",
+      "ref": "R402",
+      "source_sheet": "/Ethernet/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C18",
+      "board": "controller",
+      "ref": "C18",
+      "source_sheet": "/STM32 core clocks and reset/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R105",
+      "board": "controller",
+      "ref": "R105",
+      "source_sheet": "/5 V input protection/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C22",
+      "board": "controller",
+      "ref": "C22",
+      "source_sheet": "/STM32 core clocks and reset/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R902",
+      "board": "controller",
+      "ref": "R902",
+      "source_sheet": "/Watchdog and status/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C217",
+      "board": "controller",
+      "ref": "C217",
+      "source_sheet": "/3.3 V power and VDDA filter/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "TP501",
+      "board": "controller",
+      "ref": "TP501",
+      "source_sheet": "/USB-C/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C15",
+      "board": "controller",
+      "ref": "C15",
+      "source_sheet": "/STM32 core clocks and reset/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C9",
+      "board": "controller",
+      "ref": "C9",
+      "source_sheet": "/STM32 core clocks and reset/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C25",
+      "board": "controller",
+      "ref": "C25",
+      "source_sheet": "/STM32 core clocks and reset/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R213",
+      "board": "controller",
+      "ref": "R213",
+      "source_sheet": "/3.3 V power and VDDA filter/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R424",
+      "board": "controller",
+      "ref": "R424",
+      "source_sheet": "/Ethernet/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R406",
+      "board": "controller",
+      "ref": "R406",
+      "source_sheet": "/Ethernet/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C101",
+      "board": "controller",
+      "ref": "C101",
+      "source_sheet": "/5 V input protection/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C502",
+      "board": "controller",
+      "ref": "C502",
+      "source_sheet": "/USB-C/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C212",
+      "board": "controller",
+      "ref": "C212",
+      "source_sheet": "/3.3 V power and VDDA filter/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R505",
+      "board": "controller",
+      "ref": "R505",
+      "source_sheet": "/USB-C/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R104",
+      "board": "controller",
+      "ref": "R104",
+      "source_sheet": "/5 V input protection/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R212",
+      "board": "controller",
+      "ref": "R212",
+      "source_sheet": "/3.3 V power and VDDA filter/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C26",
+      "board": "controller",
+      "ref": "C26",
+      "source_sheet": "/STM32 core clocks and reset/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "TP603",
+      "board": "controller",
+      "ref": "TP603",
+      "source_sheet": "/SWD and VCP/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "TP602",
+      "board": "controller",
+      "ref": "TP602",
+      "source_sheet": "/SWD and VCP/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "TP908",
+      "board": "controller",
+      "ref": "TP908",
+      "source_sheet": "/Watchdog and status/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C6",
+      "board": "controller",
+      "ref": "C6",
+      "source_sheet": "/STM32 core clocks and reset/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C411",
+      "board": "controller",
+      "ref": "C411",
+      "source_sheet": "/Ethernet/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R602",
+      "board": "controller",
+      "ref": "R602",
+      "source_sheet": "/SWD and VCP/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "TP401",
+      "board": "controller",
+      "ref": "TP401",
+      "source_sheet": "/Ethernet/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "TP907",
+      "board": "controller",
+      "ref": "TP907",
+      "source_sheet": "/Watchdog and status/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R414",
+      "board": "controller",
+      "ref": "R414",
+      "source_sheet": "/Ethernet/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R407",
+      "board": "controller",
+      "ref": "R407",
+      "source_sheet": "/Ethernet/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R506",
+      "board": "controller",
+      "ref": "R506",
+      "source_sheet": "/USB-C/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "U401",
+      "board": "controller",
+      "ref": "U401",
+      "source_sheet": "/Ethernet/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "R408",
+      "board": "controller",
+      "ref": "R408",
+      "source_sheet": "/Ethernet/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "C221",
+      "board": "controller",
+      "ref": "C221",
+      "source_sheet": "/3.3 V power and VDDA filter/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "TP403",
+      "board": "controller",
+      "ref": "TP403",
+      "source_sheet": "/Ethernet/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "H33",
+      "board": "controller",
+      "ref": "H33",
+      "source_sheet": "/Stacking connectors/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "TP402",
+      "board": "controller",
+      "ref": "TP402",
+      "source_sheet": "/Ethernet/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "J31",
+      "board": "controller",
+      "ref": "J31",
+      "source_sheet": "/Stacking connectors/"
+    },
+    {
+      "source_board": "controller",
+      "source_ref": "J30",
+      "board": "controller",
+      "ref": "J30",
+      "source_sheet": "/Stacking connectors/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C110",
+      "board": "elevation",
+      "ref": "C110",
+      "source_sheet": "/Pivot_Encoder_Port/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R100",
+      "board": "elevation",
+      "ref": "R100",
+      "source_sheet": "/Pivot_Encoder_Port/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "TP24",
+      "board": "elevation",
+      "ref": "TP24",
+      "source_sheet": "/Pivot_Encoder_Port/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R165",
+      "board": "elevation",
+      "ref": "R165",
+      "source_sheet": "/Pivot_Modbus/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C114",
+      "board": "elevation",
+      "ref": "C114",
+      "source_sheet": "/Pivot_Encoder_Port/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R107",
+      "board": "elevation",
+      "ref": "R107",
+      "source_sheet": "/Pivot_Encoder_Port/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R164",
+      "board": "elevation",
+      "ref": "R164",
+      "source_sheet": "/Pivot_Modbus/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R183",
+      "board": "elevation",
+      "ref": "R183",
+      "source_sheet": "/ADS1115/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "TP8",
+      "board": "elevation",
+      "ref": "TP8",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R181",
+      "board": "elevation",
+      "ref": "R181",
+      "source_sheet": "/ADS1115/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "PS5",
+      "board": "elevation",
+      "ref": "PS5",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "U101",
+      "board": "elevation",
+      "ref": "U101",
+      "source_sheet": "/Pivot_Encoder_Port/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "J22",
+      "board": "elevation",
+      "ref": "J22",
+      "source_sheet": "/Pivot_Modbus/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "TP22",
+      "board": "elevation",
+      "ref": "TP22",
+      "source_sheet": "/Pivot_Encoder_Port/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "JP160",
+      "board": "elevation",
+      "ref": "JP160",
+      "source_sheet": "/Pivot_Modbus/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R106",
+      "board": "elevation",
+      "ref": "R106",
+      "source_sheet": "/Pivot_Encoder_Port/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "J7",
+      "board": "elevation",
+      "ref": "J7",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R131",
+      "board": "elevation",
+      "ref": "R131",
+      "source_sheet": "/Pivot_Encoder_Star/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C115",
+      "board": "elevation",
+      "ref": "C115",
+      "source_sheet": "/Pivot_Encoder_Port/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C116",
+      "board": "elevation",
+      "ref": "C116",
+      "source_sheet": "/Pivot_Encoder_Port/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R104",
+      "board": "elevation",
+      "ref": "R104",
+      "source_sheet": "/Pivot_Encoder_Port/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "TH2",
+      "board": "elevation",
+      "ref": "TH2",
+      "source_sheet": "/ADS1115/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R172",
+      "board": "elevation",
+      "ref": "R172",
+      "source_sheet": "/Pivot_Encoder_Port/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "U103",
+      "board": "elevation",
+      "ref": "U103",
+      "source_sheet": "/Pivot_Encoder_Port/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "U160",
+      "board": "elevation",
+      "ref": "U160",
+      "source_sheet": "/Pivot_Modbus/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R163",
+      "board": "elevation",
+      "ref": "R163",
+      "source_sheet": "/Pivot_Modbus/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "TP7",
+      "board": "elevation",
+      "ref": "TP7",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "J4",
+      "board": "controller",
+      "ref": "J1004",
+      "source_sheet": "/SSI_Encoder/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "J12",
+      "board": "elevation",
+      "ref": "J12",
+      "source_sheet": "/Pivot_Encoder_Port/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C145",
+      "board": "elevation",
+      "ref": "C145",
+      "source_sheet": "/Pivot_Encoder_Star/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C111",
+      "board": "elevation",
+      "ref": "C111",
+      "source_sheet": "/Pivot_Encoder_Port/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "H5",
+      "board": "elevation",
+      "ref": "H5",
+      "source_sheet": "/Controller_Interface/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "PS1",
+      "board": "elevation",
+      "ref": "PS1",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R135",
+      "board": "elevation",
+      "ref": "R135",
+      "source_sheet": "/Pivot_Encoder_Star/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "H33",
+      "board": "elevation",
+      "ref": "H33",
+      "source_sheet": "/Controller_Interface/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C188",
+      "board": "elevation",
+      "ref": "C188",
+      "source_sheet": "/Pivot_Encoder_Port/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R162",
+      "board": "elevation",
+      "ref": "R162",
+      "source_sheet": "/Pivot_Modbus/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "TP1",
+      "board": "elevation",
+      "ref": "TP1",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R103",
+      "board": "elevation",
+      "ref": "R103",
+      "source_sheet": "/Pivot_Encoder_Port/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R161",
+      "board": "elevation",
+      "ref": "R161",
+      "source_sheet": "/Pivot_Modbus/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "TP9",
+      "board": "elevation",
+      "ref": "TP9",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C112",
+      "board": "elevation",
+      "ref": "C112",
+      "source_sheet": "/Pivot_Encoder_Port/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "PS2",
+      "board": "elevation",
+      "ref": "PS2",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C141",
+      "board": "elevation",
+      "ref": "C141",
+      "source_sheet": "/Pivot_Encoder_Star/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "U110",
+      "board": "elevation",
+      "ref": "U110",
+      "source_sheet": "/Pivot_Encoder_Star/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "J21",
+      "board": "elevation",
+      "ref": "J21",
+      "source_sheet": "/Pivot_Encoder_Star/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "J1",
+      "board": "elevation",
+      "ref": "J1",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "TP3",
+      "board": "elevation",
+      "ref": "TP3",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C160",
+      "board": "elevation",
+      "ref": "C160",
+      "source_sheet": "/Pivot_Modbus/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "PS11",
+      "board": "elevation",
+      "ref": "PS11",
+      "source_sheet": "/Pivot_Encoder_Star/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "PS6",
+      "board": "elevation",
+      "ref": "PS6",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R108",
+      "board": "elevation",
+      "ref": "R108",
+      "source_sheet": "/Pivot_Encoder_Port/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R105",
+      "board": "elevation",
+      "ref": "R105",
+      "source_sheet": "/Pivot_Encoder_Port/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "H8",
+      "board": "elevation",
+      "ref": "H8",
+      "source_sheet": "/Controller_Interface/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "H7",
+      "board": "elevation",
+      "ref": "H7",
+      "source_sheet": "/Controller_Interface/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R160",
+      "board": "elevation",
+      "ref": "R160",
+      "source_sheet": "/Pivot_Modbus/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C142",
+      "board": "elevation",
+      "ref": "C142",
+      "source_sheet": "/Pivot_Encoder_Star/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R102",
+      "board": "elevation",
+      "ref": "R102",
+      "source_sheet": "/Pivot_Encoder_Port/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R137",
+      "board": "elevation",
+      "ref": "R137",
+      "source_sheet": "/Pivot_Encoder_Star/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "TP4",
+      "board": "elevation",
+      "ref": "TP4",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "U112",
+      "board": "elevation",
+      "ref": "U112",
+      "source_sheet": "/Pivot_Encoder_Star/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "TH1",
+      "board": "elevation",
+      "ref": "TH1",
+      "source_sheet": "/ADS1115/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "TP25",
+      "board": "elevation",
+      "ref": "TP25",
+      "source_sheet": "/Pivot_Encoder_Port/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "U104",
+      "board": "elevation",
+      "ref": "U104",
+      "source_sheet": "/Pivot_Encoder_Port/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R134",
+      "board": "elevation",
+      "ref": "R134",
+      "source_sheet": "/Pivot_Encoder_Star/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "PS4",
+      "board": "elevation",
+      "ref": "PS4",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R138",
+      "board": "elevation",
+      "ref": "R138",
+      "source_sheet": "/Pivot_Encoder_Star/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R180",
+      "board": "elevation",
+      "ref": "R180",
+      "source_sheet": "/ADS1115/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "J3",
+      "board": "controller",
+      "ref": "J1003",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "U100",
+      "board": "elevation",
+      "ref": "U100",
+      "source_sheet": "/Pivot_Encoder_Port/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C113",
+      "board": "elevation",
+      "ref": "C113",
+      "source_sheet": "/Pivot_Encoder_Port/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R136",
+      "board": "elevation",
+      "ref": "R136",
+      "source_sheet": "/Pivot_Encoder_Star/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R133",
+      "board": "elevation",
+      "ref": "R133",
+      "source_sheet": "/Pivot_Encoder_Star/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R182",
+      "board": "elevation",
+      "ref": "R182",
+      "source_sheet": "/ADS1115/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "TP30",
+      "board": "elevation",
+      "ref": "TP30",
+      "source_sheet": "/Controller_Interface/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "JP161",
+      "board": "elevation",
+      "ref": "JP161",
+      "source_sheet": "/Pivot_Modbus/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "TP6",
+      "board": "elevation",
+      "ref": "TP6",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "TP10",
+      "board": "elevation",
+      "ref": "TP10",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "U105",
+      "board": "elevation",
+      "ref": "U105",
+      "source_sheet": "/Pivot_Encoder_Port/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R130",
+      "board": "elevation",
+      "ref": "R130",
+      "source_sheet": "/Pivot_Encoder_Star/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "J6",
+      "board": "controller",
+      "ref": "J1006",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "TP5",
+      "board": "elevation",
+      "ref": "TP5",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "J5",
+      "board": "elevation",
+      "ref": "J5",
+      "source_sheet": "/ServoMotor/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C163",
+      "board": "elevation",
+      "ref": "C163",
+      "source_sheet": "/Pivot_Modbus/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "TP23",
+      "board": "elevation",
+      "ref": "TP23",
+      "source_sheet": "/Pivot_Encoder_Port/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C161",
+      "board": "elevation",
+      "ref": "C161",
+      "source_sheet": "/Pivot_Modbus/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "J2",
+      "board": "controller",
+      "ref": "J1002",
+      "source_sheet": "/SSI_Encoder/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "J31",
+      "board": "elevation",
+      "ref": "J31",
+      "source_sheet": "/Controller_Interface/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "U114",
+      "board": "elevation",
+      "ref": "U114",
+      "source_sheet": "/Pivot_Encoder_Star/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C140",
+      "board": "elevation",
+      "ref": "C140",
+      "source_sheet": "/Pivot_Encoder_Star/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "J20",
+      "board": "elevation",
+      "ref": "J20",
+      "source_sheet": "/Pivot_Encoder_Port/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "U113",
+      "board": "elevation",
+      "ref": "U113",
+      "source_sheet": "/Pivot_Encoder_Star/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "PS10",
+      "board": "elevation",
+      "ref": "PS10",
+      "source_sheet": "/Pivot_Encoder_Port/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "J30",
+      "board": "elevation",
+      "ref": "J30",
+      "source_sheet": "/Controller_Interface/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "TP20",
+      "board": "elevation",
+      "ref": "TP20",
+      "source_sheet": "/Pivot_Encoder_Port/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R132",
+      "board": "elevation",
+      "ref": "R132",
+      "source_sheet": "/Pivot_Encoder_Star/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "H30",
+      "board": "elevation",
+      "ref": "H30",
+      "source_sheet": "/Controller_Interface/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "JP162",
+      "board": "elevation",
+      "ref": "JP162",
+      "source_sheet": "/Pivot_Modbus/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "TP2",
+      "board": "elevation",
+      "ref": "TP2",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "H32",
+      "board": "elevation",
+      "ref": "H32",
+      "source_sheet": "/Controller_Interface/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C191",
+      "board": "elevation",
+      "ref": "C191",
+      "source_sheet": "/ADS1115/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "U102",
+      "board": "elevation",
+      "ref": "U102",
+      "source_sheet": "/Pivot_Encoder_Port/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C162",
+      "board": "elevation",
+      "ref": "C162",
+      "source_sheet": "/Pivot_Modbus/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "H31",
+      "board": "elevation",
+      "ref": "H31",
+      "source_sheet": "/Controller_Interface/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C190",
+      "board": "elevation",
+      "ref": "C190",
+      "source_sheet": "/ADS1115/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "H6",
+      "board": "elevation",
+      "ref": "H6",
+      "source_sheet": "/Controller_Interface/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "TP21",
+      "board": "elevation",
+      "ref": "TP21",
+      "source_sheet": "/Pivot_Encoder_Port/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R101",
+      "board": "elevation",
+      "ref": "R101",
+      "source_sheet": "/Pivot_Encoder_Port/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C117",
+      "board": "elevation",
+      "ref": "C117",
+      "source_sheet": "/Pivot_Encoder_Port/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C22",
+      "board": "elevation",
+      "ref": "C22",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C76",
+      "board": "elevation",
+      "ref": "C76",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R18",
+      "board": "elevation",
+      "ref": "R18",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "U11",
+      "board": "controller",
+      "ref": "U1011",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "U27",
+      "board": "controller",
+      "ref": "U1027",
+      "source_sheet": "/SSI_Encoder/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R37",
+      "board": "controller",
+      "ref": "R1037",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C93",
+      "board": "elevation",
+      "ref": "C93",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C5",
+      "board": "elevation",
+      "ref": "C5",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C24",
+      "board": "elevation",
+      "ref": "C24",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R48",
+      "board": "controller",
+      "ref": "R1048",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C16",
+      "board": "elevation",
+      "ref": "C16",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C95",
+      "board": "elevation",
+      "ref": "C95",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C44",
+      "board": "elevation",
+      "ref": "C44",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R41",
+      "board": "elevation",
+      "ref": "R41",
+      "source_sheet": "/ServoMotor/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R60",
+      "board": "controller",
+      "ref": "R1060",
+      "source_sheet": "/SSI_Encoder/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R24",
+      "board": "elevation",
+      "ref": "R24",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R47",
+      "board": "controller",
+      "ref": "R1047",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R27",
+      "board": "controller",
+      "ref": "R1027",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R5",
+      "board": "elevation",
+      "ref": "R5",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R21",
+      "board": "elevation",
+      "ref": "R21",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R46",
+      "board": "controller",
+      "ref": "R1046",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C78",
+      "board": "elevation",
+      "ref": "C78",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C10",
+      "board": "elevation",
+      "ref": "C10",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C53",
+      "board": "controller",
+      "ref": "C1053",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R55",
+      "board": "controller",
+      "ref": "R1055",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "Q3",
+      "board": "controller",
+      "ref": "Q1003",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C12",
+      "board": "elevation",
+      "ref": "C12",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "Q14",
+      "board": "elevation",
+      "ref": "Q14",
+      "source_sheet": "/LTC4364/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C63",
+      "board": "controller",
+      "ref": "C1063",
+      "source_sheet": "/SSI_Encoder/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R2",
+      "board": "controller",
+      "ref": "R1002",
+      "source_sheet": "/SSI_Encoder/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C57",
+      "board": "controller",
+      "ref": "C1057",
+      "source_sheet": "/SSI_Encoder/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R52",
+      "board": "controller",
+      "ref": "R1052",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R49",
+      "board": "controller",
+      "ref": "R1049",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "FL1",
+      "board": "elevation",
+      "ref": "FL1",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C28",
+      "board": "elevation",
+      "ref": "C28",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C51",
+      "board": "controller",
+      "ref": "C1051",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C13",
+      "board": "elevation",
+      "ref": "C13",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C99",
+      "board": "controller",
+      "ref": "C1099",
+      "source_sheet": "/SSI_Encoder/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "U22",
+      "board": "controller",
+      "ref": "U1022",
+      "source_sheet": "/SSI_Encoder/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C15",
+      "board": "elevation",
+      "ref": "C15",
+      "source_sheet": "/LTC4364/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "U14",
+      "board": "elevation",
+      "ref": "U14",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R51",
+      "board": "controller",
+      "ref": "R1051",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C18",
+      "board": "elevation",
+      "ref": "C18",
+      "source_sheet": "/LTC4364/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "U5",
+      "board": "elevation",
+      "ref": "U5",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R30",
+      "board": "controller",
+      "ref": "R1030",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "F1",
+      "board": "elevation",
+      "ref": "F1",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C79",
+      "board": "elevation",
+      "ref": "C79",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "U15",
+      "board": "elevation",
+      "ref": "U15",
+      "source_sheet": "/ServoMotor/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C97",
+      "board": "controller",
+      "ref": "C1097",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C29",
+      "board": "elevation",
+      "ref": "C29",
+      "source_sheet": "/LTC4364/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R57",
+      "board": "controller",
+      "ref": "R1057",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C60",
+      "board": "elevation",
+      "ref": "C60",
+      "source_sheet": "/ServoMotor/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R59",
+      "board": "controller",
+      "ref": "R1059",
+      "source_sheet": "/SSI_Encoder/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C48",
+      "board": "elevation",
+      "ref": "C48",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R6",
+      "board": "elevation",
+      "ref": "R6",
+      "source_sheet": "/LTC4364/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "U23",
+      "board": "elevation",
+      "ref": "U23",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C86",
+      "board": "elevation",
+      "ref": "C86",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R39",
+      "board": "controller",
+      "ref": "R1039",
+      "source_sheet": "/SSI_Encoder/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C25",
+      "board": "elevation",
+      "ref": "C25",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C1",
+      "board": "elevation",
+      "ref": "C1",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R66",
+      "board": "elevation",
+      "ref": "R66",
+      "source_sheet": "/ADS1115/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R31",
+      "board": "controller",
+      "ref": "R1031",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C14",
+      "board": "elevation",
+      "ref": "C14",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C89",
+      "board": "elevation",
+      "ref": "C89",
+      "source_sheet": "/ADS1115/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R56",
+      "board": "controller",
+      "ref": "R1056",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C7",
+      "board": "elevation",
+      "ref": "C7",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C54",
+      "board": "elevation",
+      "ref": "C54",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C67",
+      "board": "elevation",
+      "ref": "C67",
+      "source_sheet": "/ServoMotor/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C46",
+      "board": "elevation",
+      "ref": "C46",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C36",
+      "board": "elevation",
+      "ref": "C36",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R53",
+      "board": "controller",
+      "ref": "R1053",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R16",
+      "board": "elevation",
+      "ref": "R16",
+      "source_sheet": "/LTC4364/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "U3",
+      "board": "controller",
+      "ref": "U1003",
+      "source_sheet": "/SSI_Encoder/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C92",
+      "board": "elevation",
+      "ref": "C92",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "D1",
+      "board": "controller",
+      "ref": "D1001",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C38",
+      "board": "controller",
+      "ref": "C1038",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R65",
+      "board": "elevation",
+      "ref": "R65",
+      "source_sheet": "/ADS1115/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "D7",
+      "board": "elevation",
+      "ref": "D7",
+      "source_sheet": "/LTC4364/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "Q5",
+      "board": "controller",
+      "ref": "Q1005",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R50",
+      "board": "controller",
+      "ref": "R1050",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R15",
+      "board": "elevation",
+      "ref": "R15",
+      "source_sheet": "/LTC4364/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C23",
+      "board": "elevation",
+      "ref": "C23",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C85",
+      "board": "elevation",
+      "ref": "C85",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R7",
+      "board": "elevation",
+      "ref": "R7",
+      "source_sheet": "/LTC4364/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C33",
+      "board": "elevation",
+      "ref": "C33",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R34",
+      "board": "controller",
+      "ref": "R1034",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "D10",
+      "board": "elevation",
+      "ref": "D10",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "U6",
+      "board": "controller",
+      "ref": "U1006",
+      "source_sheet": "/SSI_Encoder/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C9",
+      "board": "controller",
+      "ref": "C1009",
+      "source_sheet": "/SSI_Encoder/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C73",
+      "board": "elevation",
+      "ref": "C73",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "FB2",
+      "board": "elevation",
+      "ref": "FB2",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "D4",
+      "board": "controller",
+      "ref": "D1004",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "U4",
+      "board": "elevation",
+      "ref": "U4",
+      "source_sheet": "/LTC4364/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C94",
+      "board": "elevation",
+      "ref": "C94",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C45",
+      "board": "elevation",
+      "ref": "C45",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C103",
+      "board": "elevation",
+      "ref": "C103",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C87",
+      "board": "elevation",
+      "ref": "C87",
+      "source_sheet": "/ADS1115/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "D5",
+      "board": "elevation",
+      "ref": "D5",
+      "source_sheet": "/LTC4364/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "U9",
+      "board": "controller",
+      "ref": "U1009",
+      "source_sheet": "/SSI_Encoder/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "U12",
+      "board": "controller",
+      "ref": "U1012",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R17",
+      "board": "elevation",
+      "ref": "R17",
+      "source_sheet": "/LTC4364/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "D3",
+      "board": "controller",
+      "ref": "D1003",
+      "source_sheet": "/SSI_Encoder/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R42",
+      "board": "elevation",
+      "ref": "R42",
+      "source_sheet": "/ServoMotor/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "U20",
+      "board": "controller",
+      "ref": "U1020",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C11",
+      "board": "elevation",
+      "ref": "C11",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R28",
+      "board": "controller",
+      "ref": "R1028",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R8",
+      "board": "elevation",
+      "ref": "R8",
+      "source_sheet": "/LTC4364/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "Q6",
+      "board": "controller",
+      "ref": "Q1006",
+      "source_sheet": "/SSI_Encoder/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R68",
+      "board": "elevation",
+      "ref": "R68",
+      "source_sheet": "/ADS1115/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "D2",
+      "board": "controller",
+      "ref": "D1002",
+      "source_sheet": "/SSI_Encoder/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C80",
+      "board": "elevation",
+      "ref": "C80",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R36",
+      "board": "controller",
+      "ref": "R1036",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C72",
+      "board": "controller",
+      "ref": "C1072",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C58",
+      "board": "controller",
+      "ref": "C1058",
+      "source_sheet": "/SSI_Encoder/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C71",
+      "board": "controller",
+      "ref": "C1071",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C55",
+      "board": "elevation",
+      "ref": "C55",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C102",
+      "board": "elevation",
+      "ref": "C102",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R11",
+      "board": "elevation",
+      "ref": "R11",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R19",
+      "board": "elevation",
+      "ref": "R19",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "U13",
+      "board": "elevation",
+      "ref": "U13",
+      "source_sheet": "/ServoMotor/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C27",
+      "board": "elevation",
+      "ref": "C27",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C65",
+      "board": "controller",
+      "ref": "C1065",
+      "source_sheet": "/SSI_Encoder/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C83",
+      "board": "elevation",
+      "ref": "C83",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C40",
+      "board": "controller",
+      "ref": "C1040",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C6",
+      "board": "controller",
+      "ref": "C1006",
+      "source_sheet": "/SSI_Encoder/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R23",
+      "board": "elevation",
+      "ref": "R23",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "Q13",
+      "board": "controller",
+      "ref": "Q1013",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "U16",
+      "board": "controller",
+      "ref": "U1016",
+      "source_sheet": "/SSI_Encoder/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R44",
+      "board": "elevation",
+      "ref": "R44",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C31",
+      "board": "elevation",
+      "ref": "C31",
+      "source_sheet": "/LTC4364/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "D9",
+      "board": "elevation",
+      "ref": "D9",
+      "source_sheet": "/LTC4364/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "Q4",
+      "board": "controller",
+      "ref": "Q1004",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "U19",
+      "board": "controller",
+      "ref": "U1019",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "FB3",
+      "board": "elevation",
+      "ref": "FB3",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R58",
+      "board": "controller",
+      "ref": "R1058",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "D6",
+      "board": "elevation",
+      "ref": "D6",
+      "source_sheet": "/LTC4364/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R67",
+      "board": "elevation",
+      "ref": "R67",
+      "source_sheet": "/ADS1115/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C69",
+      "board": "controller",
+      "ref": "C1069",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C34",
+      "board": "elevation",
+      "ref": "C34",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "U25",
+      "board": "elevation",
+      "ref": "U25",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C19",
+      "board": "elevation",
+      "ref": "C19",
+      "source_sheet": "/LTC4364/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C52",
+      "board": "controller",
+      "ref": "C1052",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C56",
+      "board": "controller",
+      "ref": "C1056",
+      "source_sheet": "/SSI_Encoder/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "U21",
+      "board": "elevation",
+      "ref": "U21",
+      "source_sheet": "/ADS1115/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "Q2",
+      "board": "controller",
+      "ref": "Q1002",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R22",
+      "board": "elevation",
+      "ref": "R22",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C98",
+      "board": "controller",
+      "ref": "C1098",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "Q7",
+      "board": "controller",
+      "ref": "Q1007",
+      "source_sheet": "/SSI_Encoder/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C49",
+      "board": "elevation",
+      "ref": "C49",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C20",
+      "board": "elevation",
+      "ref": "C20",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C30",
+      "board": "elevation",
+      "ref": "C30",
+      "source_sheet": "/LTC4364/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C4",
+      "board": "elevation",
+      "ref": "C4",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C91",
+      "board": "elevation",
+      "ref": "C91",
+      "source_sheet": "/ADS1115/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R54",
+      "board": "controller",
+      "ref": "R1054",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C17",
+      "board": "controller",
+      "ref": "C1017",
+      "source_sheet": "/SSI_Encoder/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R38",
+      "board": "controller",
+      "ref": "R1038",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R33",
+      "board": "controller",
+      "ref": "R1033",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R43",
+      "board": "elevation",
+      "ref": "R43",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C26",
+      "board": "elevation",
+      "ref": "C26",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C8",
+      "board": "elevation",
+      "ref": "C8",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C74",
+      "board": "elevation",
+      "ref": "C74",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R13",
+      "board": "elevation",
+      "ref": "R13",
+      "source_sheet": "/LTC4364/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "U2",
+      "board": "elevation",
+      "ref": "U2",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C39",
+      "board": "elevation",
+      "ref": "C39",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C47",
+      "board": "elevation",
+      "ref": "C47",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C43",
+      "board": "elevation",
+      "ref": "C43",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C81",
+      "board": "elevation",
+      "ref": "C81",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C42",
+      "board": "controller",
+      "ref": "C1042",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R61",
+      "board": "controller",
+      "ref": "R1061",
+      "source_sheet": "/SSI_Encoder/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "D11",
+      "board": "elevation",
+      "ref": "D11",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C77",
+      "board": "elevation",
+      "ref": "C77",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C70",
+      "board": "controller",
+      "ref": "C1070",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "U26",
+      "board": "controller",
+      "ref": "U1026",
+      "source_sheet": "/SSI_Encoder/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C32",
+      "board": "elevation",
+      "ref": "C32",
+      "source_sheet": "/LTC4364/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "Q1",
+      "board": "controller",
+      "ref": "Q1001",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R32",
+      "board": "controller",
+      "ref": "R1032",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "U10",
+      "board": "controller",
+      "ref": "U1010",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "U18",
+      "board": "controller",
+      "ref": "U1018",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C35",
+      "board": "elevation",
+      "ref": "C35",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R25",
+      "board": "elevation",
+      "ref": "R25",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R63",
+      "board": "elevation",
+      "ref": "R63",
+      "source_sheet": "/LTC4364/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "U17",
+      "board": "elevation",
+      "ref": "U17",
+      "source_sheet": "/ServoMotor/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C2",
+      "board": "controller",
+      "ref": "C1002",
+      "source_sheet": "/SSI_Encoder/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C62",
+      "board": "controller",
+      "ref": "C1062",
+      "source_sheet": "/SSI_Encoder/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C41",
+      "board": "elevation",
+      "ref": "C41",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "IC2",
+      "board": "elevation",
+      "ref": "IC2",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C100",
+      "board": "elevation",
+      "ref": "C100",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R45",
+      "board": "controller",
+      "ref": "R1045",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C59",
+      "board": "elevation",
+      "ref": "C59",
+      "source_sheet": "/ServoMotor/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C64",
+      "board": "controller",
+      "ref": "C1064",
+      "source_sheet": "/SSI_Encoder/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C88",
+      "board": "elevation",
+      "ref": "C88",
+      "source_sheet": "/ADS1115/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C84",
+      "board": "elevation",
+      "ref": "C84",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "F2",
+      "board": "elevation",
+      "ref": "F2",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R35",
+      "board": "controller",
+      "ref": "R1035",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C61",
+      "board": "elevation",
+      "ref": "C61",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C101",
+      "board": "elevation",
+      "ref": "C101",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R4",
+      "board": "controller",
+      "ref": "R1004",
+      "source_sheet": "/SSI_Encoder/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C37",
+      "board": "controller",
+      "ref": "C1037",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R40",
+      "board": "controller",
+      "ref": "R1040",
+      "source_sheet": "/SSI_Encoder/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R12",
+      "board": "elevation",
+      "ref": "R12",
+      "source_sheet": "/LTC4364/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R9",
+      "board": "elevation",
+      "ref": "R9",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R10",
+      "board": "elevation",
+      "ref": "R10",
+      "source_sheet": "/LTC4364/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C66",
+      "board": "elevation",
+      "ref": "C66",
+      "source_sheet": "/ServoMotor/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C50",
+      "board": "elevation",
+      "ref": "C50",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C68",
+      "board": "elevation",
+      "ref": "C68",
+      "source_sheet": "/ServoMotor/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C3",
+      "board": "controller",
+      "ref": "C1003",
+      "source_sheet": "/SSI_Encoder/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R29",
+      "board": "controller",
+      "ref": "R1029",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "Q15",
+      "board": "elevation",
+      "ref": "Q15",
+      "source_sheet": "/LTC4364/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "U8",
+      "board": "controller",
+      "ref": "U1008",
+      "source_sheet": "/SSI_Encoder/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "U24",
+      "board": "elevation",
+      "ref": "U24",
+      "source_sheet": "/ADS1115/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R3",
+      "board": "elevation",
+      "ref": "R3",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "FB1",
+      "board": "elevation",
+      "ref": "FB1",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R1",
+      "board": "elevation",
+      "ref": "R1",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C96",
+      "board": "controller",
+      "ref": "C1096",
+      "source_sheet": "/Stepper/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "IC1",
+      "board": "elevation",
+      "ref": "IC1",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "L1",
+      "board": "elevation",
+      "ref": "L1",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R20",
+      "board": "elevation",
+      "ref": "R20",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "Q16",
+      "board": "elevation",
+      "ref": "Q16",
+      "source_sheet": "/LTC4364/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C90",
+      "board": "elevation",
+      "ref": "C90",
+      "source_sheet": "/ADS1115/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R62",
+      "board": "controller",
+      "ref": "R1062",
+      "source_sheet": "/SSI_Encoder/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R14",
+      "board": "elevation",
+      "ref": "R14",
+      "source_sheet": "/LTC4364/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C21",
+      "board": "elevation",
+      "ref": "C21",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "U7",
+      "board": "controller",
+      "ref": "U1007",
+      "source_sheet": "/SSI_Encoder/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R26",
+      "board": "elevation",
+      "ref": "R26",
+      "source_sheet": "/Brakes/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "D12",
+      "board": "elevation",
+      "ref": "D12",
+      "source_sheet": "/LTC4364/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C82",
+      "board": "elevation",
+      "ref": "C82",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "C75",
+      "board": "elevation",
+      "ref": "C75",
+      "source_sheet": "/DC DC Step down/"
+    },
+    {
+      "source_board": "elevation",
+      "source_ref": "R78",
+      "board": "elevation",
+      "ref": "R78",
+      "source_sheet": "/ServoMotor/"
+    }
+  ],
+  "pinout": {
+    "J30": {
+      "1": "GND",
+      "2": "GND",
+      "3": "PORT_BRAKE_RELEASE_CMD",
+      "4": "STAR_BRAKE_RELEASE_CMD",
+      "5": "HOME_POS",
+      "6": "E_STOP_OK",
+      "7": "PORT_ENC_A",
+      "8": "PORT_ENC_B",
+      "9": "PORT_ENC_Z",
+      "10": "STAR_ENC_A",
+      "11": "STAR_ENC_B",
+      "12": "STAR_ENC_Z",
+      "13": "GND",
+      "14": "GND",
+      "15": "STM32_SCL",
+      "16": "STM32_SDA",
+      "17": "TX_CAN",
+      "18": "RX_CAN",
+      "19": "Silent_Mode",
+      "20": "PIVOT_MODBUS_TX",
+      "21": "PIVOT_MODBUS_RX",
+      "22": "PIVOT_MODBUS_DE",
+      "23": "NRST",
+      "24": "GND",
+      "25": "B2B_5V_IN",
+      "26": "B2B_5V_IN",
+      "27": "3V3_DIG",
+      "28": "3V3_DIG",
+      "29": "GND",
+      "30": "GND"
+    },
+    "J31": {
+      "1": "-BATT",
+      "2": "-BATT",
+      "3": "-BATT",
+      "4": "-BATT",
+      "5": "+5V_FIELD",
+      "6": "+5V_FIELD",
+      "7": "-BATT",
+      "8": "-BATT",
+      "9": "+6.5V_ENC_PORT",
+      "10": "+6.5V_ENC_PORT",
+      "11": "+5V_ENC_PORT",
+      "12": "+5V_ENC_PORT",
+      "13": "-BATT",
+      "14": "-BATT",
+      "15": "+6.5V_ENC_STAR",
+      "16": "+6.5V_ENC_STAR",
+      "17": "+5V_ENC_STAR",
+      "18": "+5V_ENC_STAR",
+      "19": "-BATT",
+      "20": "-BATT"
+    }
+  },
+  "supply_aliases": {
+    "GND_STM32": "GND",
+    "+3V3_STM32": "3V3_DIG",
+    "+5V_STM32": "B2B_5V_IN",
+    "CTRL_NRST": "NRST"
+  },
+  "supports_xy_mm": {
+    "H30": [
+      25,
+      25
+    ],
+    "H31": [
+      95,
+      25
+    ],
+    "H32": [
+      25,
+      145
+    ],
+    "H33": [
+      95,
+      145
+    ]
+  },
+  "header_origins_carrier": {
+    "J30": [
+      40,
+      85
+    ],
+    "J31": [
+      40,
+      97
+    ]
+  }
+}

@@ -7,7 +7,7 @@
   (title_block
     (title "Elevation Controller - MCU Core Clocks Reset")
     (date "2026-10-03")
-    (rev "P4.1 MODBUS"))
+    (rev "P6 COMPACT"))
   (lib_symbols
     (symbol "Controller_Power:3V3_ANA"
       (power)
@@ -6661,13 +6661,48 @@
         (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/9344b517-ffd3-5899-8171-c594a60a9dc5"
           (reference "C19")
           (unit 1))))
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 322.58 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 322.58 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Capacitor" (at 322.58 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +125 C" (at 322.58 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 322.58 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability" (at 322.58 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "C3018562" (at 322.58 107.95 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 322.58 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 322.58 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Capacitor"
+      (at 322.58 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-55 to +125 C"
+      (at 322.58 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 322.58 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability"
+      (at 322.58 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "C3018562"
+      (at 322.58 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Device:C")
     (at 254 107.95 0)
@@ -6817,13 +6852,48 @@
         (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/9344b517-ffd3-5899-8171-c594a60a9dc5"
           (reference "C13")
           (unit 1))))
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 254 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 254 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Capacitor" (at 254 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +125 C" (at 254 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 254 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability" (at 254 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "C3018562" (at 254 107.95 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 254 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 254 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Capacitor"
+      (at 254 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-55 to +125 C"
+      (at 254 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 254 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability"
+      (at 254 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "C3018562"
+      (at 254 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Controller_Power:GND")
     (at 334.01 68.58 0)
@@ -7057,13 +7127,48 @@
         (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/9344b517-ffd3-5899-8171-c594a60a9dc5"
           (reference "C17")
           (unit 1))))
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 300.99 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 300.99 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Capacitor" (at 300.99 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +125 C" (at 300.99 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 300.99 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability" (at 300.99 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "C3018562" (at 300.99 107.95 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 300.99 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 300.99 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Capacitor"
+      (at 300.99 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-55 to +125 C"
+      (at 300.99 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 300.99 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability"
+      (at 300.99 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "C3018562"
+      (at 300.99 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Device:C")
     (at 323.85 63.5 0)
@@ -7213,13 +7318,48 @@
         (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/9344b517-ffd3-5899-8171-c594a60a9dc5"
           (reference "C4")
           (unit 1))))
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 323.85 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 323.85 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Capacitor" (at 323.85 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +125 C" (at 323.85 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 323.85 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability" (at 323.85 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "C3018562" (at 323.85 63.5 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 323.85 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 323.85 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Capacitor"
+      (at 323.85 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-55 to +125 C"
+      (at 323.85 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 323.85 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability"
+      (at 323.85 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "C3018562"
+      (at 323.85 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Controller_Power:3V3_ANA")
     (at 254 101.6 0)
@@ -7453,13 +7593,48 @@
         (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/9344b517-ffd3-5899-8171-c594a60a9dc5"
           (reference "C16")
           (unit 1))))
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 288.29 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 288.29 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Capacitor" (at 288.29 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +125 C" (at 288.29 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 288.29 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "No verified JLCPCB ID; source or consign" (at 288.29 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "NOT_LISTED" (at 288.29 107.95 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 288.29 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 288.29 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Capacitor"
+      (at 288.29 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-55 to +125 C"
+      (at 288.29 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 288.29 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "No verified JLCPCB ID; source or consign"
+      (at 288.29 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "NOT_LISTED"
+      (at 288.29 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Device:C")
     (at 383.54 63.5 0)
@@ -7609,13 +7784,48 @@
         (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/9344b517-ffd3-5899-8171-c594a60a9dc5"
           (reference "C10")
           (unit 1))))
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 383.54 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 383.54 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Capacitor" (at 383.54 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +125 C" (at 383.54 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 383.54 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability" (at 383.54 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "C3018562" (at 383.54 63.5 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 383.54 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 383.54 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Capacitor"
+      (at 383.54 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-55 to +125 C"
+      (at 383.54 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 383.54 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability"
+      (at 383.54 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "C3018562"
+      (at 383.54 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Controller_Power:GND")
     (at 135.89 254 0)
@@ -8083,15 +8293,60 @@
         (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/9344b517-ffd3-5899-8171-c594a60a9dc5"
           (reference "C25")
           (unit 1))))
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 387.35 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "DNP" (at 387.35 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Capacitor" (at 387.35 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "NOT SELECTED - DNP" (at 387.35 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 387.35 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "No verified JLCPCB ID; source or consign" (at 387.35 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "NOT_SELECTED" (at 387.35 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Manufacturer" "NOT SELECTED" (at 387.35 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "MPN" "NOT SELECTED - DNP" (at 387.35 107.95 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 387.35 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "DNP"
+      (at 387.35 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Capacitor"
+      (at 387.35 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "NOT SELECTED - DNP"
+      (at 387.35 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 387.35 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "No verified JLCPCB ID; source or consign"
+      (at 387.35 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "NOT_SELECTED"
+      (at 387.35 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "NOT SELECTED"
+      (at 387.35 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "NOT SELECTED - DNP"
+      (at 387.35 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Device:C")
     (at 334.01 63.5 0)
@@ -8241,13 +8496,48 @@
         (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/9344b517-ffd3-5899-8171-c594a60a9dc5"
           (reference "C5")
           (unit 1))))
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 334.01 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 334.01 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Capacitor" (at 334.01 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +125 C" (at 334.01 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 334.01 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability" (at 334.01 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "C3018562" (at 334.01 63.5 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 334.01 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 334.01 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Capacitor"
+      (at 334.01 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-55 to +125 C"
+      (at 334.01 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 334.01 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability"
+      (at 334.01 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "C3018562"
+      (at 334.01 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Controller_Power:GND")
     (at 398.78 115.57 0)
@@ -8482,13 +8772,48 @@
         (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/9344b517-ffd3-5899-8171-c594a60a9dc5"
           (reference "C2")
           (unit 1))))
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 304.8 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 304.8 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Capacitor" (at 304.8 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +125 C" (at 304.8 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 304.8 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability" (at 304.8 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "C3018562" (at 304.8 63.5 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 304.8 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 304.8 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Capacitor"
+      (at 304.8 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-55 to +125 C"
+      (at 304.8 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 304.8 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability"
+      (at 304.8 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "C3018562"
+      (at 304.8 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Controller_Power:3V3_DIG")
     (at 304.8 57.15 0)
@@ -8722,13 +9047,48 @@
         (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/9344b517-ffd3-5899-8171-c594a60a9dc5"
           (reference "C9")
           (unit 1))))
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 373.38 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 373.38 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Capacitor" (at 373.38 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +125 C" (at 373.38 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 373.38 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability" (at 373.38 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "C3018562" (at 373.38 63.5 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 373.38 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 373.38 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Capacitor"
+      (at 373.38 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-55 to +125 C"
+      (at 373.38 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 373.38 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability"
+      (at 373.38 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "C3018562"
+      (at 373.38 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Controller_Power:GND")
     (at 383.54 68.58 0)
@@ -9004,13 +9364,48 @@
         (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/9344b517-ffd3-5899-8171-c594a60a9dc5"
           (reference "C6")
           (unit 1))))
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 342.9 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 342.9 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Capacitor" (at 342.9 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +125 C" (at 342.9 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 342.9 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability" (at 342.9 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "C3018562" (at 342.9 63.5 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 342.9 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 342.9 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Capacitor"
+      (at 342.9 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-55 to +125 C"
+      (at 342.9 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 342.9 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability"
+      (at 342.9 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "C3018562"
+      (at 342.9 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Controller_Power:3V3_DIG")
     (at 313.69 57.15 0)
@@ -9184,15 +9579,60 @@
         (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/9344b517-ffd3-5899-8171-c594a60a9dc5"
           (reference "C24")
           (unit 1))))
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 375.92 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "DNP" (at 375.92 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Capacitor" (at 375.92 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "NOT SELECTED - DNP" (at 375.92 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 375.92 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "No verified JLCPCB ID; source or consign" (at 375.92 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "NOT_SELECTED" (at 375.92 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Manufacturer" "NOT SELECTED" (at 375.92 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "MPN" "NOT SELECTED - DNP" (at 375.92 107.95 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 375.92 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "DNP"
+      (at 375.92 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Capacitor"
+      (at 375.92 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "NOT SELECTED - DNP"
+      (at 375.92 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 375.92 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "No verified JLCPCB ID; source or consign"
+      (at 375.92 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "NOT_SELECTED"
+      (at 375.92 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "NOT SELECTED"
+      (at 375.92 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "NOT SELECTED - DNP"
+      (at 375.92 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Controller_Power:GND")
     (at 264.16 114.3 0)
@@ -9499,13 +9939,48 @@
         (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/9344b517-ffd3-5899-8171-c594a60a9dc5"
           (reference "R3")
           (unit 1))))
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 250.19 250.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 250.19 250.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Resistor" (at 250.19 250.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +155 C" (at 250.19 250.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 250.19 250.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability" (at 250.19 250.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "C844935" (at 250.19 250.19 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 250.19 250.19 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 250.19 250.19 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Resistor"
+      (at 250.19 250.19 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-55 to +155 C"
+      (at 250.19 250.19 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 250.19 250.19 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability"
+      (at 250.19 250.19 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "C844935"
+      (at 250.19 250.19 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Device:C")
     (at 264.16 107.95 0)
@@ -9655,13 +10130,48 @@
         (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/9344b517-ffd3-5899-8171-c594a60a9dc5"
           (reference "C14")
           (unit 1))))
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 264.16 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 264.16 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Capacitor" (at 264.16 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +125 C" (at 264.16 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 264.16 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "No verified JLCPCB ID; source or consign" (at 264.16 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "NOT_LISTED" (at 264.16 107.95 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 264.16 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 264.16 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Capacitor"
+      (at 264.16 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-55 to +125 C"
+      (at 264.16 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 264.16 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "No verified JLCPCB ID; source or consign"
+      (at 264.16 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "NOT_LISTED"
+      (at 264.16 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Controller_Power:GND")
     (at 387.35 114.3 0)
@@ -9841,13 +10351,48 @@
         (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/9344b517-ffd3-5899-8171-c594a60a9dc5"
           (reference "SW2")
           (unit 1))))
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 361.95 205.74 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 361.95 205.74 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "PTS636SK25SMTR LFS" (at 361.95 205.74 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-40 to +85 C" (at 361.95 205.74 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 361.95 205.74 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "No verified JLCPCB ID; source or consign" (at 361.95 205.74 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "NOT_LISTED" (at 361.95 205.74 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 361.95 205.74 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 361.95 205.74 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "PTS636SK25SMTR LFS"
+      (at 361.95 205.74 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-40 to +85 C"
+      (at 361.95 205.74 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 361.95 205.74 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "No verified JLCPCB ID; source or consign"
+      (at 361.95 205.74 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "NOT_LISTED"
+      (at 361.95 205.74 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Device:C")
     (at 398.78 109.22 0)
@@ -9997,13 +10542,48 @@
         (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/9344b517-ffd3-5899-8171-c594a60a9dc5"
           (reference "C27")
           (unit 1))))
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 398.78 109.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 398.78 109.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Capacitor" (at 398.78 109.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +125 C" (at 398.78 109.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 398.78 109.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "No verified JLCPCB ID; source or consign" (at 398.78 109.22 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "NOT_LISTED" (at 398.78 109.22 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 398.78 109.22 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 398.78 109.22 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Capacitor"
+      (at 398.78 109.22 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-55 to +125 C"
+      (at 398.78 109.22 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 398.78 109.22 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "No verified JLCPCB ID; source or consign"
+      (at 398.78 109.22 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "NOT_LISTED"
+      (at 398.78 109.22 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Device:C")
     (at 297.18 205.74 0)
@@ -10153,13 +10733,48 @@
         (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/9344b517-ffd3-5899-8171-c594a60a9dc5"
           (reference "C26")
           (unit 1))))
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 297.18 205.74 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 297.18 205.74 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Capacitor" (at 297.18 205.74 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +125 C" (at 297.18 205.74 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 297.18 205.74 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability" (at 297.18 205.74 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "C3018562" (at 297.18 205.74 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 297.18 205.74 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 297.18 205.74 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Capacitor"
+      (at 297.18 205.74 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-55 to +125 C"
+      (at 297.18 205.74 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 297.18 205.74 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability"
+      (at 297.18 205.74 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "C3018562"
+      (at 297.18 205.74 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Controller_Power:GND")
     (at 313.69 68.58 0)
@@ -10435,13 +11050,48 @@
         (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/9344b517-ffd3-5899-8171-c594a60a9dc5"
           (reference "C20")
           (unit 1))))
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 332.74 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 332.74 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Capacitor" (at 332.74 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +125 C" (at 332.74 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 332.74 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "No verified JLCPCB ID; source or consign" (at 332.74 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "NOT_LISTED" (at 332.74 107.95 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 332.74 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 332.74 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Capacitor"
+      (at 332.74 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-55 to +125 C"
+      (at 332.74 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 332.74 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "No verified JLCPCB ID; source or consign"
+      (at 332.74 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "NOT_LISTED"
+      (at 332.74 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Device:C")
     (at 363.22 63.5 0)
@@ -10591,13 +11241,48 @@
         (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/9344b517-ffd3-5899-8171-c594a60a9dc5"
           (reference "C8")
           (unit 1))))
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 363.22 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 363.22 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Capacitor" (at 363.22 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +125 C" (at 363.22 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 363.22 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability" (at 363.22 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "C3018562" (at 363.22 63.5 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 363.22 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 363.22 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Capacitor"
+      (at 363.22 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-55 to +125 C"
+      (at 363.22 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 363.22 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability"
+      (at 363.22 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "C3018562"
+      (at 363.22 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Controller_Power:GND")
     (at 393.7 68.58 0)
@@ -10789,13 +11474,48 @@
         (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/9344b517-ffd3-5899-8171-c594a60a9dc5"
           (reference "C22")
           (unit 1))))
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 355.6 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 355.6 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Capacitor" (at 355.6 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +125 C" (at 355.6 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 355.6 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability" (at 355.6 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "C2168859" (at 355.6 107.95 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 355.6 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 355.6 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Capacitor"
+      (at 355.6 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-55 to +125 C"
+      (at 355.6 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 355.6 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability"
+      (at 355.6 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "C2168859"
+      (at 355.6 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Controller_Power:GND")
     (at 353.06 68.58 0)
@@ -11029,13 +11749,48 @@
         (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/9344b517-ffd3-5899-8171-c594a60a9dc5"
           (reference "C1")
           (unit 1))))
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 295.91 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 295.91 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Capacitor" (at 295.91 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +125 C" (at 295.91 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 295.91 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability" (at 295.91 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "C3018562" (at 295.91 63.5 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 295.91 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 295.91 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Capacitor"
+      (at 295.91 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-55 to +125 C"
+      (at 295.91 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 295.91 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability"
+      (at 295.91 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "C3018562"
+      (at 295.91 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Controller_Power:GND")
     (at 344.17 114.3 0)
@@ -11294,15 +12049,60 @@
         (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/9344b517-ffd3-5899-8171-c594a60a9dc5"
           (reference "Y2")
           (unit 1))))
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 320.04 152.4 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "DNP" (at 320.04 152.4 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "32.768kHz DNP" (at 320.04 152.4 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "NOT SELECTED - DNP" (at 320.04 152.4 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 320.04 152.4 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "No verified JLCPCB ID; source or consign" (at 320.04 152.4 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "NOT_SELECTED" (at 320.04 152.4 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Manufacturer" "NOT SELECTED" (at 320.04 152.4 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "MPN" "NOT SELECTED - DNP" (at 320.04 152.4 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 320.04 152.4 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "DNP"
+      (at 320.04 152.4 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "32.768kHz DNP"
+      (at 320.04 152.4 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "NOT SELECTED - DNP"
+      (at 320.04 152.4 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 320.04 152.4 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "No verified JLCPCB ID; source or consign"
+      (at 320.04 152.4 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "NOT_SELECTED"
+      (at 320.04 152.4 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Manufacturer" "NOT SELECTED"
+      (at 320.04 152.4 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "MPN" "NOT SELECTED - DNP"
+      (at 320.04 152.4 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Device:C")
     (at 344.17 107.95 0)
@@ -11452,13 +12252,48 @@
         (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/9344b517-ffd3-5899-8171-c594a60a9dc5"
           (reference "C21")
           (unit 1))))
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 344.17 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 344.17 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Capacitor" (at 344.17 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +125 C" (at 344.17 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 344.17 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "No verified JLCPCB ID; source or consign" (at 344.17 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "NOT_LISTED" (at 344.17 107.95 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 344.17 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 344.17 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Capacitor"
+      (at 344.17 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-55 to +125 C"
+      (at 344.17 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 344.17 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "No verified JLCPCB ID; source or consign"
+      (at 344.17 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "NOT_LISTED"
+      (at 344.17 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Controller_Power:3V3_DIG")
     (at 322.58 100.33 0)
@@ -11648,13 +12483,48 @@
         (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/9344b517-ffd3-5899-8171-c594a60a9dc5"
           (reference "Y1")
           (unit 1))))
-  (property "Footprint Status" "RELEASED_PADS_2_AND_4_GROUND_PER_ECX_33Q_REV2023" (at 283.21 152.4 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 283.21 152.4 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "ECS-80-8-33Q-JES-TR" (at 283.21 152.4 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-40 to +125 C" (at 283.21 152.4 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 283.21 152.4 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability" (at 283.21 152.4 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "C5727442" (at 283.21 152.4 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Footprint Status" "RELEASED_PADS_2_AND_4_GROUND_PER_ECX_33Q_REV2023"
+      (at 283.21 152.4 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 283.21 152.4 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "ECS-80-8-33Q-JES-TR"
+      (at 283.21 152.4 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-40 to +125 C"
+      (at 283.21 152.4 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 283.21 152.4 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability"
+      (at 283.21 152.4 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "C5727442"
+      (at 283.21 152.4 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "power:PWR_FLAG")
     (at 322.58 27.94 0)
@@ -11999,13 +12869,48 @@
         (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/9344b517-ffd3-5899-8171-c594a60a9dc5"
           (reference "R4")
           (unit 1))))
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 261.62 250.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 261.62 250.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Resistor" (at 261.62 250.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +155 C" (at 261.62 250.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 261.62 250.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability" (at 261.62 250.19 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "C844935" (at 261.62 250.19 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 261.62 250.19 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 261.62 250.19 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Resistor"
+      (at 261.62 250.19 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-55 to +155 C"
+      (at 261.62 250.19 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 261.62 250.19 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability"
+      (at 261.62 250.19 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "C844935"
+      (at 261.62 250.19 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Device:C")
     (at 313.69 63.5 0)
@@ -12155,13 +13060,48 @@
         (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/9344b517-ffd3-5899-8171-c594a60a9dc5"
           (reference "C3")
           (unit 1))))
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 313.69 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 313.69 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Capacitor" (at 313.69 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +125 C" (at 313.69 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 313.69 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability" (at 313.69 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "C3018562" (at 313.69 63.5 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 313.69 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 313.69 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Capacitor"
+      (at 313.69 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-55 to +125 C"
+      (at 313.69 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 313.69 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability"
+      (at 313.69 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "C3018562"
+      (at 313.69 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Device:R")
     (at 341.63 205.74 0)
@@ -12299,13 +13239,48 @@
         (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/9344b517-ffd3-5899-8171-c594a60a9dc5"
           (reference "R2")
           (unit 1))))
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 341.63 205.74 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 341.63 205.74 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Resistor" (at 341.63 205.74 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +155 C" (at 341.63 205.74 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 341.63 205.74 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability" (at 341.63 205.74 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "C844937" (at 341.63 205.74 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 341.63 205.74 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 341.63 205.74 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Resistor"
+      (at 341.63 205.74 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-55 to +155 C"
+      (at 341.63 205.74 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 341.63 205.74 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability"
+      (at 341.63 205.74 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "C844937"
+      (at 341.63 205.74 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Controller_Power:3V3_DIG")
     (at 323.85 57.15 0)
@@ -12540,13 +13515,48 @@
         (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/9344b517-ffd3-5899-8171-c594a60a9dc5"
           (reference "C12")
           (unit 1))))
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 242.57 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 242.57 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Capacitor" (at 242.57 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +125 C" (at 242.57 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 242.57 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "No verified JLCPCB ID; source or consign" (at 242.57 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "NOT_LISTED" (at 242.57 107.95 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 242.57 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 242.57 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Capacitor"
+      (at 242.57 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-55 to +125 C"
+      (at 242.57 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 242.57 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "No verified JLCPCB ID; source or consign"
+      (at 242.57 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "NOT_LISTED"
+      (at 242.57 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Device:C")
     (at 353.06 63.5 0)
@@ -12696,13 +13706,48 @@
         (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/9344b517-ffd3-5899-8171-c594a60a9dc5"
           (reference "C7")
           (unit 1))))
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 353.06 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 353.06 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Capacitor" (at 353.06 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +125 C" (at 353.06 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 353.06 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability" (at 353.06 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "C3018562" (at 353.06 63.5 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 353.06 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 353.06 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Capacitor"
+      (at 353.06 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-55 to +125 C"
+      (at 353.06 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 353.06 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability"
+      (at 353.06 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "C3018562"
+      (at 353.06 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Device:C")
     (at 278.13 107.95 0)
@@ -12852,13 +13897,48 @@
         (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/9344b517-ffd3-5899-8171-c594a60a9dc5"
           (reference "C15")
           (unit 1))))
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 278.13 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 278.13 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Capacitor" (at 278.13 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +125 C" (at 278.13 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 278.13 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability" (at 278.13 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "C3018562" (at 278.13 107.95 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 278.13 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 278.13 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Capacitor"
+      (at 278.13 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-55 to +125 C"
+      (at 278.13 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 278.13 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability"
+      (at 278.13 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "C3018562"
+      (at 278.13 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Switch:SW_Push")
     (at 317.5 205.74 0)
@@ -12996,13 +14076,48 @@
         (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/9344b517-ffd3-5899-8171-c594a60a9dc5"
           (reference "SW1")
           (unit 1))))
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 317.5 205.74 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 317.5 205.74 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "PTS636SK25SMTR LFS" (at 317.5 205.74 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-40 to +85 C" (at 317.5 205.74 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 317.5 205.74 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "No verified JLCPCB ID; source or consign" (at 317.5 205.74 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "NOT_LISTED" (at 317.5 205.74 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 317.5 205.74 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 317.5 205.74 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "PTS636SK25SMTR LFS"
+      (at 317.5 205.74 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-40 to +85 C"
+      (at 317.5 205.74 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 317.5 205.74 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "No verified JLCPCB ID; source or consign"
+      (at 317.5 205.74 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "NOT_LISTED"
+      (at 317.5 205.74 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Controller_Power:3V3_DIG")
     (at 353.06 57.15 0)
@@ -13279,13 +14394,48 @@
         (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/9344b517-ffd3-5899-8171-c594a60a9dc5"
           (reference "C18")
           (unit 1))))
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 312.42 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 312.42 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Capacitor" (at 312.42 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +125 C" (at 312.42 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 312.42 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "No verified JLCPCB ID; source or consign" (at 312.42 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "NOT_LISTED" (at 312.42 107.95 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 312.42 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 312.42 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Capacitor"
+      (at 312.42 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-55 to +125 C"
+      (at 312.42 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 312.42 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "No verified JLCPCB ID; source or consign"
+      (at 312.42 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "NOT_LISTED"
+      (at 312.42 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Controller_Power:3V3_DIG")
     (at 242.57 102.87 0)
@@ -13729,13 +14879,48 @@
         (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/9344b517-ffd3-5899-8171-c594a60a9dc5"
           (reference "C11")
           (unit 1))))
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 393.7 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 393.7 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Capacitor" (at 393.7 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +125 C" (at 393.7 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 393.7 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability" (at 393.7 63.5 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "C3018562" (at 393.7 63.5 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 393.7 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 393.7 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Capacitor"
+      (at 393.7 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-55 to +125 C"
+      (at 393.7 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 393.7 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability"
+      (at 393.7 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "C3018562"
+      (at 393.7 63.5 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Controller_Power:3V3_DIG")
     (at 373.38 57.15 0)
@@ -13927,13 +15112,48 @@
         (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/9344b517-ffd3-5899-8171-c594a60a9dc5"
           (reference "C23")
           (unit 1))))
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 365.76 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 365.76 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Capacitor" (at 365.76 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +125 C" (at 365.76 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 365.76 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability" (at 365.76 107.95 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "C2168859" (at 365.76 107.95 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 365.76 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 365.76 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Capacitor"
+      (at 365.76 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-55 to +125 C"
+      (at 365.76 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 365.76 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability"
+      (at 365.76 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "C2168859"
+      (at 365.76 107.95 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Controller_Power:GND")
     (at 288.29 114.3 0)
@@ -14119,12 +15339,42 @@
         (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/9344b517-ffd3-5899-8171-c594a60a9dc5"
           (reference "R5")
           (unit 1))))
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 364.49 151.13 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 364.49 151.13 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +155 C" (at 364.49 151.13 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 364.49 151.13 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability" (at 364.49 151.13 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "C844845" (at 364.49 151.13 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 364.49 151.13 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 364.49 151.13 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-55 to +155 C"
+      (at 364.49 151.13 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 364.49 151.13 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability"
+      (at 364.49 151.13 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "C844845"
+      (at 364.49 151.13 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Controller_Power:3V3_DIG")
     (at 383.54 57.15 0)
@@ -14304,13 +15554,48 @@
         (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/9344b517-ffd3-5899-8171-c594a60a9dc5"
           (reference "R1")
           (unit 1))))
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 276.86 205.74 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 276.86 205.74 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "Resistor" (at 276.86 205.74 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-55 to +155 C" (at 276.86 205.74 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 276.86 205.74 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability" (at 276.86 205.74 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "C844937" (at 276.86 205.74 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 276.86 205.74 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 276.86 205.74 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "Resistor"
+      (at 276.86 205.74 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-55 to +155 C"
+      (at 276.86 205.74 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 276.86 205.74 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability"
+      (at 276.86 205.74 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "C844937"
+      (at 276.86 205.74 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "MCU_ST_STM32H7:STM32H723ZGTx")
     (at 135.89 153.67 0)
@@ -14732,13 +16017,48 @@
         (path "/f90044e7-7c5d-5957-9ff6-c9223a43c712/9344b517-ffd3-5899-8171-c594a60a9dc5"
           (reference "U1")
           (unit 1))))
-  (property "Footprint Status" "Assigned; drawing/pad verification pending" (at 135.89 153.67 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending" (at 135.89 153.67 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Function" "STM32H723ZGT6" (at 135.89 153.67 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Operating Temperature" "-40 to +85 C" (at 135.89 153.67 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending" (at 135.89 153.67 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability" (at 135.89 153.67 0) (effects (font (size 1.27 1.27)) (hide yes)))
-  (property "LCSC" "C730146" (at 135.89 153.67 0) (effects (font (size 1.27 1.27)) (hide yes))))
+    (property "Footprint Status" "Assigned; drawing/pad verification pending"
+      (at 135.89 153.67 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "BOM Status" "PART IDENTIFIED; sourcing/footprint review pending"
+      (at 135.89 153.67 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Function" "STM32H723ZGT6"
+      (at 135.89 153.67 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Operating Temperature" "-40 to +85 C"
+      (at 135.89 153.67 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "Supplier Source" "Legacy schematic record; exact supplier listing verification pending"
+      (at 135.89 153.67 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "JLCPCB Status" "Historical ID; recheck exact part and assembly availability"
+      (at 135.89 153.67 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes)))
+    (property "LCSC" "C730146"
+      (at 135.89 153.67 0)
+      (effects
+        (font
+          (size 1.27 1.27))
+        (hide yes))))
   (symbol
     (lib_id "Controller_Power:3V3_DIG")
     (at 300.99 100.33 0)

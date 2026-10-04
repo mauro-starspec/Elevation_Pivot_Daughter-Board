@@ -11,6 +11,8 @@ from kicad_sexp import read, save
 import pcbnew as p
 
 ROOT=Path(__file__).resolve().parents[1]
+if json.loads((ROOT/'assembly/stack_interface.json').read_text()).get('revision')=='P6':
+    raise SystemExit('P5 builder blocked on P6. Use place_compact_pcbs.py after reviewing any manual placement edits.')
 SNAP=ROOT/'_work/before_placement_20261003'
 OUT=ROOT/'outputs/placement'; OUT.mkdir(parents=True,exist_ok=True)
 PROJECTS={'controller':'controller/Elevation_Controller','elevation':'Elevation_Pivot_Daughter-Board'}

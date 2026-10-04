@@ -1,3 +1,15 @@
+# P6 compact controller
+
+Current revision: 80 x 130 mm, with the SSI and stepper interfaces now on this
+board. Four DE9s, plus Ethernet, USB and SWD. Components use both faces.
+Open `Elevation_Controller.kicad_pro`. Only mate with the P6 carrier.
+See [current handoff](../PROJECT_HANDOFF.md) and [assembly notes](../assembly/README.md).
+
+The following source-integration notes are historical P4/P5 context; the P6
+manifest overrides their board split, connector locations and pinout.
+
+---
+
 # Elevation STM32H723 controller
 
 Open `Elevation_Controller.kicad_pro` in KiCad 9. This is the upper board of the
