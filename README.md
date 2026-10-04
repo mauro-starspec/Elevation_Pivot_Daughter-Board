@@ -1,51 +1,42 @@
-# Elevation Pivot Daughter Board
+# Elevation / Pivot - custom controller stack
 
-KiCad 9 daughter board for the Starspec elevation/pivot controller.
+P4.1 electrical design / P5 placement, 2026-10-03: two KiCad 9 projects in one
+repository. Both boards are now **120 x 200 mm**, with all 503 footprints placed
+and no tracks, vias or copper zones. The controller faces upward; carrier
+components face outward below the stack to accommodate the tall converters.
+Schematics and native KiCad BOM fields are unchanged. Routing is not started.
 
-## Current revision: P3
+| Board | Open in KiCad | Role |
+|---|---|---|
+| Elevation carrier | [Elevation_Pivot_Daughter-Board.kicad_pro](Elevation_Pivot_Daughter-Board.kicad_pro) | Field connectors, power, brakes, drives, SSI, encoders, CAN, Modbus RTU, ADC and isolation |
+| Controller | [controller/Elevation_Controller.kicad_pro](controller/Elevation_Controller.kicad_pro) | STM32H723, Ethernet, USB-C, SWD, watchdog and shared 3.3 V logic supply |
 
-The schematic adds two isolated motor encoder interfaces while preserving both
-SSI channels, two onboard 1206 thermistors, and all existing
-controller functions. Port/Star names now apply
-throughout the schematic, including brake, stepper, SSI, preset, and supply nets.
-New signals use hierarchical labels; supplies use conventional power symbols.
+The 30-contact J30 and 20-contact J31 connect matching pin numbers. Headers mount
+on the controller underside; sockets mount on the carrier top. Four matching
+M3 supports set a nominal 12 mm board-face gap. Their positions are locked.
 
-One six-channel ISO7760F isolates both motor encoders' A/B/Z signals. Both
-receivers share U105's 3.3 V supply from PS10; loss of PS10 disables both
-feedback paths. The two 5 V encoder converters remain separate.
+- [PROJECT_HANDOFF.md](PROJECT_HANDOFF.md): current scope and remaining work.
+- [docs/CONTROLLER_STACK_P4.md](docs/CONTROLLER_STACK_P4.md): electrical integration.
+- [docs/PIVOT_MODBUS.md](docs/PIVOT_MODBUS.md): isolated pivot Modbus RTU and DE9 wiring.
+- [assembly/stack_pinout.csv](assembly/stack_pinout.csv): all contacts and MCU assignments.
+- [assembly/README.md](assembly/README.md): assembly dimensions and connector selection.
+- Local schematic export: `outputs/P4_Stack_Schematic_Review.pdf`; older assembly covers are superseded by the P5 assembly notes until re-exported.
 
-Device power switching belongs to external PSRB. Other systems already measure
-battery voltage and device current. The P1 STR8 power/current and voltage
-additions have been removed, along with the new one-shot encoder fuses and
-external thermistor inputs. Existing brake current sensing is retained.
+Run `python tools/validate_stack.py`. It checks ERC, preserved circuitry, MCU
+assignments, PCB/netlist parity, mating pad registration and support clearances.
+The former `validate_pivot_schematic.py` entry point now forwards to this checker.
 
-TH1 measures board temperature and TH2 the power area. Their passive dividers
-use the existing U21 ADC's spare AIN2/3 inputs and U24 isolation. No extra sensor
-ICs, regulator or I2C isolator are required. Temperature readings depend on the
-brake supply. Firmware channel scheduling and conversion remain future work.
+Both SSI channels, both DE9 motor encoder interfaces and both passive 1206
+thermistors remain. Field sheets preserve the user's drawing edits. No battery
+voltage/device current monitoring or new one-shot fuse was added. PSRB retains
+system power control. Existing brake-current feedback remains.
 
-The PCB is unchanged and does not match the redesigned schematic. This is a
-review revision, not a fabrication release. No firmware was changed.
+P3 and the previous routed carrier are recoverable from Git commit `0c9ba1f`.
+Controller source: [mauro-starspec/stm32h723-controller](https://github.com/mauro-starspec/stm32h723-controller)
+at `2328ccb`. That separate source checkout is untouched. Firmware is unchanged.
 
-## Open and review
-
-Open [Elevation_Pivot_Daughter-Board.kicad_pro](Elevation_Pivot_Daughter-Board.kicad_pro)
-in KiCad 9. Symbols and footprints are stored locally in the repository.
-
-- [PROJECT_HANDOFF.md](PROJECT_HANDOFF.md): scope and next-session context.
-- [SCHEMATIC_REDESIGN_P3.md](docs/SCHEMATIC_REDESIGN_P3.md): foundation review and current circuits.
-- [REDESIGN_PLAN.md](docs/REDESIGN_PLAN.md): remaining review sequence.
-- outputs/Pivot_Schematic_Review.pdf: local review export, ignored by Git.
-
-Run `python tools/validate_pivot_schematic.py` to check connectivity, channel
-renaming, original component values/footprints, encoder interfaces, ERC, and
-the unchanged PCB hash. The two inherited Nucleo ERC exclusions remain.
-
-Actual NEMA34 motor/encoder identity, supply demand, maximum frequency, and the
-proposed custom DE9 harness must be verified. J20/J21 now use DE9 sockets;
-plain-language captions identify the main components. The earlier HT23/ZAA reference
-is unconfirmed for this hardware.
-
-The original elevation project remains the firmware and bench-test reference.
-The unchanged baseline PCB retains three known courtyard overlaps: H3/CN9,
-H4/CN10, and H2/CN7.
+Placement previews: `outputs/placement/controller_3d.png` and
+`outputs/placement/elevation_3d.png`. Placement evidence:
+[P5 audit](docs/validation/p5_placement_results.json). Carrier DRC has no
+violations; controller inherited footprint/library and fine-pitch/drill findings
+remain explicit. This is a placement review, not a fabrication or flight release.

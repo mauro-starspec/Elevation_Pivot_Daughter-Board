@@ -1,0 +1,22 @@
+{
+  "model": "TI_DCQ0006A_TPS737_envelope.step",
+  "source": "https://www.ti.com/lit/ds/symlink/tps737.pdf",
+  "drawing": "DCQ0006A 4214845/C 11/2021",
+  "provenance": "Project-authored maximum package envelope; not TI CAD; gull-wing bends simplified",
+  "bounds_mm": [
+    -3.63,
+    -3.3,
+    0.0,
+    3.63,
+    3.3,
+    1.8
+  ],
+  "pin_map": {
+    "1": "IN",
+    "2": "OUT",
+    "3": "GND",
+    "4": "NR",
+    "5": "EN",
+    "6": "GND tab"
+  }
+}

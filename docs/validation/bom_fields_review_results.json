@@ -1,0 +1,44 @@
+{
+  "schematics_checked": 21,
+  "boards": {
+    "Carrier": {
+      "references": 337,
+      "assembly_counts": {
+        "FIT": 303,
+        "PCB feature - no purchased component": 29,
+        "DNP - not purchased": 5
+      },
+      "fitted_with_MPN": 303,
+      "fitted_with_C_code": 285,
+      "temperature_unverified": [
+        "R17",
+        "D9",
+        "Q16",
+        "D6",
+        "D12"
+      ],
+      "preset": "Project BOM"
+    },
+    "Controller": {
+      "references": 166,
+      "assembly_counts": {
+        "FIT": 134,
+        "PCB feature - no purchased component": 25,
+        "DNP - not purchased": 7
+      },
+      "fitted_with_MPN": 134,
+      "fitted_with_C_code": 105,
+      "temperature_unverified": [],
+      "preset": "Project BOM"
+    }
+  },
+  "pcb_geometry_scope": "P5 placement authorized; use validate_stack and validate_placement for PCB checks",
+  "checks": [
+    "All drawing/electrical structure preserved",
+    "PCB preservation check follows active mechanical revision",
+    "Native field aliases agree",
+    "PCB features excluded from purchasing",
+    "DNP flags retained",
+    "Native table presets configured"
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "captured": "2026-10-03 before BOM field migration",
+  "normalization": "sexpdata.dumps(without_metadata(document)): removes instance purchasing properties and in_bom only; retains Reference, Value, Footprint and all drawing/electrical structure",
+  "schematic_sha256": {
+    "Elevation_Pivot_Daughter-Board.kicad_sch": "12eb2d6bcc0784ea163058ce86ee2e4955531ba0142ff572eeabf84c8ed59529",
+    "ADS1115.kicad_sch": "25ccd230004e8c225ad18c8e699e2bb4edc805e5b99a8aff73b33f6f6d8ccabb",
+    "Pivot_Encoder_Port.kicad_sch": "06633b476a18197ce7beac9551d2f3578ed9184d8e0f37daa79d08e990bf9dd8",
+    "Stepper.kicad_sch": "d7d8ce522c46374c39a90ac2c7aefadc1d9a466931b0a9fe25c79a01d38c2ca7",
+    "LTC4364.kicad_sch": "e0f42ab853e2f136ca544c6642a9455d293eebc5a495e0852d34d6dbd52c27c5",
+    "STM32.kicad_sch": "9d5031c31513280dfab946f16c9537056db8a0c68b0496b423d3d99b7c2ee83a",
+    "ServoMotor.kicad_sch": "fb694bc22f3ee139ae593cb06ff1b98e4b4d5daa7ef7081d613a399f069e0082",
+    "Brakes.kicad_sch": "4d2726e0da63c24385bb58689ae4ba5565d99380cf4654db90a6f42969ff5c11",
+    "DC_DC_Step_Down.kicad_sch": "11938b9d58bc79a83317b22eb02f6831e4ec5949dba28ac14bf4e6892872c3d7",
+    "Pivot_Encoder_Star.kicad_sch": "ae9fb7bf20b07d0a3701aa6c04bef5015fa19616155874eee1a5e23a5a2da580",
+    "SSI_Encoder.kicad_sch": "6ec8bdc47435b1019a9571fa1d5d8f306f235b5b39c9b44da310f7f139a5df6b",
+    "Pivot_Modbus.kicad_sch": "05256fd6594ac82b1b5f0fc7596372e0098d071e5f5ea69c513331294c9add2e",
+    "controller/Elevation_Controller.kicad_sch": "bfb3831bcb8db599b00d5519febed33497d9ce9457fefeb4156a7227c6a032bc",
+    "controller/06_debug.kicad_sch": "76d75f06fdb7fe491e7bb12a67d99238ca16461aab39f6422c66c1144b153ab4",
+    "controller/07_stack_interface.kicad_sch": "b37aeeed3b3afe44bf5df9cfac6e5dc77aa1ac3b9989a517ab8587aa7822f117",
+    "controller/01_power_input_5v.kicad_sch": "c7c36844f62dab6278cf048a3a3f26734144d36b4e9e05bed275e4c8fdb3f331",
+    "controller/03_mcu_core.kicad_sch": "6bb439aa562d8c8129418fa4696a16a43d9a11793ff44a31a65dee5c8c731275",
+    "controller/05_usb.kicad_sch": "6071e66a77811327d05afb8d4bc1ad49ddcfc45219b3caeaccf26db27f800cff",
+    "controller/04_ethernet.kicad_sch": "6b1d3b338ff20cb79e3359a9177307374c78fef2169ede671c8a1b8fb03696a6",
+    "controller/09_board_health.kicad_sch": "b26f045138c52dd540b67171c872b49eb3da3f420a744995388ecc89e0508157",
+    "controller/02_power_secondary.kicad_sch": "765d0114f59164c4dfc45b1eba63dba0738092b1e23fd680ba4d8d640db0a435"
+  },
+  "pcb_sha256": {
+    "Elevation_Pivot_Daughter-Board.kicad_pcb": "bb6d88edefe62e426dc14f3d9447e8af1a667c9bf27a3c581f64df062af9e57d",
+    "controller/Elevation_Controller.kicad_pcb": "87ed9214ef4bdacc7d39d82c7c435f4c76d216abf8a795d6afdb5817dccd3c87"
+  }
+}

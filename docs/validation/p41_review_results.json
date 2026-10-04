@@ -1,0 +1,66 @@
+{
+  "revision": "P4.1",
+  "erc": {
+    "controller": {
+      "violations": 0,
+      "exclusions": 0
+    },
+    "elevation": {
+      "violations": 0,
+      "exclusions": 0
+    }
+  },
+  "checks": [
+    "All 144 MCU pins accounted for",
+    "Field domains remain separate",
+    "Carrier component values and footprints preserved",
+    "Controller internal MCU functions preserved",
+    "No unused analog/digital expansion or current-monitor ICs"
+  ],
+  "preserved_carrier_net_groups": 191,
+  "unchanged_field_sheets": [
+    "ADS1115.kicad_sch",
+    "Brakes.kicad_sch",
+    "DC_DC_Step_Down.kicad_sch",
+    "LTC4364.kicad_sch",
+    "Pivot_Encoder_Port.kicad_sch",
+    "Pivot_Encoder_Star.kicad_sch",
+    "SSI_Encoder.kicad_sch",
+    "ServoMotor.kicad_sch",
+    "Stepper.kicad_sch"
+  ],
+  "matched_contacts": 50,
+  "application_gpio": 32,
+  "pre_modbus_net_groups_preserved": {
+    "controller": 196,
+    "elevation": 192
+  },
+  "modbus": {
+    "uart": "USART2 / AF7",
+    "tx": "PD5 / pad 119",
+    "rx": "PD6 / pad 122",
+    "de": "PD4 / pad 118",
+    "transceiver": "ISO1410DWR",
+    "connector": "J22: 1=Common, 5=D1(+), 9=D0(-)",
+    "new_components": 15,
+    "remaining_stack_ground_contacts": 13
+  },
+  "preserved_internal_mcu_connections": 27,
+  "connector_insertion_mm": 5.02,
+  "pcb": {
+    "controller": {
+      "footprints": 166,
+      "checked_pad_nets": 622,
+      "unrouted": true
+    },
+    "elevation": {
+      "footprints": 337,
+      "checked_pad_nets": 1036,
+      "unrouted": true,
+      "tall_converters_clear_controller": true
+    },
+    "mating_contacts": 50,
+    "matched_clear_supports": 4,
+    "limits": "Unrouted drafts; staged carrier parts, final layout and component-height clearance pending."
+  }
+}

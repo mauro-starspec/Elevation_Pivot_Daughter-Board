@@ -1,0 +1,54 @@
+{
+  "mechanical_revision": "P5 placement only",
+  "board_dimensions_mm": [
+    120,
+    200
+  ],
+  "boards": {
+    "controller": {
+      "footprints": 166,
+      "tracks_and_vias": 0,
+      "copper_zones": 0,
+      "footprint_envelope_overlaps": 0,
+      "support_clearance_mm": 8,
+      "drc_findings": {
+        "clearance": 4,
+        "drill_out_of_range": 9,
+        "lib_footprint_mismatch": 117
+      },
+      "unconnected_items": 401,
+      "all_pads_within_outline": true,
+      "original_parts_pad_nets_and_DNP_preserved": true
+    },
+    "elevation": {
+      "footprints": 337,
+      "tracks_and_vias": 0,
+      "copper_zones": 0,
+      "footprint_envelope_overlaps": 0,
+      "support_clearance_mm": 8,
+      "drc_findings": {},
+      "unconnected_items": 499,
+      "all_pads_within_outline": true,
+      "original_parts_pad_nets_and_DNP_preserved": true
+    }
+  },
+  "critical_pin_to_component_distances_mm": {
+    "U202.2 to C212": 2.592,
+    "U202.7 to C214": 3.214,
+    "U202.8 to C214": 3.059,
+    "U1.71 to C20": 2.357,
+    "U1.106 to C21": 2.44,
+    "U401.7 to R407": 3.645,
+    "U401.8 to R406": 4.657,
+    "U401.11 to R408": 3.819,
+    "U401.14 to R409": 3.16
+  },
+  "buck_capacitor_pin_order_for_direct_connections": true,
+  "schematic_files_byte_preserved": 21,
+  "stack_contract": "50 mating pads and four support pairs independently checked by validate_stack.py",
+  "limits": [
+    "Unrouted: unconnected items are intentional at this stage.",
+    "Controller retains 117 library mismatches and inherited U101 clearance / U401 thermal-hole rule findings; no exclusions added.",
+    "Exact footprint release, final isolation/routing, impedance, thermal/vacuum design and cable/enclosure fit remain open."
+  ]
+}

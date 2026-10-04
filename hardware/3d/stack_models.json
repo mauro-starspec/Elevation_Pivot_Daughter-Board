@@ -1,0 +1,14 @@
+{
+  "provenance": "Project-authored envelopes from Samtec TSW/SSW drawings; no contact-spring or component-clearance certification",
+  "nominal_insertion_mm": 5.02,
+  "socket_insertion_range_mm": [
+    3.68,
+    6.35
+  ],
+  "pcb_face_gap_mm": 12.0,
+  "pcb_thickness_mm": 1.6,
+  "tail_projection_beyond_1_6mm_pcb_mm": {
+    "header": 0.94,
+    "socket": 0.91
+  }
+}

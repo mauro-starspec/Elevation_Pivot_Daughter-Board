@@ -1,0 +1,20 @@
+(sym_lib_table
+  (version 7)
+  (lib
+    (name "ProtoFlow_Custom")
+    (type "KiCad")
+    (uri "${KIPRJMOD}/ProtoFlow_Custom.kicad_sym")
+    (options "")
+    (descr "ProtoFlow project-specific verified symbols"))
+  (lib
+    (name "Stack")
+    (type "KiCad")
+    (uri "${KIPRJMOD}/../Project_Symbols/Stack.kicad_sym")
+    (options "")
+    (descr "Matched elevation stack connectors"))
+  (lib
+    (name "Controller_Power")
+    (type "KiCad")
+    (uri "${KIPRJMOD}/Controller_Power.kicad_sym")
+    (options "")
+    (descr "Conventional controller supply symbols")))

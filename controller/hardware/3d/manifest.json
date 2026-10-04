@@ -1,0 +1,78 @@
+[
+  {
+    "model": "Samtec_TSW-125-07-S-D.step",
+    "source": "Samtec marketing drawings TSW Rev DS / SSW Rev CL",
+    "provenance": "Project-authored simplified envelope model; not manufacturer CAD",
+    "body_mm": [
+      5.08,
+      63.5,
+      2.54
+    ],
+    "pcb_standoff_mm": 0,
+    "step_bounds_mm": [
+      -1.27,
+      -62.23,
+      -2.54,
+      3.81,
+      1.2700000000000031,
+      8.380000000000003
+    ]
+  },
+  {
+    "model": "Samtec_SSW-125-01-S-D.step",
+    "source": "Samtec marketing drawings TSW Rev DS / SSW Rev CL",
+    "provenance": "Project-authored simplified envelope model; not manufacturer CAD",
+    "body_mm": [
+      4.95,
+      64.01,
+      8.51
+    ],
+    "pcb_standoff_mm": 0.13,
+    "step_bounds_mm": [
+      -1.205,
+      -62.485,
+      -2.51,
+      3.745,
+      1.5250000000000057,
+      8.64
+    ]
+  },
+  {
+    "model": "Samtec_TSW-130-07-S-D.step",
+    "source": "Samtec marketing drawings TSW Rev DS / SSW Rev CL",
+    "provenance": "Project-authored simplified envelope model; not manufacturer CAD",
+    "body_mm": [
+      5.08,
+      76.2,
+      2.54
+    ],
+    "pcb_standoff_mm": 0,
+    "step_bounds_mm": [
+      -1.27,
+      -74.93,
+      -2.54,
+      3.81,
+      1.27,
+      8.380000000000003
+    ]
+  },
+  {
+    "model": "Samtec_SSW-130-01-S-D.step",
+    "source": "Samtec marketing drawings TSW Rev DS / SSW Rev CL",
+    "provenance": "Project-authored simplified envelope model; not manufacturer CAD",
+    "body_mm": [
+      4.95,
+      76.71000000000001,
+      8.51
+    ],
+    "pcb_standoff_mm": 0.13,
+    "step_bounds_mm": [
+      -1.205,
+      -75.185,
+      -2.51,
+      3.745,
+      1.5250000000000057,
+      8.64
+    ]
+  }
+]

@@ -1,3 +1,5 @@
+> Historical P3 reference. [P4 controller integration](CONTROLLER_STACK_P4.md) supersedes Nucleo, interface-header and unchanged-PCB statements below.
+
 # P3 - passive onboard temperature and drawing cleanup
 
 2026-10-03. Schematic only. Supersedes P2 temperature circuitry and header-label

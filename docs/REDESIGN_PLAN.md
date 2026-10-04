@@ -1,3 +1,5 @@
+> Historical P3 reference. [P4 controller integration](CONTROLLER_STACK_P4.md) supersedes Nucleo, interface-header and unchanged-PCB statements below.
+
 # Pivot daughter-board review plan
 
 Current scope: P3, 2026-10-03. Two motor encoders supplement the existing SSI

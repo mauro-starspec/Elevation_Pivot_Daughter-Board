@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.0,
-          "height": 1.45,
-          "width": 1.0
+          "drill": 0.8,
+          "height": 1.27,
+          "width": 2.54
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -48,16 +48,10 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.3
+          "min_clearance": 0.5
         }
       },
-      "diff_pair_dimensions": [
-        {
-          "gap": 0.0,
-          "via_gap": 0.0,
-          "width": 0.0
-        }
-      ],
+      "diff_pair_dimensions": [],
       "drc_exclusions": [],
       "meta": {
         "version": 2
@@ -123,7 +117,7 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.15,
+        "min_clearance": 0.0,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
@@ -136,10 +130,10 @@
         "min_text_height": 0.8,
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
-        "min_track_width": 0.25,
+        "min_track_width": 0.0,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
-        "solder_mask_to_copper_clearance": 0.005,
+        "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
       "teardrop_options": [
@@ -186,17 +180,7 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [
-        0.0,
-        0.3,
-        0.35,
-        0.5,
-        0.8,
-        1.0,
-        1.5,
-        2.0,
-        3.0
-      ],
+      "track_widths": [],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -223,32 +207,7 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [
-        {
-          "diameter": 0.0,
-          "drill": 0.0
-        },
-        {
-          "diameter": 0.7,
-          "drill": 0.35
-        },
-        {
-          "diameter": 0.8,
-          "drill": 0.4
-        },
-        {
-          "diameter": 1.0,
-          "drill": 0.5
-        },
-        {
-          "diameter": 1.2,
-          "drill": 0.6
-        },
-        {
-          "diameter": 1.5,
-          "drill": 0.8
-        }
-      ],
+      "via_dimensions": [],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -267,16 +226,7 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [
-      [
-        "missing_power_pin|469900|850900|1169ba5a-48dc-4b92-b3e2-ed4edbfd1fde|00000000-0000-0000-0000-000000000000|/0771dda4-723b-4b91-a7fd-3d93384c8b3d/3f9c8f12-0f4f-4aa4-9cc2-9b6623511d78|/0771dda4-723b-4b91-a7fd-3d93384c8b3d/3f9c8f12-0f4f-4aa4-9cc2-9b6623511d78|",
-        ""
-      ],
-      [
-        "missing_unit|469900|850900|1169ba5a-48dc-4b92-b3e2-ed4edbfd1fde|00000000-0000-0000-0000-000000000000|/0771dda4-723b-4b91-a7fd-3d93384c8b3d/3f9c8f12-0f4f-4aa4-9cc2-9b6623511d78|/0771dda4-723b-4b91-a7fd-3d93384c8b3d/3f9c8f12-0f4f-4aa4-9cc2-9b6623511d78|",
-        ""
-      ]
-    ],
+    "erc_exclusions": [],
     "meta": {
       "version": 0
     },
@@ -511,7 +461,7 @@
         "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.35,
+        "diff_pair_width": 0.2,
         "line_style": 0,
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
@@ -519,221 +469,18 @@
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.35,
-        "via_diameter": 0.8,
-        "via_drill": 0.4,
-        "wire_width": 6
-      },
-      {
-        "bus_width": 12,
-        "clearance": 0.2,
-        "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.8,
-        "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "BRAKE_POWER",
-        "pcb_color": "rgb(222, 109, 0)",
-        "priority": 1,
-        "schematic_color": "rgb(222, 109, 0)",
-        "track_width": 0.8,
-        "via_diameter": 1.0,
-        "via_drill": 0.5,
-        "wire_width": 6
-      },
-      {
-        "bus_width": 12,
-        "clearance": 0.2,
-        "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.35,
-        "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "DIFFERENTIAL",
-        "pcb_color": "rgb(38, 123, 204)",
-        "priority": 3,
-        "schematic_color": "rgb(38, 123, 204)",
-        "track_width": 0.35,
-        "via_diameter": 0.8,
-        "via_drill": 0.4,
-        "wire_width": 6
-      },
-      {
-        "bus_width": 12,
-        "clearance": 0.2,
-        "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.5,
-        "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "GROUND",
-        "pcb_color": "rgb(63, 63, 63)",
-        "priority": 5,
-        "schematic_color": "rgb(63, 63, 63)",
-        "track_width": 0.5,
-        "via_diameter": 1.0,
-        "via_drill": 0.5,
-        "wire_width": 6
-      },
-      {
-        "bus_width": 12,
-        "clearance": 0.5,
-        "diff_pair_gap": 0.5,
-        "diff_pair_via_gap": 0.5,
-        "diff_pair_width": 0.8,
-        "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "HV_BATTERY",
-        "pcb_color": "rgb(194, 51, 33)",
-        "priority": 0,
-        "schematic_color": "rgb(194, 51, 33)",
-        "track_width": 0.8,
-        "via_diameter": 1.2,
-        "via_drill": 0.6,
-        "wire_width": 6
-      },
-      {
-        "bus_width": 12,
-        "clearance": 0.2,
-        "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.6,
-        "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "POWER",
-        "pcb_color": "rgb(237, 184, 0)",
-        "priority": 2,
-        "schematic_color": "rgb(237, 184, 0)",
-        "track_width": 0.6,
-        "via_diameter": 1.0,
-        "via_drill": 0.5,
-        "wire_width": 6
-      },
-      {
-        "bus_width": 12,
-        "clearance": 0.2,
-        "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.3,
-        "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "SENSITIVE",
-        "pcb_color": "rgb(142, 68, 173)",
-        "priority": 4,
-        "schematic_color": "rgb(142, 68, 173)",
-        "track_width": 0.3,
-        "via_diameter": 0.7,
-        "via_drill": 0.35,
+        "track_width": 0.2,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
         "wire_width": 6
       }
     ],
     "meta": {
       "version": 4
     },
-    "net_colors": {
-      "-BATT": "rgb(255, 0, 0)",
-      "GND_BRAKE": "rgb(0, 0, 255)",
-      "GND_CAN": "rgb(255, 255, 0)",
-      "GND_FLOAT": "rgb(0, 255, 255)",
-      "GND_STM32": "rgb(255, 0, 255)"
-    },
+    "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": [
-      {
-        "netclass": "HV_BATTERY",
-        "pattern": "+BATT"
-      },
-      {
-        "netclass": "HV_BATTERY",
-        "pattern": "+BATT_Prot"
-      },
-      {
-        "netclass": "HV_BATTERY",
-        "pattern": "Net-(D7-A)"
-      },
-      {
-        "netclass": "HV_BATTERY",
-        "pattern": "Net-(Q15-D)"
-      },
-      {
-        "netclass": "BRAKE_POWER",
-        "pattern": "+24V_BRAKE"
-      },
-      {
-        "netclass": "BRAKE_POWER",
-        "pattern": "*BRAKE_COIL"
-      },
-      {
-        "netclass": "BRAKE_POWER",
-        "pattern": "Net-(IC?-VS_1)"
-      },
-      {
-        "netclass": "POWER",
-        "pattern": "+5V*"
-      },
-      {
-        "netclass": "POWER",
-        "pattern": "+3V3*"
-      },
-      {
-        "netclass": "POWER",
-        "pattern": "Net-(PS?-VOUT)"
-      },
-      {
-        "netclass": "POWER",
-        "pattern": "Net-(PS4-+VIN)"
-      },
-      {
-        "netclass": "POWER",
-        "pattern": "Net-(PS4--VIN)"
-      },
-      {
-        "netclass": "DIFFERENTIAL",
-        "pattern": "*ENC_CLK_P"
-      },
-      {
-        "netclass": "DIFFERENTIAL",
-        "pattern": "*ENC_CLK_N"
-      },
-      {
-        "netclass": "DIFFERENTIAL",
-        "pattern": "*ENC_DATA_P"
-      },
-      {
-        "netclass": "DIFFERENTIAL",
-        "pattern": "*ENC_DATA_N"
-      },
-      {
-        "netclass": "DIFFERENTIAL",
-        "pattern": "Net-(U15-CANH)"
-      },
-      {
-        "netclass": "DIFFERENTIAL",
-        "pattern": "Net-(U15-CANL)"
-      },
-      {
-        "netclass": "SENSITIVE",
-        "pattern": "*/ADS1115/*CURR"
-      },
-      {
-        "netclass": "SENSITIVE",
-        "pattern": "*/ADS1115/STM32_SC?"
-      },
-      {
-        "netclass": "GROUND",
-        "pattern": "GND*"
-      },
-      {
-        "netclass": "GROUND",
-        "pattern": "-BATT"
-      }
-    ]
+    "netclass_patterns": []
   },
   "pcbnew": {
     "last_paths": {
@@ -743,7 +490,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "Elevation_Pivot_Daughter-Board.step",
+      "step": "",
       "svg": "",
       "vrml": ""
     },
@@ -751,7 +498,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
-    "bom_export_filename": "production/${PROJECTNAME}_BOM.csv",
+    "bom_export_filename": "${PROJECTNAME}.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -764,835 +511,435 @@
     },
     "bom_presets": [
       {
-        "exclude_dnp": true,
-        "fields_ordered": [
-          {
-            "group_by": false,
-            "label": "Reference",
-            "name": "Reference",
-            "show": true
-          },
-          {
-            "group_by": false,
-            "label": "Qty",
-            "name": "${QUANTITY}",
-            "show": true
-          },
-          {
-            "group_by": true,
-            "label": "Value",
-            "name": "Value",
-            "show": true
-          },
-          {
-            "group_by": true,
-            "label": "Footprint",
-            "name": "Footprint",
-            "show": true
-          },
-          {
-            "group_by": true,
-            "label": "Manufacturer",
-            "name": "Manufacturer",
-            "show": true
-          },
-          {
-            "group_by": true,
-            "label": "MPN",
-            "name": "MANUFACTURER_PART_NUMBER",
-            "show": true
-          },
-          {
-            "group_by": true,
-            "label": "LCSC",
-            "name": "LCSC",
-            "show": true
-          },
-          {
-            "group_by": false,
-            "label": "Operating Temperature",
-            "name": "Operating Temperature",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "BOM Notes",
-            "name": "BOM Notes",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "DNP",
-            "name": "${DNP}",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "Exclude from BOM",
-            "name": "${EXCLUDE_FROM_BOM}",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "Datasheet",
-            "name": "Datasheet",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "Digikey",
-            "name": "Digikey",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "Height",
-            "name": "Height",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "#",
-            "name": "${ITEM_NUMBER}",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "MANUFACTURER",
-            "name": "MANUFACTURER",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "Description_1",
-            "name": "Description_1",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "MAXIMUM_PACKAGE_HEIGHT",
-            "name": "MAXIMUM_PACKAGE_HEIGHT",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "MF",
-            "name": "MF",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "MP",
-            "name": "MP",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "Description",
-            "name": "Description",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "Manufacturer_Name",
-            "name": "Manufacturer_Name",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "Manufacturer_Part_Number",
-            "name": "Manufacturer_Part_Number",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "Mouser Part Number",
-            "name": "Mouser Part Number",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "Mouser Price/Stock",
-            "name": "Mouser Price/Stock",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "Availability",
-            "name": "Availability",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "PARTREV",
-            "name": "PARTREV",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "Package",
-            "name": "Package",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "Price",
-            "name": "Price",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "Protoflow_Source",
-            "name": "Protoflow_Source",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "Purchase-URL",
-            "name": "Purchase-URL",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "SNAPEDA_PN",
-            "name": "SNAPEDA_PN",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "STANDARD",
-            "name": "STANDARD",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "Sim.Device",
-            "name": "Sim.Device",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "Sim.Pins",
-            "name": "Sim.Pins",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "SnapEDA_Link",
-            "name": "SnapEDA_Link",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "CREATOR",
-            "name": "CREATOR",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "VENDOR",
-            "name": "VENDOR",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "VERIFIER",
-            "name": "VERIFIER",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "Check_prices",
-            "name": "Check_prices",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "DUPLICATE",
-            "name": "DUPLICATE",
-            "show": false
-          }
-        ],
-        "filter_string": "",
-        "group_symbols": true,
-        "include_excluded_from_bom": false,
-        "name": "Assembly BOM",
-        "sort_asc": true,
-        "sort_field": "Reference"
-      },
-      {
-        "exclude_dnp": true,
-        "fields_ordered": [
-          {
-            "group_by": false,
-            "label": "Designator",
-            "name": "Reference",
-            "show": true
-          },
-          {
-            "group_by": false,
-            "label": "Qty",
-            "name": "${QUANTITY}",
-            "show": true
-          },
-          {
-            "group_by": true,
-            "label": "Comment",
-            "name": "Value",
-            "show": true
-          },
-          {
-            "group_by": true,
-            "label": "Footprint",
-            "name": "Footprint",
-            "show": true
-          },
-          {
-            "group_by": true,
-            "label": "Manufacturer",
-            "name": "Manufacturer",
-            "show": true
-          },
-          {
-            "group_by": true,
-            "label": "MPN",
-            "name": "MANUFACTURER_PART_NUMBER",
-            "show": true
-          },
-          {
-            "group_by": true,
-            "label": "LCSC Part #",
-            "name": "LCSC",
-            "show": true
-          }
-        ],
-        "filter_string": "",
-        "group_symbols": true,
-        "include_excluded_from_bom": false,
-        "name": "JLCPCB BOM",
-        "sort_asc": true,
-        "sort_field": "Reference"
-      },
-      {
+        "name": "Project BOM",
         "exclude_dnp": false,
+        "include_excluded_from_bom": false,
+        "group_symbols": true,
+        "filter_string": "",
+        "sort_asc": true,
+        "sort_field": "Reference",
         "fields_ordered": [
           {
-            "group_by": false,
-            "label": "Reference",
             "name": "Reference",
-            "show": true
+            "label": "Reference",
+            "show": true,
+            "group_by": false
           },
           {
-            "group_by": false,
-            "label": "Qty",
             "name": "${QUANTITY}",
-            "show": true
+            "label": "Qty",
+            "show": true,
+            "group_by": false
           },
           {
-            "group_by": true,
-            "label": "Value",
             "name": "Value",
-            "show": true
+            "label": "Value",
+            "show": true,
+            "group_by": true
           },
           {
-            "group_by": true,
-            "label": "Footprint",
-            "name": "Footprint",
-            "show": true
+            "name": "Function",
+            "label": "Function",
+            "show": true,
+            "group_by": true
           },
           {
-            "group_by": true,
-            "label": "Manufacturer",
             "name": "Manufacturer",
-            "show": true
+            "label": "Manufacturer",
+            "show": true,
+            "group_by": true
           },
           {
-            "group_by": true,
+            "name": "MPN",
             "label": "MPN",
-            "name": "MANUFACTURER_PART_NUMBER",
-            "show": true
+            "show": true,
+            "group_by": true
           },
           {
-            "group_by": true,
-            "label": "LCSC",
             "name": "LCSC",
-            "show": true
+            "label": "LCSC",
+            "show": true,
+            "group_by": true
           },
           {
-            "group_by": false,
-            "label": "Operating Temperature",
             "name": "Operating Temperature",
-            "show": false
+            "label": "Operating Temperature",
+            "show": true,
+            "group_by": true
           },
           {
-            "group_by": false,
-            "label": "BOM Notes",
-            "name": "BOM Notes",
-            "show": true
+            "name": "Assembly",
+            "label": "Assembly",
+            "show": true,
+            "group_by": true
           },
           {
-            "group_by": true,
-            "label": "DNP",
-            "name": "${DNP}",
-            "show": true
+            "name": "BOM Status",
+            "label": "BOM Status",
+            "show": true,
+            "group_by": true
           },
           {
-            "group_by": true,
-            "label": "Exclude from BOM",
-            "name": "${EXCLUDE_FROM_BOM}",
-            "show": true
+            "name": "Footprint",
+            "label": "Footprint",
+            "show": true,
+            "group_by": true
           },
           {
-            "group_by": false,
-            "label": "Datasheet",
             "name": "Datasheet",
-            "show": false
+            "label": "Datasheet",
+            "show": true,
+            "group_by": false
           },
           {
-            "group_by": false,
-            "label": "Digikey",
-            "name": "Digikey",
-            "show": false
+            "name": "BOM Review",
+            "label": "BOM Review",
+            "show": true,
+            "group_by": true
           },
           {
-            "group_by": false,
-            "label": "Height",
+            "name": "Temp Min (degC)",
+            "label": "Temp Min (degC)",
+            "show": false,
+            "group_by": false
+          },
+          {
+            "name": "Temp Max (degC)",
+            "label": "Temp Max (degC)",
+            "show": false,
+            "group_by": false
+          },
+          {
+            "name": "Temp Basis",
+            "label": "Temp Basis",
+            "show": false,
+            "group_by": false
+          },
+          {
+            "name": "Temp Source",
+            "label": "Temp Source",
+            "show": false,
+            "group_by": false
+          },
+          {
+            "name": "Temp Checked",
+            "label": "Temp Checked",
+            "show": false,
+            "group_by": false
+          },
+          {
+            "name": "Temp Status",
+            "label": "Temp Status",
+            "show": false,
+            "group_by": false
+          },
+          {
+            "name": "JLCPCB Library",
+            "label": "JLCPCB Library",
+            "show": false,
+            "group_by": false
+          },
+          {
+            "name": "JLCPCB Status",
+            "label": "JLCPCB Status",
+            "show": false,
+            "group_by": false
+          },
+          {
+            "name": "Supplier Source",
+            "label": "Supplier Source",
+            "show": false,
+            "group_by": false
+          },
+          {
+            "name": "Supplier Data Checked",
+            "label": "Supplier Data Checked",
+            "show": false,
+            "group_by": false
+          },
+          {
+            "name": "Voltage",
+            "label": "Voltage",
+            "show": false,
+            "group_by": false
+          },
+          {
+            "name": "Dielectric",
+            "label": "Dielectric",
+            "show": false,
+            "group_by": false
+          },
+          {
+            "name": "Tolerance",
+            "label": "Tolerance",
+            "show": false,
+            "group_by": false
+          },
+          {
+            "name": "Power",
+            "label": "Power",
+            "show": false,
+            "group_by": false
+          },
+          {
+            "name": "TCR",
+            "label": "TCR",
+            "show": false,
+            "group_by": false
+          },
+          {
             "name": "Height",
-            "show": false
+            "label": "Height",
+            "show": false,
+            "group_by": false
           },
           {
-            "group_by": false,
-            "label": "#",
-            "name": "${ITEM_NUMBER}",
-            "show": false
+            "name": "Footprint Status",
+            "label": "Footprint Status",
+            "show": false,
+            "group_by": false
           },
           {
-            "group_by": false,
-            "label": "MANUFACTURER",
-            "name": "MANUFACTURER",
-            "show": false
+            "name": "BOM Notes",
+            "label": "BOM Notes",
+            "show": false,
+            "group_by": false
           },
           {
-            "group_by": false,
-            "label": "Description_1",
-            "name": "Description_1",
-            "show": false
+            "name": "DigiKey Part #",
+            "label": "DigiKey Part #",
+            "show": false,
+            "group_by": false
           },
           {
-            "group_by": false,
-            "label": "MAXIMUM_PACKAGE_HEIGHT",
-            "name": "MAXIMUM_PACKAGE_HEIGHT",
-            "show": false
+            "name": "${DNP}",
+            "label": "${DNP}",
+            "show": false,
+            "group_by": false
           },
           {
-            "group_by": false,
-            "label": "MF",
-            "name": "MF",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "MP",
-            "name": "MP",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "Description",
-            "name": "Description",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "Manufacturer_Name",
-            "name": "Manufacturer_Name",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "Manufacturer_Part_Number",
-            "name": "Manufacturer_Part_Number",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "Mouser Part Number",
-            "name": "Mouser Part Number",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "Mouser Price/Stock",
-            "name": "Mouser Price/Stock",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "Availability",
-            "name": "Availability",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "PARTREV",
-            "name": "PARTREV",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "Package",
-            "name": "Package",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "Price",
-            "name": "Price",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "Protoflow_Source",
-            "name": "Protoflow_Source",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "Purchase-URL",
-            "name": "Purchase-URL",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "SNAPEDA_PN",
-            "name": "SNAPEDA_PN",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "STANDARD",
-            "name": "STANDARD",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "Sim.Device",
-            "name": "Sim.Device",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "Sim.Pins",
-            "name": "Sim.Pins",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "SnapEDA_Link",
-            "name": "SnapEDA_Link",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "CREATOR",
-            "name": "CREATOR",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "VENDOR",
-            "name": "VENDOR",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "VERIFIER",
-            "name": "VERIFIER",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "Check_prices",
-            "name": "Check_prices",
-            "show": false
-          },
-          {
-            "group_by": false,
-            "label": "DUPLICATE",
-            "name": "DUPLICATE",
-            "show": false
-          },
-          {
-            "group_by": true,
-            "label": "Exclude from board",
-            "name": "${EXCLUDE_FROM_BOARD}",
-            "show": true
+            "name": "${EXCLUDE_FROM_BOM}",
+            "label": "${EXCLUDE_FROM_BOM}",
+            "show": false,
+            "group_by": false
           }
-        ],
-        "filter_string": "",
-        "group_symbols": true,
-        "include_excluded_from_bom": true,
-        "name": "Population review",
-        "sort_asc": true,
-        "sort_field": "Reference"
+        ]
       }
     ],
     "bom_settings": {
-      "exclude_dnp": true,
+      "name": "Project BOM",
+      "exclude_dnp": false,
+      "include_excluded_from_bom": false,
+      "group_symbols": true,
+      "filter_string": "",
+      "sort_asc": true,
+      "sort_field": "Reference",
       "fields_ordered": [
         {
-          "group_by": false,
-          "label": "Reference",
           "name": "Reference",
-          "show": true
+          "label": "Reference",
+          "show": true,
+          "group_by": false
         },
         {
-          "group_by": false,
-          "label": "Qty",
           "name": "${QUANTITY}",
-          "show": true
+          "label": "Qty",
+          "show": true,
+          "group_by": false
         },
         {
-          "group_by": true,
-          "label": "Value",
           "name": "Value",
-          "show": true
+          "label": "Value",
+          "show": true,
+          "group_by": true
         },
         {
-          "group_by": true,
-          "label": "Footprint",
-          "name": "Footprint",
-          "show": true
+          "name": "Function",
+          "label": "Function",
+          "show": true,
+          "group_by": true
         },
         {
-          "group_by": true,
-          "label": "Manufacturer",
           "name": "Manufacturer",
-          "show": true
+          "label": "Manufacturer",
+          "show": true,
+          "group_by": true
         },
         {
-          "group_by": true,
+          "name": "MPN",
           "label": "MPN",
-          "name": "MANUFACTURER_PART_NUMBER",
-          "show": true
+          "show": true,
+          "group_by": true
         },
         {
-          "group_by": true,
-          "label": "LCSC",
           "name": "LCSC",
-          "show": true
+          "label": "LCSC",
+          "show": true,
+          "group_by": true
         },
         {
-          "group_by": false,
-          "label": "Operating Temperature",
           "name": "Operating Temperature",
-          "show": false
+          "label": "Operating Temperature",
+          "show": true,
+          "group_by": true
         },
         {
-          "group_by": false,
-          "label": "BOM Notes",
-          "name": "BOM Notes",
-          "show": false
+          "name": "Assembly",
+          "label": "Assembly",
+          "show": true,
+          "group_by": true
         },
         {
-          "group_by": false,
-          "label": "DNP",
-          "name": "${DNP}",
-          "show": false
+          "name": "BOM Status",
+          "label": "BOM Status",
+          "show": true,
+          "group_by": true
         },
         {
-          "group_by": false,
-          "label": "Exclude from BOM",
-          "name": "${EXCLUDE_FROM_BOM}",
-          "show": false
+          "name": "Footprint",
+          "label": "Footprint",
+          "show": true,
+          "group_by": true
         },
         {
-          "group_by": false,
-          "label": "Datasheet",
           "name": "Datasheet",
-          "show": false
+          "label": "Datasheet",
+          "show": true,
+          "group_by": false
         },
         {
-          "group_by": false,
-          "label": "Digikey",
-          "name": "Digikey",
-          "show": false
+          "name": "BOM Review",
+          "label": "BOM Review",
+          "show": true,
+          "group_by": true
         },
         {
-          "group_by": false,
-          "label": "Height",
+          "name": "Temp Min (degC)",
+          "label": "Temp Min (degC)",
+          "show": false,
+          "group_by": false
+        },
+        {
+          "name": "Temp Max (degC)",
+          "label": "Temp Max (degC)",
+          "show": false,
+          "group_by": false
+        },
+        {
+          "name": "Temp Basis",
+          "label": "Temp Basis",
+          "show": false,
+          "group_by": false
+        },
+        {
+          "name": "Temp Source",
+          "label": "Temp Source",
+          "show": false,
+          "group_by": false
+        },
+        {
+          "name": "Temp Checked",
+          "label": "Temp Checked",
+          "show": false,
+          "group_by": false
+        },
+        {
+          "name": "Temp Status",
+          "label": "Temp Status",
+          "show": false,
+          "group_by": false
+        },
+        {
+          "name": "JLCPCB Library",
+          "label": "JLCPCB Library",
+          "show": false,
+          "group_by": false
+        },
+        {
+          "name": "JLCPCB Status",
+          "label": "JLCPCB Status",
+          "show": false,
+          "group_by": false
+        },
+        {
+          "name": "Supplier Source",
+          "label": "Supplier Source",
+          "show": false,
+          "group_by": false
+        },
+        {
+          "name": "Supplier Data Checked",
+          "label": "Supplier Data Checked",
+          "show": false,
+          "group_by": false
+        },
+        {
+          "name": "Voltage",
+          "label": "Voltage",
+          "show": false,
+          "group_by": false
+        },
+        {
+          "name": "Dielectric",
+          "label": "Dielectric",
+          "show": false,
+          "group_by": false
+        },
+        {
+          "name": "Tolerance",
+          "label": "Tolerance",
+          "show": false,
+          "group_by": false
+        },
+        {
+          "name": "Power",
+          "label": "Power",
+          "show": false,
+          "group_by": false
+        },
+        {
+          "name": "TCR",
+          "label": "TCR",
+          "show": false,
+          "group_by": false
+        },
+        {
           "name": "Height",
-          "show": false
+          "label": "Height",
+          "show": false,
+          "group_by": false
         },
         {
-          "group_by": false,
-          "label": "#",
-          "name": "${ITEM_NUMBER}",
-          "show": false
+          "name": "Footprint Status",
+          "label": "Footprint Status",
+          "show": false,
+          "group_by": false
         },
         {
-          "group_by": false,
-          "label": "MANUFACTURER",
-          "name": "MANUFACTURER",
-          "show": false
+          "name": "BOM Notes",
+          "label": "BOM Notes",
+          "show": false,
+          "group_by": false
         },
         {
-          "group_by": false,
-          "label": "Description_1",
-          "name": "Description_1",
-          "show": false
+          "name": "DigiKey Part #",
+          "label": "DigiKey Part #",
+          "show": false,
+          "group_by": false
         },
         {
-          "group_by": false,
-          "label": "MAXIMUM_PACKAGE_HEIGHT",
-          "name": "MAXIMUM_PACKAGE_HEIGHT",
-          "show": false
+          "name": "${DNP}",
+          "label": "${DNP}",
+          "show": false,
+          "group_by": false
         },
         {
-          "group_by": false,
-          "label": "MF",
-          "name": "MF",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "MP",
-          "name": "MP",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Description",
-          "name": "Description",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Manufacturer_Name",
-          "name": "Manufacturer_Name",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Manufacturer_Part_Number",
-          "name": "Manufacturer_Part_Number",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Mouser Part Number",
-          "name": "Mouser Part Number",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Mouser Price/Stock",
-          "name": "Mouser Price/Stock",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Availability",
-          "name": "Availability",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "PARTREV",
-          "name": "PARTREV",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Package",
-          "name": "Package",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Price",
-          "name": "Price",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Protoflow_Source",
-          "name": "Protoflow_Source",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Purchase-URL",
-          "name": "Purchase-URL",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "SNAPEDA_PN",
-          "name": "SNAPEDA_PN",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "STANDARD",
-          "name": "STANDARD",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Sim.Device",
-          "name": "Sim.Device",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Sim.Pins",
-          "name": "Sim.Pins",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "SnapEDA_Link",
-          "name": "SnapEDA_Link",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "CREATOR",
-          "name": "CREATOR",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "VENDOR",
-          "name": "VENDOR",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "VERIFIER",
-          "name": "VERIFIER",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Check_prices",
-          "name": "Check_prices",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "DUPLICATE",
-          "name": "DUPLICATE",
-          "show": false
+          "name": "${EXCLUDE_FROM_BOM}",
+          "label": "${EXCLUDE_FROM_BOM}",
+          "show": false,
+          "group_by": false
         }
-      ],
-      "filter_string": "",
-      "group_symbols": true,
-      "include_excluded_from_bom": false,
-      "name": "",
-      "sort_asc": true,
-      "sort_field": "Reference"
+      ]
     },
     "connection_grid_size": 50.0,
     "drawing": {
@@ -1623,7 +970,7 @@
     },
     "net_format_name": "",
     "page_layout_descr_file": "",
-    "plot_directory": "./",
+    "plot_directory": "",
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
@@ -1634,51 +981,6 @@
     "subpart_first_id": 65,
     "subpart_id_separator": 0
   },
-  "sheets": [
-    [
-      "0771dda4-723b-4b91-a7fd-3d93384c8b3d",
-      "Root"
-    ],
-    [
-      "3f9c8f12-0f4f-4aa4-9cc2-9b6623511d78",
-      "STM32"
-    ],
-    [
-      "3be31935-de41-4925-b1be-c3dd6e96a5f6",
-      "LTC4364"
-    ],
-    [
-      "a758a419-0bc2-4a38-adcd-f0c29b2c9208",
-      "DC DC Step down"
-    ],
-    [
-      "6765969a-e8c4-4024-a99d-060a4869a208",
-      "Brakes"
-    ],
-    [
-      "edc2c25e-cbd2-4f51-8e64-f3792119425c",
-      "SSI_Encoder"
-    ],
-    [
-      "32d2e4f0-d417-4e3e-aa66-6e1c3db35079",
-      "Stepper"
-    ],
-    [
-      "523e9d74-0733-4f68-aa67-b0ec5bd88b9c",
-      "ServoMotor"
-    ],
-    [
-      "17b8fa8c-be91-49fa-a99e-b377fef04af4",
-      "ADS1115"
-    ],
-    [
-      "2e710e11-24fc-53a2-ac67-6179fd34ea44",
-      "Pivot_Encoder_Port"
-    ],
-    [
-      "aaef5caf-c763-5ff0-9a29-93dc06652472",
-      "Pivot_Encoder_Star"
-    ]
-  ],
+  "sheets": [],
   "text_variables": {}
 }

@@ -1,0 +1,14 @@
+(fp_lib_table
+  (version 7)
+  (lib
+    (name "ProtoFlow")
+    (type "KiCad")
+    (uri "${KIPRJMOD}/ProtoFlow.pretty")
+    (options "")
+    (descr "Controlled project-local production footprints"))
+  (lib
+    (name "Stack")
+    (type "KiCad")
+    (uri "${KIPRJMOD}/../footprints/Stack.pretty")
+    (options "")
+    (descr "Matched elevation stack connectors")))
